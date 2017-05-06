@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Registration | Flat Theme</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/prettyPhoto.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->       
+        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    </head><!--/head-->
+    <body>
+        <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="career.html">Career</a></li>
+                                <li><a href="blog-item.html">Blog Single</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li class="active"><a href="registration.html">Registration</a></li>
+                                <li class="divider"></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Use</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li> 
+                        <li><a href="contatos.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header><!--/header-->
+
+        <section id="title" class="emerald">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Meu Cadastro</h1>
+                    </div>
+                </div>
+            </div>
+        </section><!--/#title-->     
+
+<div class="siteContent">
+				<input id="InterfaceEnvelope" type="hidden" name="InterfaceEnvelope">
+				<input id="Culture" type="hidden" name="Culture">
+				<input id="SearchType" type="hidden" name="SearchType">
+				<input id="Currency" type="hidden" name="Currency">
+				<input id="ExchangeRate" type="hidden" name="ExchangeRate">
+				<input id="SelectedCurrency" type="hidden" name="SelectedCurrency">
+				<input id="QueryString" type="hidden" name="QueryString">
+
+				
+
+    
+        <!-- Hotjar Tracking Code for http://www.cvc.com.br/ -->        
+        <script>
+            var pag = window.location.pathname.toLocaleLowerCase();
+            if (pag == '/travel/resultado-pacotes.aspx' || pag == '/travel/resultado-passagens.aspx' || pag == '/travel/resultado-hoteis.aspx') {
+                Global.SearchController.searchCompleted.attach(function () {
+                    chamaHotjar();
+                });
+            }
+            else {
+                chamaHotjar();
+            }
+
+            function chamaHotjar() {
+                    (function (h, o, t, j, a, r) {
+                        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+                        h._hjSettings = { hjid: 133522, hjsv: 5 };
+                        a = o.getElementsByTagName('head')[0];
+                        r = o.createElement('script'); r.async = 1;
+                        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                        a.appendChild(r);
+                    })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+            }
+
+        </script>
+    
+
+    <!-- JS Analytics -->
+    <script type="text/javascript" src="/scripts/analytics/pmkt.js?v=20170502"></script>
+    <script type="text/javascript" src="/scripts/analytics/multitouch.js?v=20170502"></script>
+    <script type="text/javascript" src="/scripts/redirects.js?v=20170502"></script>
+    <script type="text/javascript">
+              // TAG PADRAO
+              var _gaq = _gaq || [];
+              var UA = 'UA-1814594-1';
+
+              if(document.location.hostname == 'vendasti.cvc.com.br')
+              UA = 'UA-1814594-34';
+              else if(Util.getCookie('userType') == 'Vendor'){
+              UA = 'UA-1814594-35';
+              _gaq.push(['_trackEvent', 'Filial', 'SetCode', 'Código da filial', parseInt(Util.getCookie('BranchCode'), 10)]);
+              }
+              else if(Util.getCookie('userType') == 'Agent'){
+              UA = 'UA-1814594-36';
+              _gaq.push(['_trackEvent', 'Filial', 'SetCode', 'Código da filial', parseInt(Util.getCookie('BranchCode'), 10)]);
+              }
+
+              _gaq.push(['_setAccount', UA]);
+				//_gaq.push(['_addIgnoredOrganic', 'ignore']);
+				//_gaq.push(['_addIgnoredRef', 'cvc.com.br']);
+				//_gaq.push(['_setDomainName', 'cvc.com.br']);
+              _gaq.push(['_trackPageview']);
+
+              (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+
+            </script><script>
+            // SCRIPT NOVO
+            
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-1814594-39', 'auto');
+
+          </script>
+        
+    <!-- JS de execução/chamadas de script -->
+    <script type="text/javascript" src="/WebCommon/Scripts/Models/NewsLetterModel.js?v=20170502"></script>
+    <script type="text/javascript" src="/WebCommon/Scripts/Views/NewsLetterContact.js?v=20170502"></script>
+    <script type="text/javascript" src="/WebCommon/Scripts/Controllers/NewsLetterController.js?v=20170502"></script>
+    <script type="text/javascript" src="/scripts/GridList.js?v=20170502"></script>
+    <script type="text/javascript" src="/scripts/ImageError.js?v=20170502"></script>
+    <script type="text/javascript" src="/travel/Templates/B2C/ModalToolTip/Loyalt/Loyalt_pt-BR.js?v=20170502"></script>
+    <script type="text/javascript" src="/travel/Templates/B2C/ModalToolTip/Loyalt/LoyaltTPL.js?v=20170502"></script>
+    <script type="text/javascript" src="/travel/Templates/B2C/ModalToolTip/ModalToolTipTPL.js?v=20170502"></script>
+    <script type="text/javascript" src="/travel/Scripts/ModalToolTip.js?v=20170502"></script>
+    <script type="text/javascript" src="/travel/Scripts/ModalHotelMap.js?v=20170502"></script>
+    <script type="text/javascript" src="/travel/Templates/B2C/ModalToolTip/HotelMap/HotelMapTPL.js?v=20170502"></script>
+    <script type="text/javascript" src="/travel/Templates/B2C/ModalToolTip/HotelMap/HotelMap_pt-BR.js?v=20170502"></script>
+    <script src="/scripts/cookie.js?v=20170502" type="text/javascript"></script>
+    <script src="/scripts/scriptsHeader.js?v=20170502" type="text/javascript"></script>
+    <script src="/scripts/NavigationEvents.js?v=20170502" type="text/javascript"></script>
+    <script src="/travel/Scripts/CVC/CVC.namespace.js?v=20170502" type="text/javascript"></script>
+    <script src="/travel/Scripts/CVC/CVC.window.utils.js?v=20170502" type="text/javascript"></script>
+    <script src="/travel/Scripts/CVC/CVC.controls.utils.js?v=20170502" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (Util && Util.QueryString('searchtype') == 'Services')
+                $('#adults').children().eq(0).before('<option value="0"' + (Util.QueryString('Adults') == '0' ? 'selected' : '') + '>0</option>')
+        })
+		</script>
+
+    <script type="text/javascript" src="/scripts/pl_socialnetworks.js?v=20170502"></script>
+      
+
+    
+<script type="text/javascript">
+    var hTMLCollection = HTMLCollection.prototype.item;
+    var hTMLSelectElement = HTMLSelectElement.prototype.item;
+
+    HTMLCollection.prototype.item = function () { return hTMLCollection.bind(this)(arguments[0] || 0); }
+
+    HTMLSelectElement.prototype.item = function () { return hTMLSelectElement.bind(this)(arguments[0] || 0); }
+</script>
+
+
+
+<script src="/Travel/Scripts/angular/ngStorage.js?v=20170502" type="text/javascript"></script>
+<script src="/Travel/Scripts/app/modules/general/generalModule.js?v=20170502" type="text/javascript"></script>
+<script src="/Travel/Scripts/app/services/general/loginTimeoutService.js?v=20170502" type="text/javascript"></script>
+<script src="/Travel/Scripts/app/directives/general/dirHeaderLoginTimeout.js?v=20170502" type="text/javascript"></script>
+<script src="/Travel/Scripts/app/controllers/general/loginTimeoutController.js?v=20170502" type="text/javascript"></script>
+
+<input type="hidden" value="1" id="agencyId">
+<input type="hidden" value="3" id="searchTypeFull">
+
+<div id="modal-packageSystur" class="ui-widget-overlay hide"></div>
+
+<div ng-app="general" class="boxModel" header-login-timeout="">
+    <div class="headerTop">
+        <h1 class="logo">
+            <a href="/index.aspx" title="CVC - Viagens" target="_self">CVC - Viagens</a>
+        </h1>
+        <div class="userBox" id="userBox">
+            <ul class="userMenu">
+                <li class="commonItem"><a href="/lista-de-casamento/index.aspx" target="_blank">Lista de casamento</a></li>
+                <li class="commonItem"><a href="/ri" target="_blank">Investidores</a></li>
+                <li class="commonItem"><a href="/lps/franquias/index.aspx" target="_blank">Seja um franqueado</a></li>
+                <li class="commonItem"><a href="http://lojas.cvc.com.br" target="_blank">Lojas</a></li>
+                <li class="commonItem"><a href="/atendimento/central-de-atendimento.aspx" target="_blank">Atendimento</a></li>
+                
+            </ul>
+            <div id="linkLogin">
+                <p>
+                    <a href="/travel/minhaconta/myorders?menu=2">Minhas viagens</a> / <a href="/travel/minhaconta">Login</a>
+                </p>
+            </div>
+        </div>
+        <!-- ngIf: showLoginArea() -->
+
+        <div class="menuTelevendas">
+            <ul class="userMenuTelevendas">
+                <li class="topItem">
+                    <span class="titulo">Televendas: </span><a class="withMenuTelevendas" href="javascript:void(0);">(11) 3003-9282</a>
+
+                    <ul class="userSubMenuTelevendas" style="display: none;">
+                        <li>
+                            <p>Capitais e Regiões Metropolitanas</p>
+                            <span>3003-9282</span>
+                        </li>
+                        <li>
+                            <p>Demais localidades</p>
+                            <span>(11) 3003-9282</span>
+                        </li>
+                        <li class="atendimento">
+                            <p>Horário de atendimento</p>
+                            <span>Seg a Sex: 8h às 22h<br>
+                            Sab: 9h às 21h<br>
+                            Dom: 10h às 21h<br>
+                            Feriados: 10h às 21h</span>                            
+                        </li>
+                        <li class="outras-localidades">
+                            <p class="bt-outras-localidades">Veja informações sobre o custo das ligações</p>
+                        </li>
+                        <li class="atendimento">
+                            <p>Ligações feitas de telefone fixo</p>
+                            <span>Custo de ligação local + impostos locais conforme o estado de origem.</span>                            
+                        </li><li class="atendimento">
+                            <p>Chamadas feitas de celular</p>
+                            <span>Custo da ligação + impostos para celulares, conforme a operadora.</span>
+                        </li>
+                        <li class="atendimento">
+                            <span>Para verificar se a cidade de onde você está falando permite ligações sem código da operadora, tente discar diretamente o número <strong class="menor">3003-9282</strong>.</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="subMenuFolder" id="subMenuCanais" style="display: none"></div>
+<umbraco:macro id="Macro1" alias="[RAZOR]MainMenu" runat="server"></umbraco:macro>
+
+    
+            <script lang="javascript">
+              $(window).resize(function() {
+                var WindowWidth = $(window).width();
+                if (WindowWidth < 1007) {
+                    $('body').css("overflow-x", "visible");
+                }
+                else
+                    $('body').css("overflow-x", "hidden");
+              });
+            </script>
+            <div class="menuTopo">
+                <div>
+                    <ul class="boxModel" id="mainMenu">
+                            <li>
+                                                                    <a href="/pacotes/index.aspx" title="Pacotes" target="_self">Pacotes</a>
+                            </li>
+                            <li>
+                                                                    <a href="/passagens-aereas/index.aspx" title="Passagens Aéreas" target="_self">Passagens Aéreas</a>
+                            </li>
+                            <li>
+                                                                    <a href="/hoteis/index.aspx" title="Hotéis" target="_self">Hotéis</a>
+                            </li>
+                            <li>
+                                                                    <a href="/resorts/index.aspx" title="Resorts" target="_self">Resorts</a>
+                            </li>
+                            <li>
+                                                                    <a href="/cruzeiros" title="Cruzeiros" target="_self">Cruzeiros</a>
+                            </li>
+                            <li>
+                                                                    <a href="/promocao/circuitos.aspx" title="Circuitos" target="_self">Circuitos</a>
+                            </li>
+                            <li>
+                                                                    <a href="/intercambios.aspx" title="Intercâmbios" target="_self">Intercâmbios</a>
+                            </li>
+                            <li>
+                                                                    <a href="/promocao/ingressos.aspx" title="Ingressos" target="_self">Ingressos</a>
+                            </li>
+                            <li>
+                                                                    <a href="/vale-viagem.aspx" title="Vale-Viagem" target="_self">Vale-Viagem</a>
+                            </li>
+                            <li>
+                                                                    <a href="/promocao/destinos-ate-mil-reais.aspx" title="Promoções" target="_self">Promoções</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+				<div class="container">
+					
+    <div class="section client signin form">
+        <div class="main content" id="user"><h1 class="hide_checkout">Meu Cadastro</h1><div class="form"><div class="error"><div id="messages_exhibitor" class="messages_exhibitor"></div><div class="required"><label class=" required"><span class="force-right min-width"><span class="required">*</span>Nome Completo:</span><input id="txtName" class="just-alpha-with-accentuation" type="text" placeholder="Primeiro nome" validations="isNotEmpty:Required, PRIMEIRO NOME; isMinLength:LengthMoreOrEqualThan, PRIMEIRO NOME, 3" rules="just-alpha-with-accentuation"><span class="validate"></span></label><label class="hide"><input id="txtMiddleName" class="just-alpha-with-accentuation" type="text" placeholder="Nome do meio" rules="just-alpha-with-accentuation"><span class="validate"></span></label><label class="required"><input id="txtLastName" class="just-alpha-with-accentuation" type="text" placeholder="Ultimo nome" validations="isNotEmpty:Required, ULTIMO NOME; isMinLength:LengthMoreOrEqualThan, ULTIMO NOME, 3" rules="just-alpha-with-accentuation"><span class="validate"></span></label></div><label class="required"><span class="force-right min-width"><span class="required">*</span>Nascimento:</span><input id="txtDateOfBirth" type="text" class="date" maxlength="10" placeholder="dd/mm/aaaa" validations="isNotEmpty:Required, NASCIMENTO;isDate:Wrong, NASCIMENTO" rules="just-number" mask="full-year-date-mask"><span class="validate"></span></label><div class="small label required"><span class="force-right min-width"><span><strong class="required">*</strong>Sexo:</span></span><div id="gender" class="multi_options" validations="isNotEmpty:Required, SEXO" tabindex="-1"><span tabindex="0" class="focused">Selecione</span><ul class="select hide" id="gender_img" style="display: none;"><li class="customSelect" type="select"><a href="javascript:;" value="" tabindex="-1">Selecione</a></li><li class="customSelect" type="select"><a href="javascript:;" value="0" tabindex="-1">Masculino</a></li><li class="customSelect" type="select"><a href="javascript:;" value="1" tabindex="-1">Feminino</a></li></ul></div></div><label class="required"><span class="force-right min-width"><span class="required">*</span>CPF:</span><input id="txtCPF" type="text" class="cpf" maxlength="14" validations="isNotEmpty:Required, CPF;isCPF:Wrong, CPF" rules="just-number" mask="cpf"><span class="validate"></span></label><label class="required"><span class="force-right min-width"><span class="required">*</span>E-mail:</span><input id="txtEmail" type="text" class="just-alpha" validations="isNotEmpty:Required, E-MAIL;isEmail:Wrong, E-MAIL"><span class="validate"></span></label><label class="required" style="text-transform: none !important; font-weight: normal; font-size: 100%;"><span class="force-right min-width" style="text-align: right;"><span class="required">*</span></span><input id="ckbPolicies" type="checkbox" class="just-alpha" validations="isChecked:Required, acima confirmando que você leu a política de privacidade;"> Ao clicar no botão você confirma ter lido nossa <a href="/institucional/politica-e-normas-de-seguranca.aspx" style="text-decoration: none; color: #38b9f5;" target="_blank">Política de Privacidade</a>.<span class="validate"></span></label><div class="password_rules"><label class="required"><span class="force-right min-width"><span class="required">*</span>Senha:</span><input id="txtPassword" type="password" validations="isNotEmpty:Required, SENHA;isPassword:Login_CreatePasswordPatternError,;"><span class="validate"></span></label><label class="required"><span><span class="required">*</span>Confirmar Senha:</span><input id="txtPasswordConfirm" type="password" validations="isNotEmpty:Required, CONFIRMAR SENHA;isValueEqual:Wrong, CONFIRMAR SENHA, #txtPassword"><span class="validate margin-negative-left_small"></span></label><p>Sua senha deve conter de 4 à&nbsp; 8 caracteres.</p></div><label class="required smaller"><span class="force-right phone min-width"><span class="required">*</span>Telefone:</span><input id="txtPrimaryDDDPhone" type="text" class="just-number" maxlength="2" validations="isNotEmpty:Required, DDD TELEFONE;isNumber:Wrong, DDD TELEFONE;isMinLength:Wrong, DDD TELEFONE, 2" rules="just-number"><span class="tel validate"></span></label><label class="phone required"><input id="txtPrimaryPhone" type="text" class="just-number telephone" maxlength="10" validations="isNotEmpty:Required, TELEFONE;isPhone:Wrong, TELEFONE" rules="just-number" mask="phone"></label><div class="small label required type"><div id="divPrimaryPhoneType" class="multi_options margin-top_small" validations="isNotEmpty:Required, TIPO TELEFONE" tabindex="-1"><span tabindex="0">Selecione</span><ul class="select hide" id="phone_type"><li class="customSelect" type="select"><a href="javascript:;" class="PhoneType1" value="" tabindex="-1">Selecione</a></li><li class="customSelect" type="select"><a href="javascript:;" class="PhoneType1" value="1" tabindex="-1">Celular</a></li><li class="customSelect" type="select"><a href="javascript:;" class="PhoneType1" value="0" tabindex="-1">Fixo</a></li></ul></div></div></div></div><div class="form address"><h1>Endereço</h1><div class="small label required"><span class="min-width"><span class="label"><strong class="required">*</strong>País: </span></span><div id="txtCountry" class="multi_options margin-top_small" validations="isNotEmpty:Required, PAÍS" tabindex="-1"><span tabindex="0">BRASIL</span><ul class="select hide" id="country_img"><li class="customSelect" type="select"><a href="javascript:;" code="" value="" tabindex="-1">Selecione</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AF" value="AFEGANISTAO" tabindex="-1">AFEGANISTAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ZA" value="AFRICA DO SUL" tabindex="-1">AFRICA DO SUL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AL" value="ALBANIA" tabindex="-1">ALBANIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="DE" value="ALEMANHA" tabindex="-1">ALEMANHA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AD" value="ANDORRA" tabindex="-1">ANDORRA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="A0" value="ANGOLA" tabindex="-1">ANGOLA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AI" value="ANGUILLA" tabindex="-1">ANGUILLA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AG" value="ANTIGUA E BARBUDA" tabindex="-1">ANTIGUA E BARBUDA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AN" value="ANTILHAS HOLANDESAS" tabindex="-1">ANTILHAS HOLANDESAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SA" value="ARABIA SAUDITA" tabindex="-1">ARABIA SAUDITA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="DZ" value="ARGELIA" tabindex="-1">ARGELIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AR" value="ARGENTINA" tabindex="-1">ARGENTINA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AM" value="ARMENIA" tabindex="-1">ARMENIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AW" value="ARUBA" tabindex="-1">ARUBA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AU" value="AUSTRALIA" tabindex="-1">AUSTRALIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AT" value="AUSTRIA" tabindex="-1">AUSTRIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AZ" value="AZERBAIDJAO" tabindex="-1">AZERBAIDJAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AQ" value="AGABA" tabindex="-1">AQABA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BS" value="BAHAMAS" tabindex="-1">BAHAMAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BD" value="BANGLADESH" tabindex="-1">BANGLADESH</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BB" value="BARBADOS" tabindex="-1">BARBADOS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BH" value="BAREIN" tabindex="-1">BAREIN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BY" value="BELARUS" tabindex="-1">BELARUS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BE" value="BELGICA" tabindex="-1">BELGICA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BZ" value="BELIZE" tabindex="-1">BELIZE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BJ" value="BENIN" tabindex="-1">BENIN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BM" value="BERMUDA" tabindex="-1">BERMUDA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BO" value="BOLIVIA" tabindex="-1">BOLIVIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BA" value="BOSNIA-HERZEGOVINA" tabindex="-1">BOSNIA-HERZEGOVINA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BW" value="BOTSWANA" tabindex="-1">BOTSWANA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BR" value="BRASIL" class="current" tabindex="-1">BRASIL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BN" value="BRUNEI" tabindex="-1">BRUNEI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BG" value="BULGARIA" tabindex="-1">BULGARIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BF" value="BURKINA FASSO" tabindex="-1">BURKINA FASSO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BI" value="BURUNDI" tabindex="-1">BURUNDI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BU" value="BUTAO" tabindex="-1">BUTAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CV" value="CABO VERDE" tabindex="-1">CABO VERDE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CM" value="CAMAROES" tabindex="-1">CAMAROES</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KH" value="CAMBOJA" tabindex="-1">CAMBOJA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CA" value="CANADA" tabindex="-1">CANADA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="QA" value="CATAR" tabindex="-1">CATAR</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KZ" value="CAZAQUISTAO" tabindex="-1">CAZAQUISTAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TD" value="CHADE" tabindex="-1">CHADE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CL" value="CHILE" tabindex="-1">CHILE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CN" value="CHINA" tabindex="-1">CHINA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CY" value="CHIPRE" tabindex="-1">CHIPRE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SG" value="CINGAPURA" tabindex="-1">CINGAPURA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CO" value="COLOMBIA" tabindex="-1">COLOMBIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KM" value="COMORES" tabindex="-1">COMORES</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CG" value="CONGO" tabindex="-1">CONGO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KP" value="COREIA DO NORTE" tabindex="-1">COREIA DO NORTE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KR" value="COREIA DO SUL" tabindex="-1">COREIA DO SUL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CI" value="COSTA DO MARFIM" tabindex="-1">COSTA DO MARFIM</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CR" value="COSTA RICA" tabindex="-1">COSTA RICA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="HR" value="CROACIA" tabindex="-1">CROACIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CU" value="CUBA" tabindex="-1">CUBA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="DK" value="DINAMARCA" tabindex="-1">DINAMARCA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="DJ" value="DJIBUTI" tabindex="-1">DJIBUTI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="DM" value="DOMINICA" tabindex="-1">DOMINICA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="EG" value="EGITO" tabindex="-1">EGITO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SV" value="EL SALVADOR" tabindex="-1">EL SALVADOR</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AE" value="EMIRADOS ARABES UNIDOS" tabindex="-1">EMIRADOS ARABES UNIDOS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="EC" value="EQUADOR" tabindex="-1">EQUADOR</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ER" value="ERITREIA" tabindex="-1">ERITREIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IA" value="ESCOCIA" tabindex="-1">ESCOCIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SK" value="ESLOVAQUIA" tabindex="-1">ESLOVAQUIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SI" value="ESLOVENIA" tabindex="-1">ESLOVENIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ES" value="ESPANHA" tabindex="-1">ESPANHA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="US" value="ESTADOS UNIDOS DA AMERICA" tabindex="-1">ESTADOS UNIDOS DA AMERICA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="EE" value="ESTONIA" tabindex="-1">ESTONIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ET" value="ETIOPIA" tabindex="-1">ETIOPIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="RU" value="FEDERAÃ‡ÃƒO RUSSA" tabindex="-1">FEDERAÃ‡ÃƒO RUSSA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="FJ" value="FIJI" tabindex="-1">FIJI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="FL" value="FILIPINAS" tabindex="-1">FILIPINAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="FI" value="FINLANDIA" tabindex="-1">FINLANDIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="FR" value="FRANCA" tabindex="-1">FRANCA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="FX" value="FRANCA METROPOLITANA" tabindex="-1">FRANCA METROPOLITANA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GA" value="GABAO" tabindex="-1">GABAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GM" value="GAMBIA" tabindex="-1">GAMBIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GH" value="GANA" tabindex="-1">GANA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GE" value="GEORGIA" tabindex="-1">GEORGIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GI" value="GIBRALTAR" tabindex="-1">GIBRALTAR</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GB" value="GRA-BRETANHA" tabindex="-1">GRA-BRETANHA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GR" value="GRECIA" tabindex="-1">GRECIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GL" value="GROENLANDIA" tabindex="-1">GROENLANDIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GP" value="GUADALUPE" tabindex="-1">GUADALUPE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GD" value="GUADELOUPE" tabindex="-1">GUADELOUPE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GU" value="GUAM" tabindex="-1">GUAM</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GT" value="GUATEMALA" tabindex="-1">GUATEMALA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GY" value="GUIANA" tabindex="-1">GUIANA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GF" value="GUIANA FRANCESA" tabindex="-1">GUIANA FRANCESA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GN" value="GUINE" tabindex="-1">GUINE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GQ" value="GUINE EQUATORIAL" tabindex="-1">GUINE EQUATORIAL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GW" value="GUINE-BISSAU" tabindex="-1">GUINE-BISSAU</a></li><li class="customSelect" type="select"><a href="javascript:;" code="HT" value="HAITI" tabindex="-1">HAITI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NL" value="HOLANDA" tabindex="-1">HOLANDA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="HN" value="HONDURAS" tabindex="-1">HONDURAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="HK" value="HONG KONG" tabindex="-1">HONG KONG</a></li><li class="customSelect" type="select"><a href="javascript:;" code="HU" value="HUNGRIA" tabindex="-1">HUNGRIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="YE" value="IEMEN" tabindex="-1">IEMEN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="BV" value="ILHA BOUVET" tabindex="-1">ILHA BOUVET</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CX" value="ILHA CHRISTMAS" tabindex="-1">ILHA CHRISTMAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NF" value="ILHA NORFOLK" tabindex="-1">ILHA NORFOLK</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KY" value="ILHAS CAYMAN" tabindex="-1">ILHAS CAYMAN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CC" value="ILHAS COCOS" tabindex="-1">ILHAS COCOS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CK" value="ILHAS COOK" tabindex="-1">ILHAS COOK</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IG" value="ILHAS DE GUERNSEY" tabindex="-1">ILHAS DE GUERNSEY</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IJ" value="ILHAS DE JERSEY" tabindex="-1">ILHAS DE JERSEY</a></li><li class="customSelect" type="select"><a href="javascript:;" code="FO" value="ILHAS FAROE" tabindex="-1">ILHAS FAROE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="GS" value="ILHAS GEORGIA DO SUL E ILHAS SANDWICH DO" tabindex="-1">ILHAS GEORGIA DO SUL E ILHAS SANDWICH DO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="HM" value="ILHAS HEARD E MAC DONALD" tabindex="-1">ILHAS HEARD E MAC DONALD</a></li><li class="customSelect" type="select"><a href="javascript:;" code="FK" value="ILHAS MALVINAS" tabindex="-1">ILHAS MALVINAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MP" value="ILHAS MARIANA" tabindex="-1">ILHAS MARIANA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MH" value="ILHAS MARSHALL" tabindex="-1">ILHAS MARSHALL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PN" value="ILHAS PITCAIRN" tabindex="-1">ILHAS PITCAIRN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="RE" value="ILHAS REUNIAO" tabindex="-1">ILHAS REUNIAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SB" value="ILHAS SALOMAO" tabindex="-1">ILHAS SALOMAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SH" value="ILHAS SANTA HELENA" tabindex="-1">ILHAS SANTA HELENA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SJ" value="ILHAS SVALBARD E JAN MAYEN" tabindex="-1">ILHAS SVALBARD E JAN MAYEN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TK" value="ILHAS TOKELAU" tabindex="-1">ILHAS TOKELAU</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TC" value="ILHAS TURKS E CAICOS" tabindex="-1">ILHAS TURKS E CAICOS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="VI" value="ILHAS VIRGENS" tabindex="-1">ILHAS VIRGENS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="VG" value="ILHAS VIRGENS BRITANICAS" tabindex="-1">ILHAS VIRGENS BRITANICAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="WF" value="ILHAS WALLIS E FUTUNA" tabindex="-1">ILHAS WALLIS E FUTUNA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IN" value="INDIA" tabindex="-1">INDIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ID" value="INDONESIA" tabindex="-1">INDONESIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IR" value="IRA" tabindex="-1">IRA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IQ" value="IRAQUE" tabindex="-1">IRAQUE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IE" value="IRLANDA" tabindex="-1">IRLANDA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IS" value="ISLANDIA" tabindex="-1">ISLANDIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IL" value="ISRAEL" tabindex="-1">ISRAEL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="IT" value="ITALIA" tabindex="-1">ITALIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="YU" value="IUGOSLAVIA" tabindex="-1">IUGOSLAVIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="JM" value="JAMAICA" tabindex="-1">JAMAICA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="JP" value="JAPAO" tabindex="-1">JAPAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="JO" value="JORDANIA" tabindex="-1">JORDANIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KE" value="KENYA (Quenia)" tabindex="-1">KENYA (Quenia)</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KI" value="KIRIBATI" tabindex="-1">KIRIBATI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="WT" value="KUWAIT" tabindex="-1">KUWAIT</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KW" value="KUWEIT" tabindex="-1">KUWEIT</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LA" value="LAOS" tabindex="-1">LAOS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LS" value="LESOTO" tabindex="-1">LESOTO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LV" value="LETONIA" tabindex="-1">LETONIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LB" value="LIBANO" tabindex="-1">LIBANO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LR" value="LIBERIA" tabindex="-1">LIBERIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LY" value="LIBIA" tabindex="-1">LIBIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LI" value="LIECHTENSTEIN" tabindex="-1">LIECHTENSTEIN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LT" value="LITUANIA" tabindex="-1">LITUANIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LX" value="LUXEMBURGO" tabindex="-1">LUXEMBURGO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MO" value="MACAU" tabindex="-1">MACAU</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MK" value="MACEDONIA" tabindex="-1">MACEDONIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MG" value="MADAGASCAR" tabindex="-1">MADAGASCAR</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MY" value="MALASIA" tabindex="-1">MALASIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MW" value="MALAUI" tabindex="-1">MALAUI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MV" value="MALDIVAS" tabindex="-1">MALDIVAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ML" value="MALI" tabindex="-1">MALI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MT" value="MALTA" tabindex="-1">MALTA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MA" value="MARROCOS" tabindex="-1">MARROCOS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MQ" value="MARTINICA" tabindex="-1">MARTINICA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MU" value="MAURICIO" tabindex="-1">MAURICIO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MR" value="MAURITANIA" tabindex="-1">MAURITANIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="YT" value="MAYOTTE" tabindex="-1">MAYOTTE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MX" value="MEXICO" tabindex="-1">MEXICO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MM" value="MIANMAR" tabindex="-1">MIANMAR</a></li><li class="customSelect" type="select"><a href="javascript:;" code="FM" value="MICRONESIA" tabindex="-1">MICRONESIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MZ" value="MOCAMBIQUE" tabindex="-1">MOCAMBIQUE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MD" value="MOLDAVIA" tabindex="-1">MOLDAVIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MC" value="MONACO" tabindex="-1">MONACO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MN" value="MONGOLIA" tabindex="-1">MONGOLIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="MS" value="MONTSERRAT" tabindex="-1">MONTSERRAT</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NA" value="NAMIBIA" tabindex="-1">NAMIBIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NR" value="NAURU" tabindex="-1">NAURU</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NP" value="NEPAL" tabindex="-1">NEPAL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NI" value="NICARAGUA" tabindex="-1">NICARAGUA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NE" value="NIGER" tabindex="-1">NIGER</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NG" value="NIGERIA" tabindex="-1">NIGERIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NU" value="NIUE" tabindex="-1">NIUE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NO" value="NORUEGA" tabindex="-1">NORUEGA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NC" value="NOVA CALEDONIA" tabindex="-1">NOVA CALEDONIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NZ" value="NOVA ZELANDIA" tabindex="-1">NOVA ZELANDIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="OM" value="OMAN" tabindex="-1">OMAN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PW" value="PALAU" tabindex="-1">PALAU</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PA" value="PANAMA" tabindex="-1">PANAMA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PG" value="PAPUA NOVA GUINE" tabindex="-1">PAPUA NOVA GUINE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PK" value="PAQUISTAO" tabindex="-1">PAQUISTAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PY" value="PARAGUAI" tabindex="-1">PARAGUAI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PE" value="PERU" tabindex="-1">PERU</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PF" value="POLINESIA FRANCESA" tabindex="-1">POLINESIA FRANCESA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PL" value="POLONIA" tabindex="-1">POLONIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PR" value="PORTO RICO" tabindex="-1">PORTO RICO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PT" value="PORTUGAL" tabindex="-1">PORTUGAL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="QU" value="QUENIA" tabindex="-1">QUENIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KG" value="QUIRGUIZIA (QuirguistÃ£o)" tabindex="-1">QUIRGUIZIA (QuirguistÃ£o)</a></li><li class="customSelect" type="select"><a href="javascript:;" code="RD" value="REINO UNIDO" tabindex="-1">REINO UNIDO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CF" value="REPUBLICA CENTRO-AFRICANA" tabindex="-1">REPUBLICA CENTRO-AFRICANA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="RC" value="REPUBLICA DEMOCRATICA DO CONGO" tabindex="-1">REPUBLICA DEMOCRATICA DO CONGO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="DO" value="REPUBLICA DOMINICANA" tabindex="-1">REPUBLICA DOMINICANA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CZ" value="REPUBLICA TCHECA" tabindex="-1">REPUBLICA TCHECA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="RO" value="ROMENIA" tabindex="-1">ROMENIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="RW" value="RUANDA" tabindex="-1">RUANDA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="EH" value="SAHARA OCIDENTAL" tabindex="-1">SAHARA OCIDENTAL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="AS" value="SAMOA AMERICANA" tabindex="-1">SAMOA AMERICANA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="WS" value="SAMOA OCIDENTAL" tabindex="-1">SAMOA OCIDENTAL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SM" value="SAN MARINO" tabindex="-1">SAN MARINO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LC" value="SANTA LUCIA" tabindex="-1">SANTA LUCIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="KN" value="SAO CRISTOVAO E NEVIS" tabindex="-1">SAO CRISTOVAO E NEVIS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="PM" value="SAO PIERRE E MIQUELON" tabindex="-1">SAO PIERRE E MIQUELON</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ST" value="SAO TOME E PRINCIPE" tabindex="-1">SAO TOME E PRINCIPE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="VC" value="SAO VICENTE E GRANADINAS" tabindex="-1">SAO VICENTE E GRANADINAS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SC" value="SEICHELES" tabindex="-1">SEICHELES</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SN" value="SENEGAL" tabindex="-1">SENEGAL</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SL" value="SERRA LEOA" tabindex="-1">SERRA LEOA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="RS" value="SERVIA" tabindex="-1">SERVIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SY" value="SIRIA" tabindex="-1">SIRIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SO" value="SOMALIA" tabindex="-1">SOMALIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="LK" value="SRI LANKA" tabindex="-1">SRI LANKA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SZ" value="SUAZILANDIA" tabindex="-1">SUAZILANDIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SD" value="SUDAO" tabindex="-1">SUDAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SU" value="SUECIA" tabindex="-1">SUECIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="CH" value="SUICA" tabindex="-1">SUICA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SR" value="SURINAME" tabindex="-1">SURINAME</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SE" value="SUÃ‰CIA" tabindex="-1">SUÃ‰CIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="SW" value="SWAZILAND" tabindex="-1">SWAZILAND</a></li><li class="customSelect" type="select"><a href="javascript:;" code="NT" value="Santa Catarina" tabindex="-1">Santa Catarina</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TJ" value="TADJIQUISTAO" tabindex="-1">TADJIQUISTAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TH" value="TAILANDIA" tabindex="-1">TAILANDIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TW" value="TAIWAN" tabindex="-1">TAIWAN</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TZ" value="TANZANIA" tabindex="-1">TANZANIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TF" value="TERRITORIOS FRANCESES MERIDIONAIS" tabindex="-1">TERRITORIOS FRANCESES MERIDIONAIS</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TP" value="TIMOR LESTE" tabindex="-1">TIMOR LESTE</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TG" value="TOGO" tabindex="-1">TOGO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TO" value="TONGA" tabindex="-1">TONGA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TT" value="TRINIDAD E TOBAGO" tabindex="-1">TRINIDAD E TOBAGO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TN" value="TUNISIA" tabindex="-1">TUNISIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TM" value="TURCOMENIA" tabindex="-1">TURCOMENIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TR" value="TURQUIA" tabindex="-1">TURQUIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="TV" value="TUVALU" tabindex="-1">TUVALU</a></li><li class="customSelect" type="select"><a href="javascript:;" code="UA" value="UCRANIA" tabindex="-1">UCRANIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="UG" value="UGANDA" tabindex="-1">UGANDA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="UY" value="URUGUAI" tabindex="-1">URUGUAI</a></li><li class="customSelect" type="select"><a href="javascript:;" code="UZ" value="UZBEQUISTAO" tabindex="-1">UZBEQUISTAO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="VU" value="VANUATU" tabindex="-1">VANUATU</a></li><li class="customSelect" type="select"><a href="javascript:;" code="VA" value="VATICANO" tabindex="-1">VATICANO</a></li><li class="customSelect" type="select"><a href="javascript:;" code="VE" value="VENEZUELA" tabindex="-1">VENEZUELA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="VN" value="VIETNA" tabindex="-1">VIETNA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="YM" value="YEMEM" tabindex="-1">YEMEM</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ZM" value="ZAMBIA" tabindex="-1">ZAMBIA</a></li><li class="customSelect" type="select"><a href="javascript:;" code="ZW" value="ZIMBABUE" tabindex="-1">ZIMBABUE</a></li></ul></div></div><label class="required"><span class="force-right min-width"><span class="required">*</span>Código Postal: </span><input class="margin-left_small" id="txtZipCodeFirst" type="text" maxlength="5" validations="isNotEmpty:Required, CÓDIGO POSTAL;isNumber:Wrong, CÓDIGO POSTAL;isMinLength:Wrong, CÓDIGO POSTAL, 5"><span class="validate"></span>- </label><label class="required small_cep"><input id="txtZipCodeSecond" type="text" class="just-number" maxlength="3" validations="isNotEmpty:Required, CÓDIGO POSTAL;isNumber:Wrong, CÓDIGO POSTAL;isMinLength:Wrong, CÓDIGO POSTAL, 3"><!--<a href="javascript:;" class="bt-cep">Não sei o cep</a>--></label><label class="required bigger"><span class="force-right min-width"><span class="required">*</span>Endereço: </span><input class="margin-left_small" id="txtAddress" type="text" validations="isNotEmpty:Required, ENDEREÇO"><span class="address validate"></span></label><label class="required number">Número:<input id="txtNumber" type="text" class="just-number" validations="isEmptyOrNumber:Wrong, NÚMERO"><span class="validate"></span></label><label class="required "><span class="force-right min-width">Complemento: </span><input class="margin-left_small" id="txtComplement" type="text" validations="isAnyThing:"><span class="validate"></span></label><label class="required neighborhood"><span><strong class="required">*</strong>Bairro: </span><input id="txtNeighborhood" type="text" validations="isNotEmpty:Required, BAIRRO"><span class="validate"></span></label><label class="required"><span class="force-right min-width"><span class="required">*</span>Cidade: </span><input class="margin-left_small" id="txtCity" type="text" validations="isNotEmpty:Required, CIDADE"><span class="validate"></span></label><div class="state label required margin-top_small"><span><strong class="required">*</strong>Estado: </span><div id="txtState" class="multi_options" validations="isNotEmpty:Required, ESTADO" tabindex="-1"><span tabindex="0">--</span><ul class="select hide" id="state_img"><li class="customSelect" type="select"><a href="javascript:;" value="" class="current" tabindex="-1">--</a></li><li class="customSelect" type="select"><a href="javascript:;" value="AC" tabindex="-1">AC</a></li><li class="customSelect" type="select"><a href="javascript:;" value="AL" tabindex="-1">AL</a></li><li class="customSelect" type="select"><a href="javascript:;" value="AP" tabindex="-1">AP</a></li><li class="customSelect" type="select"><a href="javascript:;" value="AM" tabindex="-1">AM</a></li><li class="customSelect" type="select"><a href="javascript:;" value="BA" tabindex="-1">BA</a></li><li class="customSelect" type="select"><a href="javascript:;" value="CE" tabindex="-1">CE</a></li><li class="customSelect" type="select"><a href="javascript:;" value="DF" tabindex="-1">DF</a></li><li class="customSelect" type="select"><a href="javascript:;" value="ES" tabindex="-1">ES</a></li><li class="customSelect" type="select"><a href="javascript:;" value="GO" tabindex="-1">GO</a></li><li class="customSelect" type="select"><a href="javascript:;" value="MA" tabindex="-1">MA</a></li><li class="customSelect" type="select"><a href="javascript:;" value="MS" tabindex="-1">MS</a></li><li class="customSelect" type="select"><a href="javascript:;" value="MT" tabindex="-1">MT</a></li><li class="customSelect" type="select"><a href="javascript:;" value="MG" tabindex="-1">MG</a></li><li class="customSelect" type="select"><a href="javascript:;" value="PA" tabindex="-1">PA</a></li><li class="customSelect" type="select"><a href="javascript:;" value="PB" tabindex="-1">PB</a></li><li class="customSelect" type="select"><a href="javascript:;" value="PR" tabindex="-1">PR</a></li><li class="customSelect" type="select"><a href="javascript:;" value="PE" tabindex="-1">PE</a></li><li class="customSelect" type="select"><a href="javascript:;" value="PI" tabindex="-1">PI</a></li><li class="customSelect" type="select"><a href="javascript:;" value="RJ" tabindex="-1">RJ</a></li><li class="customSelect" type="select"><a href="javascript:;" value="RN" tabindex="-1">RN</a></li><li class="customSelect" type="select"><a href="javascript:;" value="RS" tabindex="-1">RS</a></li><li class="customSelect" type="select"><a href="javascript:;" value="RO" tabindex="-1">RO</a></li><li class="customSelect" type="select"><a href="javascript:;" value="RR" tabindex="-1">RR</a></li><li class="customSelect" type="select"><a href="javascript:;" value="SC" tabindex="-1">SC</a></li><li class="customSelect" type="select"><a href="javascript:;" value="SP" tabindex="-1">SP</a></li><li class="customSelect" type="select"><a href="javascript:;" value="SE" tabindex="-1">SE</a></li><li class="customSelect" type="select"><a href="javascript:;" value="TO" tabindex="-1">TO</a></li></ul></div></div></div><div class="bloco_btn"><a id="btnSave" href="javascript:;" class="signin">Cadastrar</a></div></div>
+    </div>
+
+				</div>
+
+				<div class="container">
+					<a href="javascript:void(0)" class="facebook_link_right" style="height: 230px; position: absolute; right: -149px; top: 141px; width: 140px;"></a>
+					
+					
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            var ToolTipPriceRegion = $('#newcompany').html();
+            var pag = window.location.pathname.toLocaleLowerCase();
+            $('#tooltip_region').html(ToolTipPriceRegion);
+
+            if (ToolTipPriceRegion != "" && ToolTipPriceRegion != undefined)
+                $('.container .header .modal.lookpriceRegion').css('visibility', 'visible').delay(5000).slideUp(200);
+
+            if (Util.getCookie("UserName") != "" && Util.getCookie("UserName") != null)
+                $('.container .header .modal.lookpriceRegion').addClass('moveslookpriceRegion');
+
+            else
+                $('.container .header .modal.lookpriceRegion').removeClass('moveslookpriceRegion');
+
+            var pag = window.location.pathname;
+            if (pag.search('/travel/resultado-de-carros') < 0 && pag.search('/travel/resultado-de-cruzeiros') < 0 && pag.search('/travel/resultado-de-circuitos') < 0 && pag.search('/travel/minhaconta/index') < 0 && pag.search('/travel/minhaconta/changepassword') < 0 && pag.search('/travel/minhaconta/personalinfo') < 0 && pag.search('/travel/minhaconta/myorders') < 0 && pag.search('/detalhes/hotel') < 0) {
+                $('div.newsletter').newsLetterContact({
+                    controllers: {
+                        newsLetterController: Global.NewsLetterController
+                    }
+                });
+            }
+
+        });
+    </script>
+    <script type="text/javascript" src="/scripts/footer.js?v=20170502"></script>
+
+					
+		
+		
+					
+	
+		<div class="container footer menu">
+	        <!-- BANNER DFP -->
+                            
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        var pag = window.location.pathname.toLocaleLowerCase();
+                        if (pag == '/travel/resultado-pacotes.aspx' || pag == '/travel/resultado-passagens.aspx' || pag == '/travel/resultado-hoteis.aspx') {
+                            Global.SearchController.searchCompleted.attach(function () {
+                                mostraBannerDFP();
+                            });
+                        }
+                        else if (pag.search('/hoteis/index.aspx') == -1 && pag.search('/passagens-aereas/index.aspx') == -1 && pag.search('/pacotes/index.aspx') == -1 && pag.search('/destinos/index.aspx') == -1 && pag.search('/destinos/cadernos-virtuais.aspx') == -1 && pag.search('/promocao/circuitos.aspx') == -1 && pag.search('/promocao/ingressos.aspx') == -1  && pag.search('/promocao/destinos-ate-mil-reais.aspx') == -1) {
+                            if (pag.search('/passagens-aereas/') >= 0 || pag.search('/hoteis/') >= 0 || pag.search('/pacotes/') >= 0 || pag.search('/promocao/') >= 0 || pag == '/todos-pacotes-cvc.aspx' || pag == '/detalhes/pacote.aspx' || pag == '/detalhes/hotel.aspx' || pag.search('/destinos/') >= 0) {
+                                window.onload = initPage;
+                                function initPage() {
+                                    //alert('carregou');
+                                    mostraBannerDFP();
+                                }
+
+                            }
+                        }
+
+                        function mostraBannerDFP() {
+                            switch (pag) {
+                                case '/travel/resultado-pacotes.aspx':
+                                    $('.bannerDFP-vertical ins:eq(0)').css('display', 'none');
+                                    $('.bannerDFP-vertical ins:eq(0)').eq(1).css('display', 'none');
+                                    if ($('#resultsAirHotel').css('display') == 'none') {
+                                        $('.bannerDFP-vertical').css('display', 'inline-block');
+                                        $('.section.main_results').after($('.bannerDFP-vertical'));
+                                    }
+                                    else {
+                                        //$('#airFilter').after($('.bannerDFP-vertical'));
+                                        $('#hotelFilters').after($('.bannerDFP-vertical'));
+                                        $('.bannerDFP-vertical').css('display', 'block');
+                                        $('.bannerDFP-vertical').css('clear', 'both');
+                                        $('.bannerDFP-vertical').css('float', 'left');
+                                    }
+                                    break;
+                                case '/todos-pacotes-cvc.aspx':
+                                    $('.bannerDFP-vertical ins:eq(0)').css('display', 'none');
+                                    $('.bannerDFP-vertical ins:eq(0)').eq(1).css('display', 'none');
+                                    $('.bannerDFP-vertical').css('display', 'inline-block');
+                                    $('#especial_packages').eq(0).after($('.bannerDFP-vertical').eq(0));
+                                    break;
+                                case '/travel/resultado-passagens.aspx':
+                                    $('.bannerDFP-vertical ins:eq(0)').css('display', 'none');
+                                    $('.bannerDFP-vertical ins:eq(0)').eq(1).css('display', 'none');
+                                    $('.bannerDFP-vertical').css('display', 'inline-block');
+                                    $('.filters:eq(0)').after($('.bannerDFP-vertical'));
+                                    break;
+                                case '/travel/resultado-hoteis.aspx':
+                                    $('.bannerDFP-vertical ins:eq(0)').css('display', 'none');
+                                    $('.bannerDFP-vertical ins:eq(0)').eq(1).css('display', 'none');
+                                    $('.bannerDFP-vertical').css('display', 'inline-block');
+                                    $('.filters:eq(0)').after($('.bannerDFP-vertical'));
+                                    break;
+                            }
+
+                            $('.bannerDFP').css('display', 'inline-block');
+                            $('.bannerDFP div').css('margin', 'auto');
+                        }
+
+                        $('.bannerAdsTemp').hide();
+
+                    });
+                </script>
+                <div class="bannerDFP-vertical">
+                    <p>Publicidade</p>
+                    <script type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js">
+                        googletag.pubads().definePassback('/38958695/ROS_160X600', [160, 600]).display();
+                    </script><script id="gpt-impl-0.9041305407243707" src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_115.js"></script><script type="text/javascript" src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;correlator=4042018890195349&amp;output=json_html&amp;callback=googletag.impl.pubads.setPassbackAdContents&amp;impl=s&amp;eid=108809080%2C21060233&amp;sc=1&amp;sfv=1-0-8&amp;iu=%2F38958695%2FROS_160X600&amp;sz=160x600&amp;eri=2&amp;cookie=ID%3D13ca099ddcfb5015%3AT%3D1483910717%3AS%3DALNI_MaSAHhvu5_4JtKifxtKBp_aWocC5Q&amp;lmt=1493854263&amp;dt=1493854263641&amp;cc=30&amp;frm=20&amp;biw=1366&amp;bih=662&amp;oid=3&amp;adk=544629983&amp;ifi=1&amp;u_tz=-180&amp;u_his=6&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=5&amp;u_nmime=7&amp;u_sd=1&amp;flash=25.0.0&amp;url=https%3A%2F%2Fwww.cvc.com.br%2Fcadastro-de-usuario.aspx&amp;ref=https%3A%2F%2Fwww.cvc.com.br%2FLogin&amp;dssz=132&amp;icsg=4503599627370490&amp;std=0&amp;vrg=115&amp;vrp=115&amp;ga_vid=674529287.1483910717&amp;ga_sid=1493854236&amp;ga_hid=1060849543&amp;ga_fc=true" id="sae-script-1"></script>
+                </div> 
+                <div class="bannerDFP">
+                    <p>Publicidade</p>
+                    <script type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js">
+                        googletag.pubads().definePassback('/38958695/ROS97090', [[728, 90], [970, 90]]).display();
+                    </script><script type="text/javascript" src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;correlator=4042018890195349&amp;output=json_html&amp;callback=googletag.impl.pubads.setPassbackAdContents&amp;impl=s&amp;eid=108809080%2C21060233&amp;sc=1&amp;sfv=1-0-8&amp;iu=%2F38958695%2FROS97090&amp;sz=728x90%7C970x90&amp;eri=2&amp;cookie=ID%3D13ca099ddcfb5015%3AT%3D1483910717%3AS%3DALNI_MaSAHhvu5_4JtKifxtKBp_aWocC5Q&amp;lmt=1493854263&amp;dt=1493854263759&amp;cc=30&amp;frm=20&amp;biw=1366&amp;bih=662&amp;oid=3&amp;adk=2957336737&amp;ifi=2&amp;u_tz=-180&amp;u_his=6&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=5&amp;u_nmime=7&amp;u_sd=1&amp;flash=25.0.0&amp;url=https%3A%2F%2Fwww.cvc.com.br%2Fcadastro-de-usuario.aspx&amp;ref=https%3A%2F%2Fwww.cvc.com.br%2FLogin&amp;dssz=135&amp;icsg=4503599627370410&amp;std=0&amp;csl=136&amp;vrg=115&amp;vrp=115&amp;ga_vid=674529287.1483910717&amp;ga_sid=1493854236&amp;ga_hid=1060849543&amp;ga_fc=true" id="sae-script-2"></script>
+                </div>
+                       
+	    
+		<!-- FIM BANNER DFP -->
+
+        
+            
+            
+
+            
+            <!--<div class="lead-social modulo-principal box-cinza">
+                <ul>
+                    <li class="newsletterBox newsletter">
+                        <div id="nlcComponentForm_2" class="newsletterBox newsletter"><h3>Receba dicas, novidades, ofertas e encontre seu próximo destino!</h3><h3 class="secondaryHeader"></h3><div class="form"><div class="signInNewsletterEmail"><div><input class="input_name" type="text" id="nlcTxtNome" placeholder="Nome" maxlength="20" /><div id="nlcTxtNomeErrMsg" class="fieldMessageInvalid" style="display: none;">*informe o nome</div></div><div><input type="text" id="nlcTxtEmail" placeholder="E-mail" /><div id="nlcTxtEmailErrMsg" class="fieldMessageInvalid" style="display: none;">*digite um e-mail válido</div></div><ul><li class="nlcCustomCheckbox already_client" id="nlcTxtAlreadyClient">Já sou cliente de uma loja física CVC</li><li class="nlcCustomCheckbox politica_privacidade" id="nlcTxtPolitica" style="position: absolute;left: 290px;width: 390px;">
+							  Ao clicar no botão você confirma ter lido nossa <a style="color:#0282d9;" href="/institucional/politica-de-privacidade.aspx" target="_blank">Política de Privacidade.</a></li></ul><a href="javascript:void(0);" title="Assinar e-mail" class="blueBtn" id="nlcTxtSubscribeEmail_2" rel="nlcComponentForm_2,nlcComponentSent_2">Assinar e-mail</a></div></div><div class="newsletterMessageBox sent hide" id="nlcComponentSent_2"><h2>E-mail cadastrado com sucesso</h2><p>Cadastrar outro e-mail</p></div></div>						
+                        
+                    </li>
+                    <li class="txtRedesSociais">Faça parte das nossas redes sociais</li>
+                    <li class="icos-sociais">
+                        <a href="https://www.facebook.com/cvcviagens" target="_blank" title="Facebook" class="ico-facebook">Facebook</a> <a href="https://twitter.com/#!/cvcviagens" target="_blank" title="Twitter" class="ico-twitter">Twitter</a> <a href="https://instagram.com/cvcviagens" target="_blank" title="instagram" class="ico-instagram">Instagram</a> <a href="http://www.youtube.com/cvc" target="_blank" title="Youtube" class="ico-youtube">Youtube</a> <a rel="publisher" href="https://plus.google.com/u/0/100621743540649260620/posts#100621743540649260620/posts" target="_blank" title="Google Plus" class="ico-googleplus">Google Plus</a> <a href="http://pinterest.com/cvcviagens" target="_blank" title="Pinterest" class="ico-pinterest">Pinterest</a>
+                    </li>
+                </ul>
+            </div>-->
+            
+			
+			
+			
+			<div id="SuperBanner"><script>googletag.display('SuperBanner');</script></div>
+				
+            <div class="lead-social modulo-principal box-cinza" style="padding-top: 21px; padding-bottom: 10px; height: 88px;">
+                <ul>
+                    <li class="newsletterBox newsletter" style="display: block;">
+                        <div id="nlcComponentForm_2" class="newsletterBox newsletter" style="display: block;"><h3>Receba dicas, novidades, ofertas e encontre seu próximo destino!</h3><h3 class="secondaryHeader"></h3><div class="form"><div class="signInNewsletterEmail"><div><input class="input_name" type="text" id="nlcTxtNome" placeholder="Nome" maxlength="20"><div id="nlcTxtNomeErrMsg" class="fieldMessageInvalid" style="display: none;">*informe o nome</div></div><div><input type="text" id="nlcTxtEmail" placeholder="E-mail"><div id="nlcTxtEmailErrMsg" class="fieldMessageInvalid" style="display: none;">*digite um e-mail válido</div></div><ul><li class="nlcCustomCheckbox already_client" id="nlcTxtAlreadyClient">Já sou cliente de uma loja física CVC</li><li class="nlcCustomCheckbox politica_privacidade" id="nlcTxtPolitica" style="position: absolute;left: 290px;width: 390px;">
+							  Ao clicar no botão você confirma ter lido nossa <a style="color:#0282d9;" href="/institucional/politica-de-privacidade.aspx" target="_blank">Política de Privacidade.</a></li></ul><a href="javascript:void(0);" title="Assinar e-mail" class="blueBtn" id="nlcTxtSubscribeEmail_2" rel="nlcComponentForm_2,nlcComponentSent_2">Assinar e-mail</a></div></div><div class="newsletterMessageBox sent hide" id="nlcComponentSent_2"><h2>E-mail cadastrado com sucesso</h2><p>Cadastrar outro e-mail</p></div></div>						
+                    </li>
+                    <li class="txtRedesSociais" style="display: none;">Faça parte das nossas redes sociais</li>
+                    <li class="icos-sociais" style="margin-left: 15px;">
+                        <a href="https://www.facebook.com/cvcviagens" target="_blank" title="Facebook" class="ico-facebook">Facebook</a> 
+                        <a href="https://twitter.com/#!/cvcviagens" target="_blank" title="Twitter" class="ico-twitter">Twitter</a> 
+                        <a href="https://instagram.com/cvcviagens" target="_blank" title="instagram" class="ico-instagram">Instagram</a> 
+                        <a href="http://www.youtube.com/cvc" target="_blank" title="Youtube" class="ico-youtube">Youtube</a> 
+                        <a rel="publisher" href="https://plus.google.com/u/0/100621743540649260620/posts#100621743540649260620/posts" target="_blank" title="Google Plus" class="ico-googleplus">Google Plus</a> 
+                        <a href="http://pinterest.com/cvcviagens" target="_blank" title="Pinterest" class="ico-pinterest">Pinterest</a>
+                    </li>
+                </ul>
+            </div>  
+        	
+				
+				
+            
+            <div class="menu-rodape modulo-principal box-cinza">
+                
+                <div class="menu-rodape-institucional"><h4>Institucional</h4><ul><li><a href="/institucional/nossa-historia.aspx" title="Sobre a CVC" target="_blank">Sobre a CVC</a></li><li><a href="/institucional/politica-de-privacidade.aspx" title="Política de Privacidade" target="_blank">Política de Privacidade</a></li><li><a href="/institucional/termos-e-condicoes-de-uso.aspx" title="Termos e condições de uso" target="_blank">Termos e condições de uso</a></li><li><a href="/area-do-cliente/condicoes-gerais/index.aspx" title="Condições Gerais de Contratação" target="_blank">Condições Gerais de Contratação</a></li><li><a href="http://www.cvc.com.br/ri" title="Relações com investidores" target="_blank">Relações com investidores</a></li></ul><ul><li><a href="/institucional/politica-e-normas-de-seguranca.aspx" title="Política e normas de segurança" target="_self">Política e normas de segurança</a></li><li><a href="/afiliados.aspx" title="Afiliados CVC" target="_blank">Afiliados CVC</a></li><li><a href="javascript:;" title="Trabalhe Conosco" target="_self">Trabalhe Conosco</a></li><li><a href="http://www.parceiroscvc.com.br/pesquisa/cadastro.php" title="Pesquisa de Satisfação" target="_blank">Pesquisa de Satisfação</a></li><li><a href="/lps/responsabilidade-social/index.aspx" title="Responsabilidade Social Corporativa" target="_self">Responsabilidade Social Corporativa</a></li></ul><ul><li><a href="http://www.programaviaje.com.br" title="Programa Viaje!" target="_blank">Programa Viaje!</a></li><li><a href="http://www.cvc.com.br/cambio" title="Serviço de câmbio" target="_blank">Serviço de câmbio</a></li><li><a href="http://www.cvc.com.br/seguroviagem" title="Seguro Viagem" target="_blank">Seguro Viagem</a></li><li><a href="mailto:imprensa@cvc.com.br" title="Sala de Imprensa" target="_blank">Sala de Imprensa</a></li><li><a href="http://lojas.cvc.com.br" title="Encontre uma loja CVC" target="_blank">Encontre uma loja CVC</a></li></ul></div><div class="menu-rodape-ajuda"><h4>Ajuda e observações</h4><ul><li><a href="/institucional/compra-segura.aspx" title="Compra Segura" target="_self">Compra Segura</a></li><li><a href="/atendimento/central-de-atendimento.aspx" title="Perguntas Frequentes" target="_self">Perguntas Frequentes</a></li><li><a href="/institucional/forma-de-pagamento.aspx" title="Formas de Pagamento" target="_self">Formas de Pagamento</a></li><li><a href="/sitemap.aspx" title="Mapa do Site" target="_self">Mapa do Site</a></li><li><a href="http://www.procon.rj.gov.br/" title="Acesso ao Procon/RJ" target="_blank">Acesso ao Procon/RJ</a></li><li><a href="/media/8864080/condicoes-gerais-seguro-viagem-protegida.pdf" title="Seguro Férias Protegidas CVC" target="_blank">Seguro Férias Protegidas CVC</a></li></ul></div>
+                    
+
+                
+                <div class="pagamento">
+                    <h4>Formas de pagamento</h4>
+                    <ul>
+                        <li><img src="/travel/Styles_B2C/images/Visa.png"></li>
+                        <li><img src="/travel/Styles_B2C/images/MasterCard.png"></li>
+                        <li><img src="/travel/Styles_B2C/images/American-Express.png"></li>                   
+                        <li><img src="/travel/Styles_B2C/images/Dinersc-Club.png"></li>
+                        <li><img src="/travel/Styles_B2C/images/hipercard.png"></li>
+						<li><img src="/media/10784716/elo.png"></li>
+                    </ul>
+                </div>
+                
+
+                
+                <div class="seguranca">
+                    <h4>Certificados</h4>
+                    <ul>
+                        <li>
+                            <script language="javascript">
+                                function vopenw() { tbar = 'location=no,status=yes,resizable=yes,scrollbars=yes,width=560,height=535'; sw = window.open('https://www.certisign.com.br/seal/splashcerti.htm', 'CRSN_Splash', tbar); sw.focus(); }
+							    </script>
+							    <table border="0" cellpadding="0" cellspacing="0" id="Table2">
+								    <tbody><tr>
+									    <td align="left" valign="middle">
+										    <a href="javascript:vopenw()">
+											    <img src="/travel/styles_b2c/images/span/certisign.jpg" border="0" align="center" alt="Um site validado pela Certisign indica que nossa empresa concluiu satisfatoriamente todos os procedimentos para determinar que o domínio validado é de propriedade ou se encontra registrado por uma empresa ou organização autorizada a negociar por ela ou exercer qualquer atividade lícita em seu nome.">
+										    </a>
+									    </td>									
+								    </tr>
+							    </tbody></table>
+                        </li>
+                        <li><script src="https://seal.verisign.com/getseal?host_name=www.cvc.com.br&amp;size=S&amp;use_flash=NO&amp;use_transparent=getsealjs_b.js&amp;lang=pt"></script><img name="seal" src="https://seal.websecurity.norton.com/getseal?at=0&amp;sealid=2&amp;dn=www.cvc.com.br&amp;lang=pt&amp;tpt=transparent" oncontextmenu="return false;" border="0" usemap="#sealmap_small" alt=""> <map name="sealmap_small" id="sealmap_small"><area alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" title="" href="javascript:vrsn_splash()" shape="rect" coords="0,0,100,50" tabindex="-1" style="outline:none;"><area alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" title="" href="javascript:vrsn_splash()" shape="rect" coords="0,50,53,72" tabindex="-1" style="outline:none;"><area alt="" title="" href="javascript:symcBuySSL()" shape="rect" coords="53,50,100,72" style="outline:none;"></map></li>
+                        <li><a href="/responsabilidade-social/index.aspx" target="_blank"><img src="/travel/Styles_B2C/images/abrinq.png"></a></li>
+                        <!--<li><a href="https://www.ebit.com.br/viagens-cvc/selo" target="_blank" onclick="redir(this.href)" title="Avaliado pelos consumidores"><img src="https://a248.e.akamai.net/f/248/52872/0s/img.ebit.com.br/ebitBR/selo/img_5160.png" height="62" /></a></li>-->
+						<li>
+							<div class="trustedcompany-seal">
+								<a href="http://trustedcompany.com/br/cvc.com.br-opiniões" target="_blank" title="Cvc avaliações no TrustedCompany.com">
+									<img src="//trustedcompany.s3.amazonaws.com/sites/all/modules/custom/tc_site_integrations_seal/images/seal.png" alt="Cvc avaliações no TrustedCompany.com" style="width: 40px; height: 46px;">
+								</a>
+							</div>
+						</li>
+                    </ul>
+                </div>
+                
+
+            </div>
+            
+
+            
+
+            <div class="rodape-copyright modulo-principal box-cinza">
+                <center>CVC Brasil Operadora e Agência de Viagens | CNPJ: 10.760.260/0001-19 | Rua das Figueiras, 501 - Jardim – Santo André – SP | CEP: 09.080-370</center>
+                <center><img src="/media/3128416/logo-rodape.png">© 2017 Viagens CVC - Todos os direitos reservados.</center>
+            </div>
+            
+            
+        
+
+        
+
+		
+        </div>           
+
+		
+
+		<!--Fecha footer-->            
+		<!-- Start Tagueamento -->
+		
+                                                               
+      <!-- Google Tag Manager -->
+      <noscript>
+        &lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-2LZJ" height="0" width="0" style="display:none;visibility:hidden"&gt; &lt;/iframe&gt;
+      </noscript>
+      <script>
+          (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+              var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+          })
+        (window, document, 'script', 'dataLayer', 'GTM-2LZJ');
+      </script>
+      <!-- End Google Tag Manager -->
+
+        <!-- End Tagueamento -->
+				
+	<!-- NEO ASSIST -->
+				
+					
+					<!--<div id="NeoassistCentral"></div>-->
+					<script type="text/javascript">
+					    (function () {
+					        window.NeoAssistTag = {};
+					        NeoAssistTag.querystring = true;
+					        NeoAssistTag.pageid = '';
+					        NeoAssistTag.clientdomain = 'cvc.neoassist.com';
+					        var na = document.createElement('script'); na.type = 'text/javascript'; na.async = true; na.src = '//cdn.atendimen.to/n.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(na, s);
+					    })();
+					</script>
+					
+					
+	<!-- END NEO ASSIST -->			
+		
+        
+
+
+				</div>
+
+				<div id="Div1"></div>
+				<div id="Div2" class="modal info">
+					<span class="tab top">&nbsp;</span>
+					<div class="content"></div>
+				</div>
+				<div id="Div3"></div>
+
+				<div id="estimateBox"></div>
+				
+				<div id="modal-content" class="modal info hide">
+					<span class="tab top">&nbsp;</span>
+					<div class="content"></div>
+				</div>
+			</div>
+
+        <section id="bottom" class="wet-asphalt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <h4>About Us</h4>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+                        <p>Pellentesque habitant morbi tristique senectus.</p>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Company</h4>
+                        <div>
+                            <ul class="arrow">
+                                <li><a href="#">The Company</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Our Partners</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">Conatct Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Copyright</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Latest Blog</h4>
+                        <div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img src="images/blog/thumb1.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+                                    <small class="muted">Posted 17 Aug 2013</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img src="images/blog/thumb2.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+                                    <small class="muted">Posted 13 Sep 2013</small>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img src="images/blog/thumb3.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="#">Pellentesque habitant morbi tristique senectus</a></span>
+                                    <small class="muted">Posted 11 Jul 2013</small>
+                                </div>
+                            </div>
+                        </div>  
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Address</h4>
+                        <address>
+                            <strong>Twitter, Inc.</strong><br>
+                            795 Folsom Ave, Suite 600<br>
+                            San Francisco, CA 94107<br>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address>
+                        <h4>Newsletter</h4>
+                        <form role="form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" autocomplete="off" placeholder="Enter your email">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">Go!</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="midnight-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
