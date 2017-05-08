@@ -25,12 +25,12 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="./">Inicio</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Pacotes</a></li>
-                        <li><a href="cadastrar.html">Cadastre-se</a></li>
-                        <li><a href="contatos.html">Contatos</a></li>
+                        <li><a href="./">Inicio</a></li>
+                        <li><a href="servicos.jsp">Serviços</a></li>
+                        <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
+                        <li><a href="pacotes.jsp">Pacotes</a></li>
+                        <li><a href="login.jsp">Login</a></li>
+                        <li><a href="contatos.jsp">Contatos</a></li>
                     </ul>
                 </div>
             </div>
