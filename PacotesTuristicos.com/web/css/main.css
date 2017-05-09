@@ -1097,7 +1097,7 @@ ul.faq li > div h3 {
     background-color: #1992b7;
     width: 380px;
     height: 260px;
-    margin: 30px 100px;
+    margin: 30px;
     border-radius: 5px;
 }
 #login-box-interno{
@@ -1177,7 +1177,8 @@ ul.faq li > div h3 {
     height: 260px;
     margin: 10px 750px;
     border-radius: 5px;    
-    margin-top: -286px;
+    margin-top: -290px;
+    margin-left: 750px
 }
 #cadastrar-box-interno{
     width: 360px;
@@ -1221,6 +1222,7 @@ ul.faq li > div h3 {
 #botoescadastrar{
     width: 310px;
     margin-left: 25px;
+    margin-top: 40px;
 }
 #botaocadastrar{
     float: right;
