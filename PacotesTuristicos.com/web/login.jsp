@@ -95,7 +95,7 @@
                 </div>
 
                 <div id="botoescadastrar">
-                    <button id="botaocadastrar"><a href="cadastrar.jsp">Cadastrar</a></button>
+                    <button id="botaocadastrar"><a href="cadastroCliente.jsp">Cadastrar</a></button>
                 </div>
             </div>
         </div>
