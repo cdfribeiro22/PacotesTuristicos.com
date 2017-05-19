@@ -49,22 +49,31 @@
                 <div id="login-box-label">
                     LOGIN
                 </div>
+                
+                     <form method="post" action="LoginServlet">
+                         
+                            <div class="input-div" id="input-usuario">
+                                <input type="text" name="login"  />
+                            </div>
 
-                <div class="input-div" id="input-usuario">
-                    <input type="text" value="Email"/>
-                </div>
-
-                <div class="input-div" id="input-senha">
-                    <input type="text" value="Senha"/>
-                </div>
-
-                <div id="botoes">
-                    <div id="botao">Login</div>
-                    <div id="lembra-senha"><input type="checkbox"/> Lembrar minha Senha</div>
-                </div>
+                            <div class="input-div" id="input-senha">
+                                <input type="password" name="senha" />
+                                <input type="submit" value="Entrar" />
+                                <input type="hidden" name="acao" value="login" />
+                            </div>
+                         
+                    </form> 
+                
+                        <div id="botoes">
+                            
+                            <div id="lembra-senha">
+                                <input type="checkbox"/> Lembrar minha Senha</div>
+                                
+                        </div> 
                 <div id="esqueceu-senha">
                     <a href="recuperarsenha.jsp"><b>Esqueceu a senha?</b></a>
                 </div>
+                
             </div>
         </div>
 
