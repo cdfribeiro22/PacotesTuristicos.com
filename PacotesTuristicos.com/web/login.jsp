@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Faça seu Login</h1>
+                         <h1>Faça seu Login</h1>
                     </div>
                 </div>
             </div>
