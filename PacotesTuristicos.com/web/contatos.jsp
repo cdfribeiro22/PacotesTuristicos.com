@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Registration | Flat Theme</title>
+        <title>Contatos | PacTur</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -31,7 +31,7 @@
     </head><!--/head-->
 
     <body>
-        
+
         <%@include file="cabecalho.jsp" %>
 
         <section id="title" class="emerald">
@@ -74,6 +74,8 @@
                 </div><!--/.col-sm-8-->
             </div>
         </section><!--/#contact-page-->
+
+        <%@include file="rodape.jsp" %>
 
     </body>
 </html>
