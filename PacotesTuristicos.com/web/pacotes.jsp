@@ -77,7 +77,7 @@
                 <li><a class="btn btn-default" href="#" data-filter=".norte">Norte</a></li>
             </ul><!--/#portfolio-filter-->
 
-            <ul class="portfolio-items col-3">
+            <ul class="portfolio-items col-1">
                 <li class="portfolio-item joomla sul">
                     <div class="item-inner">
 
