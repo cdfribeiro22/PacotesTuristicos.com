@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,8 +31,30 @@
     </head><!--/head-->
 
     <body>
-
-        <%@include file="cabecalho.jsp" %>
+        <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pacotes.html">Pacotes</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="blog.html">Blog</a></li> 
+                        <li><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header><!--/header-->
 
         <section id="title" class="emerald">
             <div class="container">
@@ -58,493 +80,418 @@
             <ul class="portfolio-items col-3">
                 <li class="portfolio-item joomla sul">
                     <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.1.jpg" alt="">
-                        <h5>Cataratas</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                            /div>           
-                        </div>           
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.2.jpg" alt="">
-                        <h5>Beto Carreiro</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.2.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.3.jpg" alt="">
-                        <h5>Itaipu</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.3.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                        </div>           
+
+                        <table class="table table-hover" border=1>
+                            <thead>
+                                <tr>
+                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                        com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 758,00</font>
+                                        <br><font size=1> 10x de 75,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
+                                        diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
+                                        dias / 3 diárias com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 948,00</font>
+                                        <br><font size=1> 10x de 94,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 1.078,00</font>
+                                        <br><font size=1> 10x de 107,80</font>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>           
                 </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sul">
+
+
+
+                <li class="portfolio-item joomla sudeste">
                     <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.4.jpg" alt="">
-                        <h5>Ópera de Arame</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.4.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                        </div>           
-                    </div>           
+                        <table class="table table-hover" border=1>
+                            <thead>
+                                <tr>
+                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                        com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 758,00</font>
+                                        <br><font size=1> 10x de 75,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
+                                        diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
+                                        dias / 3 diárias com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 948,00</font>
+                                        <br><font size=1> 10x de 94,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 1.078,00</font>
+                                        <br><font size=1> 10x de 107,80</font>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>   
+                    </div>       
                 </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sul">
+
+
+
+                <li class="portfolio-item joomla centro">
                     <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.5.jpg" alt="">
-                        <h5>Jardim Botânico</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.5.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                        </div>           
-                    </div>           
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.6.jpg" alt="">
-                        <h5>Museu Ambiência Casa de Pedra</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.6.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
+                        <table class="table table-hover" border=1>
+                            <thead>
+                                <tr>
+                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                        com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 758,00</font>
+                                        <br><font size=1> 10x de 75,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
+                                        diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
+                                        dias / 3 diárias com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 948,00</font>
+                                        <br><font size=1> 10x de 94,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 1.078,00</font>
+                                        <br><font size=1> 10x de 107,80</font>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>          
                     </div>
-
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.7.jpg" alt="">
-                        <h5>Teatro Guaíra</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.7.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                        </div>           
-                    </div>           
                 </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.8.jpg" alt="">
-                        <h5>Parque das Aves</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.8.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
-                    </div>
-
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item2.9.jpg" alt="">
-                        <h5>Museu Oscar Niemeyer</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item2.9.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
-                    </div>
-
-
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.1.jpg" alt="">
-                        <h5>Ilha Grande</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.2.jpg" alt="">
-                        <h5>Copacabana</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.2.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.3.jpg" alt="">
-                        <h5>Ipanema</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.3.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.4.jpg" alt="">
-                        <h5>Parque Nacional de Itatiaia</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.4.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.5.jpg" alt="">
-                        <h5>Pico da Bandeira</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.5.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.6.jpg" alt="">
-                        <h5>Cristo Redentor</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.6.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.7.jpg" alt="">
-                        <h5>Pão de Açúcar</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.7.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.8.jpg" alt="">
-                        <h5>Corcovado</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.8.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla sudeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item3.9.jpg" alt="">
-                        <h5>Parque Nacional da Serra dos Órgãos</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item3.9.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-
-
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.1.jpg" alt="">
-                        <h5>Teatro Goiânia</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.2.jpg" alt="">
-                        <h5>Museu Estadual Professor Zoroastro Artiaga</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.2.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.3.jpg" alt="">
-                        <h5>Memorial JK</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.3.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                        </div>           
-                    </div>           
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.4.jpg" alt="">
-                        <h5>Praça dos Três Poderes</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.4.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                        </div>           
-                    </div>           
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.5.jpg" alt="">
-                        <h5>Catedral de Brasília</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.5.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                        </div>           
-                    </div>           
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.6.jpg" alt="">
-                        <h5>Congresso Nacional</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.6.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
-                    </div>
-
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.7.jpg" alt="">
-                        <h5>Museu de Arte e Cultura Popular (Universidade Federal de Mato Grosso)</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.7.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>              
-                        </div>           
-                    </div>           
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.8.jpg" alt="">
-                        <h5>Parque Mãe Bonifácia</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.8.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
-                    </div>
-
-                <li class="portfolio-item joomla centro">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item4.9.jpg" alt="">
-                        <h5>Obelisco do Centro Geodésico da América do Sul</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item4.9.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>        
-                        </div>           
-                    </div>
 
 
                 <li class="portfolio-item joomla nordeste">
                     <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.1.jpg" alt="">
-                        <h5>Catedral Metropolitana de Alagoas</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla nordeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.2.jpg" alt="">
-                        <h5>Museu Afro-Brasileiro de Salvador</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.2.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla nordeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.3.jpg" alt="">
-                        <h5>Memorial da Cultura Cearense</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.3.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla nordeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.4.jpg" alt="">
-                        <h5>Centro Histórico de São Luis</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.4.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla nordeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.5.jpg" alt="">
-                        <h5>Estação Ecológica do Pau-Brasil</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.5.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla nordeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.6.jpg" alt="">
-                        <h5>Parque Ambiental de Teresina</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.6.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla nordeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.7.jpg" alt="">
-                        <h5>Olinda - Patrimônio Histórico da Humanidade</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.7.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla nordeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.8.jpg" alt="">
-                        <h5>Catedral de Santa Luzia (Mossoró)</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.8.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla nordeste">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item5.9.jpg" alt="">
-                        <h5>Cidade Histórica de São Cristovão</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item5.9.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
+                        <table class="table table-hover" border=1>
+                            <thead>
+                                <tr>
+                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                        com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 758,00</font>
+                                        <br><font size=1> 10x de 75,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
+                                        diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
+                                        dias / 3 diárias com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 948,00</font>
+                                        <br><font size=1> 10x de 94,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 1.078,00</font>
+                                        <br><font size=1> 10x de 107,80</font>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>    
                     </div>       
                 </li><!--/.portfolio-item-->
 
+
+
                 <li class="portfolio-item joomla norte">
                     <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.1.jpg" alt="">
-                        <h5>Palácio Rio Branco</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.1.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
+                        <table class="table table-hover" border=1>
+                            <thead>
+                                <tr>
+                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                        com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 758,00</font>
+                                        <br><font size=1> 10x de 75,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
+                                        diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
+                                        dias / 3 diárias com 01 dia de Parque</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 898,00</font>
+                                        <br><font size=1> 10x de 89,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 948,00</font>
+                                        <br><font size=1> 10x de 94,80</font>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
+                                        / 3 diárias</font>
+                                        <br>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
+                                    </th>
+                                    <th><font size=4>Preço por Pessoa</font>
+                                        <br><font size=1> a partir de</font>
+                                        <br><font size=4> R$ 1.078,00</font>
+                                        <br><font size=1> 10x de 107,80</font>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>    
                     </div>       
                 </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla norte">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.2.jpg" alt="">
-                        <h5>Museu da Borracha</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.2.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla norte">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.3.jpg" alt="">
-                        <h5>Linha do Equador</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.3.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla norte">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.4.jpg" alt="">
-                        <h5>Teatro Amazonas</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.4.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla norte">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.5.jpg" alt="">
-                        <h5>Praia da Ponta Negra</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.5.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla norte">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.6.jpg" alt="">
-                        <h5>Teatro da Paz (Belém)</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.6.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla norte">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.7.jpg" alt="">
-                        <h5>Museu da Estrada de Ferro Madeira Mamoré</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.7.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla norte">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.8.jpg" alt="">
-                        <h5>Parque Nacional de Monte Roraima</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.8.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item joomla norte">
-                    <div class="item-inner">
-                        <img src="images/portfolio/thumb/item6.9.jpg" alt="">
-                        <h5>Parque Cesamar</h5>
-                        <div class="overlay">
-                            <a class="preview btn btn-danger" href="images/portfolio/full/item6.9.jpg" rel="prettyPhoto"><i class="icon-eye-open"></i></a>          
-                        </div>    
-                    </div>       
-                </li><!--/.portfolio-item-->
+
+
             </ul>
         </section><!--/#portfolio-->
-
-        <section id="bottom" class="wet-asphalt">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Sobre Nós</h4>
-                        <p>A PacTur faz tudo por uma boa viagem. Por isso trabalha para 
-                            transformar essa experiência na melhor conquista de sua vida, 
-                            através de novas tendências e ampla rede de produtos e serviços turísticos. 
-                            É essa forma de pensar que estabelece a PacTur como a maior operadora de turismo 
-                            da América Latina.</p>
-                        <p>O comprometimento social, a solidez e a inovação propiciaram 
-                            notoriedade e visibilidade junto ao público.</p>
-                    </div><!--/.col-md-3-->
-
-                    <div class="col-md-3 col-sm-6">
-                        <h4>A Empresa</h4>
-                        <div>
-                            <ul class="arrow">
-                                <li><a href="#">Visão da Empresa</a></li>
-                                <li><a href="#">Conheça o Time</a></li>
-                                <li><a href="#">Nossos Parceiros</a></li>
-                                <li><a href="#">Nossos Serviços</a></li>
-                                <li><a href="#">Perguntas Frequentes</a></li>
-                                <li><a href="#">Contatos</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of Use</a></li>
-                                <li><a href="#">Copyright</a></li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3-->
-
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Endereço</h4>
-                        <address>
-                            <strong>PacTur, Inc.</strong><br>
-                            Rua 227-A, n° 95, Setor Leste Universitário<br>
-                            CEP 74610-155 - Goiânia-GO<br>
-                            Fone: (62) 3269-1200<br>
-                        </address>
-                        <h4>Receba dicas, novidades, ofertas e encontre seu próximo destino!</h4>
-                        <form role="form">
-                            <div class="input-group">
-                                <input type="text" class="form-control" autocomplete="off" placeholder="Digite seu Email">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">Enviar!</button>
-                                </span>
-                            </div>
-                        </form>
-                    </div> <!--/.col-md-3-->
-                </div>
-            </div>
-        </section><!--/#bottom-->
-
-        <footer id="footer" class="midnight-blue">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        &copy; 2017 <a>PacTur</a>. Todos os direitos reservados.
-                    </div>
-                    <div class="col-sm-6">
-                        <ul class="pull-right">
-                            <li><a id="gototop" class="gototop" href="#"> Voltar ao Topo <i class="icon-chevron-up"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer><!--/#footer-->
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.prettyPhoto.js"></script>
         <script src="js/jquery.isotope.min.js"></script>
         <script src="js/main.js"></script>
-        
+
         <%@include file="rodape.jsp" %>
-        
+
     </body>
 </html>
-
