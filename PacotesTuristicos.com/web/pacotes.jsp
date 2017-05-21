@@ -15,7 +15,7 @@
         <meta name="author" content="">
         <title>Pacotes Prontos | PacTur</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css rel="stylesheet">
         <link href="css/prettyPhoto.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
@@ -84,7 +84,7 @@
                         <table class="table table-hover" border=1>
                             <thead>
                                 <tr>
-                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                    <th><font size=4> Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
                                         <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
@@ -165,7 +165,7 @@
                         <table class="table table-hover" border=1>
                             <thead>
                                 <tr>
-                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                    <th><font size=4>Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
                                         <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
@@ -246,7 +246,7 @@
                         <table class="table table-hover" border=1>
                             <thead>
                                 <tr>
-                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                    <th><font size=4>Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
                                         <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
@@ -326,7 +326,7 @@
                         <table class="table table-hover" border=1>
                             <thead>
                                 <tr>
-                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                    <th><font size=4>Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
                                         <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
@@ -407,7 +407,7 @@
                         <table class="table table-hover" border=1>
                             <thead>
                                 <tr>
-                                    <th><font size=4> <i class="fa fa-car" style=" font-size: 15px; color: lightblue; text-shadow:2px 2px 4px #000000;"></i>Beto Carrero com Joinville - 4 dias / 2 dias
+                                    <th><font size=4>Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
                                         <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
