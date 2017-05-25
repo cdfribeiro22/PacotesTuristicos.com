@@ -48,7 +48,7 @@
             <!-- DADOS PESSOAIS-->
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <table cellspacing="10">
+                <table cellspacing="10" class="text-center">
                     <tr>
                         <td>
                             <label for="nome">Nome: </label>
@@ -89,8 +89,7 @@
                             <label>CPF:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="cpf" size="9" maxlength="9"> - 
-                            <input type="text" name="cpf2" size="2" maxlength="2">
+                            <input type="text" name="cpf" size="9" maxlength="11"> 
                         </td>
                     </tr>
 
@@ -110,7 +109,7 @@
             <!-- ENDEREÇO -->
             <fieldset>
                 <legend>Dados de Endereço</legend>
-                <table cellspacing="10">
+                <table cellspacing="10" class="text-center">
 
 
                     <tr>
@@ -206,7 +205,7 @@
             <!-- DADOS DE LOGIN -->
             <fieldset>
                 <legend>Dados de login</legend>
-                <table cellspacing="10">
+                <table cellspacing="10" class="text-center">
                     <tr>
                         <td>
                             <label for="email">E-mail: </label>

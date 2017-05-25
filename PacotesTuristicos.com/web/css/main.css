@@ -32,6 +32,7 @@ body {
     background: #f5f5f5;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    text-align: end;
 }
 h1,
 h2,
@@ -451,28 +452,15 @@ body > section {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.portfolio-items.col-2 > li {
-    width: 50%;
-}
-.portfolio-items.col-3 > li {
-    width: 33%;
-}
-.portfolio-items.col-4 > li {
-    width: 25%;
-}
-.portfolio-items.col-5 > li {
-    width: 20%;
-}
-.portfolio-items.col-6 > li {
-    width: 16%;
-}
+
 .portfolio-item {
     padding: 0;
     margin: 0;
+    border: 1px solid blue;
 }
 .portfolio-item .item-inner {
     background: #fff;
-    border: 1px solid #eee;
+    border: 1px solid #ff0;
     padding: 10px 10px 0;
     margin: 0 20px 20px 0;
     position: relative;
@@ -1233,5 +1221,9 @@ ul.faq li > div h3 {
     border: 1px solid #9eb9c3;
     color: white;
     box-shadow: 0px 0px 10px #c9c9c9;
+}
+#table{
+
+        border-color: blue;
 }
 
