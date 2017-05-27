@@ -43,6 +43,8 @@
             </div>
         </section><!--/#title--> 
 
+        <form action="Script_do_Formulario.php" method="post">
+
             <!-- DADOS PESSOAIS-->
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -244,6 +246,7 @@
             <br />
             <input type="submit">
             <input type="reset" value="Limpar">
+        </form>
 
         <%@include file="rodape.jsp" %>
 
