@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class Pessoa {
     
-    private BigInteger cpfBig; 
+    private int codigo; 
     private String cpf;
     private int pessoa;
     private String nome; 
@@ -16,14 +16,14 @@ public class Pessoa {
     private Endereco endereco;
 
 
-    public BigInteger getCpfBig() {
-        return cpfBig;
+    public int getCodigo() {
+        return codigo;
     }
     
     
 
-    public void setCpfBig(BigInteger cpfBig) {
-        this.cpfBig = cpfBig;
+    public void setCodigo(int cpfBig) {
+        this.codigo = cpfBig;
     }
 
     public int getPessoa() {
@@ -58,10 +58,7 @@ public class Pessoa {
         this.endereco = endereco;
     }
     
-    public BigDecimal ParaDecimal(){
-        BigDecimal converter = new BigDecimal(cpfBig);
-        return converter;
-    }
+  
 
     public String getCpf() {
         return cpf;

@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,12 +13,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+        <script src="js/scriptCadastro.js" type="text/javascript"></script>
         <title>Registro | PacTur</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/prettyPhoto.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+
         <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
@@ -43,7 +48,7 @@
             </div>
         </section><!--/#title--> 
 
-        <form action="Script_do_Formulario.php" method="post">
+        <form name="form1" action="Script_do_Formulario.php" method="post">
 
             <!-- DADOS PESSOAIS-->
             <fieldset>
@@ -51,17 +56,25 @@
                 <table cellspacing="10" class="text-center">
                     <tr>
                         <td>
-                            <label for="nome">Nome: </label>
+                            <label for="Cnome">Nome Completo: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="email">
+                            <input type="text" name="Cnome">
                         </td>
+
+                    </tr>
+                    <tr>
                         <td>
-                            <label for="sobrenome">Sobrenome: </label>
+                            <label for="Csexo">Sexo:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="sobrenome">
+                            <select name="sexo"> 
+                                <option value="M">...</option> 
+                                <option value="M">Masculino</option> 
+                                <option value="F">Feminino</option> 
+                            </select>
                         </td>
+
                     </tr>
 
                     <tr>
@@ -69,9 +82,7 @@
                             <label>Nascimento: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-                            <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input type="date" name="CNAscimento" required>
                         </td>
                     </tr>
 
@@ -89,7 +100,7 @@
                             <label>CPF:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="cpf" size="9" maxlength="11"> 
+                            <input type="text" name="cpf" onBlur="ValidarCPF(form1.cpf);" onKeyPress="MascaraCPF(form1.cpf);"  maxlength="14"> 
                         </td>
                     </tr>
 
@@ -98,8 +109,7 @@
                             <label>Telefone:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="telefone1" size="2" maxlength="2"> - 
-                            <input type="text" name="telefone2" size="9" maxlength="9">
+                            <input type="text" name="telefone2" size="11" maxlength="11">
                         </td>
                     </tr>
                 </table>
@@ -194,8 +204,8 @@
                             <label for="cep">CEP: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="cep" size="5" maxlength="5"> - 
-                            <input type="text" name="cep2" size="3" maxlength="3">
+                            <input type="text" name="cep" size="7" maxlength="7">
+                           
                         </td>
                     </tr>
                 </table>

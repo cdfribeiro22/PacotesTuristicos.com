@@ -90,83 +90,83 @@ public class UsuarioDao {
             e.printStackTrace();
         }
     }
-//
-//    public void deletePessoa(int codigo) {
-//        try {
-//            PreparedStatement preparedStatement = connection
-//                    .prepareStatement("delete from servicos where codigo=?");
-//            // Parameters start with 1
-//            preparedStatement.setInt(1, codigo);
-//            preparedStatement.executeUpdate();
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public void updatePessoa(Pessoa srv) {
-//        try {
-//            PreparedStatement preparedStatement = connection
-//                    .prepareStatement("update servicos set nome=?,tipoServ=?,descServ=?");
-//            // Parameters start with 1
-//
+
+    public void deleteCliente(int codigo) {
+        try {
+            PreparedStatement preparedStatement = connection
+                    .prepareStatement("delete from servicos where codigo=?");
+            // Parameters start with 1
+            preparedStatement.setInt(1, codigo);
+            preparedStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updatePessoa(Pessoa srv) {
+        try {
+            PreparedStatement preparedStatement = connection
+                    .prepareStatement("update servicos set nome=?,tipoServ=?,descServ=?");
+            // Parameters start with 1
+
 //            preparedStatement.setString(1, srv.getNome());
 //            preparedStatement.setString(2, srv.getTipoServ());
 //            preparedStatement.setString(3, srv.getDescServ());
 //
 //
 //            preparedStatement.setInt(4, srv.getCodigo());
-//            preparedStatement.executeUpdate();
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public List<Pessoa> getAllPessoa() {
-//        List<Pessoa> srvs = new ArrayList<Pessoa>();
-//        try {
-//            Statement statement = connection.createStatement();
-//            ResultSet rs = statement.executeQuery("select * from servicos");
-//            while (rs.next()) {
-//                Pessoa srv = new Pessoa();
-//                
-//                srv.setCodigo(rs.getInt("codigo"));
-//                srv.setNome(rs.getString("nome"));
-//                srv.setTipoServ(rs.getString("tipoServ"));
-//                srv.setDescServ(rs.getString("descServ"));
-//                
-//
-//               
-//                srvs.add(srv);
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return srvs;
-//    }
+            preparedStatement.executeUpdate();
 
-//    public Pessoa getPessoaById(BigInteger cpfCnpj) {
-//        Pessoa srv = new Pessoa();
-//        try {
-//            PreparedStatement preparedStatement = connection.
-//                    prepareStatement("select * from servicos where codigo=?");
-//            preparedStatement.setInt(1, codigo);
-//            ResultSet rs = preparedStatement.executeQuery();
-//
-//            if (rs.next()) {
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public List<Pessoa> getAllCliente() {
+        List<Pessoa> srvs = new ArrayList<Pessoa>();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery("select * from servicos");
+            while (rs.next()) {
+                Pessoa srv = new Pessoa();
+                
 //                srv.setCodigo(rs.getInt("codigo"));
 //                srv.setNome(rs.getString("nome"));
 //                srv.setTipoServ(rs.getString("tipoServ"));
 //                srv.setDescServ(rs.getString("descServ"));
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return srv;
-//    }
+                
+
+               
+                srvs.add(srv);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return srvs;
+    }
+
+    public UsuarioSistema getPessoaById(int cpfCnpj) {
+        UsuarioSistema srv = new UsuarioSistema();
+        try {
+            PreparedStatement preparedStatement = connection.
+                    prepareStatement("select * from servicos where codigo=?");
+//            preparedStatement.setInt(1, codigo);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            if (rs.next()) {
+//                srv.setCodigo(rs.getInt("codigo"));
+//                srv.setNome(rs.getString("nome"));
+//                srv.setTipoServ(rs.getString("tipoServ"));
+//                srv.setDescServ(rs.getString("descServ"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return srv;
+    }
     
     
     
