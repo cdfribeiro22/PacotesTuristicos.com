@@ -49,33 +49,16 @@
                 <div id="login-box-label">
                     LOGIN
                 </div>
-                
-                     <form method="post" action="LoginServlet">
-                         
-                            <div class="input-div" id="input-usuario">
-                                Usuário<input type="text" name="login" required />
-                            </div>
-
-                            <div class="input-div" id="input-senha">
-                                Senha<input type="password" name="senha" required/>
-                                <input type="submit" value="Entrar" />
-                                <input type="hidden" name="acao" value="login" />
-                            </div>
-                         
-                    </form> 
-                
-                        <div id="botoes">
-                            
-                            <div id="lembra-senha">
-                                <input type="checkbox"/> Lembrar minha Senha</div>
-                                
-                        </div> 
-                <div id="esqueceu-senha">
-                    <a href="recuperarsenha.jsp"><b>Esqueceu a senha?</b></a>
+                <div id="login-invalido">
+                    Login ou Senha inválido!
                 </div>
-                
+                 <div id="botoescadastrar">
+                    <a href="login.jsp"><button id="botaocadastrar">Tente novamente</button></a>
+                </div>  
             </div>
+                
         </div>
+        
 
         <div id="cadastrar-box">
             <div id="cadastrar-box-interno">

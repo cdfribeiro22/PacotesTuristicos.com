@@ -9,7 +9,7 @@ import java.sql.SQLException;
  *
  * @author Avell 1513
  */
-public class LoginConexao {
+public class Conexao {
 private static Connection connection = null;
 
     public static Connection getConnection() {
@@ -19,7 +19,7 @@ private static Connection connection = null;
             try {
               
                 String driver = "org.postgresql.Driver";
-                String url = "jdbc:postgresql://localhost:5432/login";
+                String url = "jdbc:postgresql://localhost:5432/pactur";
                 String user = "postgres";
                 String password = "123456";
                 Class.forName(driver);

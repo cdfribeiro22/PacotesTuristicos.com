@@ -2,23 +2,28 @@ package com.pacotesturisticos.model;
 
 
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Date;
 
 public class Pessoa {
     
-    private BigInteger cpf; 
+    private BigInteger cpfBig; 
+    private String cpf;
     private int pessoa;
     private String nome; 
-    private String String; 
+    private String telefone; 
     private Endereco endereco;
 
-    public BigInteger getCpf() {
-        return cpf;
-    }
 
-    public void setCpf(BigInteger cpf) {
-        this.cpf = cpf;
+    public BigInteger getCpfBig() {
+        return cpfBig;
+    }
+    
+    
+
+    public void setCpfBig(BigInteger cpfBig) {
+        this.cpfBig = cpfBig;
     }
 
     public int getPessoa() {
@@ -37,12 +42,12 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getString() {
-        return String;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setString(String String) {
-        this.String = String;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public Endereco getEndereco() {
@@ -52,5 +57,18 @@ public class Pessoa {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+    
+    public BigDecimal ParaDecimal(){
+        BigDecimal converter = new BigDecimal(cpfBig);
+        return converter;
+    }
 
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    
 }

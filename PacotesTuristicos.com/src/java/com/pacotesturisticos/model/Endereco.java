@@ -17,6 +17,7 @@ public class Endereco {
     private String complemento;
     private Cidade cidade;
 
+
     public int getCod_postal() {
         return cod_postal;
     }

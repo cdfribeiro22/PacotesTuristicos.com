@@ -7,8 +7,9 @@
 package com.pacotesturisticos.bll;
 
 
-import com.pacotesturisticos.Dal.LoginUsuarioDao;
+import com.pacotesturisticos.dao.UsuarioDao;
 import com.pacotesturisticos.model.LoginUsuario;
+import com.pacotesturisticos.model.UsuarioSistema;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -25,11 +26,11 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private LoginUsuarioDao ludao;
+    private UsuarioDao LoginDao;
        
     public LoginServlet() {
         super();
-        ludao = new LoginUsuarioDao();
+        LoginDao = new UsuarioDao();
     }
     @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -42,18 +43,18 @@ public class LoginServlet extends HttpServlet {
 	}
 	
 	private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String pagina = "pacotes.jsp";
+		String pagina = "login_invalido.jsp";
                 
                 
-                LoginUsuario loginBanco = new LoginUsuario();
+                UsuarioSistema login = new UsuarioSistema();
                 
-                loginBanco.setLogin(request.getParameter("login"));
-                loginBanco.setSenha(request.getParameter("senha"));
+                login.setEmail(request.getParameter("login"));
+                login.setSenha(request.getParameter("senha"));
 		// Validando se o usuário é igual a "admin" e a senha é igual a "senha"
 		
 		if(request.getParameter("acao").equals("login")) {
                     
-			if(ludao.ConsultarLogin(loginBanco)) { 
+			if(LoginDao.ConsultarLogin(login)) { 
 				
 					HttpSession sessao = request.getSession();
 					// setando um atributo da sessao
