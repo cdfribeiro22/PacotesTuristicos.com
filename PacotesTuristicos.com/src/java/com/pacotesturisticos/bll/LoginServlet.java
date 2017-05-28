@@ -23,7 +23,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author Elisabete
  */
-@WebServlet("/LoginServlet")
+@WebServlet("/LoginServlet1")
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private UsuarioDao LoginDao;

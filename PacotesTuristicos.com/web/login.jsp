@@ -50,7 +50,7 @@
                     LOGIN
                 </div>
                 
-                     <form method="post" action="LoginServlet">
+                     <form method="post" action="LoginServlet1">
                          
                             <div class="input-div" id="input-usuario">
                                 Usuário<input type="text" name="login" required />
