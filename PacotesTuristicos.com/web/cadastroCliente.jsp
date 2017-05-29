@@ -139,7 +139,7 @@
                             <input type="text" name="rua">
                         </td>
                         <td>
-                            <label for="numero">Numero:</label>
+                            <label for="numero">Número:</label>
                         </td>
                         <td align="left">
                             <input type="text" name="numero" size="4">
