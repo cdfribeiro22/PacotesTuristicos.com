@@ -165,9 +165,10 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 fieldset {
-  padding: .35em .625em .75em;
+  padding: .35em .0em .75em;
   margin: 0 2px;
   border: 1px solid #c0c0c0;
+  width: 100%;
 }
 legend {
   padding: 0;
@@ -182,10 +183,6 @@ optgroup {
 table {
   border-spacing: 0;
   border-collapse: collapse;
-}
-td,
-th {
-  padding: 0;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -1316,7 +1313,7 @@ mark,
   text-align: right;
 }
 .text-center {
-  text-align: center;
+  text-align: right;
 }
 .text-justify {
   text-align: justify;
@@ -2488,12 +2485,7 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
-fieldset {
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+
 legend {
   display: block;
   width: 100%;
