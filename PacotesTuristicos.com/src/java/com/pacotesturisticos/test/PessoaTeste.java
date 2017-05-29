@@ -40,8 +40,8 @@ public class PessoaTeste {
         
         
         cliente.setCpf("04324503605");
-        cliente.setPessoa(1);
         cliente.setNome("Carlos");
+        cliente.setPessoa(1);
         cliente.setTelefone("6281828461");
         cliente.setEmail("carlos@gmail.com");
         cliente.setSenha("123456");
@@ -71,4 +71,6 @@ public class PessoaTeste {
         
 
     }
+
+ 
 }

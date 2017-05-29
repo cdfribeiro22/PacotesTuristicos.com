@@ -10,6 +10,7 @@ package com.pacotesturisticos.dao;
 import com.pacotesturisticos.model.LoginUsuario;
 import com.pacotesturisticos.model.Pessoa;
 import br.com.Login.util.Conexao;
+import com.pacotesturisticos.model.Endereco;
 import com.pacotesturisticos.model.UsuarioSistema;
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -19,6 +20,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,8 +35,8 @@ public class UsuarioDao {
     private Connection connection;
  
      Timestamp dataDeHoje = new Timestamp(System.currentTimeMillis());
-    
-    
+     Date d = new Date(System.currentTimeMillis());
+//    
     public UsuarioDao(){
         connection = Conexao.getConnection();
         
@@ -49,7 +51,7 @@ public class UsuarioDao {
 			preparedStatement.setString(2, login.getSenha());
                         
 			ResultSet rs = preparedStatement.executeQuery();
-			                 JOptionPane.showMessageDialog(null, "teste Dao");
+//			                 JOptionPane.showMessageDialog(null, "teste Dao");
 			if (rs.next()) {
 				return true;
 				
@@ -62,6 +64,40 @@ public class UsuarioDao {
 
 		return false;
 	}
+    
+        public void addPessoaCadastro(UsuarioSistema cliente , Endereco casa) {
+            
+        try {
+           
+            PreparedStatement preparedStatement = connection
+                    .prepareStatement("insert into pessoa(cpf, nome, sexo, dt_nasc, rg, telefone, endereco, numero, complemento,"
+                                    + " bairro, estado, cidade, cep, email, senha, tipo_pessoa) "
+                                    + "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+     
+        preparedStatement.setString(1,cliente.getCpf());
+        preparedStatement.setString(2, cliente.getNome());
+        preparedStatement.setString(3, cliente.getSexo());
+        preparedStatement.setDate(4, d);
+        preparedStatement.setString(5, cliente.getRg());
+        preparedStatement.setString(6, cliente.getTelefone());
+        preparedStatement.setString(7, casa.getLogradouro());
+        preparedStatement.setInt(8, casa.getNumero());
+        preparedStatement.setString(9, casa.getComplemento());
+        preparedStatement.setString(10, casa.getBairro());
+        preparedStatement.setString(11, casa.getEstado());
+        preparedStatement.setString(12, casa.getCidade());
+        preparedStatement.setInt(13, casa.getCod_postal());
+        preparedStatement.setString(14, cliente.getEmail());
+        preparedStatement.setString(15, cliente.getSenha());
+        preparedStatement.setInt(16, 1);
+
+
+            preparedStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
     
         public void addPessoa(UsuarioSistema cliente) {
         try {

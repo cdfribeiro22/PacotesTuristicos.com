@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author Carlos Daniel
  */
-public class UsuarioSistema extends Pessoa{
+public class UsuarioSistema extends PessoaFisica{
     
     private String email;
     private String senha;
@@ -20,6 +20,11 @@ public class UsuarioSistema extends Pessoa{
     private int status;
     private Date dt_ultimo_status;
     private int tipo_usuario;
+
+ 
+    
+    
+
 
     public String getEmail() {
         return email;

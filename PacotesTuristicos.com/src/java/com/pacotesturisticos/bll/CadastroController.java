@@ -6,6 +6,7 @@
 package com.pacotesturisticos.bll;
 
 import com.pacotesturisticos.dao.UsuarioDao;
+import com.pacotesturisticos.model.Endereco;
 
 import com.pacotesturisticos.model.UsuarioSistema;
 
@@ -14,7 +15,10 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -42,28 +46,69 @@ public class CadastroController extends HttpServlet {
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+//        JOptionPane.showMessageDialog(null, "Request");
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try{
            UsuarioDao dao = new UsuarioDao();
            UsuarioSistema cliente = new UsuarioSistema();
-            Date data = new Date();
+           Endereco casa = new Endereco();
            
             PreparedStatement ps = null;
             Connection cn = null;
+                       
+            cliente.setCpf(request.getParameter("Fcpf"));
+            cliente.setNome(request.getParameter("Fnome"));
+            cliente.setSexo((request.getParameter("Fsexo")));
             
-            cliente.setNome(request.getParameter("nome"));
-            cliente.setCpf(request.getParameter("cpf"));
+//            try {
+//            Date dob = new SimpleDateFormat("MM/dd/yyyy").parse(request.getParameter("Fnascimento"));
+//            cliente.setDt_nasc(dob);
+//            JOptionPane.showMessageDialog(null, cliente.getDt_nasc());
+//            } catch (ParseException e) {
+//                JOptionPane.showMessageDialog(null, e);
+//            }
+            Date data = new Date();
+            Timestamp timeStampDate = new Timestamp(data.getTime());
+            cliente.setDt_nasc(timeStampDate);
+            cliente.setRg(request.getParameter("Frg"));
+            cliente.setTelefone(request.getParameter("Ftelefone"));
+            casa.setLogradouro(request.getParameter("Frua"));
+            casa.setNumero(Integer.parseInt(request.getParameter("Fnumero")));
+            casa.setComplemento(request.getParameter("Fcomplemento"));
+            casa.setBairro(request.getParameter("Fbairro"));
+            casa.setEstado(request.getParameter("Festado"));
+            casa.setCidade(request.getParameter("Fcidade"));
+            String cep = request.getParameter("Fcep");
+            cep = cep.replace(".", "").replace("-", "");
+            casa.setCod_postal(Integer.parseInt(cep));
+                       
+            cliente.setEmail(request.getParameter("Femail"));
+            cliente.setSenha(request.getParameter("repetir_senha"));
+                        
+//            JOptionPane.showMessageDialog(null, cliente.getNome() 
+//                                        + "\n " + cliente.getCpf()
+//                                        + "\n " + cliente.getSexo()
+//                                        + "\n " + cliente.getDt_nasc()
+//                                        + "\n " + cliente.getRg()
+//                                        + "\n " + cliente.getTelefone()
+//                                                + "\n " + casa.getLogradouro()
+//                                                + "\n " + casa.getNumero()
+//                                                + "\n " + casa.getComplemento()
+//                                                + "\n " + casa.getBairro()
+//                                                + "\n " + casa.getEstado()
+//                                                + "\n " + casa.getCidade()
+//                                                + "\n " + casa.getCod_postal()
+//                                        + "\n " + cliente.getEmail()
+//                                        + "\n " + cliente.getSenha()
+//
+//            );
             
-           
-            
-            JOptionPane.showMessageDialog(null, cliente.getNome() + " " + cliente.getCpf());
-            
+                   
         
-        
-         dao.addPessoa(cliente);
+            dao.addPessoaCadastro(cliente , casa);
             
-            String url = "cadastroCliente.jsp";
+            String url = "cadastroCliente_1_valido.jsp";
             response.sendRedirect(url);
             
         } finally {

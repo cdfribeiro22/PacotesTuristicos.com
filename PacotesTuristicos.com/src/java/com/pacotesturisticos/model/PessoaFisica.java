@@ -6,26 +6,30 @@
  */
 package com.pacotesturisticos.model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
  *
  * @author Carlos Daniel
  */
-public class PessoaFisica {
+public class PessoaFisica extends Pessoa{
     
-    private int rg;
+    private String rg;
     private Date dt_nasc;
-    private char sexo;     
+    private String sexo;     
     private String telefone;       
     private String nome_responsavel;       
     private String fone_responsavel;
 
-    public int getRg() {
+
+    
+
+    public String getRg() {
         return rg;
     }
 
-    public void setRg(int rg) {
+    public void setRg(String rg) {
         this.rg = rg;
     }
 
@@ -37,11 +41,11 @@ public class PessoaFisica {
         this.dt_nasc = dt_nasc;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {        
         this.sexo = sexo;
     }
 

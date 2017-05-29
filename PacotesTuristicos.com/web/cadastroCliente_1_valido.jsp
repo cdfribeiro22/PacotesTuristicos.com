@@ -38,7 +38,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                         <h1>Faça seu Login</h1>
+                         <h1>Cadastro Realizado com Sucesso!</h1>
+                         <h2>Faça agora seu login</h2>
                     </div>
                 </div>
             </div>
@@ -109,6 +110,7 @@
                 </div>
             </div>
         </div>
+
 
         <%@include file="rodape.jsp" %>
 
