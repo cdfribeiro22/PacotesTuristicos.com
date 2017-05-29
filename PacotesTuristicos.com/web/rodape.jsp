@@ -29,9 +29,6 @@
                                 <li><a href="#">Nossos Serviços</a></li>
                                 <li><a href="#">Perguntas Frequentes</a></li>
                                 <li><a href="#">Contatos</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms of Use</a></li>
-                                <li><a href="#">Copyright</a></li>
                             </ul>
                         </div>
                     </div><!--/.col-md-3-->

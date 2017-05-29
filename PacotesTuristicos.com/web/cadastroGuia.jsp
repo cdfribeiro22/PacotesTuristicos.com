@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,12 +13,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Registro-Guia | PacTur</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+        <script src="js/scriptCadastro.js" type="text/javascript"></script>
+        <title>Registro | PacTur</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/prettyPhoto.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+        <script src="js/scriptCadastro.js" type="text/javascript"></script>
         <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
@@ -43,35 +48,52 @@
             </div>
         </section><!--/#title--> 
 
-        <form action="Script_do_Formulario.php" method="post">
+        <form name="form1" action="CadastroController" method="post" >
 
             <!-- DADOS PESSOAIS-->
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <table cellspacing="10">
+                <table cellspacing="10" class="text-center">
+                     <tr>
+                        <td>
+                            <label>CPF:</label>
+                        </td>
+                        <td align="left">
+                            <input id="cpf" type="text" name="Fcpf" onBlur="ValidarCPF(form1.Fcpf);" onKeyPress="MascaraCPF(form1.Fcpf);"  maxlength="14" required> 
+                        </td>
+                        <td >
+                            <p id="cpfinvalido"></p>
+                        </td>
+                    </tr>
                     <tr>
                         <td>
-                            <label for="nome">Nome: </label>
+                            <label for="Cnome">Nome Completo: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="email">
+                            <input type="text" name="Fnome" maxlength="50" size="60" required>
                         </td>
+
+                    </tr>
+                    <tr>
                         <td>
-                            <label for="sobrenome">Sobrenome: </label>
+                            <label for="Csexo">Sexo:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="sobrenome">
+                            <select name="Fsexo"> 
+                                <option value="">...</option> 
+                                <option value="Masculino">Masculino</option> 
+                                <option value="Feminino">Feminino</option> 
+                            </select>
                         </td>
+
                     </tr>
 
                     <tr>
                         <td>
-                            <label>Nascimento: </label>
+                            <label>Data de Nascimento: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
-                            <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
-                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                            <input type="date" name="Fnascimento" required>
                         </td>
                     </tr>
 
@@ -80,60 +102,77 @@
                             <label for="rg">RG: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="rg" size="13" maxlength="13"> 
+                            <input type="text" name="Frg" size="20" maxlength="15" required> 
                         </td>
                     </tr>
-
-                    <tr>
-                        <td>
-                            <label>CPF:</label>
-                        </td>
-                        <td align="left">
-                            <input type="text" name="cpf" size="9" maxlength="9"> - 
-                            <input type="text" name="cpf2" size="2" maxlength="2">
-                        </td>
-                    </tr>
-
                     <tr>
                         <td>
                             <label>Telefone:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="telefone1" size="2" maxlength="2"> - 
-                            <input type="text" name="telefone2" size="9" maxlength="9">
+                            <input type="text" name="Ftelefone" onKeyPress="MascaraTelefone(form1.Ftelefone);" maxlength="14" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cnh">Idiomas</label>
+                        </td>
+                        <td align="left">
+                            <select name="Festado"> 
+                                <option value="Arabe">Árabe</option> 
+                                <option value="Espanhol">Espanhol</option> 
+                                <option value="Frances">Francês</option> 
+                                <option value="Ingles">Inglês</option> 
+                                <option value="Portugues">Português</option> 
+                                <option value="Mandarim">Mandarim</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cnh">CNH</label>
+                        </td>
+                        <td align="left">
+                            <select name="Festado"> 
+                                <option value="A">A</option> 
+                                <option value="B">B</option> 
+                                <option value="C">C</option> 
+                                <option value="D">D</option> 
+                                <option value="E">E</option> 
+                                <option value="AB">AB</option>
+                                <option value="AC">AC</option> 
+                                <option value="AD">AD</option>
+                                <option value="AE">AE</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Data de Vencimento CNH</label>
+                        </td>
+                        <td align="left">
+                            <input type="date" name="Fnascimento" required>
                         </td>
                     </tr>
                 </table>
             </fieldset>
             <br />
-
-            <!-- ENDEREÇO -->
+             <!-- ENDEREÇO ------------------------------------------------------------------------------>
             <fieldset>
                 <legend>Dados de Endereço</legend>
-                <table cellspacing="10">
-
-
-                    <tr>
-                        <td>
-                            <label for="bairro">Bairro: </label>
-                        </td>
-                        <td align="left">
-                            <input type="text" name="bairro">
-                        </td>
-                    </tr>
-
+                <table cellspacing="10" class="text-center">
                     <tr>
                         <td>
                             <label for="rua">Rua:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="rua">
+                            <input type="text" name="Frua" size="30" maxlength="30" required>
                         </td>
                         <td>
-                            <label for="numero">Numero:</label>
+                            <label for="numero">Número:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="numero" size="4">
+                            <input type="text" name="Fnumero" size="6" maxlength="6" required>
                         </td>
                     </tr>
 
@@ -142,7 +181,16 @@
                             <label for="complemento">Complemento:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="complemento">
+                            <input type="text" name="Fcomplemento" size="30" maxlength="30">
+                        </td>
+                    </tr>
+                    
+                     <tr>
+                        <td>
+                            <label for="bairro">Bairro: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="Fbairro" size="30" maxlength="30" required>
                         </td>
                     </tr>
 
@@ -151,34 +199,34 @@
                             <label for="estado">Estado:</label>
                         </td>
                         <td align="left">
-                            <select name="estado"> 
-                                <option value="ac">Acre</option> 
-                                <option value="al">Alagoas</option> 
-                                <option value="am">Amazonas</option> 
-                                <option value="ap">Amapá</option> 
-                                <option value="ba">Bahia</option> 
-                                <option value="ce">Ceará</option> 
-                                <option value="df">Distrito Federal</option> 
-                                <option value="es">Espírito Santo</option> 
-                                <option value="go">Goiás</option> 
-                                <option value="ma">Maranhão</option> 
-                                <option value="mt">Mato Grosso</option> 
-                                <option value="ms">Mato Grosso do Sul</option> 
-                                <option value="mg">Minas Gerais</option> 
-                                <option value="pa">Pará</option> 
-                                <option value="pb">Paraíba</option> 
-                                <option value="pr">Paraná</option> 
-                                <option value="pe">Pernambuco</option> 
-                                <option value="pi">Piauí</option> 
-                                <option value="rj">Rio de Janeiro</option> 
-                                <option value="rn">Rio Grande do Norte</option> 
-                                <option value="ro">Rondônia</option> 
-                                <option value="rs">Rio Grande do Sul</option> 
-                                <option value="rr">Roraima</option> 
-                                <option value="sc">Santa Catarina</option> 
-                                <option value="se">Sergipe</option> 
-                                <option value="sp">São Paulo</option> 
-                                <option value="to">Tocantins</option> 
+                            <select name="Festado"> 
+                                <option value="Acre">Acre</option> 
+                                <option value="Alagoas">Alagoas</option> 
+                                <option value="Amazonas">Amazonas</option> 
+                                <option value="Amapá">Amapá</option> 
+                                <option value="Bahia">Bahia</option> 
+                                <option value="Ceará">Ceará</option> 
+                                <option value="Distrito">Distrito Federal</option> 
+                                <option value="Espírito">Espírito Santo</option> 
+                                <option value="Goiás">Goiás</option> 
+                                <option value="Maranhão">Maranhão</option> 
+                                <option value="Mato Grosso">Mato Grosso</option> 
+                                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option> 
+                                <option value="Minas Gerais">Minas Gerais</option> 
+                                <option value="Pará">Pará</option> 
+                                <option value="Paraíba">Paraíba</option> 
+                                <option value="Paraná">Paraná</option> 
+                                <option value="Pernambuco">Pernambuco</option> 
+                                <option value="Piauí">Piauí</option> 
+                                <option value="Rio de Janeiro">Rio de Janeiro</option> 
+                                <option value="Rio Grande do Norte">Rio Grande do Norte</option> 
+                                <option value="Rondônia">Rondônia</option> 
+                                <option value="Rio Grande do Sul">Rio Grande do Sul</option> 
+                                <option value="Roraima">Roraima</option> 
+                                <option value="Santa Catarina">Santa Catarina</option> 
+                                <option value="Sergipe">Sergipe</option> 
+                                <option value="São Paulo">São Paulo</option> 
+                                <option value="Tocantins">Tocantins</option> 
                             </select>
                         </td>
                     </tr>
@@ -187,7 +235,7 @@
                             <label for="cidade">Cidade: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="cidade">
+                            <input type="text" name="Fcidade" size="30" maxlength="30" required>
                         </td>
                     </tr>
                     <tr>
@@ -195,15 +243,68 @@
                             <label for="cep">CEP: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="cep" size="5" maxlength="5"> - 
-                            <input type="text" name="cep2" size="3" maxlength="3">
+                            <input type="text" name="Fcep" onKeyPress="MascaraCep(form1.Fcep);" maxlength="10" required>
+                           
                         </td>
                     </tr>
                 </table>
             </fieldset>
             <br />
 
-            <br />
+            <!-- DADOS DE LOGIN --------------------------------------------------------------------->
+            <fieldset>
+                <legend>Dados de Login</legend>
+                <table cellspacing="10" class="text-center">
+                    <tr>
+                        <td>
+                            <label for="email">E-mail: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="Femail" onBlur="validacaoEmail(form1.Femail);"  maxlength="60" size='65' required>
+                        </td>
+                        <td >
+                            <p id="emailinvalido"></p>
+                        </td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>
+                            <label for="imagem">Imagem de perfil:</label>
+                        </td>
+                        <td>
+                            <input type="file" name="imagem" >
+
+                        </td>
+                    </tr>
+                    -->
+                    <tr>
+                        <td>
+                            <label for="pass">Senha: </label>
+                        </td>
+                        <td align="left">
+                            
+                            <input id="txtSenha" name="senha" type="password" required placeholder="Digite uma Senha" title="Senha" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="passconfirm">Confirme a senha: </label>
+                        </td>
+                        <td align="left">
+                            
+                            <input id="repetir_senha" name="repetir_senha" type="password" required  onBlur="validarSenha(this);" placeholder="Repetir Senha" title="Repetir Senha" />
+                        </td>
+                         <td >
+                            <p id="senhainvalida"></p>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br />   
+            
+            
+            
+            
             <input type="submit">
             <input type="reset" value="Limpar">
         </form>

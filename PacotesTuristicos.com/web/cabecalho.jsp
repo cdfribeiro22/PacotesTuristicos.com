@@ -24,7 +24,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="./">Inicio</a></li>
-                        <li><a href="servicos.jsp">Serviços</a></li>
+                        <li><a href="servicos.jsp">Guia</a></li>
                         <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
                         <li><a href="pacotes.jsp">Pacotes</a></li>
                         <li><a href="login.jsp">Login</a></li>
