@@ -187,16 +187,36 @@ public class UsuarioDao {
         UsuarioSistema srv = new UsuarioSistema();
         try {
             PreparedStatement preparedStatement = connection.
-                    prepareStatement("select * from servicos where codigo=?");
-//            preparedStatement.setInt(1, codigo);
+                    prepareStatement("select * from pessoa where cod_cliente=?");
+            preparedStatement.setInt(1, cpfCnpj);
             ResultSet rs = preparedStatement.executeQuery();
 
             if (rs.next()) {
-//                srv.setCodigo(rs.getInt("codigo"));
-//                srv.setNome(rs.getString("nome"));
-//                srv.setTipoServ(rs.getString("tipoServ"));
-//                srv.setDescServ(rs.getString("descServ"));
+                srv.setCodigo(rs.getInt("cod_cliente"));
+                srv.setCpf(rs.getString("cpf"));
+                srv.setNome(rs.getString("nome"));
+                srv.setSexo(rs.getString("sexo"));
+                srv.setDt_nasc(rs.getDate("dt_nasc"));
+                srv.setRg(rs.getString("rg"));
+                srv.setTelefone(rs.getString("telefone"));
+                
+                srv.setpBairro(rs.getString("bairro"));
+                srv.setpRua(rs.getString("endereco"));
+                srv.setpNumero(rs.getInt("numero"));
+                srv.setpComplemento(rs.getString("complemento"));
+                srv.setpEstado(rs.getString("estado"));
+                srv.setpCidade(rs.getString("cidade"));
+                srv.setpCep(rs.getString("cep"));
+                
+                srv.setEmail(rs.getString("email"));
+                srv.setSenha(rs.getString("senha"));
+                
+                
+
+
             }
+            
+//            JOptionPane.showMessageDialog(null,srv.getNome() );
         } catch (SQLException e) {
             e.printStackTrace();
         }

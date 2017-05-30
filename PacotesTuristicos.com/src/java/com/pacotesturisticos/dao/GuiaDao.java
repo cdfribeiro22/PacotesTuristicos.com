@@ -12,6 +12,7 @@ import com.pacotesturisticos.model.Pessoa;
 import br.com.Login.util.Conexao;
 import com.pacotesturisticos.model.Endereco;
 import com.pacotesturisticos.model.UsuarioSistema;
+import com.pacotesturisticos.model.UsuarioSistemaGuia;
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.Date;
@@ -65,14 +66,14 @@ public class GuiaDao {
 		return false;
 	}
     
-        public void addPessoaCadastro(UsuarioSistema cliente , Endereco casa) {
+        public void addGuiaCadastro(UsuarioSistemaGuia cliente , Endereco casa) {
             
         try {
            
             PreparedStatement preparedStatement = connection
                     .prepareStatement("insert into pessoa(cpf, nome, sexo, dt_nasc, rg, telefone, endereco, numero, complemento,"
-                                    + " bairro, estado, cidade, cep, email, senha, tipo_pessoa) "
-                                    + "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                                    + " bairro, estado, cidade, cep, email, senha, tipo_pessoa, idioma1, idioma2, idioma3, cnh, dt_cnh) "
+                                    + "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
      
         preparedStatement.setString(1,cliente.getCpf());
         preparedStatement.setString(2, cliente.getNome());
@@ -90,6 +91,11 @@ public class GuiaDao {
         preparedStatement.setString(14, cliente.getEmail());
         preparedStatement.setString(15, cliente.getSenha());
         preparedStatement.setInt(16, 1);
+        preparedStatement.setString(17, cliente.getIdioma1());
+        preparedStatement.setString(18, cliente.getIdioma2());        
+        preparedStatement.setString(19, cliente.getIdioma3());        
+        preparedStatement.setString(20, cliente.getCnh());        
+        preparedStatement.setDate(21, d);        
 
 
             preparedStatement.executeUpdate();

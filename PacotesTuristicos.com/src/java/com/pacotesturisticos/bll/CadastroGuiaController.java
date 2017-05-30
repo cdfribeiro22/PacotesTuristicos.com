@@ -66,11 +66,13 @@ public class CadastroGuiaController extends HttpServlet {
             cliente.setDt_nasc(timeStampDate);
             cliente.setRg(request.getParameter("Frg"));
             cliente.setTelefone(request.getParameter("Ftelefone"));
+            
             cliente.setIdioma1(request.getParameter("Fidioma1"));
             cliente.setIdioma2(request.getParameter("Fidioma2"));
             cliente.setIdioma3(request.getParameter("Fidioma3"));
-            cliente.setIdioma1(request.getParameter("Fcnh"));
-            cliente.setIdioma1(request.getParameter("Fdatacnh"));
+            cliente.setCnh(request.getParameter("Fcnh"));
+            cliente.setDt_cnh_vencimento(timeStampDate);
+            
             casa.setLogradouro(request.getParameter("Frua"));
             casa.setNumero(Integer.parseInt(request.getParameter("Fnumero")));
             casa.setComplemento(request.getParameter("Fcomplemento"));
@@ -89,9 +91,11 @@ public class CadastroGuiaController extends HttpServlet {
                                         + "\n " + cliente.getSexo()
                                         + "\n " + cliente.getDt_nasc()
                                         + "\n " + cliente.getRg()
-                                        + "\n " + cliente.getTelefone()
-                    
-                    
+                                        + "\n " + cliente.getIdioma1()
+                                        + "\n " + cliente.getIdioma2()                    
+                                        + "\n " + cliente.getIdioma3()                    
+                                        + "\n " + cliente.getCnh()
+                                        + "\n " + cliente.getDt_cnh_vencimento()
                                                 + "\n " + casa.getLogradouro()
                                                 + "\n " + casa.getNumero()
                                                 + "\n " + casa.getComplemento()

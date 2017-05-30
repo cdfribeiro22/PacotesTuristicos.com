@@ -48,7 +48,7 @@
             </div>
         </section><!--/#title--> 
 
-        <form name="form1" action="CadastroController" method="post" >
+        <form name="form2" action="CadastroGuiaController" method="post" >
 
             <!-- DADOS PESSOAIS-->
             <fieldset>
@@ -59,7 +59,7 @@
                             <label>CPF:</label>
                         </td>
                         <td align="left">
-                            <input id="cpf" type="text" name="Fcpf" onBlur="ValidarCPF(form1.Fcpf);" onKeyPress="MascaraCPF(form1.Fcpf);"  maxlength="14" required> 
+                            <input id="cpf" type="text" name="Fcpf" onBlur="ValidarCPF(form2.Fcpf);" onKeyPress="MascaraCPF(form2.Fcpf);"  maxlength="14" required> 
                         </td>
                         <td >
                             <p id="cpfinvalido"></p>
@@ -70,7 +70,7 @@
                             <label for="Cnome">Nome Completo: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Fnome" maxlength="50" size="60" required>
+                            <input type="text" name="Fnome" maxlength="35" size="35" required>
                         </td>
 
                     </tr>
@@ -110,15 +110,16 @@
                             <label>Telefone:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Ftelefone" onKeyPress="MascaraTelefone(form1.Ftelefone);" maxlength="14" required>
+                            <input type="text" name="Ftelefone" onKeyPress="MascaraTelefone(form2.Ftelefone);" maxlength="14" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="cnh">Idiomas</label>
+                            <label for="cnh">Idioma 1</label>
                         </td>
                         <td align="left">
-                            <select name="Festado"> 
+                            <select name="Fidioma1"> 
+                                <option value="Mandarim">-</option>
                                 <option value="Arabe">Árabe</option> 
                                 <option value="Espanhol">Espanhol</option> 
                                 <option value="Frances">Francês</option> 
@@ -127,13 +128,45 @@
                                 <option value="Mandarim">Mandarim</option> 
                             </select>
                         </td>
+                    </tr>    
+                    <tr> 
+                        <td>
+                            <label for="cnh">Idioma 2</label>
+                        </td>
+                        <td align="left">
+                            <select name="Fidioma2"> 
+                                <option value="Mandarim">-</option>
+                                <option value="Ingles">Inglês</option> 
+                                <option value="Arabe">Árabe</option> 
+                                <option value="Espanhol">Espanhol</option> 
+                                <option value="Frances">Francês</option> 
+                                <option value="Portugues">Português</option> 
+                                <option value="Mandarim">Mandarim</option>
+                            </select>
+                        </td>
+                    </tr>    
+                    <tr>    
+                        <td>
+                            <label for="cnh">Idioma 3</label>
+                        </td>
+                         <td align="left">
+                            <select name="Fidioma3"> 
+                                <option value="Mandarim">-</option>
+                                <option value="Arabe">Árabe</option> 
+                                <option value="Espanhol">Espanhol</option> 
+                                <option value="Frances">Francês</option> 
+                                <option value="Ingles">Inglês</option> 
+                                <option value="Portugues">Português</option> 
+                                <option value="Mandarim">Mandarim</option>
+                            </select>
+                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="cnh">CNH</label>
+                            <label>Tipo CNH</label>
                         </td>
-                        <td align="left">
-                            <select name="Festado"> 
+                         <td align="left">
+                            <select name="Fidioma3"> 
                                 <option value="A">A</option> 
                                 <option value="B">B</option> 
                                 <option value="C">C</option> 
@@ -243,7 +276,7 @@
                             <label for="cep">CEP: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Fcep" onKeyPress="MascaraCep(form1.Fcep);" maxlength="10" required>
+                            <input type="text" name="Fcep" onKeyPress="MascaraCep(form2.Fcep);" maxlength="10" required>
                            
                         </td>
                     </tr>
@@ -260,7 +293,7 @@
                             <label for="email">E-mail: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Femail" onBlur="validacaoEmail(form1.Femail);"  maxlength="60" size='65' required>
+                            <input type="text" name="Femail" onBlur="validacaoEmail(form2.Femail);"  maxlength="40" size='40' required>
                         </td>
                         <td >
                             <p id="emailinvalido"></p>

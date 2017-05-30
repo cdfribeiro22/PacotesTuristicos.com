@@ -74,7 +74,7 @@ function ValidarCPF(Objcpf) {
         document.form1.cpf.focus();
     } else {    
        
-        document.getElementById("cpfinvalido").innerHTML="OK! CPF Valido!>" ;
+        document.getElementById("cpfinvalido").innerHTML="OK CPF Valido" ;
         
     }
 }

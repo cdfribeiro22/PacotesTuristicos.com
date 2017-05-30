@@ -17,7 +17,7 @@ public class UsuarioSistemaGuia extends UsuarioSistema{
     private String idioma2;
     private String idioma3;
     private String cnh;
-    private Date dt_vencimento;
+    private Date dt_cnh_vencimento;
 
     public String getIdioma1() {
         return idioma1;
@@ -51,12 +51,12 @@ public class UsuarioSistemaGuia extends UsuarioSistema{
         this.cnh = cnh;
     }
 
-    public Date getDt_vencimento() {
-        return dt_vencimento;
+    public Date getDt_cnh_vencimento() {
+        return dt_cnh_vencimento;
     }
 
-    public void setDt_vencimento(Date dt_vencimento) {
-        this.dt_vencimento = dt_vencimento;
+    public void setDt_cnh_vencimento(Date dt_cnh_vencimento) {
+        this.dt_cnh_vencimento = dt_cnh_vencimento;
     }
 
 

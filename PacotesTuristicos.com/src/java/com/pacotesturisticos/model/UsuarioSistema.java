@@ -16,10 +16,20 @@ public class UsuarioSistema extends PessoaFisica{
     private String email;
     private String senha;
     private Date dt_cadatro;
+    private String pBairro;
+    private String pRua;
+    private int pNumero;
+    private String pComplemento;
+    private String pEstado;
+    private String pCidade;
+    private String pCep;
+    private String pEmail;
+    private String psenha;
     private Date dt_ult_acess;     
     private int status;
     private Date dt_ultimo_status;
     private int tipo_usuario;
+    
 
  
     
@@ -80,6 +90,78 @@ public class UsuarioSistema extends PessoaFisica{
 
     public void setTipo_usuario(int tipo_usuario) {
         this.tipo_usuario = tipo_usuario;
+    }
+
+    public String getpBairro() {
+        return pBairro;
+    }
+
+    public void setpBairro(String pBairro) {
+        this.pBairro = pBairro;
+    }
+
+    public String getpRua() {
+        return pRua;
+    }
+
+    public void setpRua(String pRua) {
+        this.pRua = pRua;
+    }
+
+    public int getpNumero() {
+        return pNumero;
+    }
+
+    public void setpNumero(int pNumero) {
+        this.pNumero = pNumero;
+    }
+
+    public String getpComplemento() {
+        return pComplemento;
+    }
+
+    public void setpComplemento(String pComplemento) {
+        this.pComplemento = pComplemento;
+    }
+
+    public String getpEstado() {
+        return pEstado;
+    }
+
+    public void setpEstado(String pEstado) {
+        this.pEstado = pEstado;
+    }
+
+    public String getpCidade() {
+        return pCidade;
+    }
+
+    public void setpCidade(String pCidade) {
+        this.pCidade = pCidade;
+    }
+
+    public String getpCep() {
+        return pCep;
+    }
+
+    public void setpCep(String pCep) {
+        this.pCep = pCep;
+    }
+
+    public String getpEmail() {
+        return pEmail;
+    }
+
+    public void setpEmail(String pEmail) {
+        this.pEmail = pEmail;
+    }
+
+    public String getPsenha() {
+        return psenha;
+    }
+
+    public void setPsenha(String psenha) {
+        this.psenha = psenha;
     }
     
     

@@ -4,6 +4,10 @@
     Author     : Gylles
 --%>
 
+<%@page import="com.pacotesturisticos.model.Endereco"%>
+<%@page import="javax.swing.JOptionPane"%>
+<%@page import="com.pacotesturisticos.model.UsuarioSistema"%>
+<%@page import="com.pacotesturisticos.dao.UsuarioDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -49,6 +53,14 @@
         </section><!--/#title--> 
 
         <form name="form1" action="Script_do_Formulario.php" method="post">
+            
+            <%
+                UsuarioDao dao = new UsuarioDao();
+                UsuarioSistema user = new UsuarioSistema();
+                user = dao.getPessoaById(17);
+                
+                  
+            %>
 
             <!-- DADOS PESSOAIS-->
             <fieldset>
@@ -59,16 +71,16 @@
                             <label for="Cnome">Nome Completo: </label>
                         </td>
                         <td align="left">
-                            
+                            <%= user.getNome() %> 
                         </td>
-
+                           
                     </tr>
                     <tr>
                         <td>
                             <label for="Csexo">Sexo:</label>
                         </td>
                         <td align="left">
-                           
+                            <%= user.getSexo()%> 
                         </td>
 
                     </tr>
@@ -78,7 +90,7 @@
                             <label>Nascimento: </label>
                         </td>
                         <td align="left">
-                            
+                             <%= user.getDt_nasc()%>
                         </td>
                     </tr>
 
@@ -87,7 +99,7 @@
                             <label for="rg">RG: </label>
                         </td>
                         <td align="left">
-                            
+                             <%= user.getRg()%>
                         </td>
                     </tr>
 
@@ -96,7 +108,7 @@
                             <label>CPF:</label>
                         </td>
                         <td align="left">
-                           
+                              <%= user.getCpf()%>
                         </td>
                     </tr>
 
@@ -105,7 +117,7 @@
                             <label>Telefone:</label>
                         </td>
                         <td align="left">
-                            
+                            <%= user.getTelefone()%>
                         </td>
                     </tr>
                 </table>
@@ -123,7 +135,7 @@
                             <label for="bairro">Bairro: </label>
                         </td>
                         <td align="left">
-                            
+                            <%= user.getpBairro() %>
                         </td>
                     </tr>
 
@@ -132,7 +144,7 @@
                             <label for="rua">Rua:</label>
                         </td>
                         <td align="left">
-                            
+                             <%= user.getpRua()%>
                         </td>
                      </tr>    
                      <tr>    
@@ -140,7 +152,7 @@
                             <label for="numero">Número:</label>
                         </td>
                         <td align="left">
-                            
+                            <%= user.getpNumero()%>
                         </td>
                     </tr>
 
@@ -149,7 +161,7 @@
                             <label for="complemento">Complemento:</label>
                         </td>
                         <td align="left">
-                            
+                            <%= user.getpComplemento()%>
                         </td>
                     </tr>
 
@@ -158,12 +170,15 @@
                             <label for="estado">Estado:</label>
                         </td>
                         <td align="left">
-                            
+                             <%= user.getpEstado()%>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <label for="cidade">Cidade: </label>
+                        </td>
+                         <td align="left">
+                             <%= user.getpCidade()%>
                         </td>
                         
                     </tr>
@@ -172,9 +187,8 @@
                             <label for="cep">CEP: </label>
                         </td>
                         <td align="left">
-                            
-                           
-                        </td>
+                              <%= user.getpCep()%>
+                         </td>
                     </tr>
                 </table>
             </fieldset>
@@ -189,36 +203,20 @@
                             <label for="email">E-mail: </label>
                         </td>
                         <td align="left">
-                           
+                            <%= user.getEmail()%>
                         </td>
                     </tr>
-                    <!--
-                    <tr>
-                        <td>
-                            <label for="imagem">Imagem de perfil:</label>
-                        </td>
-                        <td>
-                            <input type="file" name="imagem" >
 
-                        </td>
-                    </tr>
-                    -->
+
                     <tr>
                         <td>
                             <label for="pass">Senha: </label>
                         </td>
                         <td align="left">
-                           
+                            <%= user.getSenha() %>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <label for="passconfirm">Confirme a senha: </label>
-                        </td>
-                        <td align="left">
-                            
-                        </td>
-                    </tr>
+
                 </table>
             </fieldset>
             <br />
