@@ -80,7 +80,7 @@
         <div id="cadastrar-box">
             <div id="cadastrar-box-interno">
                 <div id="cadastrar-box-label">
-                    FAÇA AGORA SEU CADASTRO Guia
+                    FAÇA AGORA SEU CADASTRO
                 </div>
 
                 <div id="cliente">
