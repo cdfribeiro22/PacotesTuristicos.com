@@ -115,7 +115,37 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="cnh">Idioma 1</label>
+                            <label for="idioma1">Idioma 1:</label>
+                        </td>
+                        <td align="left">
+                            <select name="Festado"> 
+                                <option value="Arabe">Árabe</option> 
+                                <option value="Espanhol">Espanhol</option> 
+                                <option value="Frances">Francês</option> 
+                                <option value="Ingles">Inglês</option> 
+                                <option value="Portugues">Português</option> 
+                                <option value="Mandarim">Mandarim</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="idioma2">Idioma 2:</label>
+                        </td>
+                        <td align="left">
+                            <select name="Festado"> 
+                                <option value="Arabe">Árabe</option> 
+                                <option value="Espanhol">Espanhol</option> 
+                                <option value="Frances">Francês</option> 
+                                <option value="Ingles">Inglês</option> 
+                                <option value="Portugues">Português</option> 
+                                <option value="Mandarim">Mandarim</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="idioma3">Idioma 3:</label>
                         </td>
                         <td align="left">
                             <select name="Fidioma1"> 

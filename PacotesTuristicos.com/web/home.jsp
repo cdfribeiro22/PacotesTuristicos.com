@@ -12,7 +12,6 @@
                         <div class="col-sm-12">
                             <div class="carousel-content centered">
                                 <h2 class="animation animated-item-1">Beto Carrero World é um parque temático localizado no litoral norte do estado de Santa Catarina.</h2>
-                                <a class="btn btn-md animation animated-item-3" href="#">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -25,7 +24,6 @@
                             <div class="carousel-content center centered">
                                 <h2 class="boxed animation animated-item-1">O Pão de Açúcar é um complexo de morros localizado no bairro da Urca, na cidade do Rio de Janeiro, no Brasil.</h2>
                                 <p class="boxed animation animated-item-2">É composto pelo morro do Pão de Açúcar, morro da Urca e morro da Babilônia.</p>
-                                <a class="btn btn-md animation animated-item-3" href="#">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -38,7 +36,6 @@
                             <div class="carousel-content centered">
                                 <h2 class="animation animated-item-1">O Centro Histórico de Salvador compreende a área histórica da cidade de Salvador.</h2>
                                 <p class="animation animated-item-2">Composto por ruas e monumentos arquitetônicos da época do Brasil Colônia.</p>
-                                <a class="btn btn-md animation animated-item-3" href="#">Saiba mais</a>
                             </div>
                         </div>
                     </div>

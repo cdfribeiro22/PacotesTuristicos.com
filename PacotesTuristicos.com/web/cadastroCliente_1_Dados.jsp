@@ -46,7 +46,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Cadastre-se</h1>
+                        <h1>Meus Dadnos Cadastrados</h1>
                     </div>
                 </div>
             </div>
@@ -220,8 +220,8 @@
                 </table>
             </fieldset>
             <br />
-            <input type="submit">
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Alterar">
+            <input type="reset" value="Encerrar Conta">
         </form>
 
         <%@include file="rodape.jsp" %>
