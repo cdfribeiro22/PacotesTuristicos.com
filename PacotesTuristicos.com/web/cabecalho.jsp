@@ -27,7 +27,7 @@
                         <li><a href="cadastroGuia.jsp">Guia</a></li>
                         <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
                         <li><a href="pacotes.jsp">Pacotes</a></li>
-                        <li><a href="cadastroCliente_1.jsp">Login</a></li>
+                        <li><a href="login.jsp">Login</a></li>
                         <li><a href="contatos.jsp">Contatos</a></li>
                         <li><a href="cadastroCliente_1_Dados.jsp">Meu Cadastro</a></li>
                     </ul>
