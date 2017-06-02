@@ -6,6 +6,8 @@
 
 
 <!DOCTYPE html>
+
+
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
@@ -27,12 +29,36 @@
                         <li><a href="cadastroGuia.jsp">Guia</a></li>
                         <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
                         <li><a href="pacotes.jsp">Pacotes</a></li>
-                        <li><a href="cadastroCliente_1.jsp">Login</a></li>
                         <li><a href="contatos.jsp">Contatos</a></li>
-                        <li><a href="cadastroCliente_1_Dados.jsp">Meu Cadastro</a></li>
+                        
+                           
+<%
+	// verificando se tem um atributo login na sessao
+	// se tiver vai continuar e mostrar o menu
+	if(session.getAttribute("login") != null) {
+%>
+                         <li><a href="cadastroCliente_1_Dados.jsp">Meus Dados</a></li>
+                         <li>  <% out.print(session.getAttribute("login")); %> </li>
+                         <li><a class="btn btn-danger" href="LoginServlet1?acao=logout">Logout</a></li>
+                         
+ <%
+	// se não existir um login na sessao, 
+	// vai enviar para a página de login novamente
+	} else {
+%>
+                        <li><a href="login.jsp">Login</a></li>
+<%
+}
+%>                    
+                        
                     </ul>
                 </div>
+
+               
+                
             </div>
         </header><!--/header-->
     </body>
+    
+
 </html>

@@ -118,7 +118,8 @@
                             <label for="idioma1">Idioma 1:</label>
                         </td>
                         <td align="left">
-                            <select name="Festado"> 
+                            <select name="Festado">
+                                <option value="Mandarim">-</option>
                                 <option value="Arabe">Árabe</option> 
                                 <option value="Espanhol">Espanhol</option> 
                                 <option value="Frances">Francês</option> 
@@ -133,7 +134,8 @@
                             <label for="idioma2">Idioma 2:</label>
                         </td>
                         <td align="left">
-                            <select name="Festado"> 
+                            <select name="Festado">
+                                <option value="Mandarim">-</option>
                                 <option value="Arabe">Árabe</option> 
                                 <option value="Espanhol">Espanhol</option> 
                                 <option value="Frances">Francês</option> 
@@ -159,38 +161,7 @@
                             </select>
                         </td>
                     </tr>    
-                    <tr> 
-                        <td>
-                            <label for="cnh">Idioma 2</label>
-                        </td>
-                        <td align="left">
-                            <select name="Fidioma2"> 
-                                <option value="Mandarim">-</option>
-                                <option value="Ingles">Inglês</option> 
-                                <option value="Arabe">Árabe</option> 
-                                <option value="Espanhol">Espanhol</option> 
-                                <option value="Frances">Francês</option> 
-                                <option value="Portugues">Português</option> 
-                                <option value="Mandarim">Mandarim</option>
-                            </select>
-                        </td>
-                    </tr>    
-                    <tr>    
-                        <td>
-                            <label for="cnh">Idioma 3</label>
-                        </td>
-                         <td align="left">
-                            <select name="Fidioma3"> 
-                                <option value="Mandarim">-</option>
-                                <option value="Arabe">Árabe</option> 
-                                <option value="Espanhol">Espanhol</option> 
-                                <option value="Frances">Francês</option> 
-                                <option value="Ingles">Inglês</option> 
-                                <option value="Portugues">Português</option> 
-                                <option value="Mandarim">Mandarim</option>
-                            </select>
-                         </td>
-                    </tr>
+                    
                     <tr>
                         <td>
                             <label>Tipo CNH</label>

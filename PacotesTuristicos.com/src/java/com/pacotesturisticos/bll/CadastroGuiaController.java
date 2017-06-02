@@ -86,27 +86,27 @@ public class CadastroGuiaController extends HttpServlet {
             cliente.setEmail(request.getParameter("Femail"));
             cliente.setSenha(request.getParameter("repetir_senha"));
                         
-            JOptionPane.showMessageDialog(null, cliente.getNome() 
-                                        + "\n " + cliente.getCpf()
-                                        + "\n " + cliente.getSexo()
-                                        + "\n " + cliente.getDt_nasc()
-                                        + "\n " + cliente.getRg()
-                                        + "\n " + cliente.getIdioma1()
-                                        + "\n " + cliente.getIdioma2()                    
-                                        + "\n " + cliente.getIdioma3()                    
-                                        + "\n " + cliente.getCnh()
-                                        + "\n " + cliente.getDt_cnh_vencimento()
-                                                + "\n " + casa.getLogradouro()
-                                                + "\n " + casa.getNumero()
-                                                + "\n " + casa.getComplemento()
-                                                + "\n " + casa.getBairro()
-                                                + "\n " + casa.getEstado()
-                                                + "\n " + casa.getCidade()
-                                                + "\n " + casa.getCod_postal()
-                                        + "\n " + cliente.getEmail()
-                                        + "\n " + cliente.getSenha()
-
-            );
+//            JOptionPane.showMessageDialog(null, cliente.getNome() 
+//                                        + "\n " + cliente.getCpf()
+//                                        + "\n " + cliente.getSexo()
+//                                        + "\n " + cliente.getDt_nasc()
+//                                        + "\n " + cliente.getRg()
+//                                        + "\n " + cliente.getIdioma1()
+//                                        + "\n " + cliente.getIdioma2()                    
+//                                        + "\n " + cliente.getIdioma3()                    
+//                                        + "\n " + cliente.getCnh()
+//                                        + "\n " + cliente.getDt_cnh_vencimento()
+//                                                + "\n " + casa.getLogradouro()
+//                                                + "\n " + casa.getNumero()
+//                                                + "\n " + casa.getComplemento()
+//                                                + "\n " + casa.getBairro()
+//                                                + "\n " + casa.getEstado()
+//                                                + "\n " + casa.getCidade()
+//                                                + "\n " + casa.getCod_postal()
+//                                        + "\n " + cliente.getEmail()
+//                                        + "\n " + cliente.getSenha()
+//
+//            );
             
                    
         
