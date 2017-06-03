@@ -9,6 +9,8 @@
 <%@page import="com.pacotesturisticos.model.UsuarioSistema"%>
 <%@page import="com.pacotesturisticos.dao.UsuarioDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <!DOCTYPE html>
 <html>
@@ -66,6 +68,15 @@
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <table cellspacing="10" class="text-center">
+                     <tr>
+                        <td>
+                            <label for="Cnome">Código Cliente: </label>
+                        </td>
+                        <td align="left">
+                            <%= user.getCodigo()%> 
+                        </td>
+                           
+                    </tr>
                     <tr>
                         <td>
                             <label for="Cnome">Nome Completo: </label>
