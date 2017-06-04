@@ -32,7 +32,7 @@
     </head><!--/head-->
 
     <body>
-        
+
         <%@include file="cabecalho.jsp" %>
 
 
@@ -75,6 +75,9 @@
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 758,00</font>
                                         <br><font size=1> 10x de 75,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSul1.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
@@ -89,6 +92,9 @@
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSul2.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
@@ -103,6 +109,9 @@
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSul3.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
@@ -117,6 +126,9 @@
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 948,00</font>
                                         <br><font size=1> 10x de 94,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSul4.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
@@ -131,6 +143,9 @@
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 1.078,00</font>
                                         <br><font size=1> 10x de 107,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSul5.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                             </thead>
