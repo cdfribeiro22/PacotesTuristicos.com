@@ -47,33 +47,13 @@
             </div>
         </section><!--/#title--> 
 
-        <section id="portfolio" class="container">
-            <ul class="portfolio-items col-1">
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
 
-                        <table class="table table-hover" border=1>
-                            <thead>
-                                <tr>
-                                    <th><font size=4> Beto Carrero com Joinville - 4 dias / 2 dias
-                                        com 01 dia de Parque</font>
-                                        <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
-                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
-                                    </th>
-                                    <th><font size=4>Preço por Pessoa</font>
-                                        <br><font size=1> a partir de</font>
-                                        <br><font size=4> R$ 758,00</font>
-                                        <br><font size=1> 10x de 75,80</font>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>    
-                    </div>       
-                </li><!--/.portfolio-item-->
-            </ul>
-        </section><!--/#portfolio-->
+
+        <div>
+
+            <h1>PACOTE Beto Carrero com Joinville - 4 dias / 2 diárias com 01 dia de Parque</h1>
+
+        </div>   
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
