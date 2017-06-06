@@ -6746,4 +6746,3978 @@ button.close {
         display: none !important;
     }
 }
+ /*-- CommonStyles --*/
+
+#packageDetail_CVC, #packageDetail_CVC *, #packageDetail_CVC *:before, #packageDetail_CVC *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#packageDetail_CVC {
+    width: 100%;
+    border: 1px solid #d5d5d5;
+    float: left;
+    padding: 15px;
+    min-height: 250px;
+    position: relative;
+}
+
+#packageDetail_CVC h1 {
+    font-size: 21px;
+    color: #666666;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#chooseAnotherPackage {
+    color: #0c83d9;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+#chooseAnotherPackage:before {
+    content: '';
+    display: inline-block;
+    border-right: 5px solid #0c83d9;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    width: 0;
+    height: 0;
+    margin-right: 6px;
+    position: relative;
+    top: 2px;
+}
+
+#packageDetail_CVC strong.sectionTitle {
+    font: bold 18px Arial, Helvetica;
+    margin: 0 0 15px 0;
+    display: inline-block;
+    clear: left;
+    width: 100%;
+}
+
+#confirmRooms:active {
+    top: 5px !important
+}
+
+.send {
+    background: #5ab112;
+    clear: both;
+    width: auto;
+    height: 30px;
+    font: bold 12px Arial, Helvetica !important;
+    line-height: 30px !important;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    box-shadow: 3px 3px 0 0 #369212;
+    padding: 0 15px;
+}
+
+.send:hover {
+    background: #6cc121;
+}
+
+.send:active {
+    background: #5ab112;
+    box-shadow: 1px 1px 0 0 #369212;
+    left: 1px;
+    top: 1px;
+    position: relative;
+}
+
+/*--PackageDescription --*/
+
+#packageDescription, #packageDate {
+    display: block;
+    width: 456px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #d5d5d5;
+    padding: 15px;
+    float: left;
+    height: 556px;
+    margin: 0 0 20px 0;
+}
+
+#packageDescription > p {
+    line-height: 16px;
+    margin-bottom: 12px;
+    text-align: justify;
+    height: 131px;
+    display: block;
+    font-size: 12px;
+}
+
+#packageDescription > a {
+    margin: 0 10px 18px 0
+}
+
+#packageDescription > div > a {
+    margin: 0 10px 18px 0
+}
+
+/* -- PhotoGallery --*/
+
+#packageGallery {
+    width: 454px;
+    margin: 0 0 0 -15px;
+    clear: left;
+    position: relative;
+}
+
+.thumbsHolder {
+    height: 50px;
+    background: #3b3b3b;
+    border-bottom: 1px solid #000;
+    box-shadow: inset 0px -1px 0 0 rgb(102, 102, 102);
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+
+.thumbsHolder > a {
+    width: 10px;
+    height: 24px;
+    background: url(../media/2641161/sprites.png) -681px -20px;
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    top: 10px;
+}
+
+.thumbsHolder .prevBtn {
+    background-position: -681px -20px;
+    left: 10px
+}
+
+.thumbsHolder .nextBtn {
+    background-position: -698px -20px;
+    right: 10px
+}
+
+.thumbsHolder ul {
+    width: 407px;
+    margin: 0 auto 0 auto;
+    height: 40px;
+    padding-top: 11px;
+    overflow: hidden;
+}
+
+.thumbsHolder .scroller {
+    width: 3000px;
+    height: 28px;
+}
+
+.thumbsHolder li {
+    background: white;
+    width: 33px;
+    height: 28px;
+    float: left;
+    margin: 0 4px 0 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.thumbsHolder li:hover {
+    border: 1px solid #ccc;
+}
+
+.thumbsHolder li.active {
+    border: 1px solid #f8bf00;
+}
+
+.thumbsHolder.noPagination > a {
+    display: none
+}
+
+.thumbsHolder.noPagination > ul {
+    margin-left: 10px
+}
+
+.bigImageContainer {
+    width: 100%;
+    overflow: hidden;
+    background: rgb(240, 240, 240);
+    height: 262px;
+    display: block;
+    position: relative;
+}
+
+.bigImageContainer > a {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bigImageContainer img {
+    max-width: 100%;
+    cursor: pointer;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#packageGallery .bigImageContainer .image-legend {
+    position: absolute;
+    bottom: 26px;
+    right: 27px;
+    height: initial;
+    background: white;
+    background: rgba(255, 255, 255, 0.77);
+    padding: 7px 15px;
+}
+
+.galleryPrev, .galleryNext {
+    position: absolute;
+    top: 159px !important;
+    width: 38px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../media/2286155/bannerbuttons.png);
+    background-position: 9px -43px;
+    border-radius: 5px;
+    border: 1px solid #242424;
+    left: 27px;
+    text-indent: -9999px;
+    background-size: 165%;
+    opacity: 0.5;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.galleryPrev:hover {
+    background-position: 9px -43px;
+}
+
+.galleryNext {
+    right: 16px;
+    left: initial;
+    background-position: -31px -43px;
+}
+
+.galleryNext:hover {
+    background-position: -31px -43px;
+}
+
+.galleryPrev:hover, .galleryNext:hover {
+    opacity: 0.8
+}
+
+/*-- packageDate --*/
+
+#packageDate {
+    margin: 0 0 0 15px;
+    padding: 0;
+    border-top: none;
+    position: relative;
+}
+
+#packageConfig > strong:first-child {
+    color: #387500;
+    font-size: 18px;
+    background: #dbf3bf;
+    border-radius: 5px 5px 0px 0px;
+    line-height: 38px;
+    text-indent: 11px;
+    height: 38px;
+    display: block;
+    border-bottom: 1px solid #b0c992;
+    float: none;
+    margin: 0 0 17px;
+    border-top: 1px solid #b0c992;
+}
+
+#packageConfig label {
+    font: bold 13px Arial;
+    color: #999;
+    float: left;
+    margin: 0 5px 0 10px;
+    padding: 0;
+}
+
+#packageConfig strong {
+    font: bold 13px Arial;
+    color: #666;
+    float: left;
+    margin-right: 10px;
+}
+
+#packageConfig a {
+    position: relative;
+    top: -6px
+}
+
+#packageDate .error {
+    clear: left;
+    width: 434px;
+    height: 300px;
+    background: #FFF1D8;
+    margin: 0 10px;
+    position: absolute;
+    top: 212px;
+    line-height: 289px;
+    border: 1px solid #F5E046;
+    z-index:10;
+    left: 0px;
+}
+
+#packageDate .error center {
+    font: bold 14px Arial;
+    line-height: 19px;
+    color: #948453;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 40px;
+}
+
+.roomsConfig {
+    clear: both;
+    width: 100%;
+    padding: 13px 0 5px;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    float: left;
+    margin: 8px 0 12px 0;
+    height: 49px;
+}
+
+#packageConfig .roomsConfig label {
+    padding-left: 13px;
+    border-left: 1px solid #999;
+    margin-left: 3px;
+    font-size: 13px;
+    position: relative;
+}
+
+#packageConfig .roomsConfig label small {
+    position: absolute;
+    left: 13px;
+    font-size: 9px;
+    width: 65px;
+    font-weight: 100;
+    display: none;
+}
+
+#packageConfig .roomsConfig label:first-child {
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.roomsConfig > a {
+    margin: 0 0 0 3px
+}
+
+.roomsConfig {
+    clear: both;
+    width: 100%;
+    padding: 13px 0 5px;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    float: left;
+    margin: 8px 0 12px 0;
+    height: 49px;
+}
+
+#packageConfig .roomsConfig label {
+    padding-left: 13px;
+    border-left: 1px solid #999;
+    margin-left: 3px;
+    font-size: 13px;
+    position: relative;
+}
+
+    #packageConfig .roomsConfig label small {
+        position: absolute;
+        left: 13px;
+        font-size: 9px;
+        width: 65px;
+        font-weight: 100;
+        display: none;
+    }
+
+    #packageConfig .roomsConfig label:first-child {
+        border: none;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+.roomsConfig > a {
+    margin: 0 0 0 3px;
+}
+
+/* -- RoomsLightbox -- */
+
+.packagePropertiesHolder {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.packagePropertiesHolder:before {
+    content: '';
+     display: inline-block;
+     height: 100%;
+     vertical-align: middle;
+   /* Adjusts for spacing */
+ }
+
+#setPackageProperties {
+    text-align: left;
+    width: 762px;
+    box-sizing: border-box;
+    background: #f8f8f8;
+    border: 3px solid #0c83d9;
+    border-radius: 3px;
+    font: bold 13px Arial, Helvetica;
+    padding: 15px 10px 10px 10px;
+    z-index: 1000;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#setPackageProperties .closeBtn {
+    position: absolute;
+    text-shadow: 0 -1px #717171;
+    font-size: 14px;
+    font-family: Lucida console;
+    right: 15px;
+    top: 16px;
+    width: 23px;
+    height: 23px;
+    font-weight: bold;
+    border-radius: 5px;
+    /* background-color:#f3f3f3; */
+    /* border: 1px solid #C4C4C4; */
+    /* box-shadow:0 1px 1px 0 #ccc; */
+    text-align: center;
+    line-height: 24px;
+    color: #989898;
+    /* background-image: linear-gradient(to bottom, white, #E6E6E6); */
+}
+
+#setPackageProperties #confirmRooms {
+    padding: 10px 15px;
+    float: none;
+    /* margin: 0 18px 17px 0; */
+    top: auto;
+    bottom: auto;
+    margin: 0px auto;
+    font-size: 14px;
+}
+
+.ie8 #setPackageProperties #confirmRooms {
+    bottom: 26px
+}
+
+label[for="inputFromCity"] {
+    text-indent: 15px;
+    line-height: 19px;
+    margin-left: 15px;
+}
+
+select[name="inputFromCity"] {
+    background: white;
+    width: 148px;
+    height: 31px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 0 0 10px;
+    font: bold 15px Arial, Helvetica;
+    color: #666;
+    text-indent: 3px
+}
+
+#setPackageProperties .rooms {
+    width: 731px;
+    display: block;
+    /* border-top:1px dashed #999; */
+    /* margin-top: 15px; */
+    /* padding-top: 15px; */
+    float: left;
+    max-height: 270px;
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+
+#setPackageProperties .rooms:after {
+    content: '.';
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 1px;
+    visibility: hidden;
+}
+
+#setPackageProperties .rooms label, #setPackageProperties .roomsNumb label {
+    float: left;
+    line-height: 21px;
+    margin-right: 4px;
+    margin-left: 0;
+    /* margin-top: 4px; */
+}
+
+#setPackageProperties .rooms label[for="adults"] {
+    /* line-height:30px  */
+}
+
+#setPackageProperties .rooms label small, #setPackageProperties .roomsNumb label small {
+    font: 9px Arial, Helvetica;
+    margin-top: -1px;
+    clear: both;
+    display: block;
+    width: 100px;
+}
+
+#setPackageProperties .rooms .agesHolder {
+    display: block;
+    float: left;
+    width: 219px;
+    margin-left: 15px;
+}
+
+#setPackageProperties .rooms .agesHolder label {
+    text-indent: 0 !important;
+    width: 61px;
+    color: #898989 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+#setPackageProperties .rooms label:first-child, #setPackageProperties .roomsNumb label:first-child {
+    /* text-indent:16px */
+}
+
+#setPackageProperties .rooms select, #setPackageProperties .roomsNumb select {
+    width: 50px;
+    height: 31px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 0px 0 5px;
+    float: left;
+    font-weight: bold !important;
+    color: #898989 !important;
+    text-align: center;
+}
+
+#setPackageProperties .rooms .room select, #setPackageProperties .roomsNumb .room select {
+    width: 59px;
+    margin-right: 5px;
+}
+
+#setPackageProperties .childrensAgeBox {
+    width: 100%;
+    /* height: 48px; */
+    float: left;
+    clear: left;
+}
+
+#setPackageProperties .childrensAgeBox[type="babies"] {
+    /* width: 167px; */
+}
+
+#setPackageProperties .childrensAgeBox p {
+    font: 10px Arial;
+    padding-top: 5px;
+    font-weight: bold;
+    color: #898989 !important;
+}
+
+#setPackageProperties .childrensAgeBox select {
+    width: 60px !important;
+    font: 10px Arial;
+    height: 26px;
+    margin: 3px 5px 0 0px;
+}
+
+#setPackageProperties .childrensAgeBox p + select {
+    margin-left: 0
+}
+
+#setPackageProperties .childrensAgeBox[type="babies"] select {
+    width: 35px;
+}
+
+#setPackageProperties .rooms .room {
+    float: right;
+    /* margin-right: 15px; */
+    margin-bottom: 10px;
+    width: 100%;
+    background: white;
+    border: 1px solid #CDCDCD;
+    /* padding: 10px; */
+    /* border-radius: 3px; */
+}
+
+#setPackageProperties select[name="roomsNumber"] + .room {
+    margin-top: -10px
+}
+
+.room .roomTag {
+    float: left;
+    background: #e3e3e3;
+    /* margin: 1px 15px 0 0; */
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    color: #4C4C4C;
+    /* font:100 11px Arial, Helvetica; */
+    /* text-align:center; */
+    line-height: 30px;
+    font-weight: bold !important;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+/* -- Calendar -- */
+
+#packageCalendar {
+    float: left;
+    width: 100%;
+    min-height: 288px;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+#packageCalendar .ui-datepicker-calendar {
+    margin: 0
+}
+
+#packageCalendar .ui-datepicker-inline,
+#packageCalendar .ui-datepicker-group,
+#packageCalendar .ui-datepicker-group table {
+    width: 430px;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+}
+
+#packageCalendar .ui-datepicker-group table thead {
+    background: #F1F1F1;
+    width: 200px !important;
+    border-right: 1px solid #E9E9E9;
+    border-left: 1px solid #E9E9E9;
+}
+
+#packageCalendar .ui-datepicker-group table thead tr th {
+    line-height: 14px;
+    border: 1px solid #E9E9E9;
+}
+
+#packageCalendar .ui-datepicker-group table thead tr th:first-child {
+    border-left: none
+}
+
+#packageCalendar .ui-datepicker-header {
+    background: #d7d7d7;
+    height: 38px;
+    padding: 0 !important;
+}
+
+#packageCalendar .ui-datepicker .ui-datepicker-title {
+    height: 38px;
+    color: #666;
+    line-height: 38px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#packageCalendar .ui-datepicker td {
+    height: 45px;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    border: 1px solid #E9E9E9;
+    vertical-align: middle;
+}
+
+#packageCalendar .ui-datepicker td > span {
+    border: none !important;
+    height: auto;
+    background: none !important;
+    padding: 0;
+    text-align: center;
+    color: #888;
+}
+
+#packageCalendar td > div:first-child {
+    text-align: center;
+    background: #E7F6FF;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+#packageCalendar td > div:first-child:hover {
+    background: #F7F7F7;
+}
+
+#packageCalendar td > div:first-child .promotional {
+    background: #e5f2d8;
+    width: 100%;
+    height: 100%;
+}
+
+#packageCalendar td > div:first-child .promotional a {
+    color: #666 !important
+}
+
+#packageCalendar td > div:first-child .promotional span {
+    color: #666 !important
+}
+
+#packageCalendar a.ui-state-default {
+    height: 0;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    margin: 0 auto;
+    display: block !important;
+    width: auto !important;
+    text-align: center !important;
+    color: #4AA2E2 !important;
+}
+
+#packageCalendar a.ui-state-default.ui-state-active {
+    border: 2px solid #74B934 !important;
+    position: absolute;
+    height: 104%;
+    top: -1px;
+    line-height: 28px;
+}
+
+#packageCalendar a.ui-state-default + span {
+    top: 25px !important;
+    color: #6FAEDB !important;
+    font-size: 10px !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#packageCalendar .ui-datepicker-buttonpane {
+    display: none
+}
+
+#packageCalendar .package-info {
+    margin-left: 10px;
+    font: bold 10px Arial;
+    color: #999;
+    float: left;
+}
+
+#packageCalendar .legend {
+    margin-right: 11px;
+    font: bold 10px Arial;
+    float: right;
+}
+
+#packageCalendar .legend span {
+    font-size: 10px;
+    color: #999;
+}
+
+#packageDate .legend .color1, #packageDate .legend .color2 {
+    width: 16px;
+    height: 9px;
+    background: #e5f2d8;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+}
+
+#packageDate .package-info {
+    float: left;
+    margin: 0 0 0 15px;
+    font: bold 11px Arial;
+    color: #999
+}
+
+#packageDate .legend {
+    float: right;
+    margin: 0 15px 0 0;
+    font: bold 11px Arial;
+    color: #999
+}
+
+#packageDate .legend strong {
+    color: #666
+}
+
+#packageDate .legend .color2 {
+    background-color: #a2d5f9
+}
+
+#packageDate #calendarPreLoader {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: none;
+    position: absolute;
+    height: 330px;
+    width: 95%;
+    display: block;
+    left: 10px;
+    top: 147px;
+    left: 12px;
+}
+
+#packageDate #calendarPreLoader:before {
+    width: 157px;
+    height: 43px;
+    background: #fff url(../travel/styles_B2C/images/styles/loader.gif) 112px 3px no-repeat;
+    display: block;
+    content: 'Carregando';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -17px 0 0 -75px;
+    font: bold 13px Arial, Helvetica;
+    line-height: 43px;
+    color: #153039;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-indent: 15px
+}
+
+#packageCalendar .ui-datepicker-prev span, #packageCalendar .ui-state-hover, #packageCalendar .ui-datepicker-next span, #packageCalendar .ui-state-hover {
+    background: none;
+    border: none;
+}
+
+#packageCalendar .ui-datepicker .ui-datepicker-prev[onclick], .ui-datepicker .ui-datepicker-next[onclick] {
+    top: 7px
+}
+
+#packageCalendar .ui-datepicker-prev[onclick], #packageCalendar .ui-datepicker-next[onclick] {
+    background: url("../travel/styles_B2C/images/lightbox.png") 0 -55px;
+    width: 24px;
+    left: 4px;
+    height: 24px;
+    cursor: pointer;
+    transition: margin 0.1s;
+    top: 8px;
+}
+
+#packageCalendar .ui-datepicker-next[onclick] {
+    background-position: 0 -107px;
+    right: 4px;
+    left: inherit;
+}
+
+#packageCalendar .ui-datepicker-next {
+    background: url("../travel/styles_B2C/images/proximos.png");
+    cursor: pointer;
+    height: 31px;
+    width: 80px;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+}
+
+#packageCalendar .ui-datepicker-prev {
+    background: url("../travel/styles_B2C/images/anteriores.png");
+    cursor: pointer;
+    height: 31px;
+    width: 80px;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+}
+
+#packageCalendar .ui-datepicker-prev:hover, #packageCalendar .ui-datepicker-next:hover {
+    opacity: 0.8
+}
+
+#packageCalendar .ui-datepicker-prev.ui-state-disabled, #packageCalendar .ui-datepicker-next.ui-state-disabled {
+    background: url("../travel/styles_B2C/images/lightbox.png") 0 -55px;
+    width: 24px;
+    left: 4px;
+    height: 23px;
+    cursor: pointer;
+    transition: margin 0.1s;
+    top: 8px;
+    opacity: .35
+}
+
+#packageCalendar .ui-datepicker-next.ui-state-disabled {
+    background-position: 0 -107px;
+    right: 4px;
+    left: inherit;
+}
+
+/* -- packageResults --*/
+
+label[for="orderResults"] {
+    font: bold 12px Arial;
+    margin-right: 10px;
+    padding: 0
+}
+
+select[name="orderResults"] {
+    width: auto;
+    height: 28px;
+    padding: 5px 0 5px 5px;
+    position: relative;
+    top: -5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+#packagesHolder {
+    float: left;
+    clear: left;
+    display: none;
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+#packageResults {
+    float: left;
+    /* margin-top: -13px; */
+}
+
+#packageResults ul.list > li {
+    margin-top: 20px;
+    float: left;
+    width: 930px;
+}
+
+#packageResults ul.list > li:first-child {
+    margin-top: 0px;
+}
+
+#packageResults select {
+    border: 1px solid #d9d9d9;
+    background-color: #FFF;
+    height: 25px;
+    width: 116px;
+    margin-left: 8px;
+    margin-right: 50px;
+}
+
+#packageResults #totalPackagesLabel {
+    float: right;
+    position: relative;
+    top: -3px;
+}
+
+#packageResults ul.list {
+    float: left;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+#packageResults #showAllpackages {
+    clear: left;
+    float: left;
+    margin: 16px 0 5px 0;
+    font: bold 12px Arial;
+    color: #0C83D9;
+    position: relative;
+}
+
+#packageResults #showAllpackages:hover {
+    text-decoration: underline
+}
+
+#packageResults #showAllpackages:before {
+    content: '';
+    display: block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #0C83D9;
+    position: absolute;
+    right: -16px;
+    top: 5px;
+}
+
+#packageResults div.packageRecommendation {
+    float: left;
+    width: 716px;
+    /* border:solid 1px #d9d9d9; */
+    height: 128px;
+    margin-right: 3px;
+}
+
+#packageResults .packageRecommendation li {
+    float: left;
+    clear: left;
+    width: 100%;
+    /* padding: 5px 5px; */
+    height: 30px;
+    border: none;
+}
+
+#packageResults .packageRecommendation span.going, #packageResults .packageRecommendation span.returning {
+    float: left
+}
+
+#packageResults .packageRecommendation li img {
+    float: left;
+    margin: 5px 0px 0px 60px;
+    width: 30px;
+}
+
+#packageResults .packageRecommendation .travelAirportInfos {
+    /* width: 42%; */
+    font: 10px Arial;
+    float: left;
+    text-align: left;
+    height: 100%;
+    line-height: 22px;
+    padding-top: 5px;
+    padding-left: 20px;
+    /* margin-right: 40px; */
+}
+
+#packageResults .packageRecommendation .travelAirportInfos span.cityName {
+    max-width: 92px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#packageResults .packageRecommendation .travelAirportInfos.destination {
+    background: url("../travel/styles_B2C/images/gray.png") no-repeat -16px -2272px;
+    padding-left: 35px;
+}
+
+#packageResults .packageRecommendation .travelAirportInfos a {
+    color: #0c83d9;
+    text-decoration: underline;
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+#packageResults .packageRecommendation .travelAirportInfos strong.date {
+    clear: both;
+    display: block;
+    /* width: 50px; */
+    float: left;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+#packageResults .packageRecommendation .stopsInfo {
+    width: 64px;
+    float: left;
+    /* height: 100%; */
+    margin-left: 30px;
+    overflow: hidden;
+    font-size: 9px;
+    text-align: center;
+    line-height: 12px;
+    padding-top: 4px;
+    margin-top: 6px;
+}
+
+#packageResults .packageRecommendation .stopsInfo a.flightInfo {
+    color: #0c83d9;
+    font-weight: bold;
+}
+
+#packageResults .packageRecommendation .stopsInfo a.flightInfo:hover {
+    text-decoration: underline
+}
+
+/*-- Results Air Recommendation --*/
+
+#packageResults .packageRecommendation li[flightgrouphash] {
+    background: #e8e8e8;
+}
+
+#packageResults .packageRecommendation li[flightgrouphash] h3 {
+    width: 71px;
+    float: left;
+    height: 32px;
+    background: url(../travel/styles_B2C/images/ida_image.png) -1px -2px no-repeat;
+    text-indent: -9999px;
+}
+
+#packageResults .packageRecommendation li[flightgrouphash] h3.arrival {
+    background: url(../travel/styles_B2C/images/volta_image.png) -1px -2px;
+    width: 91px;
+}
+
+#packageResults .packageRecommendation li[flightgrouphash] span {
+    font: bold 13px Arial;
+    text-transform: uppercase;
+    color: #666;
+    line-height: 23px;
+    left: 5px;
+    position: relative;
+    top: 4px;
+    float: left;
+}
+
+#packageResults .packageRecommendation li[flightgrouphash] span:before {
+    content: '';
+    width: 23px;
+    height: 22px;
+    display: block;
+    float: left;
+    background: url(../travel/styles_B2C/images/sprite_infos.png) no-repeat -7px -122px;
+    margin-right: 8px;
+}
+
+#packageResults .packageRecommendation li[flightgrouphash] span.arrival:before {
+    background-position: -7px -180px;
+}
+
+#packageResults .packageRecommendation li:nth-child(even) {
+    background: #FAFAFA;
+}
+
+/*-- HotelResults --*/
+
+#contentResults .figure img:hover {
+    opacity: 0.8
+}
+
+#contentResults .hotelName {
+    float: left;
+    margin: 0 10px 5px 0;
+    display: block;
+    width: auto;
+    position: relative;
+    top: 4px;
+}
+
+#contentResults .rate {
+    height: 17px;
+}
+
+#contentResults p.city {
+    width: 198px;
+    font-size: 10px;
+    color: #999;
+    line-height: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 3px 0 7px 0;
+    clear: left;
+}
+
+#contentResults .room_type {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 3px;
+    height: inherit;
+}
+
+#contentResults .packageMenu {
+    float: left;
+    width: 198px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    display: none;
+}
+
+#contentResults .packageMenu a {
+    float: left;
+    width: 21px;
+    height: 22px;
+    text-indent: -9999px;
+    margin-right: 6px;
+    border-radius: 4px;
+    background: #0C83D9 url(../travel/styles_B2C/images/sprite-modal1.png) -7px -42px;
+}
+
+#contentResults .packageMenu a#bookingPeriod {
+    background-position: -7px -108px
+}
+
+#contentResults .packageMenu a#hotelInMap {
+    background-position: -7px -223px
+}
+
+#contentResults .packageMenu a:hover {
+    background-color: #3E9EE4;
+}
+
+#contentResults .room_type strong, #contentResults .dateInfos strong {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+#contentResults .hotelMenu {
+    clear: left;
+    float: left;
+    width: 100%;
+    background: #F7F7F7;
+    height: 41px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px dotted #ccc;
+    text-align: center;
+}
+
+#contentResults .hotelMenu a {
+    float: left;
+    border-left: 1px solid #bbb;
+    width: 33.3%;
+    font: bold 10px Arial;
+    height: 20px;
+    display: block;
+    margin-top: 9px;
+    padding-top: 4px;
+    color: #0C83D9;
+}
+
+#contentResults .hasOneRoom a {
+    float: left;
+    border-left: 1px solid #bbb;
+    width: 50%;
+    font: bold 10px Arial;
+    height: 20px;
+    display: block;
+    margin-top: 9px;
+    padding-top: 4px;
+    color: #0C83D9;
+}
+
+#contentResults .hotelMenu li:first-child a {
+    border: none;
+}
+
+#contentResults .hotelMenu li a:hover {
+    text-decoration: underline
+}
+
+.search_results.hotel .results .services .hotel .room_type li.one_room {
+    width: 100% !important;
+    max-width: 100% !important;
+    }
+
+#packageResults .price.totalPackage {
+    float: left;
+    width: 199px;
+    height: 230px;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    background: #F5F5F5;
+    margin: -8px -8px 0px 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#packageResults .price.totalPackage > strong {
+    width: 100%;
+    height: 35px;
+    background: #edc23c;
+    display: block;
+    line-height: 33px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+}
+
+#packageResults .price.totalPackage > strong:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 24px;
+    background: url('../travel/styles_B2C/images/tag-melhorpreco.png') no-repeat;
+    position: absolute;
+    top: 6px;
+    right: 18px;
+}
+
+#packageResults .price.totalPackage p.total_title {
+    font: bold 12px Arial;
+    text-transform: uppercase;
+    margin: 40px 0 6px 0;
+}
+
+#packageResults .price.totalPackage .value_results {
+    margin: 7px 0px 6px 0;
+    font: bold 20px Arial;
+    color: #0C83D9
+}
+
+#packageResults .price.totalPackage .value_results .parcel {
+    color: #666;
+    font-size: 23px !important;
+}
+
+#packageResults .price.totalPackage .cash {
+    margin: 5px 0 15px 0;
+    display: block;
+    color: #666;
+    font-size: 12px !important;
+}
+
+    #packageResults .price.totalPackage .cash .cash_text {
+        font-size: 12px !important;
+    }
+
+.packagedBlock {
+    display: block;
+    padding-top: 5px;
+    color: #0C83D9;
+    font-weight: 900;
+    font-size: 10px;
+    margin: 10px 0 0 0;
+    text-transform: initial;
+}
+
+.packagedBlock:hover {
+    text-decoration: underline
+}
+
+/* -- BestPriceConfigs --*/
+
+#packageResults .best_price div.packageRecommendation, #packageResults .best_price .hotelContent, #packageResults .best_price .price.totalPackage, #packageResults .best_price .hotelListName li {
+    border: solid 1px #f5e08e;
+}
+
+#packageResults .best_price .packageRecommendation li[flightgrouphash], #packageResults .best_price .price.totalPackage, #packageResults .best_price .hotelListName li {
+    background: #fbf1c4;
+}
+
+#packageResults .best_price .packageRecommendation li:nth-child(even), #packageResults .best_price .hotelContent .hotelMenu {
+    background: #FFFDF4;
+}
+
+#packageResults .best_price .packageRecommendation li[flightgrouphash] span {
+    color: #6d5508;
+}
+
+#packageResults .best_price .packageRecommendation li[flightgrouphash] span:before {
+    background-position: -7px -12px;
+}
+
+#packageResults .best_price .packageRecommendation li[flightgrouphash] span.arrival:before {
+    background-position: -7px -69px;
+}
+
+#packageResults .best_price .price.totalPackage p.total_title {
+    margin: 20px 0 6px 0;
+}
+
+#packagesHolder + #packageErrorMessages center {
+    width: 100%;
+    clear: left;
+    height: 40px;
+    background: #FFFCE5;
+    border: 1px solid #E7D4B7;
+    border-radius: 3px;
+    float: left;
+    margin-top: -5px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #B38245;
+}
+
+.hotelDescription {
+    float: left;
+    width: 564px;
+    line-height: 17px;
+    position: relative;
+    top: -4px;
+    max-height: 52px;
+    overflow: hidden;
+}
+
+.wiFi_Service {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    bottom: -28px;
+    width: 98%;
+}
+
+.wiFi_Service:before {
+    content: '';
+    display: block;
+    background: url(../travel/Styles_B2C/images/gray-2.png) -28px -1350px no-repeat;
+    width: 15px;
+    height: 17px;
+    float: left;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    position: relative;
+    top: -4px;
+    left: -1px;
+}
+
+/* -- Type Air -- */
+
+#packageResults li[packageType="air"] .hotelContent {
+    width: 367px;
+    height: 163px;
+}
+
+#packageResults li[packageType="air"] .hotelContent:before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 36px;
+    position: absolute;
+    background: url(../travel/styles_B2C/images/sprites_unif.png) no-repeat -4px -256px;
+    z-index: 7;
+    left: -21px;
+    top: 50%;
+    margin-top: -18px;
+}
+
+#packageResults li[packageType="air"].best_price .hotelContent:before {
+    background: url(../travel/styles_B2C/images/sprites_unif.png) no-repeat -6px -146px;
+}
+
+#packageResults li[packageType="air"] .hotelContent .figure {
+    margin: 0 5px 0 0
+}
+
+#packageResults li[packageType="air"] .hotelContent .hotelName {
+    margin: 0 0px 5px 0;
+    width: 198px;
+}
+
+#packageResults li[packageType="air"] .hotelContent .room_type {
+    width: auto;
+    margin: 0;
+}
+
+#packageResults li[packageType="air"] .hotelContent .room_type li, #contentResults .dateInfos li {
+    width: 198px;
+}
+
+#packageResults li[packageType="air"] .price.totalPackage {
+    height: 136px;
+}
+
+#packageResults li[packageType="air"] .price.totalPackage p.total_title {
+    margin: 12px 0 -1px 0;
+    font-size: 14px;
+    text-transform: none;
+    color: #444444;
+}
+
+#packageResults li[packageType="air"].best_price .price.totalPackage p.total_title {
+    margin-top: 9px;
+    font-size: 11px;
+}
+
+#packageResults li[packageType="air"] .price.totalPackage .cash {
+    margin: 0px 0 6px 0;
+}
+
+#packageResults li[packageType="air"] .packagedBlock {
+    margin: 5px 0 0 0
+}
+
+/* -- Circuitos --*/
+
+#packageResults ul.list > li[packageType="multi_excerpt"] {
+    margin-top: 40px;
+}
+
+#packageResults ul.list > li[packageType="multi_excerpt"]:first-child {
+    margin-top: 20px;
+}
+
+.hotelListName {
+    position: absolute;
+    top: -16px;
+    left: 0px;
+    width: 101.3%;
+    overflow: hidden;
+}
+
+.hotelListName .scroller {
+    width: 2000px;
+    float: left;
+}
+
+.hotelListName li {
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #d9d9d9;
+    display: inline;
+    padding: 2px 5px;
+    background: #efefef;
+    font: bold 10px Arial;
+    text-transform: uppercase;
+    color: #888;
+    cursor: pointer;
+    margin-right: 3px;
+    float: left;
+    border-bottom: none;
+    max-width: 140px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hotelListName li:hover {
+    background: white !important;
+    color: #0c83d9
+}
+
+.hotelListName li.active {
+    background: white !important;
+    color: #0c83d9;
+    border-bottom: 1px solid white !important;
+    position: relative;
+    z-index: 5;
+}
+
+.hotelListBox > li {
+    float: left;
+    display: none
+}
+
+.hotelListBox > li:first-child {
+    display: block
+}
+
+#packageResults li[packageType="multi_excerpt"] .hotelMenu a {
+    width: 50%
+}
+
+/* -- LightboxPhotos --*/
+
+#lightboxOverlay.lightbox, #lightboxOverlay.lightbox * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#lightboxOverlay.lightbox h1 {
+    margin: 5px 0 10px;
+}
+
+#lightboxOverlay h1 strong.title {
+    color: #8F8F8F !important;
+    font-size: 16px;
+    margin-right: 6px;
+    float: left;
+    display: block;
+}
+
+.photos .rate {
+    float: right;
+    display: block;
+    clear: none;
+}
+
+#lightboxOverlay .thumbsHolder {
+    height: 50px;
+    background: #3b3b3b;
+    border-bottom: 1px solid #000;
+    box-shadow: inset 0px -1px 0 0 rgb(73, 73, 73);
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    clear: both;
+}
+
+#lightboxOverlay .thumbsHolder ul {
+    width: 760px;
+    margin: 0 auto 0 auto;
+    height: 40px;
+    padding-top: 11px;
+    overflow: hidden;
+}
+
+#lightboxOverlay .thumbsHolder .scroller {
+    width: 3000px;
+    height: 28px;
+}
+
+#lightboxOverlay .thumbsHolder li {
+    background: white;
+    width: 33px;
+    height: 28px;
+    float: left;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#lightboxOverlay .thumbsHolder.noPagination > a {
+    display: none
+}
+
+#lightboxOverlay .thumbsHolder.noPagination > ul {
+    margin-left: 10px
+}
+
+#lightboxOverlay .thumbsHolder li:hover {
+    border: 1px solid #ccc;
+}
+
+#lightboxOverlay .thumbsHolder li.active {
+    border: 1px solid #f8bf00;
+}
+
+#lightboxOverlay .thumbsHolder li img {
+    width: 100%;
+    height: 100%;
+}
+
+#lightboxOverlay .thumbsHolder > a {
+    width: 10px;
+    height: 24px;
+    background: url(../media/2641161/sprites.png) -681px -20px;
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    top: 10px;
+}
+
+#lightboxOverlay .thumbsHolder .prevBtn {
+    background-position: -681px -20px;
+    left: 10px
+}
+
+#lightboxOverlay .thumbsHolder .nextBtn {
+    background-position: -698px -20px;
+    right: 10px
+}
+
+#lightboxOverlay .bigImageContainer {
+    width: 100%;
+    overflow: hidden;
+    background: rgb(240, 240, 240);
+    height: 465px;
+    display: block;
+    position: relative;
+}
+
+#lightboxOverlay .bigImageContainer > a {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#lightboxOverlay .bigImageContainer img {
+    max-width: 100%;
+    cursor: pointer;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#lightboxOverlay .galleryPrev, #lightboxOverlay .galleryNext {
+    background: rgb(0, 0, 0) url(../media/2286155/bannerbuttons.png);
+    background: rgba(0, 0, 0, 0.25) url(../media/2286155/bannerbuttons.png) no-repeat;
+    display: block;
+    width: 49px;
+    height: 60px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 5px;
+    top: 295px !important;
+}
+
+#lightboxOverlay .galleryPrev {
+    background-position: 13px 3px;
+    left: 20px;
+}
+
+#lightboxOverlay .galleryNext {
+    background-position: -40px 3px;
+    right: 20px;
+}
+
+#lightboxOverlay .galleryPrev:hover {
+    background-position: 13px -61px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+#lightboxOverlay .galleryNext:hover {
+    background-position: -40px -60px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+#lightboxOverlay .clickToOpenLightbox {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 8px 28px 8px 8px;
+    font-size: 9px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    background: url(../travel/Styles_B2C/images/zoom_in.png) 120px 5px no-repeat rgba(0, 0, 0, 0.7);
+}
+
+#lightboxOverlay {
+    position: fixed;
+    top: 0;
+    left: 0 !important;
+    z-index: 2000;
+    width: 858px;
+    height: 586px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#lightboxOverlay .galleryPrev, #lightboxOverlay .galleryNext {
+    top: 307px;
+}
+
+#lightboxOverlay .clickToOpenLightbox {
+    display: none
+}
+
+#lightboxOverlay .keyboardNavigate {
+    display: block;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: url(../travel/styles_B2C/images/keyboardNavigate.png);
+    width: 91px;
+    height: 40px;
+    text-indent: -9999px;
+}
+
+#lightboxOverlay .no-rgba .galleryPrev {
+    background: url(../travel/styles_B2C/images/galleryPrev.png) -4px -4px no-repeat;
+    display: block;
+    width: 52px;
+    height: 61px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#lightboxOverlay .no-rgba .galleryNext {
+    background: url(../travel/styles_B2C/images/galleryNext.png) -4px -4px no-repeat;
+    display: block;
+    width: 52px;
+    height: 61px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#lightboxOverlay .no-rgba .galleryPrev:hover {
+    background: url(../travel/styles_B2C/images/galleryPrev.png) -4px -4px no-repeat;
+    display: block;
+    width: 52px;
+    height: 61px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#lightboxOverlay .no-rgba .galleryNext:hover {
+    background: url(../travel/styles_B2C/images/galleryNext.png) -4px -4px no-repeat;
+    display: block;
+    width: 52px;
+    height: 61px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* -- LightboxDetails -- */
+
+#lightboxOverlay.hotelDetail {
+    padding: 20px;
+    height: inherit;
+    padding-bottom: 10px;
+    bottom: initial;
+    top: 40px;
+}
+
+#lightboxOverlay .hotelName {
+    float: left;
+    position: relative;
+    top: 0px;
+    margin: 0 10px 5px 0;
+    font: bold 16px Arial;
+    color: #0c83d9
+}
+
+#lightboxOverlay .description {
+    clear: left;
+    font: 13px Arial;
+    line-height: 20px;
+    margin: 0 0 20px 0
+}
+
+#lightboxOverlay .title {
+    margin: 0 10px 10px 0;
+    font: bold 16px Arial;
+    color: #0c83d9;
+    display: block;
+}
+
+#lightboxOverlay .category {
+    margin: 0 0 10px 10px;
+    display: block;
+    clear: both;
+    float: none;
+    font-size: 13px;
+}
+
+.boardsBox li {
+    margin: 0 0 10px 20px;
+    display: inline;
+    line-height: 20px;
+    float: left;
+}
+
+.boardsBox {
+    border: 1px solid #DFDFDF;
+    float: left;
+    background: white;
+    padding: 10px 10px 10px 5px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+    #lightboxOverlay .title {
+        margin: 0 10px 10px 0;
+        font: bold 16px Arial;
+        color: #0c83d9;
+        display: block;
+    }
+
+    #lightboxOverlay .category {
+        margin: 0 0 10px 10px;
+        display: block;
+        clear: both;
+        float: none;
+        font-size: 13px;
+    }
+
+.boardsBox li {
+    margin: 0 0 10px 20px;
+    display: inline;
+    line-height: 20px;
+    float: left;
+}
+
+.boardsBox {
+    border: 1px solid #DFDFDF;
+    float: left;
+    background: white;
+    padding: 10px 10px 10px 5px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* -- LightboxBookingPeriod*/
+
+#lightboxOverlay.bookingPeriod {
+    width: 620px;
+    top: 200px;
+}
+
+/* -- LightboxRooms -- */
+
+.otherRooms {
+    width: 600px;
+    height: auto;
+    z-index: 9999;
+    position: fixed;
+    top: 30%;
+    border: 1px solid #2d5c95;
+    background: white;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    padding-bottom: 4px;
+    vertical-align: middle;
+}
+
+.otherRooms h2 {
+    background: #0c83d9;
+    width: 598px;
+    margin: -10px 0 10px -10px;
+    height: 40px;
+    border-bottom: 1px solid #2d5c95;
+    box-shadow: inset 0 0 1px #ffffff;
+    font: bold 13px Arial;
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-indent: 13px;
+}
+
+.otherRooms .close {
+    background: url("../travel/styles_B2C/images/lightbox.png") 0 0;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    text-indent: -9999px;
+    width: 24px;
+    height: 26px;
+}
+
+#packageResults .otherRooms .list {
+    margin: 0
+}
+
+#packageResults .otherRooms .current, #packageResults .customradio {
+    background: url("../travel/styles_B2C/images/radio_selected.png") no-repeat 1px 13px;
+    padding-left: 24px;
+    float: none !important;
+    height: 47px;
+    font-size: 11px;
+    width: 100%;
+    margin: 0 0 10px 0 !important;
+}
+
+.otherRooms .current .picked, .customradio .picked {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eeb818;
+    background: #fff5e5;
+    cursor: pointer;
+}
+
+.current .picked .ico, .customradio .ico {
+    background: #FFF5E5 url("../travel/styles_B2C/images/yellow.png") no-repeat -19px -3250px;
+    width: 23px;
+    display: block;
+    float: left;
+    height: 19px;
+    text-indent: -9999px;
+    margin: 0 11px 0 0;
+    position: relative;
+    top: 4px;
+}
+
+.current p strong, .customradio p strong {
+    display: block;
+    margin: -1px 0 4px 0;
+    font-size: 12px;
+}
+
+.customradio .ico {
+    background: url("../travel/styles_B2C/images/gray.png") no-repeat -19px -3250px;
+}
+
+.customradio .picked {
+    border: none;
+    background: #F7F7F7;
+    border: 1px solid #E4E4E4;
+}
+
+#packageResults .customradio {
+    background: url(../travel/styles_B2C/images/radio.png) no-repeat 1px 12px;
+}
+
+.otherRooms .customradio .picked:hover {
+    border: 1px solid #bbb
+}
+
+/* -- DalsinB -- */
+
+#modal_preview * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#modal_preview {
+width: 850px;
+height: auto;
+padding: 10px;
+border-radius: 4px;
+border: solid 3px #0c83d9;
+font-family: Arial;
+position: fixed;
+top: 10%;
+left: 17%;
+z-index: 99999;
+background: #ffffff;
+}
+
+#modal-opacity {
+    position: fixed;
+}
+
+    #modal_preview h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        color: #0183d9;
+    }
+
+    #modal_preview .bt-close {
+        background: url(../travel/Styles_B2C/images/lightbox-3.png) no-repeat 0 0;
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    #modal_preview .circuits {
+        width: 100%;
+        height: 450px;
+        margin-top: 15px;
+        overflow: auto;
+    }
+
+        #modal_preview .circuits table {
+            width: 100%;
+            background: #f5f5f5;
+            font-size: 12px;
+            color: #666666;
+        }
+
+            #modal_preview .circuits table tr .title {
+                background: #959696;
+                color: #fff;
+                font-weight: bold;
+                font-size: 16px;
+                padding: 10px 9px;
+                border-top: none;
+            }
+
+            #modal_preview .circuits table tr .subtitle {
+                background: #eaeaea;
+                color: #666666;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 8px 9px;
+                border-top: none;
+            }
+
+            #modal_preview .circuits table tr td {
+                padding: 1px 8px;
+                border-top: dotted 1px #d9d9d9;
+            }
+
+            #modal_preview .circuits table tr td span {
+                position: relative;
+                top: 5px;
+            }
+
+            #modal_preview .circuits table tr td .rate {
+                background: url(../../img.cvc.com.br/images/rate.html) no-repeat 10px 7px;
+                width: 144px;
+                height: 25px;
+                float: left;
+            }
+
+/*modal detalhes*/
+
+    #modal_preview .details * {
+        -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+#modal_preview .details {
+        width: 100%;
+        margin-top: 15px;
+        border-top: solid 1px #d9d9d9;
+}
+
+    #modal_preview .details table {
+        border-bottom: dashed 1px #d9d9d9;
+        width: 99%;
+        margin-left: 5px;
+    }
+
+        #modal_preview .details table tr td {
+            padding: 6px 0px;
+            font-size: 11px;
+            color: #666;
+        }
+
+        #modal_preview .details table .index td span {
+            border: solid 1px #d9d9d9;
+            padding: 3px 6px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            margin-left: 5px !important;
+        }
+
+        #modal_preview .details table .legend td span {
+            border: solid 1px #d9d9d9;
+            padding: 3px 6px;
+            margin-left: 5px !important;
+            background: #f5f5f5;
+        }
+
+        #modal_preview .details table .index td .second {
+            background: #0c83d9;
+            color: #fff;
+            font-weight: bold;
+            border: solid 1px #0c83d9;
+        }
+
+        #modal_preview .details table .index td .third {
+            background: #e1effa;
+            color: #0c83d9;
+            font-weight: bold;
+        }
+
+        #modal_preview .details table .legend td .first {
+            background: #fff !important;
+        }
+
+        #modal_preview .details table .legend td .second {
+            background: #ffd800;
+            color: #896a02;
+            font-weight: bold;
+            border: solid 1px #e4c101;
+        }
+
+        #modal_preview .details table .legend td .third {
+            background: #e1effa;
+            color: #0c83d9;
+            font-weight: bold;
+        }
+
+     #modal_preview .details table:first-child {
+        margin-top: 15px;
+    }
+
+    #modal_preview .details table tr .title {
+        color: #555;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #modal_preview .details .overflow_table {
+        width: 100%;
+        height: 280px;
+        overflow: auto;
+        margin: 20px 0 0 0;
+    }
+
+    #modal_preview .details .table_detail {
+        width: 100%;
+        border: solid 1px #e0e0e0;
+        overflow: auto;
+        margin-left: 0px;
+        margin-top: 0px !important;
+    }
+
+        #modal_preview .details .table_detail tr th {
+            background: #0c83d9;
+            color: #fff;
+            font-weight: bold;
+            font-size: 11px;
+            border-left: solid 1px #1a6daa;
+            border-right: solid 1px #3b88c0;
+            padding: 5px;
+        }
+
+        #modal_preview .details .table_detail .index th {
+            border-top: solid 1px #1a6daa;
+        }
+
+        #modal_preview .details .table_detail tr td {
+            border-top: dashed 1px #d9d9d9;
+            border-left: solid 1px #d9d9d9;
+            border-right: solid 1px #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+            #modal_preview .details .table_detail tr td:first-child {
+                border-left: none;
+            }
+
+        #modal_preview .details .table_detail tr .highlightGrp {
+            background: #ffd800;
+            border-right: none;
+            font-weight: bold;
+        }
+
+        #modal_preview .details .table_detail tr .highlightEsp {
+            background: #273c71;
+            border-right: none;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #modal_preview .details .table_detail .itens td {
+            border-top: none;
+        }
+
+        #modal_preview .details .table_detail .tr_highlight {
+            background: #f2f2f2;
+        }
+
+.packageCVCBoxServices {
+    clear: both;
+    padding: 3px 10px;
+}
+
+.packageCVCBoxServices li {
+    margin: 5px 0;
+    font: 10px Arial;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#servicesContainer {
+    overflow: hidden;
+}
+
+#packageTypeHeader .packageTypeItem.packageTypeItem[type="services"] {
+    display: none
+}
+
+#packageTypeHeader {
+    width: 101%
+}
+
+/*Botoes de navegaï¿½ï¿½o Diretiva B*/
+
+#packageTypeHeader .packageTypeItem {
+    background-color: #e7e7e7;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    color: #0C83D9;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 38px;
+    line-height: 34px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 460px;
+    margin-right: 7px;
+}
+
+#packageTypeHeader .active:after {
+    bottom: -8px;
+    content: '';
+    border-top: 7px solid #0C83D9;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    display: inline-block;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 0;
+}
+
+#packageTypeHeader .active {
+    background-color: #f5f5f5;
+    border: 2px solid #0C83D9;
+}
+
+li.services.air {
+border-radius: 5px;
+border: solid 1px #cccccc;
+padding: 8px;
+padding-bottom: 0px;
+box-shadow: 0 0 1px 2px #eeeeee;
+}
+
+a.flightInfo {
+float: right;
+margin: 11px 13px 0;
+color: #0c83d9;
+font-size: 9px;
+}
+
+#packageResults .packageRecommendation .travelInfos {
+    /* width: 42%; */
+    font: 10px Arial;
+    float: left;
+    text-align: left;
+    height: 100%;
+    line-height: 22px;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-right: 40px;
+}
+
+ #packageResults .packageRecommendation .travelInfos strong {
+    margin-right: 8px;
+ }
+
+#packageResults .packageRecommendation .travelInfos.space {
+    margin-left: 30px;
+}
+
+#totalPackagesLabel {
+    margin-bottom: 4px;
+}
+
+.flightPanel {
+    margin: 0px 0px 10px 0px;
+}
+
+/*modal detalhes*/
+
+#flightInfo, #flightInfo * {
+    /* box-sizing: border-box; */
+    -moz-box-sizing: border-box;
+}
+
+.modal.info.results {
+    color: #666666;
+    text-transform: none;
+    width: 736px !important;
+    margin: auto !important;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border: none;
+    height: 330px;
+    z-index: 2000 !important;
+}
+
+    .modal.info.results .head {
+        background: #f8f9fb;
+        border: solid 1px #bdbdbd;
+        border-bottom: none !important;
+        height: 34px;
+        padding-left: 10px;
+    }
+
+        .modal.info.results .head strong {
+            margin: 0px 0px 0px 0px !important;
+            text-decoration: none;
+            float: left;
+            height: 10px;
+            padding: 10px 0px;
+            margin-top: 0px !important;
+            color: #0C83D9;
+            text-transform: none !important;
+            font-size: 14px;
+        }
+
+            .modal.info.results .head strong span {
+                float: left;
+                color: #0c83d9;
+                font-weight: normal;
+                font-size: 12px;
+                padding-top: 3px;
+                padding-left: 3px;
+            }
+
+modal.info.results .modal-flight-full .modal-flight-full {
+    width: 100% !important;
+    height: 318px;
+    background: none;
+}
+
+.modal.info.results .modal-flight-full p {
+    padding: 4px 0 !important;
+    text-transform: none !important;
+    font-size: 14px;
+}
+
+.modal.info.results .modal-flight-full span.scale {
+    text-align: left;
+    width: 165px;
+    float: right;
+    line-height: 15px;
+    margin: 0 0 10px;
+}
+
+.modal.info.results .anac-flight-full {
+    float: left;
+    border-top: 1px solid #d9d9d9;
+    width: 93%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+    .modal.info.results .anac-flight-full .title {
+        margin-left: 0px;
+        margin: 0px 0px 0px 0px;
+        height: 28px;
+        padding: 16px 0px 0px 0px;
+        font-size: 14px;
+        color: #666666;
+        width: 89%;
+        text-decoration: none !important;
+        text-transform: none !important;
+    }
+
+.modal.info.results .wait_voo {
+    /* width: 676px; */
+    background: #dddddd;
+    border: solid 1px #bdbdbd;
+    height: 38px;
+}
+
+    .modal.info.results .wait_voo p {
+        font-size: 12px;
+        margin: 0;
+        color: #666;
+        font-weight: bold;
+        background: url(../travel/styles_B2C/images/img_voo.png) no-repeat 156px 2px;
+        text-align: center !important;
+        height: 38px !important;
+        padding-left: 20px !important;
+        padding-top: 13px !important;
+    }
+
+.modal.info.results .anac-flight-full .info strong {
+    margin-bottom: 10px !important;
+    text-align: left;
+}
+
+    .modal.info.results .anac-flight-full .info strong span {
+        margin-right: 10px;
+        text-decoration: none !important;
+        text-transform: none !important;
+    }
+
+.modal.info.results .anac-flight-full .info .modal-flight-full {
+    width: 97% !important;
+    margin-left: 10px;
+}
+
+.modal.info.results .anac-flight-full .contentAnac span {
+    width: 100% !important;
+    float: left;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+    .modal.info.results .anac-flight-full .contentAnac span a {
+        color: #0c88d8;
+        font-weight: bold;
+    }
+
+.modal.info.results .anac-flight-full .modal-flight-full {
+    width: 380px !important;
+    float: none !important;
+}
+
+.modal.info.results.double {
+    width: 735px !important;
+    display: block !important;
+    height: 500px;
+}
+
+    .modal.info.results.double ul.scrollFlightPanel {
+        height: 207px;
+        max-height: 308px;
+    }
+
+    .modal.info.results.double .modal-flight-full {
+        width: 722px !important;
+        height: 488px !important;
+    }
+
+        .modal.info.results.double .modal-flight-full .navigate {
+            width: 100%;
+            font-weight: bold;
+            color: #0c88d8;
+        }
+
+            .modal.info.results.double .modal-flight-full .navigate .next {
+                float: right;
+                margin: 10px 10px 0px 0px;
+            }
+
+            .modal.info.results.double .modal-flight-full .navigate .back {
+                float: left;
+                margin: 10px 0px 0px 10px;
+            }
+
+.modal.info.results.fullFlightInfo {
+    display: block;
+    background: #EDEDED;
+    border: 6px solid #0c83d9;
+    overflow-y: auto;
+    padding: 14px 15px 15px 15px;
+    height: 533px;
+    overflow-x: hidden;
+}
+
+    .modal.info.results.fullFlightInfo h1 {
+        margin: 0 0 5px 0;
+        padding: 0;
+    }
+
+    .modal.info.results.fullFlightInfo .modal-flight-full {
+        height: auto;
+    }
+
+        .modal.info.results.fullFlightInfo .modal-flight-full .detail {
+            padding: 0 0 10px 0 !important;
+            background: none;
+        }
+
+        .modal.info.results.fullFlightInfo .modal-flight-full .contentCarrousel {
+            width: 100%;
+            margin: 0;
+            height: auto;
+            margin-bottom: 14px;
+        }
+
+    .modal.info.results.fullFlightInfo .anac-flight-full {
+        margin: 0;
+        padding-top: 10px;
+    }
+
+        .modal.info.results.fullFlightInfo .anac-flight-full * {
+            line-height: 15px;
+        }
+
+.modal.info .modal-flight-full h1 {
+    font-weight: bold;
+    color: #0c83d9 !important;
+    font-size: 18px !important;
+    text-align: left;
+    width: 100%;
+    padding-top: 11px;
+    padding-left: 13px;
+    padding-bottom: 8px;
+}
+
+html .modal .modal-flight-full {
+    background-color: #EDEDED;
+}
+
+.modal.info.results {
+    color: #666666;
+    text-transform: none;
+    width: 736px !important;
+    margin: auto !important;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border: none;
+    height: 330px;
+    z-index: 2000 !important;
+}
+
+.closeModalAereo {
+    background: url("../travel/styles_B2C/images/lightbox.png") 0 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 25px;
+    width: 26px;
+}
+
+.modal.info.results .tableInfo .tableFlightInfoFull {
+    background-color: #FFFFFF !important;
+    width: 662px;
+    border: 1px solid #BDBDBD;
+    border-top: none !important;
+    margin-left: 0px;
+    padding: 0px 0px 10px 10px;
+}
+
+.modal.info.results.fullFlightInfo .modal-flight-full .contentCarrousel {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    margin-bottom: 14px;
+}
+
+.modal.info .modal-flight-full p span.city {
+    color: #666;
+}
+
+.modal.info .modal-flight-full .detail {
+    color: #999999;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+}
+
+.modal.info .modal-flight-full .going {
+    float: left;
+    text-align: left;
+    font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #ABABAB;
+    margin-left: 1px;
+    margin-top: -3px;
+}
+
+.modal.info .modal-flight-full strong {
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.headerLine {
+    border-bottom: solid 1px #F0F0F0 !important;
+    margin: 32px 0px 0px -10px;
+}
+
+.going span {
+    color: #0C83D9;
+}
+
+.modal.info.results .anac-flight-full .title {
+    margin-left: 0px;
+    margin: 0px 0px 0px 0px;
+    height: 28px;
+    padding: 16px 0px 0px 0px;
+    font-size: 14px;
+    color: #666666;
+    width: 89%;
+    text-decoration: none !important;
+    text-transform: none !important;
+}
+
+.modal.info.results .anac-flight-full {
+    border-top: 1px dashed #8e8e8e;
+    float: left;
+    margin-left: 15px;
+    width: 654px;
+}
+
+.cia_aerea {
+    margin-top: -7px;
+    margin-left: 5px;
+}
+
+/*modal detalhes*/
+
+/*Modal Pag Aereo*/
+
+/*MODAL INFO*/
+
+.modal.info {
+  width: 220px !important;
+}
+
+.modal.info .tab {
+  /*background: url("/travel/styles_B2C/images/aba_modal.png") -6px -58px;*/
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  margin: 0 0 0 130px;
+}
+
+.modal.info .tab.top {
+  background: url("../travel/styles_B2C/images/aba_modal.png") -6px 2px;
+  top: -10px;
+}
+
+.modal.info .tab.left {
+  background: url("../travel/styles_B2C/images/aba_modal.png") -6px -29px;
+  left: -16px;
+  margin: 0;
+  top: 10px;
+}
+
+.modal.info .tab.right {
+  background: url("../travel/styles_B2C/images/aba_modal.png") -6px -99px;
+  left: auto;
+  margin: 0;
+  right: -7px;
+  top: 10px;
+}
+
+.modal.info .content {
+  width: 200px !important;
+  background-color: #EDEDED;
+}
+
+.modal.info .content h1 {
+  font-weight: bold;
+  color: #0c83d9 !important;
+  font-size: 18px !important;
+  /* margin: 0 !important; */
+  text-align: left;
+  width: 100%;
+  /* margin-top: 1px; */
+  padding-top: 11px;
+  padding-left: 13px;
+  padding-bottom: 8px;
+}
+
+.modal.info .content h2 {
+  color: #0c83d9;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.modal.info .content .detail {
+  /* font-weight: bold; */
+  color: #999999;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
+}
+
+.modal.info .content strong {
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+  margin-top: 10px;
+  text-align: left;
+  font-family: Arial;
+}
+
+.modal.info .content p {
+  font-size: 11px;
+  width: 100% !important;
+  float: left;
+  margin: 0 !important;
+  text-align: left !important;
+  height: auto !important;
+  padding: 2px 0 !important;
+  border: none !important;
+}
+
+.modal.info .content p img {
+  margin: -6px 0;
+}
+
+.modal.info .content p span {
+  text-align: right;
+  margin-right: 0px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.modal.info.results .content p {
+  padding: 4px 4px 4px 13px !important;
+  text-transform: none !important;
+  font-size: 14px;
+}
+
+        .modal.info.results .wait_voo p {
+            font-size: 12px;
+            margin: 0;
+            color: #666;
+            font-weight: bold;
+            background: url(../travel/styles_B2C/images/img_voo.png) no-repeat 156px 2px;
+            text-align: center !important;
+            height: 38px !important;
+            padding-left: 20px !important;
+            padding-top: 13px !important;
+}
+
+.modal.info .content p span.city {
+    color: #666
+}
+
+.modal.info .content p .blue {
+  font-weight: bold;
+  text-transform: uppercase;
+  float: none;
+  color: #0c83d9;
+}
+
+.modal.info .content .example {
+  color: #b0b5b8;
+  margin-top: 10px !important;
+}
+
+.modal.info .content .name {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.modal.info .content .second {
+  margin-top: 10px !important;
+}
+
+.modal.info.results {
+  width: 660px !important;
+  right: -148px;
+  top: -240px;
+  margin: 0 20px !important;
+}
+
+.modal.info.results .content span.scale {
+  text-align: left;
+  width: 165px;
+  float: right;
+  line-height: 15px;
+  margin: 0 0 10px;
+}
+
+.modal.info.results .content p {
+  /* padding: 4px 4px 4px 13px !important; */
+  /* text-transform: none !important; */
+  /* font-size: 14px; */
+}
+
+.modal.info.results {
+  color: #666666;
+  text-transform: none;
+  width: 736px !important;
+  margin: auto !important;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  border: none;
+  height: 330px;
+  z-index: 2000 !important;
+}
+
+    .modal.info.results .head {
+        background: #f8f9fb;
+        border: solid 1px #bdbdbd;
+        border-bottom: none !important;
+        height: 35px;
+        padding-left: 10px;
+}
+
+.modal.info.results .head strong {
+  margin: 0px 0px 0px 0px !important;
+  text-decoration: none;
+  float: left;
+  height: 10px;
+  padding: 10px 0px;
+  margin-top: 0px !important;
+  color: #0C83D9;
+  text-transform: none !important;
+  font-size: 14px;
+}
+
+    .modal.info.results .head strong span {
+        float: left;
+        color: #0c83d9;
+        font-weight: normal;
+        font-size: 12px;
+        padding-top: 3px;
+        padding-left: 3px;
+}
+
+   .modal.info.results .head strong .cia_aerea {
+        margin-top: -5px;
+        padding-top: 0px !important;
+        padding-left: 8px;
+}
+
+.modal.info.results .content {
+  width: 100% !important;
+  height: 318px;
+}
+
+.modal.info.results .tableInfo .tableFlightInfo {
+   background-color: #FFFFFF !important;
+   /* border-collapse: collapse; */
+   width: 100%;
+   border: 1px solid #BDBDBD;
+   border-top: none !important;
+   margin-left: 0px;
+   padding: 0px 0px 10px 10px;
+}
+
+.modal.info.results .anac {
+    float: left;
+    margin-left: 15px;
+    width: 654px;
+}
+
+.modal.info.results .anac .info strong {
+    text-align: left;
+    text-decoration: none !important;
+    text-transform: none;
+}
+
+.modal.info.results .anac .info strong span {
+    font-size: 12px;
+    margin-right: 5px;
+    text-decoration: none !important;
+    text-transform: none !important;
+}
+
+.modal .anac .info .content {
+    margin-left: 10px;
+    width: 97% !important;
+}
+
+.anac .headerContentPanel {
+    margin-left: 10px;
+}
+
+.content .contentCarrousel {
+    overflow: hidden;
+    width: 676px;
+    height: 140px;
+    margin-left: 15px;
+    /* border: solid 1px #BDBDBD; */
+}
+
+.double .content .contentCarrousel {
+    overflow: hidden;
+    height: 318px;
+}
+
+.results #list2 .services ul .scrollFlightPanel {
+    max-height: 210px;
+    overflow: hidden;
+    width: 9999px !important;
+    background-color: #F5F5F5;
+}
+
+.modal.info.results .tableInfo .tableFlightInfo .return span, .modal.info.results .tableInfo .tableFlightInfo .going span {
+    color: #0C83D9;
+}
+
+.modal.info .content .going {
+  float: left;
+  text-align: left;
+  /* font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif; */
+  font-family: Arial;
+  font-size: 12px;
+  color: #ABABAB;
+  margin-left: -1px;
+  margin-top: 1px;
+  font-weight: bold;
+}
+
+.scrollFlightPanel .FlightInterval {
+    /* padding: 5px; */
+    padding-left: 0px !important;
+    background: none;
+    margin: 0px 0 10px 0;
+}
+
+.headerLine {
+    border-bottom: solid 1px #F0F0F0 !important;
+    /* margin: 32px 0px 0px -10px; */
+}
+
+.modal.info.results .anac .info strong ul li {
+    padding-top: 5px;
+}
+
+.modal.info.results.fullFlightInfo h1 {
+    margin: 0 0 20px 0;
+    padding: 0
+}
+
+.modal.info.results.fullFlightInfo .content {
+    height: auto;
+    padding: 0;
+}
+
+.modal.info.results.fullFlightInfo .content .detail {
+    padding: 0 0 10px 0 !important;
+}
+
+.modal.info.results.fullFlightInfo .content .contentCarrousel {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    margin-bottom: 14px;
+}
+
+.modal.info.results.fullFlightInfo .anac {
+    margin: 0;
+    padding-top: 10px
+}
+
+.modal.info.results.fullFlightInfo .anac * {
+    line-height: 15px
+}
+
+.modal.info.results .informations, .modal.info.results .info p {
+padding: 4px !important;
+line-height: 18px;
+margin-left: -4px !important;
+float: left;
+text-transform: none;
+}
+
+.modal.info.results .informations, .modal.info.results .info p {
+padding: 4px !important;
+line-height: 18px;
+margin-left: -4px !important;
+float: left;
+text-transform: none;
+}
+
+.modal.info.results .informations {
+margin-top: 5px !important;
+}
+
+.modal.info.results .anac .title {
+  margin-left: 0px;
+  margin: 0px 0px 0px 0px;
+  height: 28px;
+  padding: 16px 0px 0px 0px;
+  font-size: 14px;
+  color: #666666;
+  width: 89%;
+  text-decoration: none !important;
+  text-transform: none !important;
+}
+
+.modal.info.results .anac .info strong ul li {
+    padding-top: 5px;
+}
+
+/*#estimateBox { margin: 0 0 0 -24px !important;}
+*/
+
+/*o cÃ³digo acima quebra o layout do estimate box, jogando-o para a esquerda da tela*/
+
+.header.value_price2.filterHeader {
+margin-top: -5px !important;
+padding: 5px;
+margin-bottom: 4px;
+padding-top: 3px;
+padding-left: 10px !important;
+}
+
+.header.filterHeader span {
+color: #666 !important;
+}
+
+.search_results.hotel .list .services {
+    width: 100% !important;
+}
+
+.loaderPrices .confirm-hotel {
+    top: 52px !important;
+    left: 730px !important;
+}
+
+#hotelIdentity[packagetype="multi_excerpt"] {
+    margin: 12px 0 0 0;
+    background: none;
+    border: none !important;
+    box-shadow: none !important;
+    height: auto !important;
+}
+
+#hotelIdentity[packagetype="multi_excerpt"] .content {
+    border-radius: 0 0 0 0;
+}
+
+#hotelIdentity[packagetype="multi_excerpt"] #hotelIdentity {
+    margin: 0 0 0 0 !important
+}
+
+.roomsNumb select#departure_location {
+    width: 150px !important;
+    /* margin-right: 30px !important; */
+}
+
+#setPackageProperties .roomsNumb {
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+div#setPackageProperties .roomsNumb .saida {
+    display: block;
+    float: left;
+    padding: 0px 20px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+div#setPackageProperties .roomsNumb .quartos {
+    border-left: #cccccc 1px solid;
+    display: block;
+    float: left;
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+.roomsNumb label {
+    /* margin-top: 5px !important; */
+    margin: 5px 0px 0px 0px !important;
+    text-align: left !important;
+    text-indent: 0px !important;
+}
+
+#setPackageProperties .roomsNumb label {
+    color: #898989 !important;
+    font-size: 14px !important;
+}
+
+.room .roomContent {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0px 5px 10px 5px;
+}
+
+#setPackageProperties .buttonPlace {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.roomsOverflow {
+    overflow-y: auto;
+}
+
+.tableInfo {
+    width: 100%;
+}
+
+#packageErrorMessages {
+  background: url(../travel/styles_B2C/images/icon-alert.png) no-repeat 16px 15px #fffbde !important;
+  width: 100%;
+  padding: 15px;
+  border: solid 1px #ebcb00;
+  height: 88px;
+  clear: both;
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
+  vertical-align: middle;
+    text-align: center;
+}
+
+#packageErrorMessages:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+    vertical-align: middle;
+    /* Adjusts for spacing */
+}
+
+#packageErrorMessages center {
+    font: bold 13px Arial;
+    color: #b78f16 !important;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 37px;
+}
+
+.search_results.hotel .results .services .hotel p.description {
+        font-size: 12px;
+        float: left;
+        line-height: 16px;
+        width: 100%;
+}
+
+#btNovaData {
+    background: #FFc834;
+    color: #644b01;
+    font-size: 10px;
+    padding: 8px 11px;
+    border-radius: 5px;
+    box-shadow: 3px 3px #DEA915;
+    font-weight: bold;
+}
+
+#btNovaData:hover {
+    background-color: #FFD84e;
+}
+
+#btNovaData:active {
+    background: #0083d8;
+    box-shadow: 1px 1px 0 0 #D1AE15;
+    bottom: 13px !important;
+    color: #644b01;
+    text-decoration: none;
+  background-color: #FFD84e;
+}
+
+.modalInfo {
+    font-size: 9px !important;
+    padding: 11px !important;
+}
+
+    .modalInfo::before {
+        margin-top: -20px;
+    }
+
+.messageImportant {
+    width: 100%;
+    float: left;
+    background: url("../travel/styles_B2C/images/notification.jpg") #edf4fa -1px -2px no-repeat;
+    border: solid 1px #cbe6f7;
+    border-radius: 5px;
+    padding: 8px 8px 8px 57px;
+    margin: -4px 0px 15px 0px;
+    }
+
+.messageImportant p {
+    color: #14416b;
+    font-size: 11px;
+    line-height: 14px;
+    font-family: Arial;
+}
+
+    .messageImportant p strong {
+        text-transform: uppercase;
+        color: #14416b;
+    }
+
+    .filterHeader .label {
+    float: left;
+        padding: 9px 0px 0px 0px;
+}
+
+/*-- Modal Unavailable Flights - BEGIN --*/
+
+.packagesHolder {
+    float: left;
+    clear: left;
+    display: none;
+}
+
+.packageResults {
+    float: left;
+    overflow-y: auto;
+    max-height: 550px/* margin-top: -13px; */
+}
+
+.packageResults ul.list > li {
+    margin-top: 20px;
+    float: left;
+    width: 930px;
+}
+
+.packageResults ul.list > li:first-child {
+    margin-top: 0px;
+}
+
+.packageResults select {
+    border: 1px solid #d9d9d9;
+    background-color: #FFF;
+    height: 25px;
+    width: 116px;
+    margin-left: 8px;
+    margin-right: 50px;
+}
+
+.packageResults #totalPackagesLabel {
+    float: right;
+    position: relative;
+    top: -3px;
+}
+
+.packageResults ul.list {
+    float: left;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+.packageResults #showAllpackages {
+    clear: left;
+    float: left;
+    margin: 16px 0 5px 0;
+    font: bold 12px Arial;
+    color: #0C83D9;
+    position: relative;
+}
+
+.packageResults #showAllpackages:hover {
+    text-decoration: underline
+}
+
+.packageResults #showAllpackages:before {
+    content: '';
+    display: block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #0C83D9;
+    position: absolute;
+    right: -16px;
+    top: 5px;
+}
+
+.packageResults div.packageRecommendation {
+    float: left;
+    width: 716px;
+    /* border:solid 1px #d9d9d9; */
+    height: 128px;
+    margin-right: 3px;
+}
+
+.packageResults .packageRecommendation li {
+    float: left;
+    clear: left;
+    width: 100%;
+    /* padding: 5px 5px; */
+    height: 30px;
+    border: none;
+}
+
+.packageResults .packageRecommendation span.going, .packageResults .packageRecommendation span.returning {
+    float: left
+}
+
+.packageResults .packageRecommendation li img {
+    float: left;
+    margin: 5px 0px 0px 60px;
+    width: 30px;
+}
+
+.packageResults .packageRecommendation .travelAirportInfos {
+    /* width: 42%; */
+    font: 10px Arial;
+    float: left;
+    text-align: left;
+    height: 100%;
+    line-height: 22px;
+    padding-top: 5px;
+    padding-left: 20px;
+    /* margin-right: 40px; */
+}
+
+.packageResults .packageRecommendation .travelAirportInfos span.cityName {
+    max-width: 92px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.packageResults .packageRecommendation .travelAirportInfos.destination {
+    background: url("../travel/styles_B2C/images/gray.png") no-repeat -16px -2272px;
+    padding-left: 35px;
+}
+
+.packageResults .packageRecommendation .travelAirportInfos a {
+    color: #0c83d9;
+    text-decoration: underline;
+    margin-left: 3px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+
+.packageResults .packageRecommendation .travelAirportInfos strong.date {
+    clear: both;
+    display: block;
+    /* width: 50px; */
+    float: left;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.packageResults .packageRecommendation .stopsInfo {
+    width: 64px;
+    float: left;
+    /* height: 100%; */
+    margin-left: 30px;
+    overflow: hidden;
+    font-size: 9px;
+    text-align: center;
+    line-height: 12px;
+    padding-top: 4px;
+    margin-top: 6px;
+}
+
+.packageResults .packageRecommendation .stopsInfo a.flightInfo {
+    color: #0c83d9;
+    font-weight: bold;
+}
+
+.packageResults .packageRecommendation .stopsInfo a.flightInfo:hover {
+    text-decoration: underline
+}
+
+.packageResults .packageRecommendation li[flightgrouphash] {
+  background: #e8e8e8;
+  position: relative;
+}
+
+.packageResults .packageRecommendation li[flightgrouphash] h3 {
+    width: 71px;
+    float: left;
+    height: 32px;
+    background: url(../travel/styles_B2C/images/ida_image.png) -1px -2px no-repeat;
+    text-indent: -9999px;
+}
+
+.packageResults .packageRecommendation li[flightgrouphash] h3.arrival {
+    background: url(../travel/styles_B2C/images/volta_image.png) -1px -2px;
+    width: 91px;
+}
+
+.packageResults .packageRecommendation li[flightgrouphash] span {
+    font: bold 13px Arial;
+    text-transform: uppercase;
+    color: #666;
+    line-height: 23px;
+    left: 5px;
+    position: relative;
+    top: 4px;
+    float: left;
+}
+
+.packageResults .packageRecommendation li[flightgrouphash] span:before {
+    content: '';
+    width: 23px;
+    height: 22px;
+    display: block;
+    float: left;
+    background: url(../travel/styles_B2C/images/sprite_infos.png) no-repeat -7px -122px;
+    margin-right: 8px;
+}
+
+.packageResults .packageRecommendation li[flightgrouphash] span.arrival:before {
+    background-position: -7px -180px;
+}
+
+.packageResults .packageRecommendation li:nth-child(even) {
+    background: #FAFAFA;
+}
+
+.packageResults .price.totalPackage {
+    float: left;
+    width: 199px;
+    height: 230px;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    background: #F5F5F5;
+    margin: -8px -8px 0px 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.packageResults .price.totalPackage > strong {
+    width: 100%;
+    height: 35px;
+    background: #edc23c;
+    display: block;
+    line-height: 33px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.packageResults .price.totalPackage > strong:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 24px;
+    background: url('../travel/styles_B2C/images/tag-melhorpreco.png') no-repeat;
+    position: absolute;
+    top: 6px;
+    right: 18px;
+}
+
+.packageResults .price.totalPackage p.total_title {
+    font: bold 12px Arial;
+    text-transform: uppercase;
+    margin: 40px 0 6px 0;
+}
+
+.packageResults .price.totalPackage .value_results {
+    margin: 7px 0px 6px 0;
+    font: bold 20px Arial;
+    color: #0C83D9
+}
+
+.packageResults .price.totalPackage .value_results .parcel {
+    color: #666;
+    font-size: 26px !important;
+}
+
+.packageResults .price.totalPackage .cash {
+    margin: 5px 0 15px 0;
+    display: block;
+    color: #666;
+    font-size: 12px !important;
+}
+
+.packageResults .price.totalPackage .cash .cash_text {
+    font-size: 12px !important;
+}
+
+.packageResults .best_price div.packageRecommendation, .packageResults .best_price .hotelContent, .packageResults .best_price .price.totalPackage, .packageResults .best_price .hotelListName li {
+    border: solid 1px #f5e08e;
+}
+
+.packageResults .best_price .packageRecommendation li[flightgrouphash], .packageResults .best_price .price.totalPackage, .packageResults .best_price .hotelListName li {
+    background: #fbf1c4;
+}
+
+.packageResults .best_price .packageRecommendation li:nth-child(even), .packageResults .best_price .hotelContent .hotelMenu {
+    background: #FFFDF4;
+}
+
+.packageResults .best_price .packageRecommendation li[flightgrouphash] span {
+    color: #6d5508;
+}
+
+.packageResults .best_price .packageRecommendation li[flightgrouphash] span:before {
+    background-position: -7px -12px;
+}
+
+.packageResults .best_price .packageRecommendation li[flightgrouphash] span.arrival:before {
+    background-position: -7px -69px;
+}
+
+.packageResults .best_price .price.totalPackage p.total_title {
+    margin: 20px 0 6px 0;
+}
+
+.packageResults li[packageType="air"] .hotelContent {
+    width: 367px;
+    height: 163px;
+}
+
+.packageResults li[packageType="air"] .hotelContent:before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 36px;
+    position: absolute;
+    background: url(../travel/styles_B2C/images/sprites_unif.png) no-repeat -4px -256px;
+    z-index: 7;
+    left: -21px;
+    top: 50%;
+    margin-top: -18px;
+}
+
+.packageResults li[packageType="air"].best_price .hotelContent:before {
+    background: url(../travel/styles_B2C/images/sprites_unif.png) no-repeat -6px -146px;
+}
+
+.packageResults li[packageType="air"] .hotelContent .figure {
+    margin: 0 5px 0 0
+}
+
+.packageResults li[packageType="air"] .hotelContent .hotelName {
+    margin: 0 0px 5px 0;
+    width: 198px;
+}
+
+.packageResults li[packageType="air"] .hotelContent .room_type {
+    width: auto;
+    margin: 0;
+}
+
+.packageResults li[packageType="air"] .hotelContent .room_type li, #contentResults .dateInfos li {
+    width: 198px;
+}
+
+.packageResults li[packageType="air"] .price.totalPackage {
+    height: 136px;
+}
+
+.packageResults li[packageType="air"] .price.totalPackage p.total_title {
+    margin: 12px 0 -1px 0;
+    font-size: 14px;
+    text-transform: none;
+    color: #444444;
+}
+
+.packageResults li[packageType="air"].best_price .price.totalPackage p.total_title {
+    margin-top: 9px;
+    font-size: 11px;
+}
+
+.packageResults li[packageType="air"] .price.totalPackage .cash {
+    margin: 0px 0 6px 0;
+}
+
+.packageResults li[packageType="air"] .packagedBlock {
+    margin: 5px 0 0 0
+}
+
+.packageResults ul.list > li[packageType="multi_excerpt"] {
+    margin-top: 40px;
+}
+
+.packageResults ul.list > li[packageType="multi_excerpt"]:first-child {
+    margin-top: 20px;
+}
+
+.packageResults li[packageType="multi_excerpt"] .hotelMenu a {
+    width: 50%
+}
+
+.packageResults .otherRooms .list {
+    margin: 0
+}
+
+.packageResults .otherRooms .current, .packageResults .customradio {
+    background: url("../travel/styles_B2C/images/radio_selected.png") no-repeat 1px 13px;
+    padding-left: 24px;
+    float: none !important;
+    height: 47px;
+    font-size: 11px;
+    width: 100%;
+    margin: 0 0 10px 0 !important;
+}
+
+.packageResults .customradio {
+    background: url(../travel/styles_B2C/images/radio.png) no-repeat 1px 12px;
+}
+
+.packageResults .packageRecommendation .travelInfos {
+    font: 10px Arial;
+    float: left;
+    text-align: left;
+    height: 100%;
+    line-height: 22px;
+    padding-top: 5px;
+    padding-left: 20px;
+    margin-right: 40px;
+}
+
+.packageResults .packageRecommendation .travelInfos strong {
+    margin-right: 8px;
+}
+
+.packageResults .packageRecommendation .travelInfos.space {
+    margin-left: 30px;
+}
+
+/*-- Modal Unavailable Flights - END   --*/
+
+/*#packageCalendar .ui-state-hover,
+#packageCalendar .ui-autocomplete li a:hover {
+  background: transparent url('/travel/styles_B2C/images/lightbox.png') no-repeat !important;
+  border: 0 !important;
+  opacity: 0.8;
+}
+*/
+
+#packageCalendar .ui-icon-circle-triangle-w {
+  background-position: 0 -55px !important;
+}
+
+#packageCalendar .ui-icon-circle-triangle-e {
+  background-position: 0 -107px !important;
+}
+
+/*#packageCalendar .ui-datepicker-next[title="PrÃ³ximo"] {
+  background: url("/travel/styles_B2C/images/proximos.png");
+}
+*/
+
+/*#packageCalendar .ui-state-hover,
+#packageCalendar .ui-autocomplete li a:hover {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+}
+*/
+
+#unavailableFlightsCalendar .ui-datepicker {
+  display: block;
+  margin: 0 auto;
+  width: 360px;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-header {
+  background: #d7d7d7;
+  padding: 0;
+  /*height: 38px;*/
+}
+
+#unavailableFlightsCalendar .ui-datepicker-title {
+  color: #666;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 38px;
+}
+
+#unavailableFlightsCalendar .ui-widget-header .ui-icon {
+  background: none;
+}
+
+#unavailableFlightsCalendar .ui-state-hover {
+    border: 0 !important;
+  cursor: pointer;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-prev, #unavailableFlightsCalendar .ui-datepicker-next {
+/*   background-image: url('../travel/styles_B2C/images/lightbox.png'); */
+  background-postion: no-repeat;
+  border: 0;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-prev, #unavailableFlightsCalendar .ui-datepicker-prev.ui-state-hover {
+  background-image: url('../travel/styles_B2C/images/lightbox.png') !important;
+  background-color: transparent !important;
+  background-position-y: -56px !important;
+  top: 8px;
+  left: 5px;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-next, #unavailableFlightsCalendar .ui-datepicker-next.ui-state-hover {
+  background-image: url('../travel/styles_B2C/images/lightbox.png') !important;
+  background-color: transparent !important;
+  background-position-y: -108px !important;
+  right: 5px;
+  top: 8px;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-calendar {
+  background-color: #fff;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-calendar thead {
+  border-left: 1px solid #E9E9E9;
+  border-right: 1px solid #E9E9E9;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-calendar tbody {
+  border-collpase: collpase;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-calendar td {
+  border: 1px solid #E9E9E9;
+  height: 30px;
+  vertical-align: middle;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-calendar .ui-state-default {
+  border: 1px solid transparent;
+  color: #666;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-calendar .ui-state-default.ui-state-hover {
+  border: 1px solid #f8c632 !important;
+  line-height: 30px;
+}
+
+#unavailableFlightsCalendar .ui-state-highlight, #unavailableFlightsCalendar .ui-widget-content .ui-state-highlight, #unavailableFlightsCalendar .ui-widget-header .ui-state-highlight {
+  background: #e5f2d8 !important;
+  border: 1px solid #74B934 !important;
+  color: #666;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-calendar .ui-state-highlight.ui-state-hover {
+    background-color: #fef8e6 !important;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-current {
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+
+#unavailableFlightsCalendar .ui-datepicker-current.ui-state-hover {
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+}
+
+#unavailableFlightsCalendar .ui-state-active {
+  background: #c1e8f9;
+  border: 1px solid #0184dc !important;
+}
+
+#liUnavailableFlights {
+  clear: both;
+  text-align: right;
+}
+
+#liUnavailableFlights > a {
+    margin: 10px;
+}
+
+.packageCVCLoader {
+  width: 100%;
+  height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+    z-index: 999;
+}
+
+.packageCVCLoader:before {
+  width: 157px;
+  height: 43px;
+  background: #fff url(../travel/styles_B2C/images/styles/loader.gif) 112px 3px no-repeat;
+  display: block;
+  content: 'Carregando';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -17px 0 0 -75px;
+  font: bold 13px Arial, Helvetica;
+  line-height: 43px;
+  color: #153039;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-indent: 15px;
+}
+
+/* -- Modal de Voos IndisponÃ­veis [INICIO] -- */
+
+#ulUnavailableFlightGroups .moreDetailsPlaceHolder {
+  display: inline-block;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  /* padding-right: 10px; */
+}
+
+#ulUnavailableFlightGroups .moreDetailsPlaceHolder > a {
+  color: #0c83d9;
+  font-size: 10px;
+  line-height: 30px;
+}
+
+.show-blocked-details {
+    clear: both;
+    text-decoration: underline;
+    color: #0C83D9;
+    line-height: 30px;
+}
+
+#modal-content {
+    top: 14%;
+}
+
+#hotelIdentity .hotel {
+    width: 100% !important;
+}
+
+.remake-search-package-cvc {
+    width: 100%;
+    background: #F5F5F5;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #E0E0E0;
+}
+
+.remake-search-package-cvc {
+    clear: both;
+}
+
+.remake-search-package-cvc,
+.remake-search-package-cvc * {
+    transition: all 0.2s ease;
+}
+
+.show-remake-search-button {
+    padding: 15px;
+}
+
+.show-remake-search-button::after {
+    border: inset 5px;
+    content: '';
+    display: inline-block;
+    height: 0;
+    margin-left: 5px;
+    position: relative;
+    width: 0;
+}
+
+.show-remake-search-button.open::before {
+    content: "Refazer busca com novos destinos ou datas";
+    display: inline-block;
+}
+
+.show-remake-search-button.open::after {
+    border-color: #0492f1 transparent transparent transparent;
+    border-top-style: solid;
+    top: 3px;
+}
+
+.show-remake-search-button.close::before {
+    content: "Fechar refazer busca";
+    display: inline-block;
+}
+
+.show-remake-search-button.close::after {
+    border-color: transparent transparent #0492f1 transparent;
+    border-bottom-style: solid;
+    top: -1px;
+}
+
+#package-cvc-search-engine {
+    padding: 20px;
+    position: relative;
+    cursor: default;
+}
+
+#package-cvc-search-engine * {
+    box-sizing: border-box;
+}
+
+#package-cvc-search-engine #searchPackageCVC {
+    margin-right: 5px;
+}
+
+#package-cvc-search-engine input[type="checkbox"], 
+#package-cvc-search-engine input[type="radio"] {
+    margin-right: 5px;
+}
+
+.ui-menu .ui-menu-item a {
+    border: 1px solid #fff;
+    height: auto !important;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
