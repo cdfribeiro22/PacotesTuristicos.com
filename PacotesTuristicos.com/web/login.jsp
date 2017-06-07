@@ -108,7 +108,6 @@
 
                 <div id="botoescadastrar">
                     <a href="cadastroCliente_1.jsp"><button id="botaocadastrar">Cadastrar</button></a>
-
                 </div>
             </div>
         </div>

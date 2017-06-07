@@ -20,6 +20,8 @@
         <link href="css/prettyPhoto.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+        <script src="js/scriptCadastro.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
         <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
@@ -57,60 +59,25 @@
 
                     <p><strong>Sobre o destino: </strong>Já sabe seu destino nas próximas férias? Que tal o Parque Beto Carrero World? O maior parque de diversão da América Latina e o primeiro multitemático, em seus mais de 10 milhões de metros quadrados, oferece atrações para todos os gostos. Os brinquedos agradam tanto a criançada como os adultos, que irão se divertir nas áreas temáticas do complexo. Prepare-se para viver grandes emoções na FireWhipe, uma gigantesca montanha-russa com cinco loopings!</p>
                     <div id="allServicesDiv">
-                        <a href="javascript:;" id="EverydayScript" class="blueBtn" title="Roteiro dia a dia" trigger="click" modal="EveryDayScript">Roteiro dia a dia</a>
-                        <a href="javascript:;" id="AllServicesIncluded" class="blueBtn" title="Serviços Inclusos" trigger="click" modal="EveryDayScript">Serviços Inclusos</a>
+                        <button onclick="window.open('http://www.code3000.blogspot.pt/',
+                                        'Code 3000', 'toolbar=no,location=no,status=no,menubar=no,\n\
+                                        scrollbars=no,resizable=no,width=500,height=500')
+                                        ;">Roteiro dia a dia</button>
+
+
+                        <button onclick="window.open('http://www.code3000.blogspot.pt/',
+                                        'Code 3000', 'toolbar=no,location=no,status=no,menubar=no,\n\
+                                        scrollbars=no,resizable=no,width=500,height=500')
+                                        ;">Serviços Inclusos</button>
                     </div>
-                    <div id="packageGallery">
 
-                        <div class="thumbsHolder">
-                            <ul>
-                                <div class="scroller" style="width: 592px;">
-
-                                    <li class="imageItem  active">
-                                        <a href="javascript:;">
-                                            <img src="images/pacotesSul1/1.jpg" width="33" height="28">
-                                        </a>
-                                    </li>
-
-                                    <li class="imageItem ">
-                                        <a href="javascript:;">
-                                            <img src="images/pacotesSul1/2.jpg" width="33" height="28">
-                                        </a>
-                                    </li>
-
-                                    <li class="imageItem ">
-                                        <a href="javascript:;">
-                                            <img src="images/pacotesSul1/3.jpg" width="33" height="28">
-                                    </li>
-
-                                    <li class="imageItem ">
-                                        <a href="javascript:;">
-                                            <img src="images/pacotesSul1/4.jpg" width="33" height="28">
-                                        </a>
-                                    </li>
-
-                                    <li class="imageItem ">
-                                        <a href="javascript:;">
-                                            <img src="images/pacotesSul1/5.jpg" width="33" height="28">
-                                        </a>
-                                    </li>
-
-                                </div>
-                                <!-- scroller -->
-                            </ul>
-                            <a href="javascript:;" class="prevBtn">Voltar</a>
-                            <a href="javascript:;" class="nextBtn">Próximo</a>
-                        </div>
-                        <!-- thumbsHolder -->
-                        <div class="bigImageContainer">
-                            <img class="imageBig" src="../../img.cvc.com.br/images/189723.jpg" alt="BETO CARRERO WORLD" title="BETO CARRERO WORLD">
-                            <p class="image-legend hide">BETO CARRERO WORLD</p>
-                        </div>
-                        <!-- bigImageContainer -->
-                        <a href="javascript:;" class="galleryPrev previous">Anterior</a>
-                        <a href="javascript:;" class="galleryNext next">Próximo</a>
-
-                    </div>
+                    <marquee direction="left" scrollamount="3" height="250px" behavior="alternate"  onmouseover="this.stop()" onmouseout="this.start()">
+                        <img src="images/pacotesSul1/1.jpg">
+                        <img src="images/pacotesSul1/2.jpg">
+                        <img src="images/pacotesSul1/3.jpg">
+                        <img src="images/pacotesSul1/4.jpg">
+                        <img src="images/pacotesSul1/5.jpg">
+                    </marquee>
                     <!-- packageGallery -->
 
                 </div>
@@ -122,8 +89,6 @@
                         <strong id="originCity">SÃO PAULO</strong>
                         <a href="javascript:;" id="changeCityOrigin" class="blueBtn">Alterar</a>
                         <div class="roomsConfig">
-                            <label for="roomsQtd">Quartos:</label>
-                            <strong id="roomsQtd">1</strong>
                             <label for="adultsQtd">Adultos:</label>
                             <strong id="adultsQtd">2</strong>
                             <label for="childrenQtd">Crianças:</label>
@@ -134,111 +99,20 @@
                         <!-- roomsConfig -->
                     </div>
                     <!-- packageConfig -->
-                    <div id="packageCalendar"></div>
-                    <!-- packageCalendar -->
-                    <span class="package-info">Preço por pessoa.</span>
-                    <span class="legend">
-                        <strong>Legenda:</strong>
-                        <span class="color1"></span>
-                        <span>Datas promocionais</span>
-                        <span class="color2"></span>
-                        <span>Datas disponíveis</span>
-                    </span>
-                    <div id="calendarPreLoader"></div>
-                    <div id="liUnavailableFlights" style="display: none">
-                        <a href="javascript://void(0);" class="send" title="Visualizar vôos indiponíveis" trigger="click" modal="UnavaiableFlighScript">Vôos indisponíveis</a>
+                    <tr>
+                        <td>
+                            <label>Data da Viagem</label>
+                        </td>
+                        <td align="left">
+                            <input type="date" name="dataviagem" required>
+                        </td>
+                    </tr>
+
+                    <div id="botaocomprar">
+                        <a href="pagamento.jsp"><button id="botaocomprar">Comprar</button></a>
                     </div>
-                </div>
-                <div class="messageImportant">
-                    <p><strong>Importante:</strong> Quando houver a inclusão da criança ou bebê na viagem o valor total do quarto será dividido pela quantidade de passageiros. Para casos de promoção que incluam bebê ou criança grátis, o desconto já estará aplicado no total do quarto e dividido pelo total de passageiros (adulto ou criança ou bebê).</p>
-                </div>        
-                <!-- packageDate -->
-                <div id="packagesHolder">
-
-
-                    <div id="packageBoxContainer" class="engine_search" style="position: absolute; top: inherit; left: inherit;">
-                        <div class="msgText">
-                            Encontramos o melhor preço para a sua pesquisa!
-                        </div>
-                        <div id="primaryBoxContainer">
-                            <div id="boxAereo" class="itemBox">
-                                <div class="itemHeader">
-                                    <strong class="title">Voo</strong>
-                                    <a href="javascript:;" class="seeItemDetails">Ver detalhes</a>
-                                </div>
-                                <strong class="addTitle">Nenhum voo adicionado</strong>
-                                <a href="javascript:;" class="addItem">Adicionar</a>
-                            </div>
-                        </div>
-                        <div id="secondBoxContainer">
-                            <div id="selectedHotel" class="itemBox">
-                                <div class="itemHeader">
-                                    <strong class="title">Hotel</strong>
-                                    <a href="javascript:;" class="seeItemDetails">Ver detalhes</a>
-                                </div>
-                                <strong class="addTitle">Nenhum hotel adicionado</strong>
-                                <a href="javascript:;" class="addItem">Adicionar</a>
-                            </div>
-                        </div>
-                        <div id="servicesContainer" class="itemBox">
-                            <div class="itemHeader">
-                                <strong class="title">Serviços</strong>
-                                <a href="javascript:;" id="AllServicesIncluded" class="seeItemDetails" trigger="click" modal="EveryDayScript">Ver detalhes</a>
-                            </div>
-                            <div id="selected-services">
-                                <strong class="addTitle">Nenhum serviço adicionado</strong>
-                            </div>
-                        </div>
-                        <div id="thirdBoxContainer">
-                        </div>
-                    </div>
-
-                    <div class="packageContainer">
-                        <div id="packageResults" style="display: none;"></div>
-                        <!-- packageResults -->
-                        <div id="contentResults" class="search_results hotel">
-                            <div id="hotelResults" class="results">
-                                <div class="header filterHeader">
-                                    <div class="label">
-                                        <span>Ordenar por:</span>
-                                        <select id="hotelSort">
-                                            <option value="2">Maior preço</option>
-                                            <option value="1" selected="selected">Menor preço</option>
-                                            <option value="3">Nome do Hotel</option>
-                                            <option value="4">Recomendados</option>
-                                        </select>
-                                    </div>
-                                    <div class="label">
-                                        <span>Itens por página:</span>
-                                        <select id="Select2">
-                                            <option value="10" selected="selected">10</option>
-                                            <option value="20">20</option>
-                                            <option value="30">30</option>
-                                            <option value="50">50</option>
-                                        </select>
-                                    </div>
-                                    <div class="showMore">
-                                        Mostrando <strong><span id="showingPage"></span>- <span id="showingPerPage"></span>&nbsp;de&nbsp;<span id="showingTotal"></span></strong>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- search_results hotel -->
-
-                        <div class="PriceGroups">
-                            <div id="priceGroupsResults"></div>
-                        </div>
-                        <!-- search_results hotel -->
-
-                    </div>
-                    <!-- packagesHolder -->
-                    <div id="packageErrorMessages"></div>
-                    <div id="estimateBox"></div>
-                </div>
-                <!-- packageDetail_CVC -->
-
+                </div>       
             </div>
-            <div id="packageCVCLoaderHolder"></div>
         </div>
 
         <script src="js/jquery.js"></script>

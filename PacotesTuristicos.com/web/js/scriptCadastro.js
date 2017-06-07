@@ -147,3 +147,6 @@ function validarSenha(form1){
 		return false;
 	}
 }
+function popup(){
+    varWindow = window.open ('popup.html', 'popup');
+}

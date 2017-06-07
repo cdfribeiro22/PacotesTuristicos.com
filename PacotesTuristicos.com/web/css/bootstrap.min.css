@@ -6746,7 +6746,7 @@ button.close {
         display: none !important;
     }
 }
- /*-- CommonStyles --*/
+/*-- CommonStyles --*/
 
 #packageDetail_CVC, #packageDetail_CVC *, #packageDetail_CVC *:before, #packageDetail_CVC *:after {
     box-sizing: border-box;
@@ -7142,20 +7142,20 @@ button.close {
     position: relative;
 }
 
-    #packageConfig .roomsConfig label small {
-        position: absolute;
-        left: 13px;
-        font-size: 9px;
-        width: 65px;
-        font-weight: 100;
-        display: none;
-    }
+#packageConfig .roomsConfig label small {
+    position: absolute;
+    left: 13px;
+    font-size: 9px;
+    width: 65px;
+    font-weight: 100;
+    display: none;
+}
 
-    #packageConfig .roomsConfig label:first-child {
-        border: none;
-        padding: 0;
-        margin-left: 10px;
-    }
+#packageConfig .roomsConfig label:first-child {
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+}
 
 .roomsConfig > a {
     margin: 0 0 0 3px;
@@ -7176,11 +7176,11 @@ button.close {
 
 .packagePropertiesHolder:before {
     content: '';
-     display: inline-block;
-     height: 100%;
-     vertical-align: middle;
-   /* Adjusts for spacing */
- }
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    /* Adjusts for spacing */
+}
 
 #setPackageProperties {
     text-align: left;
@@ -8027,7 +8027,7 @@ select[name="orderResults"] {
 .search_results.hotel .results .services .hotel .room_type li.one_room {
     width: 100% !important;
     max-width: 100% !important;
-    }
+}
 
 #packageResults .price.totalPackage {
     float: left;
@@ -8090,9 +8090,9 @@ select[name="orderResults"] {
     font-size: 12px !important;
 }
 
-    #packageResults .price.totalPackage .cash .cash_text {
-        font-size: 12px !important;
-    }
+#packageResults .price.totalPackage .cash .cash_text {
+    font-size: 12px !important;
+}
 
 .packagedBlock {
     display: block;
@@ -8625,20 +8625,20 @@ select[name="orderResults"] {
     width: 100%;
 }
 
-    #lightboxOverlay .title {
-        margin: 0 10px 10px 0;
-        font: bold 16px Arial;
-        color: #0c83d9;
-        display: block;
-    }
+#lightboxOverlay .title {
+    margin: 0 10px 10px 0;
+    font: bold 16px Arial;
+    color: #0c83d9;
+    display: block;
+}
 
-    #lightboxOverlay .category {
-        margin: 0 0 10px 10px;
-        display: block;
-        clear: both;
-        float: none;
-        font-size: 13px;
-    }
+#lightboxOverlay .category {
+    margin: 0 0 10px 10px;
+    display: block;
+    clear: both;
+    float: none;
+    font-size: 13px;
+}
 
 .boardsBox li {
     margin: 0 0 10px 20px;
@@ -8775,232 +8775,232 @@ select[name="orderResults"] {
 }
 
 #modal_preview {
-width: 850px;
-height: auto;
-padding: 10px;
-border-radius: 4px;
-border: solid 3px #0c83d9;
-font-family: Arial;
-position: fixed;
-top: 10%;
-left: 17%;
-z-index: 99999;
-background: #ffffff;
+    width: 850px;
+    height: auto;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid 3px #0c83d9;
+    font-family: Arial;
+    position: fixed;
+    top: 10%;
+    left: 17%;
+    z-index: 99999;
+    background: #ffffff;
 }
 
 #modal-opacity {
     position: fixed;
 }
 
-    #modal_preview h3 {
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        color: #0183d9;
-    }
+#modal_preview h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #0183d9;
+}
 
-    #modal_preview .bt-close {
-        background: url(../travel/Styles_B2C/images/lightbox-3.png) no-repeat 0 0;
-        width: 25px;
-        height: 25px;
-        display: block;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-    }
+#modal_preview .bt-close {
+    background: url(../travel/Styles_B2C/images/lightbox-3.png) no-repeat 0 0;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
 
-    #modal_preview .circuits {
-        width: 100%;
-        height: 450px;
-        margin-top: 15px;
-        overflow: auto;
-    }
+#modal_preview .circuits {
+    width: 100%;
+    height: 450px;
+    margin-top: 15px;
+    overflow: auto;
+}
 
-        #modal_preview .circuits table {
-            width: 100%;
-            background: #f5f5f5;
-            font-size: 12px;
-            color: #666666;
-        }
+#modal_preview .circuits table {
+    width: 100%;
+    background: #f5f5f5;
+    font-size: 12px;
+    color: #666666;
+}
 
-            #modal_preview .circuits table tr .title {
-                background: #959696;
-                color: #fff;
-                font-weight: bold;
-                font-size: 16px;
-                padding: 10px 9px;
-                border-top: none;
-            }
+#modal_preview .circuits table tr .title {
+    background: #959696;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 9px;
+    border-top: none;
+}
 
-            #modal_preview .circuits table tr .subtitle {
-                background: #eaeaea;
-                color: #666666;
-                font-weight: bold;
-                font-size: 14px;
-                padding: 8px 9px;
-                border-top: none;
-            }
+#modal_preview .circuits table tr .subtitle {
+    background: #eaeaea;
+    color: #666666;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 9px;
+    border-top: none;
+}
 
-            #modal_preview .circuits table tr td {
-                padding: 1px 8px;
-                border-top: dotted 1px #d9d9d9;
-            }
+#modal_preview .circuits table tr td {
+    padding: 1px 8px;
+    border-top: dotted 1px #d9d9d9;
+}
 
-            #modal_preview .circuits table tr td span {
-                position: relative;
-                top: 5px;
-            }
+#modal_preview .circuits table tr td span {
+    position: relative;
+    top: 5px;
+}
 
-            #modal_preview .circuits table tr td .rate {
-                background: url(../../img.cvc.com.br/images/rate.html) no-repeat 10px 7px;
-                width: 144px;
-                height: 25px;
-                float: left;
-            }
+#modal_preview .circuits table tr td .rate {
+    background: url(../../img.cvc.com.br/images/rate.html) no-repeat 10px 7px;
+    width: 144px;
+    height: 25px;
+    float: left;
+}
 
 /*modal detalhes*/
 
-    #modal_preview .details * {
-        -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-#modal_preview .details {
-        width: 100%;
-        margin-top: 15px;
-        border-top: solid 1px #d9d9d9;
+#modal_preview .details * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-    #modal_preview .details table {
-        border-bottom: dashed 1px #d9d9d9;
-        width: 99%;
-        margin-left: 5px;
-    }
+#modal_preview .details {
+    width: 100%;
+    margin-top: 15px;
+    border-top: solid 1px #d9d9d9;
+}
 
-        #modal_preview .details table tr td {
-            padding: 6px 0px;
-            font-size: 11px;
-            color: #666;
-        }
+#modal_preview .details table {
+    border-bottom: dashed 1px #d9d9d9;
+    width: 99%;
+    margin-left: 5px;
+}
 
-        #modal_preview .details table .index td span {
-            border: solid 1px #d9d9d9;
-            padding: 3px 6px;
-            border-radius: 5px;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-            margin-left: 5px !important;
-        }
+#modal_preview .details table tr td {
+    padding: 6px 0px;
+    font-size: 11px;
+    color: #666;
+}
 
-        #modal_preview .details table .legend td span {
-            border: solid 1px #d9d9d9;
-            padding: 3px 6px;
-            margin-left: 5px !important;
-            background: #f5f5f5;
-        }
+#modal_preview .details table .index td span {
+    border: solid 1px #d9d9d9;
+    padding: 3px 6px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-left: 5px !important;
+}
 
-        #modal_preview .details table .index td .second {
-            background: #0c83d9;
-            color: #fff;
-            font-weight: bold;
-            border: solid 1px #0c83d9;
-        }
+#modal_preview .details table .legend td span {
+    border: solid 1px #d9d9d9;
+    padding: 3px 6px;
+    margin-left: 5px !important;
+    background: #f5f5f5;
+}
 
-        #modal_preview .details table .index td .third {
-            background: #e1effa;
-            color: #0c83d9;
-            font-weight: bold;
-        }
+#modal_preview .details table .index td .second {
+    background: #0c83d9;
+    color: #fff;
+    font-weight: bold;
+    border: solid 1px #0c83d9;
+}
 
-        #modal_preview .details table .legend td .first {
-            background: #fff !important;
-        }
+#modal_preview .details table .index td .third {
+    background: #e1effa;
+    color: #0c83d9;
+    font-weight: bold;
+}
 
-        #modal_preview .details table .legend td .second {
-            background: #ffd800;
-            color: #896a02;
-            font-weight: bold;
-            border: solid 1px #e4c101;
-        }
+#modal_preview .details table .legend td .first {
+    background: #fff !important;
+}
 
-        #modal_preview .details table .legend td .third {
-            background: #e1effa;
-            color: #0c83d9;
-            font-weight: bold;
-        }
+#modal_preview .details table .legend td .second {
+    background: #ffd800;
+    color: #896a02;
+    font-weight: bold;
+    border: solid 1px #e4c101;
+}
 
-     #modal_preview .details table:first-child {
-        margin-top: 15px;
-    }
+#modal_preview .details table .legend td .third {
+    background: #e1effa;
+    color: #0c83d9;
+    font-weight: bold;
+}
 
-    #modal_preview .details table tr .title {
-        color: #555;
-        font-size: 12px;
-        font-weight: bold;
-    }
+#modal_preview .details table:first-child {
+    margin-top: 15px;
+}
 
-    #modal_preview .details .overflow_table {
-        width: 100%;
-        height: 280px;
-        overflow: auto;
-        margin: 20px 0 0 0;
-    }
+#modal_preview .details table tr .title {
+    color: #555;
+    font-size: 12px;
+    font-weight: bold;
+}
 
-    #modal_preview .details .table_detail {
-        width: 100%;
-        border: solid 1px #e0e0e0;
-        overflow: auto;
-        margin-left: 0px;
-        margin-top: 0px !important;
-    }
+#modal_preview .details .overflow_table {
+    width: 100%;
+    height: 280px;
+    overflow: auto;
+    margin: 20px 0 0 0;
+}
 
-        #modal_preview .details .table_detail tr th {
-            background: #0c83d9;
-            color: #fff;
-            font-weight: bold;
-            font-size: 11px;
-            border-left: solid 1px #1a6daa;
-            border-right: solid 1px #3b88c0;
-            padding: 5px;
-        }
+#modal_preview .details .table_detail {
+    width: 100%;
+    border: solid 1px #e0e0e0;
+    overflow: auto;
+    margin-left: 0px;
+    margin-top: 0px !important;
+}
 
-        #modal_preview .details .table_detail .index th {
-            border-top: solid 1px #1a6daa;
-        }
+#modal_preview .details .table_detail tr th {
+    background: #0c83d9;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    border-left: solid 1px #1a6daa;
+    border-right: solid 1px #3b88c0;
+    padding: 5px;
+}
 
-        #modal_preview .details .table_detail tr td {
-            border-top: dashed 1px #d9d9d9;
-            border-left: solid 1px #d9d9d9;
-            border-right: solid 1px #fff;
-            padding: 5px;
-            text-align: center;
-        }
+#modal_preview .details .table_detail .index th {
+    border-top: solid 1px #1a6daa;
+}
 
-            #modal_preview .details .table_detail tr td:first-child {
-                border-left: none;
-            }
+#modal_preview .details .table_detail tr td {
+    border-top: dashed 1px #d9d9d9;
+    border-left: solid 1px #d9d9d9;
+    border-right: solid 1px #fff;
+    padding: 5px;
+    text-align: center;
+}
 
-        #modal_preview .details .table_detail tr .highlightGrp {
-            background: #ffd800;
-            border-right: none;
-            font-weight: bold;
-        }
+#modal_preview .details .table_detail tr td:first-child {
+    border-left: none;
+}
 
-        #modal_preview .details .table_detail tr .highlightEsp {
-            background: #273c71;
-            border-right: none;
-            font-weight: bold;
-            color: #fff;
-        }
+#modal_preview .details .table_detail tr .highlightGrp {
+    background: #ffd800;
+    border-right: none;
+    font-weight: bold;
+}
 
-        #modal_preview .details .table_detail .itens td {
-            border-top: none;
-        }
+#modal_preview .details .table_detail tr .highlightEsp {
+    background: #273c71;
+    border-right: none;
+    font-weight: bold;
+    color: #fff;
+}
 
-        #modal_preview .details .table_detail .tr_highlight {
-            background: #f2f2f2;
-        }
+#modal_preview .details .table_detail .itens td {
+    border-top: none;
+}
+
+#modal_preview .details .table_detail .tr_highlight {
+    background: #f2f2f2;
+}
 
 .packageCVCBoxServices {
     clear: both;
@@ -9069,18 +9069,18 @@ background: #ffffff;
 }
 
 li.services.air {
-border-radius: 5px;
-border: solid 1px #cccccc;
-padding: 8px;
-padding-bottom: 0px;
-box-shadow: 0 0 1px 2px #eeeeee;
+    border-radius: 5px;
+    border: solid 1px #cccccc;
+    padding: 8px;
+    padding-bottom: 0px;
+    box-shadow: 0 0 1px 2px #eeeeee;
 }
 
 a.flightInfo {
-float: right;
-margin: 11px 13px 0;
-color: #0c83d9;
-font-size: 9px;
+    float: right;
+    margin: 11px 13px 0;
+    color: #0c83d9;
+    font-size: 9px;
 }
 
 #packageResults .packageRecommendation .travelInfos {
@@ -9095,9 +9095,9 @@ font-size: 9px;
     margin-right: 40px;
 }
 
- #packageResults .packageRecommendation .travelInfos strong {
+#packageResults .packageRecommendation .travelInfos strong {
     margin-right: 8px;
- }
+}
 
 #packageResults .packageRecommendation .travelInfos.space {
     margin-left: 30px;
@@ -9133,34 +9133,34 @@ font-size: 9px;
     z-index: 2000 !important;
 }
 
-    .modal.info.results .head {
-        background: #f8f9fb;
-        border: solid 1px #bdbdbd;
-        border-bottom: none !important;
-        height: 34px;
-        padding-left: 10px;
-    }
+.modal.info.results .head {
+    background: #f8f9fb;
+    border: solid 1px #bdbdbd;
+    border-bottom: none !important;
+    height: 34px;
+    padding-left: 10px;
+}
 
-        .modal.info.results .head strong {
-            margin: 0px 0px 0px 0px !important;
-            text-decoration: none;
-            float: left;
-            height: 10px;
-            padding: 10px 0px;
-            margin-top: 0px !important;
-            color: #0C83D9;
-            text-transform: none !important;
-            font-size: 14px;
-        }
+.modal.info.results .head strong {
+    margin: 0px 0px 0px 0px !important;
+    text-decoration: none;
+    float: left;
+    height: 10px;
+    padding: 10px 0px;
+    margin-top: 0px !important;
+    color: #0C83D9;
+    text-transform: none !important;
+    font-size: 14px;
+}
 
-            .modal.info.results .head strong span {
-                float: left;
-                color: #0c83d9;
-                font-weight: normal;
-                font-size: 12px;
-                padding-top: 3px;
-                padding-left: 3px;
-            }
+.modal.info.results .head strong span {
+    float: left;
+    color: #0c83d9;
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
 
 modal.info.results .modal-flight-full .modal-flight-full {
     width: 100% !important;
@@ -9191,17 +9191,17 @@ modal.info.results .modal-flight-full .modal-flight-full {
     margin-left: 10px;
 }
 
-    .modal.info.results .anac-flight-full .title {
-        margin-left: 0px;
-        margin: 0px 0px 0px 0px;
-        height: 28px;
-        padding: 16px 0px 0px 0px;
-        font-size: 14px;
-        color: #666666;
-        width: 89%;
-        text-decoration: none !important;
-        text-transform: none !important;
-    }
+.modal.info.results .anac-flight-full .title {
+    margin-left: 0px;
+    margin: 0px 0px 0px 0px;
+    height: 28px;
+    padding: 16px 0px 0px 0px;
+    font-size: 14px;
+    color: #666666;
+    width: 89%;
+    text-decoration: none !important;
+    text-transform: none !important;
+}
 
 .modal.info.results .wait_voo {
     /* width: 676px; */
@@ -9210,28 +9210,28 @@ modal.info.results .modal-flight-full .modal-flight-full {
     height: 38px;
 }
 
-    .modal.info.results .wait_voo p {
-        font-size: 12px;
-        margin: 0;
-        color: #666;
-        font-weight: bold;
-        background: url(../travel/styles_B2C/images/img_voo.png) no-repeat 156px 2px;
-        text-align: center !important;
-        height: 38px !important;
-        padding-left: 20px !important;
-        padding-top: 13px !important;
-    }
+.modal.info.results .wait_voo p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+    font-weight: bold;
+    background: url(../travel/styles_B2C/images/img_voo.png) no-repeat 156px 2px;
+    text-align: center !important;
+    height: 38px !important;
+    padding-left: 20px !important;
+    padding-top: 13px !important;
+}
 
 .modal.info.results .anac-flight-full .info strong {
     margin-bottom: 10px !important;
     text-align: left;
 }
 
-    .modal.info.results .anac-flight-full .info strong span {
-        margin-right: 10px;
-        text-decoration: none !important;
-        text-transform: none !important;
-    }
+.modal.info.results .anac-flight-full .info strong span {
+    margin-right: 10px;
+    text-decoration: none !important;
+    text-transform: none !important;
+}
 
 .modal.info.results .anac-flight-full .info .modal-flight-full {
     width: 97% !important;
@@ -9246,10 +9246,10 @@ modal.info.results .modal-flight-full .modal-flight-full {
     font-weight: normal;
 }
 
-    .modal.info.results .anac-flight-full .contentAnac span a {
-        color: #0c88d8;
-        font-weight: bold;
-    }
+.modal.info.results .anac-flight-full .contentAnac span a {
+    color: #0c88d8;
+    font-weight: bold;
+}
 
 .modal.info.results .anac-flight-full .modal-flight-full {
     width: 380px !important;
@@ -9262,31 +9262,31 @@ modal.info.results .modal-flight-full .modal-flight-full {
     height: 500px;
 }
 
-    .modal.info.results.double ul.scrollFlightPanel {
-        height: 207px;
-        max-height: 308px;
-    }
+.modal.info.results.double ul.scrollFlightPanel {
+    height: 207px;
+    max-height: 308px;
+}
 
-    .modal.info.results.double .modal-flight-full {
-        width: 722px !important;
-        height: 488px !important;
-    }
+.modal.info.results.double .modal-flight-full {
+    width: 722px !important;
+    height: 488px !important;
+}
 
-        .modal.info.results.double .modal-flight-full .navigate {
-            width: 100%;
-            font-weight: bold;
-            color: #0c88d8;
-        }
+.modal.info.results.double .modal-flight-full .navigate {
+    width: 100%;
+    font-weight: bold;
+    color: #0c88d8;
+}
 
-            .modal.info.results.double .modal-flight-full .navigate .next {
-                float: right;
-                margin: 10px 10px 0px 0px;
-            }
+.modal.info.results.double .modal-flight-full .navigate .next {
+    float: right;
+    margin: 10px 10px 0px 0px;
+}
 
-            .modal.info.results.double .modal-flight-full .navigate .back {
-                float: left;
-                margin: 10px 0px 0px 10px;
-            }
+.modal.info.results.double .modal-flight-full .navigate .back {
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
 
 .modal.info.results.fullFlightInfo {
     display: block;
@@ -9298,35 +9298,35 @@ modal.info.results .modal-flight-full .modal-flight-full {
     overflow-x: hidden;
 }
 
-    .modal.info.results.fullFlightInfo h1 {
-        margin: 0 0 5px 0;
-        padding: 0;
-    }
+.modal.info.results.fullFlightInfo h1 {
+    margin: 0 0 5px 0;
+    padding: 0;
+}
 
-    .modal.info.results.fullFlightInfo .modal-flight-full {
-        height: auto;
-    }
+.modal.info.results.fullFlightInfo .modal-flight-full {
+    height: auto;
+}
 
-        .modal.info.results.fullFlightInfo .modal-flight-full .detail {
-            padding: 0 0 10px 0 !important;
-            background: none;
-        }
+.modal.info.results.fullFlightInfo .modal-flight-full .detail {
+    padding: 0 0 10px 0 !important;
+    background: none;
+}
 
-        .modal.info.results.fullFlightInfo .modal-flight-full .contentCarrousel {
-            width: 100%;
-            margin: 0;
-            height: auto;
-            margin-bottom: 14px;
-        }
+.modal.info.results.fullFlightInfo .modal-flight-full .contentCarrousel {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    margin-bottom: 14px;
+}
 
-    .modal.info.results.fullFlightInfo .anac-flight-full {
-        margin: 0;
-        padding-top: 10px;
-    }
+.modal.info.results.fullFlightInfo .anac-flight-full {
+    margin: 0;
+    padding-top: 10px;
+}
 
-        .modal.info.results.fullFlightInfo .anac-flight-full * {
-            line-height: 15px;
-        }
+.modal.info.results.fullFlightInfo .anac-flight-full * {
+    line-height: 15px;
+}
 
 .modal.info .modal-flight-full h1 {
     font-weight: bold;
@@ -9452,118 +9452,118 @@ html .modal .modal-flight-full {
 /*MODAL INFO*/
 
 .modal.info {
-  width: 220px !important;
+    width: 220px !important;
 }
 
 .modal.info .tab {
-  /*background: url("/travel/styles_B2C/images/aba_modal.png") -6px -58px;*/
-  position: absolute;
-  bottom: -11px;
-  left: 0;
-  margin: 0 0 0 130px;
+    /*background: url("/travel/styles_B2C/images/aba_modal.png") -6px -58px;*/
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    margin: 0 0 0 130px;
 }
 
 .modal.info .tab.top {
-  background: url("../travel/styles_B2C/images/aba_modal.png") -6px 2px;
-  top: -10px;
+    background: url("../travel/styles_B2C/images/aba_modal.png") -6px 2px;
+    top: -10px;
 }
 
 .modal.info .tab.left {
-  background: url("../travel/styles_B2C/images/aba_modal.png") -6px -29px;
-  left: -16px;
-  margin: 0;
-  top: 10px;
+    background: url("../travel/styles_B2C/images/aba_modal.png") -6px -29px;
+    left: -16px;
+    margin: 0;
+    top: 10px;
 }
 
 .modal.info .tab.right {
-  background: url("../travel/styles_B2C/images/aba_modal.png") -6px -99px;
-  left: auto;
-  margin: 0;
-  right: -7px;
-  top: 10px;
+    background: url("../travel/styles_B2C/images/aba_modal.png") -6px -99px;
+    left: auto;
+    margin: 0;
+    right: -7px;
+    top: 10px;
 }
 
 .modal.info .content {
-  width: 200px !important;
-  background-color: #EDEDED;
+    width: 200px !important;
+    background-color: #EDEDED;
 }
 
 .modal.info .content h1 {
-  font-weight: bold;
-  color: #0c83d9 !important;
-  font-size: 18px !important;
-  /* margin: 0 !important; */
-  text-align: left;
-  width: 100%;
-  /* margin-top: 1px; */
-  padding-top: 11px;
-  padding-left: 13px;
-  padding-bottom: 8px;
+    font-weight: bold;
+    color: #0c83d9 !important;
+    font-size: 18px !important;
+    /* margin: 0 !important; */
+    text-align: left;
+    width: 100%;
+    /* margin-top: 1px; */
+    padding-top: 11px;
+    padding-left: 13px;
+    padding-bottom: 8px;
 }
 
 .modal.info .content h2 {
-  color: #0c83d9;
-  text-transform: uppercase;
-  line-height: 25px;
+    color: #0c83d9;
+    text-transform: uppercase;
+    line-height: 25px;
 }
 
 .modal.info .content .detail {
-  /* font-weight: bold; */
-  color: #999999;
-  text-align: left;
-  text-transform: uppercase;
-  padding: 0px;
-  margin: 0px;
+    /* font-weight: bold; */
+    color: #999999;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
 }
 
 .modal.info .content strong {
-  font-weight: bold;
-  text-transform: uppercase;
-  float: left;
-  margin-top: 10px;
-  text-align: left;
-  font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+    font-family: Arial;
 }
 
 .modal.info .content p {
-  font-size: 11px;
-  width: 100% !important;
-  float: left;
-  margin: 0 !important;
-  text-align: left !important;
-  height: auto !important;
-  padding: 2px 0 !important;
-  border: none !important;
+    font-size: 11px;
+    width: 100% !important;
+    float: left;
+    margin: 0 !important;
+    text-align: left !important;
+    height: auto !important;
+    padding: 2px 0 !important;
+    border: none !important;
 }
 
 .modal.info .content p img {
-  margin: -6px 0;
+    margin: -6px 0;
 }
 
 .modal.info .content p span {
-  text-align: right;
-  margin-right: 0px;
-  font-weight: bold;
-  font-size: 12px;
-  font-family: Arial;
+    text-align: right;
+    margin-right: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial;
 }
 
 .modal.info.results .content p {
-  padding: 4px 4px 4px 13px !important;
-  text-transform: none !important;
-  font-size: 14px;
+    padding: 4px 4px 4px 13px !important;
+    text-transform: none !important;
+    font-size: 14px;
 }
 
-        .modal.info.results .wait_voo p {
-            font-size: 12px;
-            margin: 0;
-            color: #666;
-            font-weight: bold;
-            background: url(../travel/styles_B2C/images/img_voo.png) no-repeat 156px 2px;
-            text-align: center !important;
-            height: 38px !important;
-            padding-left: 20px !important;
-            padding-top: 13px !important;
+.modal.info.results .wait_voo p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+    font-weight: bold;
+    background: url(../travel/styles_B2C/images/img_voo.png) no-repeat 156px 2px;
+    text-align: center !important;
+    height: 38px !important;
+    padding-left: 20px !important;
+    padding-top: 13px !important;
 }
 
 .modal.info .content p span.city {
@@ -9571,110 +9571,110 @@ html .modal .modal-flight-full {
 }
 
 .modal.info .content p .blue {
-  font-weight: bold;
-  text-transform: uppercase;
-  float: none;
-  color: #0c83d9;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: none;
+    color: #0c83d9;
 }
 
 .modal.info .content .example {
-  color: #b0b5b8;
-  margin-top: 10px !important;
+    color: #b0b5b8;
+    margin-top: 10px !important;
 }
 
 .modal.info .content .name {
-  font-weight: bold;
-  text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .modal.info .content .second {
-  margin-top: 10px !important;
+    margin-top: 10px !important;
 }
 
 .modal.info.results {
-  width: 660px !important;
-  right: -148px;
-  top: -240px;
-  margin: 0 20px !important;
+    width: 660px !important;
+    right: -148px;
+    top: -240px;
+    margin: 0 20px !important;
 }
 
 .modal.info.results .content span.scale {
-  text-align: left;
-  width: 165px;
-  float: right;
-  line-height: 15px;
-  margin: 0 0 10px;
+    text-align: left;
+    width: 165px;
+    float: right;
+    line-height: 15px;
+    margin: 0 0 10px;
 }
 
 .modal.info.results .content p {
-  /* padding: 4px 4px 4px 13px !important; */
-  /* text-transform: none !important; */
-  /* font-size: 14px; */
+    /* padding: 4px 4px 4px 13px !important; */
+    /* text-transform: none !important; */
+    /* font-size: 14px; */
 }
 
 .modal.info.results {
-  color: #666666;
-  text-transform: none;
-  width: 736px !important;
-  margin: auto !important;
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  border: none;
-  height: 330px;
-  z-index: 2000 !important;
+    color: #666666;
+    text-transform: none;
+    width: 736px !important;
+    margin: auto !important;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border: none;
+    height: 330px;
+    z-index: 2000 !important;
 }
 
-    .modal.info.results .head {
-        background: #f8f9fb;
-        border: solid 1px #bdbdbd;
-        border-bottom: none !important;
-        height: 35px;
-        padding-left: 10px;
+.modal.info.results .head {
+    background: #f8f9fb;
+    border: solid 1px #bdbdbd;
+    border-bottom: none !important;
+    height: 35px;
+    padding-left: 10px;
 }
 
 .modal.info.results .head strong {
-  margin: 0px 0px 0px 0px !important;
-  text-decoration: none;
-  float: left;
-  height: 10px;
-  padding: 10px 0px;
-  margin-top: 0px !important;
-  color: #0C83D9;
-  text-transform: none !important;
-  font-size: 14px;
+    margin: 0px 0px 0px 0px !important;
+    text-decoration: none;
+    float: left;
+    height: 10px;
+    padding: 10px 0px;
+    margin-top: 0px !important;
+    color: #0C83D9;
+    text-transform: none !important;
+    font-size: 14px;
 }
 
-    .modal.info.results .head strong span {
-        float: left;
-        color: #0c83d9;
-        font-weight: normal;
-        font-size: 12px;
-        padding-top: 3px;
-        padding-left: 3px;
+.modal.info.results .head strong span {
+    float: left;
+    color: #0c83d9;
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 3px;
+    padding-left: 3px;
 }
 
-   .modal.info.results .head strong .cia_aerea {
-        margin-top: -5px;
-        padding-top: 0px !important;
-        padding-left: 8px;
+.modal.info.results .head strong .cia_aerea {
+    margin-top: -5px;
+    padding-top: 0px !important;
+    padding-left: 8px;
 }
 
 .modal.info.results .content {
-  width: 100% !important;
-  height: 318px;
+    width: 100% !important;
+    height: 318px;
 }
 
 .modal.info.results .tableInfo .tableFlightInfo {
-   background-color: #FFFFFF !important;
-   /* border-collapse: collapse; */
-   width: 100%;
-   border: 1px solid #BDBDBD;
-   border-top: none !important;
-   margin-left: 0px;
-   padding: 0px 0px 10px 10px;
+    background-color: #FFFFFF !important;
+    /* border-collapse: collapse; */
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    border-top: none !important;
+    margin-left: 0px;
+    padding: 0px 0px 10px 10px;
 }
 
 .modal.info.results .anac {
@@ -9730,15 +9730,15 @@ html .modal .modal-flight-full {
 }
 
 .modal.info .content .going {
-  float: left;
-  text-align: left;
-  /* font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif; */
-  font-family: Arial;
-  font-size: 12px;
-  color: #ABABAB;
-  margin-left: -1px;
-  margin-top: 1px;
-  font-weight: bold;
+    float: left;
+    text-align: left;
+    /* font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif; */
+    font-family: Arial;
+    font-size: 12px;
+    color: #ABABAB;
+    margin-left: -1px;
+    margin-top: 1px;
+    font-weight: bold;
 }
 
 .scrollFlightPanel .FlightInterval {
@@ -9788,35 +9788,35 @@ html .modal .modal-flight-full {
 }
 
 .modal.info.results .informations, .modal.info.results .info p {
-padding: 4px !important;
-line-height: 18px;
-margin-left: -4px !important;
-float: left;
-text-transform: none;
+    padding: 4px !important;
+    line-height: 18px;
+    margin-left: -4px !important;
+    float: left;
+    text-transform: none;
 }
 
 .modal.info.results .informations, .modal.info.results .info p {
-padding: 4px !important;
-line-height: 18px;
-margin-left: -4px !important;
-float: left;
-text-transform: none;
+    padding: 4px !important;
+    line-height: 18px;
+    margin-left: -4px !important;
+    float: left;
+    text-transform: none;
 }
 
 .modal.info.results .informations {
-margin-top: 5px !important;
+    margin-top: 5px !important;
 }
 
 .modal.info.results .anac .title {
-  margin-left: 0px;
-  margin: 0px 0px 0px 0px;
-  height: 28px;
-  padding: 16px 0px 0px 0px;
-  font-size: 14px;
-  color: #666666;
-  width: 89%;
-  text-decoration: none !important;
-  text-transform: none !important;
+    margin-left: 0px;
+    margin: 0px 0px 0px 0px;
+    height: 28px;
+    padding: 16px 0px 0px 0px;
+    font-size: 14px;
+    color: #666666;
+    width: 89%;
+    text-decoration: none !important;
+    text-transform: none !important;
 }
 
 .modal.info.results .anac .info strong ul li {
@@ -9829,15 +9829,15 @@ margin-top: 5px !important;
 /*o cÃ³digo acima quebra o layout do estimate box, jogando-o para a esquerda da tela*/
 
 .header.value_price2.filterHeader {
-margin-top: -5px !important;
-padding: 5px;
-margin-bottom: 4px;
-padding-top: 3px;
-padding-left: 10px !important;
+    margin-top: -5px !important;
+    padding: 5px;
+    margin-bottom: 4px;
+    padding-top: 3px;
+    padding-left: 10px !important;
 }
 
 .header.filterHeader span {
-color: #666 !important;
+    color: #666 !important;
 }
 
 .search_results.hotel .list .services {
@@ -9928,22 +9928,22 @@ div#setPackageProperties .roomsNumb .quartos {
 }
 
 #packageErrorMessages {
-  background: url(../travel/styles_B2C/images/icon-alert.png) no-repeat 16px 15px #fffbde !important;
-  width: 100%;
-  padding: 15px;
-  border: solid 1px #ebcb00;
-  height: 88px;
-  clear: both;
+    background: url(../travel/styles_B2C/images/icon-alert.png) no-repeat 16px 15px #fffbde !important;
+    width: 100%;
+    padding: 15px;
+    border: solid 1px #ebcb00;
+    height: 88px;
+    clear: both;
     box-sizing: border-box;
     margin: 0 0 10px 0;
-  vertical-align: middle;
+    vertical-align: middle;
     text-align: center;
 }
 
 #packageErrorMessages:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
+    content: '';
+    display: inline-block;
+    height: 100%;
     vertical-align: middle;
     /* Adjusts for spacing */
 }
@@ -9957,10 +9957,10 @@ div#setPackageProperties .roomsNumb .quartos {
 }
 
 .search_results.hotel .results .services .hotel p.description {
-        font-size: 12px;
-        float: left;
-        line-height: 16px;
-        width: 100%;
+    font-size: 12px;
+    float: left;
+    line-height: 16px;
+    width: 100%;
 }
 
 #btNovaData {
@@ -9983,7 +9983,7 @@ div#setPackageProperties .roomsNumb .quartos {
     bottom: 13px !important;
     color: #644b01;
     text-decoration: none;
-  background-color: #FFD84e;
+    background-color: #FFD84e;
 }
 
 .modalInfo {
@@ -9991,9 +9991,9 @@ div#setPackageProperties .roomsNumb .quartos {
     padding: 11px !important;
 }
 
-    .modalInfo::before {
-        margin-top: -20px;
-    }
+.modalInfo::before {
+    margin-top: -20px;
+}
 
 .messageImportant {
     width: 100%;
@@ -10003,7 +10003,7 @@ div#setPackageProperties .roomsNumb .quartos {
     border-radius: 5px;
     padding: 8px 8px 8px 57px;
     margin: -4px 0px 15px 0px;
-    }
+}
 
 .messageImportant p {
     color: #14416b;
@@ -10012,14 +10012,14 @@ div#setPackageProperties .roomsNumb .quartos {
     font-family: Arial;
 }
 
-    .messageImportant p strong {
-        text-transform: uppercase;
-        color: #14416b;
-    }
+.messageImportant p strong {
+    text-transform: uppercase;
+    color: #14416b;
+}
 
-    .filterHeader .label {
+.filterHeader .label {
     float: left;
-        padding: 9px 0px 0px 0px;
+    padding: 9px 0px 0px 0px;
 }
 
 /*-- Modal Unavailable Flights - BEGIN --*/
@@ -10184,8 +10184,8 @@ div#setPackageProperties .roomsNumb .quartos {
 }
 
 .packageResults .packageRecommendation li[flightgrouphash] {
-  background: #e8e8e8;
-  position: relative;
+    background: #e8e8e8;
+    position: relative;
 }
 
 .packageResults .packageRecommendation li[flightgrouphash] h3 {
@@ -10447,11 +10447,11 @@ div#setPackageProperties .roomsNumb .quartos {
 */
 
 #packageCalendar .ui-icon-circle-triangle-w {
-  background-position: 0 -55px !important;
+    background-position: 0 -55px !important;
 }
 
 #packageCalendar .ui-icon-circle-triangle-e {
-  background-position: 0 -107px !important;
+    background-position: 0 -107px !important;
 }
 
 /*#packageCalendar .ui-datepicker-next[title="PrÃ³ximo"] {
@@ -10467,91 +10467,91 @@ div#setPackageProperties .roomsNumb .quartos {
 */
 
 #unavailableFlightsCalendar .ui-datepicker {
-  display: block;
-  margin: 0 auto;
-  width: 360px;
+    display: block;
+    margin: 0 auto;
+    width: 360px;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-header {
-  background: #d7d7d7;
-  padding: 0;
-  /*height: 38px;*/
+    background: #d7d7d7;
+    padding: 0;
+    /*height: 38px;*/
 }
 
 #unavailableFlightsCalendar .ui-datepicker-title {
-  color: #666;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 38px;
+    color: #666;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 38px;
 }
 
 #unavailableFlightsCalendar .ui-widget-header .ui-icon {
-  background: none;
+    background: none;
 }
 
 #unavailableFlightsCalendar .ui-state-hover {
     border: 0 !important;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-prev, #unavailableFlightsCalendar .ui-datepicker-next {
-/*   background-image: url('../travel/styles_B2C/images/lightbox.png'); */
-  background-postion: no-repeat;
-  border: 0;
+    /*   background-image: url('../travel/styles_B2C/images/lightbox.png'); */
+    background-postion: no-repeat;
+    border: 0;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-prev, #unavailableFlightsCalendar .ui-datepicker-prev.ui-state-hover {
-  background-image: url('../travel/styles_B2C/images/lightbox.png') !important;
-  background-color: transparent !important;
-  background-position-y: -56px !important;
-  top: 8px;
-  left: 5px;
+    background-image: url('../travel/styles_B2C/images/lightbox.png') !important;
+    background-color: transparent !important;
+    background-position-y: -56px !important;
+    top: 8px;
+    left: 5px;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-next, #unavailableFlightsCalendar .ui-datepicker-next.ui-state-hover {
-  background-image: url('../travel/styles_B2C/images/lightbox.png') !important;
-  background-color: transparent !important;
-  background-position-y: -108px !important;
-  right: 5px;
-  top: 8px;
+    background-image: url('../travel/styles_B2C/images/lightbox.png') !important;
+    background-color: transparent !important;
+    background-position-y: -108px !important;
+    right: 5px;
+    top: 8px;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-calendar {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-calendar thead {
-  border-left: 1px solid #E9E9E9;
-  border-right: 1px solid #E9E9E9;
+    border-left: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-calendar tbody {
-  border-collpase: collpase;
+    border-collpase: collpase;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-calendar td {
-  border: 1px solid #E9E9E9;
-  height: 30px;
-  vertical-align: middle;
+    border: 1px solid #E9E9E9;
+    height: 30px;
+    vertical-align: middle;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-calendar .ui-state-default {
-  border: 1px solid transparent;
-  color: #666;
-  font-size: 12px;
-  line-height: 30px;
-  text-align: center;
+    border: 1px solid transparent;
+    color: #666;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-calendar .ui-state-default.ui-state-hover {
-  border: 1px solid #f8c632 !important;
-  line-height: 30px;
+    border: 1px solid #f8c632 !important;
+    line-height: 30px;
 }
 
 #unavailableFlightsCalendar .ui-state-highlight, #unavailableFlightsCalendar .ui-widget-content .ui-state-highlight, #unavailableFlightsCalendar .ui-widget-header .ui-state-highlight {
-  background: #e5f2d8 !important;
-  border: 1px solid #74B934 !important;
-  color: #666;
+    background: #e5f2d8 !important;
+    border: 1px solid #74B934 !important;
+    color: #666;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-calendar .ui-state-highlight.ui-state-hover {
@@ -10559,24 +10559,24 @@ div#setPackageProperties .roomsNumb .quartos {
 }
 
 #unavailableFlightsCalendar .ui-datepicker-current {
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 5px;
 }
 
 #unavailableFlightsCalendar .ui-datepicker-current.ui-state-hover {
-  background-color: #fff !important;
-  border: 1px solid #ccc !important;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
 }
 
 #unavailableFlightsCalendar .ui-state-active {
-  background: #c1e8f9;
-  border: 1px solid #0184dc !important;
+    background: #c1e8f9;
+    border: 1px solid #0184dc !important;
 }
 
 #liUnavailableFlights {
-  clear: both;
-  text-align: right;
+    clear: both;
+    text-align: right;
 }
 
 #liUnavailableFlights > a {
@@ -10584,48 +10584,48 @@ div#setPackageProperties .roomsNumb .quartos {
 }
 
 .packageCVCLoader {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 999;
 }
 
 .packageCVCLoader:before {
-  width: 157px;
-  height: 43px;
-  background: #fff url(../travel/styles_B2C/images/styles/loader.gif) 112px 3px no-repeat;
-  display: block;
-  content: 'Carregando';
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin: -17px 0 0 -75px;
-  font: bold 13px Arial, Helvetica;
-  line-height: 43px;
-  color: #153039;
-  text-transform: uppercase;
-  border-radius: 5px;
-  text-indent: 15px;
+    width: 157px;
+    height: 43px;
+    background: #fff url(../travel/styles_B2C/images/styles/loader.gif) 112px 3px no-repeat;
+    display: block;
+    content: 'Carregando';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -17px 0 0 -75px;
+    font: bold 13px Arial, Helvetica;
+    line-height: 43px;
+    color: #153039;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-indent: 15px;
 }
 
 /* -- Modal de Voos IndisponÃ­veis [INICIO] -- */
 
 #ulUnavailableFlightGroups .moreDetailsPlaceHolder {
-  display: inline-block;
-  text-align: right;
-  position: absolute;
-  right: 10px;
-  /* padding-right: 10px; */
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    /* padding-right: 10px; */
 }
 
 #ulUnavailableFlightGroups .moreDetailsPlaceHolder > a {
-  color: #0c83d9;
-  font-size: 10px;
-  line-height: 30px;
+    color: #0c83d9;
+    font-size: 10px;
+    line-height: 30px;
 }
 
 .show-blocked-details {
@@ -10718,6 +10718,15 @@ div#setPackageProperties .roomsNumb .quartos {
 .ui-menu .ui-menu-item a {
     border: 1px solid #fff;
     height: auto !important;
+}
+.botaoComprar{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 2px;
+    border: 1px solid #CCC;
+    padding: 3px 3px;
+    font-weight: bold;
+    font-family: Arial, Tahoma, helvetica;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
