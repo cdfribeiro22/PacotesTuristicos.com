@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Login | PacTur</title>
+        <title>Pagamento | PacTur</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -37,7 +37,17 @@
 
         <%@include file="cabecalho.jsp" %>
 
-        <%@include file="rodape.jsp" %>
+        <section id="title" class="emerald">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Formas de pagamento</h1>
+                    </div>
+                </div>
+            </div>
+        </section><!--/#title--> 
+
+            <%@include file="rodape.jsp" %>
 
     </body>
 </html>

@@ -83,21 +83,6 @@
                 </div>
                 <!-- packageDescription -->
                 <div id="packageDate">
-                    <div id="packageConfig">
-                        <strong>Data da sua viagem</strong>
-                        <label for="originCity">Cidade de origem:</label>
-                        <strong id="originCity">SÃO PAULO</strong>
-                        <a href="javascript:;" id="changeCityOrigin" class="blueBtn">Alterar</a>
-                        <div class="roomsConfig">
-                            <label for="adultsQtd">Adultos:</label>
-                            <strong id="adultsQtd">2</strong>
-                            <label for="childrenQtd">Crianças:</label>
-                            <strong id="childrenQtd">0</strong>
-                            <label for="babiesQtd">Bebês:</label>
-                            <strong id="babiesQtd">0</strong>
-                        </div>
-                        <!-- roomsConfig -->
-                    </div>
                     <!-- packageConfig -->
                     <tr>
                         <td>
