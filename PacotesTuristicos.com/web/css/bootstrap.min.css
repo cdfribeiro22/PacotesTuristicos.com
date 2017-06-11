@@ -6755,7 +6755,6 @@ button.close {
 
 #packageDetail_CVC {
     width: 100%;
-    border: 1px solid #d5d5d5;
     float: left;
     padding: 15px;
     min-height: 250px;
@@ -6835,7 +6834,6 @@ button.close {
 
 #packageDescription, #packageDate {
     display: block;
-    width: 456px;
     border-radius: 5px 5px 0 0;
     border: 1px solid #d5d5d5;
     padding: 15px;
@@ -6850,7 +6848,7 @@ button.close {
     text-align: justify;
     height: 131px;
     display: block;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #packageDescription > a {

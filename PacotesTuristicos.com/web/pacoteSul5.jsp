@@ -47,34 +47,51 @@
             </div>
         </section><!--/#title--> 
 
-        <section id="portfolio" class="container">
+        
+        <div class="table-responsive">
+            <table id="tabela1" border="1">
+                <tr><td><img src="images/pacotesSul1/1.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/6.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/8.jpg" style="width:100%"></td> </tr>
+                <tr><td><img src="images/pacotesSul1/2.jpg" style="width:100%"></td>
 
-            <ul class="portfolio-items col-1">
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
+                    <td>
+                        <font size=5> Beto Carrero com Joinville 
+                        <br>4 dias / 2 dias com 01 dia de Parque</font><br>
+                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i></td> 
 
-                        <table class="table table-hover" border=1>
-                            <thead>
-                                <tr>
-                                    <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
-                                        / 3 diárias</font>
-                                        <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
-                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
-                                    </th>
-                                    <th><font size=4>Preço por Pessoa</font>
-                                        <br><font size=1> a partir de</font>
-                                        <br><font size=4> R$ 1.078,00</font>
-                                        <br><font size=1> 10x de 107,80</font>
-                                    </th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>           
-                </li><!--/.portfolio-item-->
-            </ul>
-        </section><!--/#portfolio-->
+                    <td><img src="images/pacotesSul1/9.jpg" style="width:100%"></td> </tr>
+
+                <tr><td><img src="images/pacotesSul1/3.jpg" style="width:100%"></td>
+
+                    <td>
+                        Aproveite as várias atrações de Fraiburgo, onde você pode<br>
+                        fazer trilhas, admirar a flora da região e aprender sobre<br> 
+                        preservação ecológica. Já Treze Tílias te leva a um cenário<br> 
+                        único, com inspirações austríacas na arquitetura e nas famosas<br> 
+                        produções de escultura em madeira. É a mais importante cidade de<br> 
+                        colonização austríaca do Brasil e também oferece rica gastronomia.<br> 
+                        Curta o passeio por parques, monumentos e trilhas, além das diversas<br> 
+                        atividades relacionadas ao turismo rural.<br>
+                    </td> 
+
+                    <td><img src="images/pacotesSul1/10.jpg" style="width:100%"></td> </tr>
+
+                <tr><td><img src="images/pacotesSul1/4.jpg" style="width:100%"></td> 
+
+                    <td>
+                        <font size=4>Preço por Pessoa</font>
+                        <br><font size=2> a partir de</font>
+                        <br><font size=4> R$ 1.078,00</font>
+                        <br><font size=2> 10x de 107,80</font>
+                        <div id="verdetalhes">
+                            <a href="pagamento.jsp"><button id="verdetalhes">Comprar</button></a>
+                        </div>
+                    </td> 
+
+                    <td><img src="images/pacotesSul1/11.jpg" style="width:100%"></td> </tr>
+                <tr><td><img src="images/pacotesSul1/5.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/7.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/12.jpg" style="width:100%"></td> </tr>
+            </table>
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>

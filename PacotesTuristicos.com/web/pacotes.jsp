@@ -475,8 +475,6 @@
                         </table>    
                     </div>       
                 </li><!--/.portfolio-item-->
-
-
             </ul>
         </section><!--/#portfolio-->
 

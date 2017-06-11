@@ -65,17 +65,17 @@ function ValidarCPF(Objcpf) {
     soma2 = (((soma2 + (2 * soma1)) * 10) % 11);
 
     var digitoGerado = (soma1 * 10) + soma2;
-   
 
-    if ((digitoGerado !== digitoDigitado)){
-      
-        document.getElementById("cpfinvalido").innerHTML="<font color='red'>OPS! CPF Invalido! </font>" ;
+
+    if ((digitoGerado !== digitoDigitado)) {
+
+        document.getElementById("cpfinvalido").innerHTML = "<font color='red'>OPS! CPF Invalido! </font>";
 //        document.getElementById("cpf").value='' ;
         document.form1.cpf.focus();
-    } else {    
-       
-        document.getElementById("cpfinvalido").innerHTML="OK CPF Valido" ;
-        
+    } else {
+
+        document.getElementById("cpfinvalido").innerHTML = "OK CPF Valido";
+
     }
 }
 
@@ -130,23 +130,28 @@ function validacaoEmail(field) {
     }
 }
 
-  //Valida senhas Iguais
+//Valida senhas Iguais
 
 
-function validarSenha(form1){ 
-	senha = document.form1.senha.value;
-	senhaRepetida = document.form1.repetir_senha.value;
-        
-	if (senha !== senhaRepetida){
-		document.getElementById("senhainvalida").innerHTML = "<font color='red'><b>As senhas não coincidem! Digite Novamente</b></font>";
-		document.getElementById("txtSenha").value='' ;
-                document.getElementById("repetir_senha").value='' ;
-                document.form1.txtSenha.focus();
-                
-                
-		return false;
-	}
+function validarSenha(form1) {
+    senha = document.form1.senha.value;
+    senhaRepetida = document.form1.repetir_senha.value;
+
+    if (senha !== senhaRepetida) {
+        document.getElementById("senhainvalida").innerHTML = "<font color='red'><b>As senhas não coincidem! Digite Novamente</b></font>";
+        document.getElementById("txtSenha").value = '';
+        document.getElementById("repetir_senha").value = '';
+        document.form1.txtSenha.focus();
+
+
+        return false;
+    }
 }
-function popup(){
-    varWindow = window.open ('popup.html', 'popup');
+function NovaJanela(pagina, nome, w, h, scroll) {
+    LeftPosition = (screen.width) ? (screen.width - w) / 2 : 0;
+    TopPosition = (screen.height) ? (screen.height - h) / 2 : 0;
+    settings = 'height=' + h + ',width=' + w + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=' + scroll + ',resizable'
+    win = window.open(pagina, nome, settings);
+    alert("copiar...");
+
 }

@@ -49,55 +49,50 @@
             </div>
         </section><!--/#title--> 
 
-        <div class="container">
+        <div class="table-responsive">
+            <table id="tabela1" border="1">
+                <tr><td><img src="images/pacotesSul1/1.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/6.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/8.jpg" style="width:100%"></td> </tr>
+                <tr><td><img src="images/pacotesSul1/2.jpg" style="width:100%"></td>
 
-            <div id="packageDetail_CVC">
+                    <td>
+                        <font size=5> Beto Carrero com Joinville 
+                        <br>4 dias / 2 dias com 01 dia de Parque</font><br>
+                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i></td> 
 
-                <h1>PACOTE Beto Carrero com Joinville - 4 dias / 2 diárias com 01 dia de Parque</h1>
+                    <td><img src="images/pacotesSul1/9.jpg" style="width:100%"></td> </tr>
 
-                <div id="packageDescription">
+                <tr><td><img src="images/pacotesSul1/3.jpg" style="width:100%"></td>
 
-                    <p><strong>Sobre o destino: </strong>Já sabe seu destino nas próximas férias? Que tal o Parque Beto Carrero World? O maior parque de diversão da América Latina e o primeiro multitemático, em seus mais de 10 milhões de metros quadrados, oferece atrações para todos os gostos. Os brinquedos agradam tanto a criançada como os adultos, que irão se divertir nas áreas temáticas do complexo. Prepare-se para viver grandes emoções na FireWhipe, uma gigantesca montanha-russa com cinco loopings!</p>
-                    <div id="allServicesDiv">
-                        <button onclick="window.open('http://www.code3000.blogspot.pt/',
-                                        'Code 3000', 'toolbar=no,location=no,status=no,menubar=no,\n\
-                                        scrollbars=no,resizable=no,width=500,height=500')
-                                        ;">Roteiro dia a dia</button>
+                    <td>
+                        Já sabe seu destino nas próximas férias? Que tal o Parque<br>
+                        Beto Carrero World? O maior parque de diversão da América<br> 
+                        Latina e o primeiro multitemático, em seus mais de 10 milhões<br> 
+                        de metros quadrados, oferece atrações para todos os gostos.<br>
+                        Os brinquedos agradam tanto a criançada como os adultos, que<br> 
+                        irão se divertir nas áreas temáticas do complexo. Prepare-se<br> 
+                        para viver grandes emoções na FireWhipe, uma gigantesca<br> 
+                        montanha-russa com cinco loopings!
+                    </td> 
 
+                    <td><img src="images/pacotesSul1/10.jpg" style="width:100%"></td> </tr>
 
-                        <button onclick="window.open('http://www.code3000.blogspot.pt/',
-                                        'Code 3000', 'toolbar=no,location=no,status=no,menubar=no,\n\
-                                        scrollbars=no,resizable=no,width=500,height=500')
-                                        ;">Serviços Inclusos</button>
-                    </div>
+                <tr><td><img src="images/pacotesSul1/4.jpg" style="width:100%"></td> 
 
-                    <marquee direction="left" scrollamount="3" height="250px" behavior="alternate"  onmouseover="this.stop()" onmouseout="this.start()">
-                        <img src="images/pacotesSul1/1.jpg">
-                        <img src="images/pacotesSul1/2.jpg">
-                        <img src="images/pacotesSul1/3.jpg">
-                        <img src="images/pacotesSul1/4.jpg">
-                        <img src="images/pacotesSul1/5.jpg">
-                    </marquee>
-                    <!-- packageGallery -->
+                    <td>
+                        <font size=4>Preço por Pessoa</font>
+                        <br><font size=2> a partir de</font>
+                        <br><font size=4> R$ 758,00</font>
+                        <br><font size=2> 10x de 75,80</font>
+                        <div id="verdetalhes">
+                            <a href="pagamento.jsp"><button id="verdetalhes">Comprar</button></a>
+                        </div>
+                    </td> 
 
-                </div>
-                <!-- packageDescription -->
-                <div id="packageDate">
-                    <!-- packageConfig -->
-                    <tr>
-                        <td>
-                            <label>Data da Viagem</label>
-                        </td>
-                        <td align="left">
-                            <input type="date" name="dataviagem" required>
-                        </td>
-                    </tr>
-
-                    <div id="botaocomprar">
-                        <a href="pagamento.jsp"><button id="botaocomprar">Comprar</button></a>
-                    </div>
-                </div>       
-            </div>
+                    <td><img src="images/pacotesSul1/11.jpg" style="width:100%"></td> </tr>
+                <tr><td><img src="images/pacotesSul1/5.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/7.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/12.jpg" style="width:100%"></td> </tr>
+            </table>
         </div>
 
         <script src="js/jquery.js"></script>

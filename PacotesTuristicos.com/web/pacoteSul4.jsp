@@ -47,32 +47,44 @@
             </div>
         </section><!--/#title--> 
 
-        <section id="portfolio" class="container">
-            <ul class="portfolio-items col-1">
-                <li class="portfolio-item joomla sul">
-                    <div class="item-inner">
+        
+        <div class="table-responsive">
+            <table id="tabela1" border="1">
+                <tr><td><img src="images/pacotesSul1/1.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/6.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/8.jpg" style="width:100%"></td> </tr>
+                <tr><td><img src="images/pacotesSul1/2.jpg" style="width:100%"></td>
 
-                        <table class="table table-hover" border=1>
-                            <thead>
-                                <tr>
-                                    <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
-                                        / 3 diárias</font>
-                                        <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
-                                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
-                                    </th>
-                                    <th><font size=4>Preço por Pessoa</font>
-                                        <br><font size=1> a partir de</font>
-                                        <br><font size=4> R$ 948,00</font>
-                                        <br><font size=1> 10x de 94,80</font>
-                                    </th>
-                            </thead>
-                        </table>
-                    </div>           
-                </li><!--/.portfolio-item-->
-            </ul>
-        </section><!--/#portfolio-->
+                    <td>
+                        <font size=5> Beto Carrero com Joinville 
+                        <br>4 dias / 2 dias com 01 dia de Parque</font><br>
+                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
+                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                        <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i></td> 
+
+                    <td><img src="images/pacotesSul1/9.jpg" style="width:100%"></td> </tr>
+
+                <tr><td><img src="images/pacotesSul1/3.jpg" style="width:100%"></td>
+
+                    <td>
+                        Em outubro, época da Oktoberfest, a maior festa brasileira da cerveja, as diárias dos hotéis duplicam por conta dos turistas do Brasil e do mundo que seguem a Blumenau para aproveitar o agito e degustar o famoso chope da região. A atmosfera local é regada por música, dança, bebidas e comidas, dia e noite. Beto Carrero World é O maior parque de diversão da América Latina.
+                    </td> 
+
+                    <td><img src="images/pacotesSul1/10.jpg" style="width:100%"></td> </tr>
+
+                <tr><td><img src="images/pacotesSul1/4.jpg" style="width:100%"></td> 
+
+                    <td>
+                        <font size=4>Preço por Pessoa</font>
+                        <br><font size=2> a partir de</font>
+                        <br><font size=4> R$ 758,00</font>
+                        <br><font size=2> 10x de 75,80</font>
+                        <div id="verdetalhes">
+                            <a href="pagamento.jsp"><button id="verdetalhes">Comprar</button></a>
+                        </div>
+                    </td> 
+
+                    <td><img src="images/pacotesSul1/11.jpg" style="width:100%"></td> </tr>
+                <tr><td><img src="images/pacotesSul1/5.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/7.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/12.jpg" style="width:100%"></td> </tr>
+            </table>
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
