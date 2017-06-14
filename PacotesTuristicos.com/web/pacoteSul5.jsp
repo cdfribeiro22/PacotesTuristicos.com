@@ -50,19 +50,19 @@
         
         <div class="table-responsive">
             <table id="tabela1" border="1">
-                <tr><td><img src="images/pacotesSul1/1.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/6.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/8.jpg" style="width:100%"></td> </tr>
-                <tr><td><img src="images/pacotesSul1/2.jpg" style="width:100%"></td>
+                <tr><td><img src="images/pacotesSul5/1.jpg" style="width:100%"></td> <td><img src="images/pacotesSul5/6.jpg" style="width:100%"></td> <td><img src="images/pacotesSul5/8.jpg" style="width:100%"></td> </tr>
+                <tr><td><img src="images/pacotesSul5/2.jpg" style="width:100%"></td>
 
                     <td>
-                        <font size=5> Beto Carrero com Joinville 
-                        <br>4 dias / 2 dias com 01 dia de Parque</font><br>
+                        <font size=5> Beto Carrero com Joinville e Unipraias -<br>
+                        5 dias / 3 diárias com 01 dia de Parque</font><br>
                         <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
                         <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i></td> 
 
-                    <td><img src="images/pacotesSul1/9.jpg" style="width:100%"></td> </tr>
+                    <td><img src="images/pacotesSul5/9.jpg" style="width:100%"></td> </tr>
 
-                <tr><td><img src="images/pacotesSul1/3.jpg" style="width:100%"></td>
+                <tr><td><img src="images/pacotesSul5/3.jpg" style="width:100%"></td>
 
                     <td>
                         Aproveite as várias atrações de Fraiburgo, onde você pode<br>
@@ -75,9 +75,9 @@
                         atividades relacionadas ao turismo rural.<br>
                     </td> 
 
-                    <td><img src="images/pacotesSul1/10.jpg" style="width:100%"></td> </tr>
+                    <td><img src="images/pacotesSul5/10.jpg" style="width:100%"></td> </tr>
 
-                <tr><td><img src="images/pacotesSul1/4.jpg" style="width:100%"></td> 
+                <tr><td><img src="images/pacotesSul5/4.jpg" style="width:100%"></td> 
 
                     <td>
                         <font size=4>Preço por Pessoa</font>
@@ -89,8 +89,8 @@
                         </div>
                     </td> 
 
-                    <td><img src="images/pacotesSul1/11.jpg" style="width:100%"></td> </tr>
-                <tr><td><img src="images/pacotesSul1/5.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/7.jpg" style="width:100%"></td> <td><img src="images/pacotesSul1/12.jpg" style="width:100%"></td> </tr>
+                    <td><img src="images/pacotesSul5/3.jpg" style="width:100%"></td> </tr>
+                <tr><td><img src="images/pacotesSul5/5.jpg" style="width:100%"></td> <td><img src="images/pacotesSul5/7.jpg" style="width:100%"></td> <td><img src="images/pacotesSul5/8.jpg" style="width:100%"></td> </tr>
             </table>
 
         <script src="js/jquery.js"></script>

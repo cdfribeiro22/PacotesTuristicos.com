@@ -54,8 +54,8 @@
                 <tr><td><img src="images/pacotesSul1/2.jpg" style="width:100%"></td>
 
                     <td>
-                        <font size=5> Beto Carrero com Joinville 
-                        <br>4 dias / 2 dias com 01 dia de Parque</font><br>
+                        <font size=5> Beto Carrero com Joinville e Unipraias - <br>
+                        5 dias / 3 diárias com 01 dia de Parque</font><br>
                         <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
                         <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i></td> 
@@ -82,8 +82,8 @@
                     <td>
                         <font size=4>Preço por Pessoa</font>
                         <br><font size=2> a partir de</font>
-                        <br><font size=4> R$ 758,00</font>
-                        <br><font size=2> 10x de 75,80</font>
+                        <br><font size=4> R$ 928,00</font>
+                        <br><font size=2> 10x de 92,80</font>
                         <div id="verdetalhes">
                             <a href="pagamento.jsp"><button id="verdetalhes">Comprar</button></a>
                         </div>

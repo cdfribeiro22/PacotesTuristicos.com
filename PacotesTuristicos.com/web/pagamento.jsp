@@ -74,7 +74,8 @@
                         datanasc: {
                             required: true, date: true
                         },
-                    },
+                        
+
                     messages: {
                         nome: {
                             required: "Digite o seu nome",
@@ -121,48 +122,48 @@
                     <label>* E-mail</label>
                     <input name="email" type="text" class="g">
 
-                    <label>Telefone</label>
-                    <input name="" type="text" class="p" id="telefone">
+                    <label>* Telefone</label>
+                    <input name="telefone" type="text" class="p" id="telefone">
 
-                    <label>Celular</label>
-                    <input name="" type="text" class="p" id="celular">
+                    <label>* Celular</label>
+                    <input name="celular" type="text" class="p" id="celular">
 
-                    <label>Data de Nascimento</label>
+                    <label>* Data de Nascimento</label>
                     <input name="datanasc" type="text" class="p" id="datanasc">
 
-                    <label>Sexo</label>
-                    <select name="" class="m">
+                    <label>* Sexo</label>
+                    <select name="sexo" class="m">
                         <option>Selecione</option>
                         <option>Masculino</option>
                         <option>Feminino</option>
                     </select>
 
-                    <label>CEP</label>
-                    <input name="" type="text" class="p" id="cep">
+                    <label>* CEP</label>
+                    <input name="cep" type="text" class="p" id="cep">
 
-                    <label>Endereço</label>
-                    <input name="" type="text" class="g">
+                    <label>* Endereço</label>
+                    <input name="endereco" type="text" class="g">
 
-                    <label>Número</label>
-                    <input name="" type="text" class="pp" >
+                    <label>* Número</label>
+                    <input name="numero" type="text" class="pp" >
 
-                    <label>Complemento</label>
-                    <input name="" type="text" class="m">
+                    <label>* Complemento</label>
+                    <input name="complemento" type="text" class="m">
 
-                    <label>Bairro</label>
-                    <input name="" type="text" class="p">
+                    <label>* Bairro</label>
+                    <input name="bairro" type="text" class="p">
 
-                    <label>Cidade</label>
-                    <input name="" type="text" class="p">
+                    <label>* Cidade</label>
+                    <input name="cidade" type="text" class="p">
 
-                    <label>Número do Cartão</label>
-                    <input name="" type="text" class="p">
+                    <label>* Número do Cartão</label>
+                    <input name="numCartao" type="text" class="p">
 
-                    <label>Nome Impresso no Cartão</label>
-                    <input name="" type="text" class="p">
+                    <label>* Nome Impresso no Cartão</label>
+                    <input name="nomeCartao" type="text" class="p">
 
-                    <label>Data de Validade - Mês</label>
-                    <select name="" class="m1">
+                    <label>* Data de Validade - Mês</label>
+                    <select name="dataValiMes" class="m1">
                         <option>Mês</option>
                         <option>01</option>
                         <option>02</option>
@@ -177,8 +178,8 @@
                         <option>11</option>
                         <option>12</option>
                     </select>
-                    <label>Data de Validade - Ano</label>
-                    <select name="" class="m1">
+                    <label>* Data de Validade - Ano</label>
+                    <select name="dataValiAno" class="m1">
                         <option>Ano</option>
                         <option>17</option>
                         <option>18</option>
@@ -193,7 +194,7 @@
                         <option>27</option>
                     </select>
                     
-                    <label>Código de Segurança</label>
+                    <label>* Código de Segurança</label>
                     <input id="codseguranca" name="" type="text" class="pp" >
 
                     <input type="submit" value="Finalizar">
