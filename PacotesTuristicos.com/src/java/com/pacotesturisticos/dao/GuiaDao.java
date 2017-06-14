@@ -7,12 +7,12 @@
 package com.pacotesturisticos.dao;
 
 
-import com.pacotesturisticos.model.LoginUsuario;
-import com.pacotesturisticos.model.Pessoa;
+import com.pacotesturisticos.model.CUsuarioSistema;
+import com.pacotesturisticos.model.CPessoa;
 import br.com.Login.util.Conexao;
-import com.pacotesturisticos.model.Endereco;
-import com.pacotesturisticos.model.UsuarioSistema;
-import com.pacotesturisticos.model.UsuarioSistemaGuia;
+import com.pacotesturisticos.model.CPessoaEndereco;
+import com.pacotesturisticos.model.Pessoa;
+import com.pacotesturisticos.model.CPessoaGuia;
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.Date;
@@ -43,7 +43,7 @@ public class GuiaDao {
         
     }
     
-    public boolean ConsultarLogin(UsuarioSistema login) {
+    public boolean ConsultarLogin(Pessoa login) {
 		
 		try {
 			PreparedStatement preparedStatement = connection.
@@ -66,7 +66,7 @@ public class GuiaDao {
 		return false;
 	}
     
-        public void addGuiaCadastro(UsuarioSistemaGuia cliente , Endereco casa) {
+        public void addGuiaCadastro(CPessoaGuia cliente , CPessoaEndereco casa) {
             
         try {
            
@@ -75,27 +75,9 @@ public class GuiaDao {
                                     + " bairro, estado, cidade, cep, email, senha, tipo_pessoa, idioma1, idioma2, idioma3, cnh, dt_cnh) "
                                     + "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
      
-        preparedStatement.setString(1,cliente.getCpf());
+
         preparedStatement.setString(2, cliente.getNome());
-        preparedStatement.setString(3, cliente.getSexo());
-        preparedStatement.setDate(4, d);
-        preparedStatement.setString(5, cliente.getRg());
-        preparedStatement.setString(6, cliente.getTelefone());
-        preparedStatement.setString(7, casa.getLogradouro());
-        preparedStatement.setInt(8, casa.getNumero());
-        preparedStatement.setString(9, casa.getComplemento());
-        preparedStatement.setString(10, casa.getBairro());
-        preparedStatement.setString(11, casa.getEstado());
-        preparedStatement.setString(12, casa.getCidade());
-        preparedStatement.setInt(13, casa.getCod_postal());
-        preparedStatement.setString(14, cliente.getEmail());
-        preparedStatement.setString(15, cliente.getSenha());
-        preparedStatement.setInt(16, 1);
-        preparedStatement.setString(17, cliente.getIdioma1());
-        preparedStatement.setString(18, cliente.getIdioma2());        
-        preparedStatement.setString(19, cliente.getIdioma3());        
-        preparedStatement.setString(20, cliente.getCnh());        
-        preparedStatement.setDate(21, d);        
+        
 
 
             preparedStatement.executeUpdate();
@@ -105,7 +87,7 @@ public class GuiaDao {
         }
     }
     
-        public void addPessoa(UsuarioSistema cliente) {
+        public void addPessoa(Pessoa cliente) {
         try {
            
             PreparedStatement preparedStatement = connection
@@ -113,10 +95,10 @@ public class GuiaDao {
                                     + " status_usuario, dt_ult_acesso, dt_ultimo_status, tipo_usuario) "
                                     + "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
      
-        preparedStatement.setString(1,cliente.getCpf());
-        preparedStatement.setInt(2, cliente.getPessoa());
+   
+        preparedStatement.setInt(2, cliente.getTipoPessoa());
         preparedStatement.setString(3, cliente.getNome());
-        preparedStatement.setString(4, cliente.getTelefone());
+   
         preparedStatement.setString(5, cliente.getEmail());
         preparedStatement.setString(6, cliente.getSenha());
         preparedStatement.setTimestamp(7, dataDeHoje);
@@ -146,7 +128,7 @@ public class GuiaDao {
         }
     }
 
-    public void updatePessoa(Pessoa srv) {
+    public void updatePessoa(CPessoa srv) {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("update servicos set nome=?,tipoServ=?,descServ=?");
@@ -165,13 +147,13 @@ public class GuiaDao {
         }
     }
 
-    public List<Pessoa> getAllCliente() {
-        List<Pessoa> srvs = new ArrayList<Pessoa>();
+    public List<CPessoa> getAllCliente() {
+        List<CPessoa> srvs = new ArrayList<CPessoa>();
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("select * from servicos");
             while (rs.next()) {
-                Pessoa srv = new Pessoa();
+                CPessoa srv = new CPessoa();
                 
 //                srv.setCodigo(rs.getInt("codigo"));
 //                srv.setNome(rs.getString("nome"));
@@ -189,8 +171,8 @@ public class GuiaDao {
         return srvs;
     }
 
-    public UsuarioSistema getPessoaById(int cpfCnpj) {
-        UsuarioSistema srv = new UsuarioSistema();
+    public Pessoa getPessoaById(int cpfCnpj) {
+        Pessoa srv = new Pessoa();
         try {
             PreparedStatement preparedStatement = connection.
                     prepareStatement("select * from servicos where codigo=?");

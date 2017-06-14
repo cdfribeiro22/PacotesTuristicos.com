@@ -38,9 +38,17 @@
 	if(session.getAttribute("login") != null) {
 %>
                          <li><a href="cadastroCliente_1_Dados.jsp">Meus Dados</a></li>
-                         <li>  <% out.print(session.getAttribute("login")); %> </li>
+                         <li>  <% out.print(session.getAttribute("login").toString()); %> </li>
                          <li><a class="btn btn-danger" href="LoginServlet1?acao=logout">Logout</a></li>
-                         
+<%
+	// se não existir um login na sessao, 
+	// vai enviar para a página de login novamente
+            if (session.getAttribute("login") != null){
+%>
+                        <li><a href="admin.jsp">Administrador</a></li>
+<%
+            }
+%>                            
  <%
 	// se não existir um login na sessao, 
 	// vai enviar para a página de login novamente

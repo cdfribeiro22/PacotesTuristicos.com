@@ -2,6 +2,7 @@
     Document   : cadastrar1
     Created on : 17/05/2017, 18:44:57
     Author     : Gylles
+    cadastroCliente_1.jsp
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -67,6 +68,18 @@
                     </tr>
                     <tr>
                         <td>
+                            <label for="CTipoPessoa">Tipo Pessoa:</label>
+                        </td>
+                        <td align="left">
+                            <select name="Ftipopessoa"> 
+                                <option value=1>Fisica</option> 
+                               
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
                             <label for="Cnome">Nome Completo: </label>
                         </td>
                         <td align="left">
@@ -105,17 +118,33 @@
                             <input type="text" name="Frg" size="20" maxlength="15" required> 
                         </td>
                     </tr>
-
-                   
+                    
+                   <tr>
+                        <td>
+                            <label for="orgao">Orgão Expeditor</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="ForgaoExpeditor" size="15" maxlength="10" required> 
+                        </td>
+                    </tr>   
 
                     <tr>
                         <td>
-                            <label>Telefone:</label>
+                            <label>Telefone Fixo:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Ftelefone" onKeyPress="MascaraTelefone(form1.Ftelefone);" maxlength="14" required>
+                            <input type="text" name="Ftelefone1" onKeyPress="MascaraTelefoneFixo(form1.Ftelefone1);" maxlength="15" required>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <label>Telefone Movel:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="Ftelefone2" onKeyPress="MascaraTelefoneMovel(form1.Ftelefone2);" maxlength="15" required>
+                        </td>
+                    </tr>
+                    
                 </table>
             </fieldset>
             <br />
@@ -213,6 +242,18 @@
                            
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <label for="pais">Pais</label>
+                        </td>
+                        <td align="left">
+                            <select name="Fpais"> 
+                                <option value="Brasil">Brasil</option> 
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    
                 </table>
             </fieldset>
             <br />
@@ -249,7 +290,7 @@
                         </td>
                         <td align="left">
                             
-                            <input id="txtSenha" name="senha" type="password" required placeholder="Digite uma Senha" title="Senha" />
+                            <input id="txtSenha" name="senha" type="password" required placeholder="Digite uma Senha" title="Senha" maxlength="8"/>
                         </td>
                     </tr>
                     <tr>
@@ -258,7 +299,7 @@
                         </td>
                         <td align="left">
                             
-                            <input id="repetir_senha" name="repetir_senha" type="password" required  onBlur="validarSenha(this);" placeholder="Repetir Senha" title="Repetir Senha" />
+                            <input id="repetir_senha" name="repetir_senha" type="password" required  onBlur="validarSenha(this);" placeholder="Repetir Senha" title="Repetir Senha" maxlength="8"/>
                         </td>
                          <td >
                             <p id="senhainvalida"></p>

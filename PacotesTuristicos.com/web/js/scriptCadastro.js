@@ -95,7 +95,14 @@ function ValidaCep(cep) {
 }
 
 //adiciona mascara ao telefone
-function MascaraTelefone(tel) {
+function MascaraTelefoneMovel(tel) {
+    if (mascaraInteiro(tel) === false) {
+        event.returnValue = false;
+    }
+    return formataCampo(tel, '(00) 00000-0000', event);
+}
+
+function MascaraTelefoneFixo(tel) {
     if (mascaraInteiro(tel) === false) {
         event.returnValue = false;
     }

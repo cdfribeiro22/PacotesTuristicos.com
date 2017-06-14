@@ -4,11 +4,11 @@ package com.pacotesturisticos.model;
  *
  * @author eduardo
  */
-public enum CategoriaCNH {
+public enum CPessoaCategoriaCNH {
     A, B, C, D, E,
     AB, AC, AD, AE;
 
-    public static CategoriaCNH getById(int id) {
+    public static CPessoaCategoriaCNH getById(int id) {
         switch (id) {
             case 1: return A;
             case 2: return B;

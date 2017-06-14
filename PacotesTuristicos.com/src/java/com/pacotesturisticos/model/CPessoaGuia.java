@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author Carlos Daniel
  */
-public class UsuarioSistemaGuia extends UsuarioSistema{
+public class CPessoaGuia extends CPessoa{
     
     private String idioma1;
     private String idioma2;

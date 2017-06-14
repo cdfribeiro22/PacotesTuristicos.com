@@ -1,6 +1,6 @@
 package com.pacotesturisticos.test;
 
-import com.pacotesturisticos.model.CategoriaCNH;
+import com.pacotesturisticos.model.CPessoaCategoriaCNH;
 
 /**
  *
@@ -8,6 +8,6 @@ import com.pacotesturisticos.model.CategoriaCNH;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println(CategoriaCNH.AB);
+        System.out.println(CPessoaCategoriaCNH.AB);
     }
 }

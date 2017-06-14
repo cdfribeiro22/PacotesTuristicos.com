@@ -4,9 +4,11 @@
     Author     : Gylles
 --%>
 
-<%@page import="com.pacotesturisticos.model.Endereco"%>
+<%@page import="com.pacotesturisticos.model.CPessoaFisica"%>
+<%@page import="com.pacotesturisticos.model.CUsuarioSistema"%>
+
 <%@page import="javax.swing.JOptionPane"%>
-<%@page import="com.pacotesturisticos.model.UsuarioSistema"%>
+
 <%@page import="com.pacotesturisticos.dao.UsuarioDao"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -58,8 +60,8 @@
             
             <%
                 UsuarioDao dao = new UsuarioDao();
-                UsuarioSistema user = new UsuarioSistema();
-                user = dao.getPessoaById(20);
+                CPessoaFisica user = new CPessoaFisica();
+                user = dao.getPessoaByEmail(session.getAttribute("login").toString());
                 
                   
             %>
@@ -73,7 +75,7 @@
                             <label for="Cnome">Código Cliente: </label>
                         </td>
                         <td align="left">
-                            <%= user.getCodigo()%> 
+                            <%= user.getCodigoCliente()%> 
                         </td>
                            
                     </tr>
@@ -110,7 +112,7 @@
                             <label for="rg">RG: </label>
                         </td>
                         <td align="left">
-                             <%= user.getRg()%>
+                             <%= user.getDocumento()%>
                         </td>
                     </tr>
 
@@ -128,7 +130,7 @@
                             <label>Telefone:</label>
                         </td>
                         <td align="left">
-                            <%= user.getTelefone()%>
+                            <%= user.getTelefoneFixo()%>
                         </td>
                     </tr>
                 </table>
@@ -146,7 +148,7 @@
                             <label for="bairro">Bairro: </label>
                         </td>
                         <td align="left">
-                            <%= user.getpBairro() %>
+                            <%= user.getBairro()%>
                         </td>
                     </tr>
 
@@ -155,7 +157,7 @@
                             <label for="rua">Rua:</label>
                         </td>
                         <td align="left">
-                             <%= user.getpRua()%>
+                             <%= user.getLogradouro()%>
                         </td>
                      </tr>    
                      <tr>    
@@ -163,7 +165,7 @@
                             <label for="numero">Número:</label>
                         </td>
                         <td align="left">
-                            <%= user.getpNumero()%>
+                            <%= user.getNumero()%>
                         </td>
                     </tr>
 
@@ -172,7 +174,7 @@
                             <label for="complemento">Complemento:</label>
                         </td>
                         <td align="left">
-                            <%= user.getpComplemento()%>
+                            <%= user.getComplemento()%>
                         </td>
                     </tr>
 
@@ -181,7 +183,7 @@
                             <label for="estado">Estado:</label>
                         </td>
                         <td align="left">
-                             <%= user.getpEstado()%>
+                             <%= user.getEstado()%>
                         </td>
                     </tr>
                     <tr>
@@ -189,7 +191,7 @@
                             <label for="cidade">Cidade: </label>
                         </td>
                          <td align="left">
-                             <%= user.getpCidade()%>
+                             <%= user.getCidade()%>
                         </td>
                         
                     </tr>
@@ -198,7 +200,7 @@
                             <label for="cep">CEP: </label>
                         </td>
                         <td align="left">
-                              <%= user.getpCep()%>
+                              <%= user.getCod_postal()%>
                          </td>
                     </tr>
                 </table>

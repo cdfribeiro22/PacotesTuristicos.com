@@ -1,71 +1,74 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.pacotesturisticos.model;
 
-
-
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.Date;
 
-public class Pessoa {
-    
-    private int codigo; 
-    private String cpf;
-    private int pessoa;
-    private String nome; 
-    private String telefone; 
-    private Endereco endereco;
+/**
+ *
+ * @author Carlos Daniel
+ */
+public  class Pessoa extends CPessoa{
+        
+    private int tipo_usuario;
+    private String email;
+    private String senha;
+    private Date dtCadatro;
+    private Date dtUltAcess; 
+    private int status;
 
 
-    public int getCodigo() {
-        return codigo;
-    }
-    
-    
-
-    public void setCodigo(int cpfBig) {
-        this.codigo = cpfBig;
+    public int getTipo_usuario() {
+        return tipo_usuario;
     }
 
-    public int getPessoa() {
-        return pessoa;
+    public void setTipo_usuario(int tipo_usuario) {
+        this.tipo_usuario = tipo_usuario;
     }
 
-    public void setPessoa(int pessoa) {
-        this.pessoa = pessoa;
+    public String getEmail() {
+        return email;
     }
 
-    public String getNome() {
-        return nome;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getSenha() {
+        return senha;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public Date getDtCadatro() {
+        return dtCadatro;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public void setDtCadatro(Date dtCadatro) {
+        this.dtCadatro = dtCadatro;
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public Date getDtUltAcess() {
+        return dtUltAcess;
     }
-    
+
+    public void setDtUltAcess(Date dtUltAcess) {
+        this.dtUltAcess = dtUltAcess;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+
   
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-    
 }

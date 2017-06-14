@@ -6,10 +6,11 @@
 package com.pacotesturisticos.bll;
 
 import com.pacotesturisticos.dao.UsuarioDao;
-import com.pacotesturisticos.model.Endereco;
+import com.pacotesturisticos.model.CPessoaEndereco;
+import com.pacotesturisticos.model.CPessoaFisica;
 
-import com.pacotesturisticos.model.UsuarioSistema;
-import com.pacotesturisticos.model.UsuarioSistemaGuia;
+import com.pacotesturisticos.model.Pessoa;
+import com.pacotesturisticos.model.CPessoaGuia;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -52,39 +53,14 @@ public class CadastroGuiaController extends HttpServlet {
         PrintWriter out = response.getWriter();
         try{
            UsuarioDao dao = new UsuarioDao();
-           UsuarioSistemaGuia cliente = new UsuarioSistemaGuia();
-           Endereco casa = new Endereco();
+            CPessoaFisica cliente = new CPessoaFisica();
+           CPessoaEndereco casa = new CPessoaEndereco();
            
             PreparedStatement ps = null;
             Connection cn = null;
                        
-            cliente.setCpf(request.getParameter("Fcpf"));
             cliente.setNome(request.getParameter("Fnome"));
-            cliente.setSexo((request.getParameter("Fsexo")));
-            Date data = new Date();
-            Timestamp timeStampDate = new Timestamp(data.getTime());
-            cliente.setDt_nasc(timeStampDate);
-            cliente.setRg(request.getParameter("Frg"));
-            cliente.setTelefone(request.getParameter("Ftelefone"));
-            
-            cliente.setIdioma1(request.getParameter("Fidioma1"));
-            cliente.setIdioma2(request.getParameter("Fidioma2"));
-            cliente.setIdioma3(request.getParameter("Fidioma3"));
-            cliente.setCnh(request.getParameter("Fcnh"));
-            cliente.setDt_cnh_vencimento(timeStampDate);
-            
-            casa.setLogradouro(request.getParameter("Frua"));
-            casa.setNumero(Integer.parseInt(request.getParameter("Fnumero")));
-            casa.setComplemento(request.getParameter("Fcomplemento"));
-            casa.setBairro(request.getParameter("Fbairro"));
-            casa.setEstado(request.getParameter("Festado"));
-            casa.setCidade(request.getParameter("Fcidade"));
-            String cep = request.getParameter("Fcep");
-            cep = cep.replace(".", "").replace("-", "");
-            casa.setCod_postal(Integer.parseInt(cep));
-                       
-            cliente.setEmail(request.getParameter("Femail"));
-            cliente.setSenha(request.getParameter("repetir_senha"));
+           
                         
 //            JOptionPane.showMessageDialog(null, cliente.getNome() 
 //                                        + "\n " + cliente.getCpf()
@@ -110,7 +86,7 @@ public class CadastroGuiaController extends HttpServlet {
             
                    
         
-            dao.addPessoaCadastro(cliente , casa);
+            dao.addPessoaCadastro(cliente);
             
             String url = "cadastroCliente_1_valido.jsp";
             response.sendRedirect(url);

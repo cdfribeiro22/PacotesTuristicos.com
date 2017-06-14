@@ -8,8 +8,8 @@ package com.pacotesturisticos.bll;
 
 
 import com.pacotesturisticos.dao.UsuarioDao;
-import com.pacotesturisticos.model.LoginUsuario;
-import com.pacotesturisticos.model.UsuarioSistema;
+import com.pacotesturisticos.model.CUsuarioSistema;
+import com.pacotesturisticos.model.Pessoa;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 		String pagina = "login_invalido.jsp";
                 
                 
-                UsuarioSistema login = new UsuarioSistema();
+                CUsuarioSistema login = new CUsuarioSistema();
                 
                 login.setEmail(request.getParameter("login"));
                 login.setSenha(request.getParameter("senha"));
