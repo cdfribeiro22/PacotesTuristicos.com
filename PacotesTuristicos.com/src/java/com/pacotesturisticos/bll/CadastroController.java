@@ -41,8 +41,9 @@ import javax.swing.JOptionPane;
 public class CadastroController extends HttpServlet {
     
     private static final long serialVersionUID = 1L;
-    private static String INSERT_OR_EDIT = "/cadastroCliente_1.jsp";
-    private static String LIST_Cliente = "/CadastroController.jsp";
+    private static String INSERT_OR_EDIT = "/cadastroCliente_1_Dados_1.jsp";
+    private static String LIST_Cliente = "/admin_listarclientes.jsp";
+    private static String LIST_OCliente = "/admin_dadosCliente.jsp";
     private UsuarioDao dao;
 
     public CadastroController() {
@@ -73,6 +74,14 @@ public class CadastroController extends HttpServlet {
             forward = LIST_Cliente;
             
             request.setAttribute("clientes", dao.getAllCliente());
+            
+        } else if (action.equalsIgnoreCase("listarCliente")) {
+            
+            forward = LIST_OCliente;
+            
+            int CodigoCliente = Integer.parseInt(request.getParameter("CodigoCliente"));
+            CPessoaFisica cliente = dao.getPessoaById(CodigoCliente);
+            request.setAttribute("cliente", cliente);
            
         } else {
             forward = INSERT_OR_EDIT;
@@ -83,7 +92,7 @@ public class CadastroController extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        JOptionPane.showMessageDialog(null, "DOPOST");
+//        JOptionPane.showMessageDialog(null, "DOPOST");
         CPessoaFisica cliente = new CPessoaFisica();
 
         cliente.setCodigoCliente(Integer.parseInt(request.getParameter("CodigoCliente")));

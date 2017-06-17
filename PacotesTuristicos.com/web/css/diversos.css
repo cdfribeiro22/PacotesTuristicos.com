@@ -16,10 +16,11 @@ and open the template in the editor.
     background:#060;
     border-radius: 10px;
     position:absolute;
-    
+
 }
 
 .left-align { 
-text-align: left;
+    text-align: left;
 
 }
+

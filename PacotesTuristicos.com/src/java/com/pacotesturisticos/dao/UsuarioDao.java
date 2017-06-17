@@ -228,19 +228,36 @@ public class UsuarioDao {
         CPessoaFisica srv = new CPessoaFisica();
         try {
             PreparedStatement preparedStatement = connection.
-                    prepareStatement("select * from pessoa where cod_cliente=?");
+                    prepareStatement("select * from pessoa where codigocliente=?");
             preparedStatement.setInt(1, cpfCnpj);
             ResultSet rs = preparedStatement.executeQuery();
 
             if (rs.next()) {
 
-                srv.setEmail(rs.getString("email"));
-                srv.setSenha(rs.getString("senha"));
+               srv.setDocumento(rs.getString("pdocumento"));
+                srv.setDt_nasc(rs.getDate("pdtnascimento"));
+                srv.setSexo(rs.getString("psexo"));
+                srv.setTelefoneFixo(rs.getString("ptelefonefixo"));
+                srv.setTelefoneMovel(rs.getString("ptelefonemovel"));
+                srv.setOrgaoExpeditor(rs.getString("porgaoexpeditor"));
+                srv.setCpf(rs.getString("pcpfcnpj"));
+                srv.setNome(rs.getString("pnome"));
+                srv.setTipoPessoa(Integer.parseInt(rs.getString("ptipopessoa")));
+                srv.setTipoUsuario(Integer.parseInt(rs.getString("utipousuario")));
+                srv.setEmail(rs.getString("uemail"));
+                srv.setSenha(rs.getString("usenha"));
+                srv.setDt_nasc(rs.getDate("udtcadastro"));
+                srv.setDtAcesso(rs.getDate("udtultacesso"));
+                srv.setCodigoCliente(Integer.parseInt(rs.getString("codigocliente")));
+                
+                
 
             }
-
-//            JOptionPane.showMessageDialog(null,srv.getNome() );
-        } catch (SQLException e) {
+            rs.close();
+            
+            srv.CPessoaEndereco(getEnderecoByID(srv.getCodigoCliente()));
+            
+            } catch (SQLException e) {
             e.printStackTrace();
         }
 

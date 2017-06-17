@@ -27,40 +27,28 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="./">Inicio</a></li>
-                        <li><a href="cadastroGuia.jsp">Guia</a></li>
-                        <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
-                        <li><a href="pacotes.jsp">Pacotes</a></li>
-                        <li><a href="contatos.jsp">Contatos</a></li>
-
-
-                        <%
-                            // verificando se tem um atributo login na sessao
-                            // se tiver vai continuar e mostrar o menu
+                        
+<%
                             if (session.getAttribute("login") != null) {
-                        %>
-                        <li><a href="cadastroCliente_1_Dados_1.jsp">Meus Dados</a></li>
-                        <li>  <% out.print(session.getAttribute("login").toString()); %> </li>
-                        <li><a class="btn btn-danger" href="LoginServlet1?acao=logout">Logout</a></li>
-                            <%
-                                // se não existir um login na sessao, 
-                                // vai enviar para a página de login novamente
                                 String logado = "admin@pactur.com";
                                 if (session.getAttribute("login") != null && (logado.equals(session.getAttribute("login")))) {
-                            %>
-                         <li><a href="admin_index.jsp">Gerenciar Site</a></li>
-                      
-                        <%
-                            }
-                        %>                            
-                        <%
-                            // se não existir um login na sessao, 
-                            // vai enviar para a página de login novamente
+%>                           
+                        <li><a href="#">Administrador</a></li>
+                        <li><a href="admin_listarclientes.jsp">Clientes</a></li>
+                        <li><a href="#">Pacotes</a></li>
+<%                        
+                            }                                            
+ %>
+                        
+                        <li>  <% out.print(session.getAttribute("login").toString()); %> </li>
+                        <li><a class="btn btn-danger" href="LoginServlet1?acao=logout">Logout</a></li>
+<%
                         } else {
-                        %>
+%>
                         <li><a href="login.jsp">Login</a></li>
-                            <%
+<%
                                 }
-                            %>                    
+%>                    
 
                     </ul>
                 </div>
@@ -69,7 +57,7 @@
 
             </div>
         </header><!--/header-->
-        
+       
     </body>
 
 

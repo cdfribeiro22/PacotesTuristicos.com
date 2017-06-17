@@ -50,16 +50,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Meus Dadnos Cadastrados</h1>
+                        <h1>Meus Dados Cadastrados</h1>
                     </div>
                 </div>
             </div>
         </section><!--/#title--> 
 
-        <form name="form1" action="Script_do_Formulario.php" method="post">
+        <form method="post" action="CadastroController" name="form1"  >
             
-            
-
             <!-- DADOS PESSOAIS-->
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -69,7 +67,7 @@
                             <label for="Cnome">Código Cliente: </label>
                         </td>
                         <td align="left">
-                            <%= user.getCodigoCliente()%> 
+                            <td> <input type="text" readonly="readonly" name="fcodigo" value="<c:out value="${cliente.getCodigoCliente()}" />" /> </td> 
                         </td>
                            
                     </tr>
@@ -78,7 +76,7 @@
                             <label for="Cnome">Nome Completo: </label>
                         </td>
                         <td align="left">
-                            <%= user.getNome() %> 
+                           <td> <input type="text"  name="fnome" value="<c:out value="${cliente.getNome()}" />" /> </td> 
                         </td>
                            
                     </tr>
@@ -87,7 +85,7 @@
                             <label for="Csexo">Sexo:</label>
                         </td>
                         <td align="left">
-                            <%= user.getSexo()%> 
+                           <td> <input type="text"  name="fsexo" value="<c:out value="${cliente.getSexo()}" />" /> </td> 
                         </td>
 
                     </tr>
@@ -97,7 +95,7 @@
                             <label>Nascimento: </label>
                         </td>
                         <td align="left">
-                             <%= user.getDt_nasc()%>
+                          <td> <input type="date" name="Fnascimento" value="<c:out value="${cliente.getDt_nasc()}" />" /> </td> 
                         </td>
                     </tr>
 
@@ -106,7 +104,7 @@
                             <label for="rg">RG: </label>
                         </td>
                         <td align="left">
-                             <%= user.getDocumento()%>
+                            <td> <input type="text"  name="Frg" value="<c:out value="${cliente.getDocumento()}" />" /> </td> 
                         </td>
                     </tr>
 
@@ -115,7 +113,7 @@
                             <label>CPF:</label>
                         </td>
                         <td align="left">
-                              <%= user.getCpf()%>
+                             <td> <input type="text"  name="Fcpf" value="<c:out value="${cliente.getCpf()}" />" /> </td> 
                         </td>
                     </tr>
 
@@ -124,7 +122,7 @@
                             <label>Telefone:</label>
                         </td>
                         <td align="left">
-                            <%= user.getTelefoneFixo()%>
+                           <td> <input type="text" readonly="FTelefone" name="codigo" value="<c:out value="${cliente.getTelefoneFixo()}" />" /> </td> 
                         </td>
                     </tr>
                 </table>
@@ -142,7 +140,7 @@
                             <label for="bairro">Bairro: </label>
                         </td>
                         <td align="left">
-                            <%= user.getBairro()%>
+                            <td> <input type="text"  name="Fbairro" value="<c:out value="${cliente.getBairro()}" />" /> </td> 
                         </td>
                     </tr>
 
@@ -151,7 +149,7 @@
                             <label for="rua">Rua:</label>
                         </td>
                         <td align="left">
-                             <%= user.getLogradouro()%>
+                             <td> <input type="text"  name="Frua" value="<c:out value="${cliente.getLogradouro()}" />" /> </td> 
                         </td>
                      </tr>    
                      <tr>    
@@ -159,7 +157,7 @@
                             <label for="numero">Número:</label>
                         </td>
                         <td align="left">
-                            <%= user.getNumero()%>
+                           <td> <input type="text"  name="Fnumero" value="<c:out value="${cliente.getNumero()}" />" /> </td> 
                         </td>
                     </tr>
 
@@ -168,7 +166,7 @@
                             <label for="complemento">Complemento:</label>
                         </td>
                         <td align="left">
-                            <%= user.getComplemento()%>
+                            <td> <input type="text"  name="Fcomplemento" value="<c:out value="${cliente.getComplemento()}" />" /> </td> 
                         </td>
                     </tr>
 
@@ -177,7 +175,7 @@
                             <label for="estado">Estado:</label>
                         </td>
                         <td align="left">
-                             <%= user.getEstado()%>
+                             <td> <input type="text"  name="Festado" value="<c:out value="${cliente.getEstado()}" />" /> </td> 
                         </td>
                     </tr>
                     <tr>
@@ -185,7 +183,7 @@
                             <label for="cidade">Cidade: </label>
                         </td>
                          <td align="left">
-                             <%= user.getCidade()%>
+                             <td> <input type="text"  name="Fcidade" value="<c:out value="${cliente.getCidade()}" />" /> </td> 
                         </td>
                         
                     </tr>
@@ -194,7 +192,7 @@
                             <label for="cep">CEP: </label>
                         </td>
                         <td align="left">
-                              <%= user.getCod_postal()%>
+                             <td> <input type="text"  name="Fcep" value="<c:out value="${cliente.getCod_postal()}" />" /> </td> 
                          </td>
                     </tr>
                 </table>
@@ -210,7 +208,7 @@
                             <label for="email">E-mail: </label>
                         </td>
                         <td align="left">
-                            <%= user.getEmail()%>
+                            <td> <input type="text"  name="Femail" value="<c:out value="${cliente.getEmail()}" />" /> </td> 
                         </td>
                     </tr>
 
@@ -220,7 +218,7 @@
                             <label for="pass">Senha: </label>
                         </td>
                         <td align="left">
-                            <%= user.getSenha() %>
+                           <td> <input type="text" name="Fsenha" value="<c:out value="*******" />" /> </td> 
                         </td>
                     </tr>
 

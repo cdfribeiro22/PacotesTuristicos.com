@@ -8180,7 +8180,7 @@ select[name="orderResults"] {
     float: left;
     -webkit-transform: rotate(315deg);
     -moz-transform: rotate(315deg);
-    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation = 3);
     position: relative;
     top: -4px;
     left: -1px;

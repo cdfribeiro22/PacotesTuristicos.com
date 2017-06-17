@@ -71,6 +71,8 @@ public class LoginServlet extends HttpServlet {
 			// que ira mostrar o formulario para o usuário logar
 			pagina = "index.jsp";
 		}
+                
+               
 		
 		response.sendRedirect(pagina);
 		

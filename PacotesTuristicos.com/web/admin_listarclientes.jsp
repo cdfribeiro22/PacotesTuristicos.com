@@ -44,13 +44,13 @@
 
     <body>
 
-        <%@include file="cabecalho.jsp" %>
+        <%@include file="admin_cabecalho.jsp" %>
 
         <section id="title" class="emerald">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Meus Dadnos Cadastrados</h1>
+                        <h1>Clientes Cadastrados</h1>
                     </div>
                 </div>
             </div>
@@ -69,12 +69,12 @@
     <legend>Dados Pessoais</legend>
     <table id=listarMensagens cellspacing="10" class="text-center" border=1>
         <thead>
-            <tr>
+            <tr align="center">
                 <th>Código Cliente</th>
                 <th>Nome Completo</th>
                 <th>Sexo</th>
                 <th>Nascimento</th>
-                <th>RG</th>
+                 <!--<th>RG</th>
                 <th>CPF</th>
                 <th>Rua</th>
                 <th>Número</th>
@@ -82,21 +82,22 @@
                 <th>Estado</th>
                 <th>Cidade</th>
                 <th>CEP</th>
-                <th>Bairro</th>
+                <th>Bairro</th>-->
                 <th>E-mail</th>
                 <th>Status</th>
-                <th>apagar</th>
-                <th>editar</th>
+                
+                <th><FONT COLOR="0000FF">Alterar Status</th>
+                <th><FONT COLOR="0000FF">Mais Detalhes</th>
             </tr>    
         </thead>        
         <tbody>
             <c:forEach items="${clientes}" var="cliente">
-                <tr>
-                    <td><c:out value="${cliente.getCodigoCliente()}" /></td>
+                <tr align="center">
+                    <td ><c:out value="${cliente.getCodigoCliente()}" /></td>
                     <td><c:out value="${cliente.getNome()}" /></td>
                     <td><c:out value="${cliente.getSexo()}" /></td>
                     <td><c:out value="${cliente.getDt_nasc()}" /></td>
-                    <td><c:out value="${cliente.getDocumento()}" /></td>
+                     <!--<td><c:out value="${cliente.getDocumento()}" /></td>
                     <td><c:out value="${cliente.getCpf()}" /></td>
                     <td><c:out value="${cliente.getLogradouro()}" /></td>
                     <td><c:out value="${cliente.getNumero()}" /></td>
@@ -104,12 +105,13 @@
                     <td><c:out value="${cliente.getEstado()}" /></td>
                     <td><c:out value="${cliente.getCidade()}" /></td>
                     <td><c:out value="${cliente.getCod_postal()}" /></td>
-                    <td><c:out value="${cliente.getBairro()}" /></td>
+                    <td><c:out value="${cliente.getBairro()}" /></td>-->
                     <td><c:out value="${cliente.getEmail()}" /></td>
                     <td><c:out value="${cliente.getStatusUsuario()}" /></td>
 
-                    <td><a href="CadastroController?action=edit&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>">Alterar</a></td>
-                    <td><a href="CadastroController?action=delete&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>">Remover</a></td>
+                    
+                    <td><a href="CadastroController?action=delete&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>"><FONT COLOR="0000FF"><b>Alterar Status</b></a></td>
+                    <td><a href="CadastroController?action=listarCliente&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>"><FONT COLOR="0000FF"><b>Detalhes</b></a></td>
                 </tr>
             </c:forEach>   
         </tbody>   
@@ -117,10 +119,7 @@
     </table>
 
     <br />
-    <input type="submit" value="Alterar">
-    <input type="reset" value="Encerrar Conta">
-
-    <%@include file="rodape.jsp" %>
+    
 
 </body>
 </html>
