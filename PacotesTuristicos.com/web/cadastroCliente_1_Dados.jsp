@@ -58,7 +58,13 @@
 
         <form name="form1" action="Script_do_Formulario.php" method="post">
             
+            <%
+                UsuarioDao dao = new UsuarioDao();
+                CPessoaFisica user = new CPessoaFisica();
+                user = dao.getPessoaByEmail(session.getAttribute("login").toString());
             
+
+            %>
 
             <!-- DADOS PESSOAIS-->
             <fieldset>

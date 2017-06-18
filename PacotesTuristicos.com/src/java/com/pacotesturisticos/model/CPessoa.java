@@ -47,6 +47,10 @@ public class CPessoa {
     public void setNome(String nome) {
         this.nome = nome;
     }
+    
+    public String getCodigoClienteString (){
+        return "" + CodigoCliente;
+    }
 
 
 

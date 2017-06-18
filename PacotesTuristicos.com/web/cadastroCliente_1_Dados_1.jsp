@@ -56,7 +56,9 @@
             </div>
         </section><!--/#title--> 
 
-        <form method="post" action="CadastroController" name="form1"  >
+        <form  name="form1" action='CadastroController'   method="post">
+            
+
             
             <!-- DADOS PESSOAIS-->
             <fieldset>
@@ -64,10 +66,10 @@
                 <table cellspacing="10" class="text-center">
                      <tr>
                         <td>
-                            <label for="Cnome">Código Cliente: </label>
+                            <label for="fcodigo">Código Cliente: </label>
                         </td>
                         <td align="left">
-                            <td> <input type="text" readonly="readonly" name="fcodigo" value="<c:out value="${cliente.getCodigoCliente()}" />" /> </td> 
+                            <td> <input type="text" readonly="true" name="fcodigo" value="<c:out value="${cliente.getCodigoCliente()}" />" /> </td> 
                         </td>
                            
                     </tr>
@@ -225,8 +227,9 @@
                 </table>
             </fieldset>
             <br />
-            <input type="submit" value="Alterar">
-            <input type="reset" value="Encerrar Conta">
+             
+            <input type="submit" value="Alterar/Gravar">
+            <input type="reset" value="Inativar Conta">
         </form>
 
         <%@include file="rodape.jsp" %>

@@ -65,6 +65,9 @@ public class CadastroController extends HttpServlet {
 
         } else if (action.equalsIgnoreCase("edit")) {
             forward = INSERT_OR_EDIT;
+            
+////            JOptionPane.showMessageDialog(null, request.getParameter("CodigoCliente"));
+            
             int CodigoCliente = Integer.parseInt(request.getParameter("CodigoCliente"));
             CPessoaFisica cliente = dao.getPessoaById(CodigoCliente);
             request.setAttribute("cliente", cliente);

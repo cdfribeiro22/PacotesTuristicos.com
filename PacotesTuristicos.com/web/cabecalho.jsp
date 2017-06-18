@@ -5,6 +5,11 @@
 --%>
 
 
+<%@page import="javax.swing.JOptionPane"%>
+<%@page import="com.pacotesturisticos.model.CPessoaFisica"%>
+<%@page import="com.pacotesturisticos.dao.UsuarioDao"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 
 
@@ -37,9 +42,21 @@
                             // verificando se tem um atributo login na sessao
                             // se tiver vai continuar e mostrar o menu
                             if (session.getAttribute("login") != null) {
+                            UsuarioDao dao = new UsuarioDao();
+                            CPessoaFisica user = new CPessoaFisica();
+                            user = dao.getPessoaByEmail(session.getAttribute("login").toString());
+                            //JOptionPane.showMessageDialog(null, user.getCodigoClienteString());
+                            
                         %>
-                        <li><a href="cadastroCliente_1_Dados_1.jsp">Meus Dados</a></li>
+                        
+                        
+                        <li><a href="CadastroController?action=edit&CodigoCliente=<c:out value="<%= user.getCodigoClienteString() %>"/>">Meus Dados</a></li>
+                        
+                        
+                        
+                        
                         <li>  <% out.print(session.getAttribute("login").toString()); %> </li>
+                        
                         <li><a class="btn btn-danger" href="LoginServlet1?acao=logout">Logout</a></li>
                             <%
                                 // se não existir um login na sessao, 
