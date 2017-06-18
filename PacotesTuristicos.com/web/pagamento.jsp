@@ -37,7 +37,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
         <script type="text/javascript">
-            // Define máscaras
+// Define máscaras
             $(document).ready(function () {
                 $('#data').Zebra_DatePicker();
 
@@ -60,12 +60,54 @@
                 }).trigger('focusout');
             });
 
-            // Define regras para a validação
+// Define regras para a validação
             $(document).ready(function () {
                 $("#validate").validate({
                     // Define as regras
                     rules: {
                         nome: {
+                            required: true
+                        },
+                        codseguranca: {
+                            required: true
+                        },
+                        sexo: {
+                            required: true
+                        },
+                        celular: {
+                            required: true
+                        },
+                        telefone: {
+                            required: true
+                        },
+                        cep: {
+                            required: true
+                        },
+                        endereco: {
+                            required: true
+                        },
+                        numero: {
+                            required: true
+                        },
+                        complemento: {
+                            required: true
+                        },
+                        bairro: {
+                            required: true
+                        },
+                        cidade: {
+                            required: true
+                        },
+                        numCartao: {
+                            required: true
+                        },
+                        dataValiMes: {
+                            required: true
+                        },
+                        dataValiAno: {
+                            required: true
+                        },
+                        nomeCartao: {
                             required: true
                         },
                         email: {
@@ -74,11 +116,52 @@
                         datanasc: {
                             required: true, date: true
                         },
-                        
-
+                    },
                     messages: {
                         nome: {
                             required: "Digite o seu nome",
+                        },
+                        codseguranca: {
+                            required: "Digite o Código de Segurança do Cartão"
+                        },
+                        telefone: {
+                            required: "Digite o Número do seu Telefone"
+                        },
+                        celular: {
+                            required: "Digite o Número do seu Celular"
+                        },
+                        sexo: {
+                            required: "Selecione seu Sexo"
+                        },
+                        cep: {
+                            required: "Digite seu CEP"
+                        },
+                        endereco: {
+                            required: "Digite o Endereço"
+                        },
+                        numero: {
+                            required: "Digite o Número "
+                        },
+                        complemento: {
+                            required: "Digite o Complemento"
+                        },
+                        bairro: {
+                            required: "Digite o Bairro"
+                        },
+                        cidade: {
+                            required: "Digite a Cidade"
+                        },
+                        numCartao: {
+                            required: "Digite o Número do Cartão"
+                        },
+                        dataValiMes: {
+                            required: "Digite o Mês de Validade do Cartão"
+                        },
+                        dataValiAno: {
+                            required: "Digite o Ano de Validade do Cartão"
+                        },
+                        nomeCartao: {
+                            required: "Digite o Nome Impresso no Cartão"
                         },
                         email: {
                             required: "Digite o seu e-mail para contato",
@@ -193,9 +276,9 @@
                         <option>26</option>
                         <option>27</option>
                     </select>
-                    
+
                     <label>* Código de Segurança</label>
-                    <input id="codseguranca" name="" type="text" class="pp" >
+                    <input id="codseguranca" name="codseguranca" type="text" class="pp" >
 
                     <input type="submit" value="Finalizar">
 
