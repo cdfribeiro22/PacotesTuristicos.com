@@ -47,6 +47,12 @@
                 </div>
             </div>
         </section><!--/#title--> 
+        <%      UsuarioDao dao = new UsuarioDao();
+                CPessoaFisica user = new CPessoaFisica();
+                user = dao.getPessoaByEmail(session.getAttribute("login").toString());
+
+
+        %>
 
         <form name="form2" action="CadastroGuiaController" method="post" >
 
@@ -54,12 +60,14 @@
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <table cellspacing="10" class="text-center">
-                     <tr>
+                    <tr>
                         <td>
                             <label>CPF:</label>
                         </td>
+
+
                         <td align="left">
-                            <input id="cpf" type="text" name="Fcpf" onBlur="ValidarCPF(form2.Fcpf);" onKeyPress="MascaraCPF(form2.Fcpf);"  maxlength="14" required> 
+                            <input id="cpf" type="text" name="Fcpf" onBlur="ValidarCPF(form2.Fcpf);" onKeyPress="MascaraCPF(form2.Fcpf);" value=" <%= user.getCpf()%>" maxlength="14" required> 
                         </td>
                         <td >
                             <p id="cpfinvalido"></p>
@@ -161,12 +169,12 @@
                             </select>
                         </td>
                     </tr>    
-                    
+
                     <tr>
                         <td>
                             <label>Tipo CNH</label>
                         </td>
-                         <td align="left">
+                        <td align="left">
                             <select name="Fidioma3"> 
                                 <option value="A">A</option> 
                                 <option value="B">B</option> 
@@ -191,7 +199,7 @@
                 </table>
             </fieldset>
             <br />
-             <!-- ENDEREÇO ------------------------------------------------------------------------------>
+            <!-- ENDEREÇO ------------------------------------------------------------------------------>
             <fieldset>
                 <legend>Dados de Endereço</legend>
                 <table cellspacing="10" class="text-center">
@@ -218,8 +226,8 @@
                             <input type="text" name="Fcomplemento" size="30" maxlength="30">
                         </td>
                     </tr>
-                    
-                     <tr>
+
+                    <tr>
                         <td>
                             <label for="bairro">Bairro: </label>
                         </td>
@@ -278,7 +286,7 @@
                         </td>
                         <td align="left">
                             <input type="text" name="Fcep" onKeyPress="MascaraCep(form2.Fcep);" maxlength="10" required>
-                           
+
                         </td>
                     </tr>
                 </table>
@@ -316,7 +324,7 @@
                             <label for="pass">Senha: </label>
                         </td>
                         <td align="left">
-                            
+
                             <input id="txtSenha" name="senha" type="password" required placeholder="Digite uma Senha" title="Senha" />
                         </td>
                     </tr>
@@ -325,20 +333,20 @@
                             <label for="passconfirm">Confirme a senha: </label>
                         </td>
                         <td align="left">
-                            
+
                             <input id="repetir_senha" name="repetir_senha" type="password" required  onBlur="validarSenha(this);" placeholder="Repetir Senha" title="Repetir Senha" />
                         </td>
-                         <td >
+                        <td >
                             <p id="senhainvalida"></p>
                         </td>
                     </tr>
                 </table>
             </fieldset>
             <br />   
-            
-            
-            
-            
+
+
+
+
             <input type="submit">
             <input type="reset" value="Limpar">
         </form>
