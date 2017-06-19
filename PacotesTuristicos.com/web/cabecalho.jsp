@@ -32,9 +32,10 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="./">Inicio</a></li>
-                        <li><a href="cadastroGuia.jsp">Guia</a></li>
+                        
                         <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
                         <li><a href="pacotes.jsp">Pacotes</a></li>
+                        <li><a href="guia.jsp">Guia Turistico</a></li>
                         <li><a href="contatos.jsp">Contatos</a></li>
 
 
@@ -54,7 +55,7 @@
                         
                         
                         
-                        
+                        <li><a href="cadastroGuia.jsp">Guia Turistico</a></li>
                         <li>  <% out.print(session.getAttribute("login").toString()); %> <a></a></li>
                         
                         <li><a class="btn btn-danger" href="LoginServlet1?acao=logout">Logout</a></li>
