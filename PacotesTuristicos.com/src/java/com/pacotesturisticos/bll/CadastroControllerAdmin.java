@@ -37,17 +37,17 @@ import javax.swing.JOptionPane;
  * @author Carlos Daniel
  */
 
-@WebServlet("/CadastroController")
-public class CadastroController extends HttpServlet {
+@WebServlet("/CadastroControllerAdmin")
+public class CadastroControllerAdmin extends HttpServlet {
     
     private static final long serialVersionUID = 1L;
     private static String INSERT_OR_EDIT = "/cadastroCliente_1_Dados_1.jsp";
-    private static String LIST_Cliente = "/cadastroCliente_1_valido.jsp";
-    private static String LIST_Admin_Clientes = "/admin_listarclientes.jsp";
+    private static String LIST_Cliente = "/admin_listarclientes.jsp";
+    private static String LIST_Cliente_cadastrado = "/cadastroCliente_1_valido.jsp";
     private static String LIST_OCliente = "/admin_dadosCliente.jsp";
     private UsuarioDao dao;
 
-    public CadastroController() {
+    public CadastroControllerAdmin() {
         super();
         dao = new UsuarioDao();
     }
@@ -57,18 +57,11 @@ public class CadastroController extends HttpServlet {
         String forward = "";
         String action = request.getParameter("action");
 
-        if (action.equalsIgnoreCase("ativar")) {
-           
-            int CodigoCliente = Integer.parseInt(request.getParameter("CodigoCliente"));
-            dao.ativaCliente(CodigoCliente);
-            forward = LIST_Admin_Clientes;
-            request.setAttribute("clientes", dao.getAllCliente());
-
-        } else if (action.equalsIgnoreCase("inativar")) {
+        if (action.equalsIgnoreCase("delete")) {
            
             int CodigoCliente = Integer.parseInt(request.getParameter("CodigoCliente"));
             dao.inativaCliente(CodigoCliente);
-            forward = LIST_Admin_Clientes;
+            forward = LIST_Cliente;
             request.setAttribute("clientes", dao.getAllCliente());
 
         } else if (action.equalsIgnoreCase("edit")) {
@@ -82,7 +75,7 @@ public class CadastroController extends HttpServlet {
 
         } else if (action.equalsIgnoreCase("listCliente")) {
             
-            forward = LIST_Admin_Clientes;
+            forward = LIST_Cliente;
             
             request.setAttribute("clientes", dao.getAllCliente());
             
@@ -106,54 +99,14 @@ public class CadastroController extends HttpServlet {
 //        JOptionPane.showMessageDialog(null, "DOPOST");
         CPessoaFisica cliente = new CPessoaFisica();
 
-        cliente.setCpf(request.getParameter("Fcpf"));
-//            JOptionPane.showMessageDialog(null, request.getParameter("Ftipopessoa")); 
-            if ( "1".equals(request.getParameter("Ftipopessoa")))
-                cliente.setTipoPessoa(1); 
-            cliente.setTipoUsuario(1);
-            cliente.setNome(request.getParameter("Fnome"));    
-            cliente.setSexo(request.getParameter("Fsexo"));  
-            
-           
-//                   JOptionPane.showMessageDialog(null, request.getParameter("Fnascimento"));
-            Date dob;
-            try {
-                dob = new SimpleDateFormat("yyyy-MM-dd").parse(request.getParameter("Fnascimento"));
-                 cliente.setDt_nasc(dob);
-            } catch (ParseException ex) {
-                Logger.getLogger(CadastroController.class.getName()).log(Level.SEVERE, null, ex);
-            }
-           
-//            JOptionPane.showMessageDialog(null, cliente.getDt_nasc());
-           
-            cliente.setDocumento(request.getParameter("Frg")); 
-            cliente.setOrgaoExpeditor(request.getParameter("ForgaoExpeditor"));   
-            cliente.setTelefoneFixo(request.getParameter("Ftelefone1"));    
-            cliente.setTelefoneMovel(request.getParameter("Ftelefone2"));    
-            
- 
-            cliente.setLogradouro(request.getParameter("Frua"));    
-            cliente.setNumero(Integer.parseInt(request.getParameter("Fnumero")));    
-            cliente.setComplemento(request.getParameter("Fcomplemento"));    
-            cliente.setBairro(request.getParameter("Fbairro"));    
-            cliente.setEstado(request.getParameter("Festado"));    
-            cliente.setCidade(request.getParameter("Fcidade"));    
-            cliente.setCod_postal(request.getParameter("Fcep"));    
-            cliente.setPais(request.getParameter("Fpais"));  
-//            String cep = request.getParameter("Fcep");
-//            cep = cep.replace(".", "").replace("-", "");
-//            cliente.setCod_postal(Integer.parseInt(cep));
-                       
-            cliente.setEmail(request.getParameter("Femail"));
-            cliente.setSenha(request.getParameter("repetir_senha"));
+        cliente.setCodigoCliente(Integer.parseInt(request.getParameter("Fcodigocliente")));
 
-       int CodigoCliente = Integer.parseInt(request.getParameter("Fcodigocliente"));
-//       JOptionPane.showMessageDialog(null, "DOPOST Codigo do cliente" + CodigoCliente);
+       String CodigoCliente = request.getParameter("Fcodigocliente");
 
-        if (CodigoCliente == 0) {
+        if (CodigoCliente == null || CodigoCliente.isEmpty()) {
             dao.addPessoaCadastro(cliente);
         } else {
-            cliente.setCodigoCliente(Integer.parseInt(CodigoCliente+""));
+            cliente.setCodigoCliente(Integer.parseInt(CodigoCliente));
             dao.updatePessoa(cliente);
         }
         RequestDispatcher view = request.getRequestDispatcher(LIST_Cliente);
@@ -175,6 +128,8 @@ public class CadastroController extends HttpServlet {
           
             CPessoaFisica pf = new CPessoaFisica();
             
+           
+            
             PreparedStatement ps = null;
             Connection cn = null;
                        
@@ -187,16 +142,16 @@ public class CadastroController extends HttpServlet {
             pf.setSexo(request.getParameter("Fsexo"));  
             
            
-//                   JOptionPane.showMessageDialog(null, request.getParameter("Fnascimento"));
+                   JOptionPane.showMessageDialog(null, request.getParameter("Fnascimento"));
             Date dob;
             try {
                 dob = new SimpleDateFormat("yyyy-MM-dd").parse(request.getParameter("Fnascimento"));
                  pf.setDt_nasc(dob);
             } catch (ParseException ex) {
-                Logger.getLogger(CadastroController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(CadastroControllerAdmin.class.getName()).log(Level.SEVERE, null, ex);
             }
            
-//            JOptionPane.showMessageDialog(null, pf.getDt_nasc());
+            JOptionPane.showMessageDialog(null, pf.getDt_nasc());
            
             pf.setDocumento(request.getParameter("Frg")); 
             pf.setOrgaoExpeditor(request.getParameter("ForgaoExpeditor"));   

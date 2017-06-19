@@ -55,7 +55,7 @@
                         
                         
                         
-                        <li>  <% out.print(session.getAttribute("login").toString()); %> </li>
+                        <li>  <% out.print(session.getAttribute("login").toString()); %> <a></a></li>
                         
                         <li><a class="btn btn-danger" href="LoginServlet1?acao=logout">Logout</a></li>
                             <%

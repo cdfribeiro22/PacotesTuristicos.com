@@ -35,7 +35,7 @@
 %>                           
                         <li><a href="#">Administrador</a></li>
                         <li><a href="admin_listarclientes.jsp">Clientes</a></li>
-                        <li><a href="#">Pacotes</a></li>
+                        <li><a href="admin_listarpacotes.jsp">Pacotes</a></li>
 <%                        
                             }                                            
  %>

@@ -8,6 +8,7 @@ package com.pacotesturisticos.dao;
 import com.pacotesturisticos.model.CUsuarioSistema;
 import com.pacotesturisticos.model.CPessoa;
 import br.com.Login.util.Conexao;
+import com.pacotesturisticos.model.CPacotes;
 import com.pacotesturisticos.model.CPessoaEndereco;
 import com.pacotesturisticos.model.CPessoaFisica;
 import com.pacotesturisticos.model.Pessoa;
@@ -30,7 +31,7 @@ import javax.swing.JOptionPane;
  *
  * @author Avell 1513
  */
-public class UsuarioDao {
+public class PacotesDao {
 
     private Connection connection;
 
@@ -38,7 +39,7 @@ public class UsuarioDao {
     Date d = new Date(System.currentTimeMillis());
 //    
 
-    public UsuarioDao() {
+    public PacotesDao() {
         connection = Conexao.getConnection();
 
     }
@@ -64,39 +65,28 @@ public class UsuarioDao {
         return false;
     }
 
-    public void addPessoaCadastro(CPessoaFisica cliente) {
+    public void addPacoteCadastro(CPacotes pacote) {
 
         try {
 
             PreparedStatement preparedStatement = connection
-                    .prepareStatement("insert into pessoa( pTipoPessoa, pNome, "
-                            + " uTipoUsuario, uEmail, uSenha, uDtCadastro, uDtUltAcesso, "
-                            + " pDocumento, pDtNascimento, pSexo, pTelefoneFixo, "
-                            + " pTelefoneMovel, pCpfCnpj, pOrgaoExpeditor, statuscliente)"
-                            + "values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  RETURNING codigocliente ");
+                    .prepareStatement("insert into pacotes( codigopacote, regiao, "
+                            + " descpasseio, item1, item2, item3, valor) "
+                            + "values (?, ?, ?, ?, ?, ?, ?)");
 
-            preparedStatement.setInt(1, cliente.getTipoPessoa());
-            preparedStatement.setString(2, cliente.getNome());
-            preparedStatement.setInt(3, cliente.getTipoUsuario());
-            preparedStatement.setString(4, cliente.getEmail());
-            preparedStatement.setString(5, cliente.getSenha());
-            preparedStatement.setDate(6, d);
-            preparedStatement.setDate(7, d);
-            preparedStatement.setString(8, cliente.getDocumento());
-//            preparedStatement.setDate(9,d);
-            preparedStatement.setDate(9, new Date(cliente.getDt_nasc().getTime()));
-            preparedStatement.setString(10, cliente.getSexo());
-            preparedStatement.setString(11, cliente.getTelefoneFixo());
-            preparedStatement.setString(12, cliente.getTelefoneMovel());
-            preparedStatement.setString(13, cliente.getCpf());
-            preparedStatement.setString(14, cliente.getOrgaoExpeditor());
-            preparedStatement.setString(15, "ativo");
+            preparedStatement.setInt(1, pacote.getCodigopacote());
+            preparedStatement.setString(2, pacote.getRegiao());
+            preparedStatement.setString(3, pacote.getDescpasseio());
+            preparedStatement.setString(4, pacote.getItem1());
+            preparedStatement.setString(5, pacote.getItem2());
+            preparedStatement.setString(6, pacote.getItem3());
+            preparedStatement.setString(7, pacote.getPreco());
+            
+            
 
-            ResultSet rs = preparedStatement.executeQuery();
-            while (rs.next()) {
-                cliente.setCodigoCliente(rs.getInt("codigocliente"));
-                addPessoaEndereco(cliente);
-            }
+           preparedStatement.executeQuery();
+           
+            
 
 //          preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -158,10 +148,10 @@ public class UsuarioDao {
         }
     }
 
-    public void inativaCliente(int codigo) {
+    public void inativaPacote(int codigo) {
         try {
             PreparedStatement preparedStatement = connection
-                    .prepareStatement("update pessoa set statuscliente=? WHERE codigoCliente=?");
+                    .prepareStatement("update pacotes set statuspacote=? WHERE codigopacote=?");
             // Parameters start with 1
            
             preparedStatement.setString(1, "inativo");
@@ -173,10 +163,10 @@ public class UsuarioDao {
         }
     }
     
-    public void ativaCliente(int codigo) {
+    public void ativaPacote(int codigo) {
         try {
             PreparedStatement preparedStatement = connection
-                    .prepareStatement("update pessoa set statuscliente=? WHERE codigoCliente=?");
+                    .prepareStatement("update pacotes set statuspacote=? WHERE codigopacote=?");
             // Parameters start with 1
            
             preparedStatement.setString(1, "ativo");
@@ -207,30 +197,23 @@ public class UsuarioDao {
         }
     }
 
-    public List<CPessoaFisica> getAllCliente() {
-        List<CPessoaFisica> srvs = new ArrayList<CPessoaFisica>();
+    public List<CPacotes> getAllPacotes() {
+        List<CPacotes> srvs = new ArrayList<CPacotes>();
         try {
             Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("select * from pessoa");
+            ResultSet rs = statement.executeQuery("select * from pacotes");
             while (rs.next()) {
-                CPessoaFisica srv = new CPessoaFisica();
-                    srv.setDocumento(rs.getString("pdocumento"));
-                    srv.setDt_nasc(rs.getDate("pdtnascimento"));
-                    srv.setSexo(rs.getString("psexo"));
-                    srv.setTelefoneFixo(rs.getString("ptelefonefixo"));
-                    srv.setTelefoneMovel(rs.getString("ptelefonemovel"));
-                    srv.setOrgaoExpeditor(rs.getString("porgaoexpeditor"));
-                    srv.setCpf(rs.getString("pcpfcnpj"));
-                    srv.setNome(rs.getString("pnome"));
-                    srv.setTipoPessoa(Integer.parseInt(rs.getString("ptipopessoa")));
-                    srv.setTipoUsuario(Integer.parseInt(rs.getString("utipousuario")));
-                    srv.setEmail(rs.getString("uemail"));
-                    srv.setSenha(rs.getString("usenha"));
-                    srv.setDt_nasc(rs.getDate("udtcadastro"));
-                    srv.setDtAcesso(rs.getDate("udtultacesso"));
-                    srv.setCodigoCliente(rs.getInt("codigocliente"));
-                    srv.setStatusUsuario(rs.getString("statuscliente"));
-                    srv.CPessoaEndereco(getEnderecoByID(srv.getCodigoCliente()));
+                CPacotes srv = new CPacotes();
+                    srv.setCodigopacote(rs.getInt("codigopacote"));
+                    srv.setRegiao(rs.getString("regiao"));
+                    srv.setDescpasseio(rs.getString("descpasseio"));
+                    srv.setItem1(rs.getString("item1"));
+                    srv.setItem2(rs.getString("item2"));
+                    srv.setItem3(rs.getString("item3"));
+                    srv.setPreco(rs.getString("valor"));
+                    srv.setStatus(rs.getString("statuspacote"));
+                    
+                    
                    
                 srvs.add(srv);
             }
@@ -241,38 +224,25 @@ public class UsuarioDao {
         return srvs;
     }
 
-    public CPessoaFisica getPessoaById(int cpfCnpj) {
-        CPessoaFisica srv = new CPessoaFisica();
+    public CPacotes getPacoteById(int codigo) {
+        CPacotes srv = new CPacotes();
         try {
             PreparedStatement preparedStatement = connection.
-                    prepareStatement("select * from pessoa where codigocliente=?");
-            preparedStatement.setInt(1, cpfCnpj);
+                    prepareStatement("select * from pacotes where codigopacote=?");
+            preparedStatement.setInt(1, codigo);
             ResultSet rs = preparedStatement.executeQuery();
 
             if (rs.next()) {
 
-               srv.setDocumento(rs.getString("pdocumento"));
-                srv.setDt_nasc(rs.getDate("pdtnascimento"));
-                srv.setSexo(rs.getString("psexo"));
-                srv.setTelefoneFixo(rs.getString("ptelefonefixo"));
-                srv.setTelefoneMovel(rs.getString("ptelefonemovel"));
-                srv.setOrgaoExpeditor(rs.getString("porgaoexpeditor"));
-                srv.setCpf(rs.getString("pcpfcnpj"));
-                srv.setNome(rs.getString("pnome"));
-                srv.setTipoPessoa(Integer.parseInt(rs.getString("ptipopessoa")));
-                srv.setTipoUsuario(Integer.parseInt(rs.getString("utipousuario")));
-                srv.setEmail(rs.getString("uemail"));
-                srv.setSenha(rs.getString("usenha"));
-                srv.setDt_nasc(rs.getDate("udtcadastro"));
-                srv.setDtAcesso(rs.getDate("udtultacesso"));
-                srv.setCodigoCliente(Integer.parseInt(rs.getString("codigocliente")));
+                srv.setRegiao(rs.getString("regiao"));
+               
                 
                 
 
             }
             rs.close();
             
-            srv.CPessoaEndereco(getEnderecoByID(srv.getCodigoCliente()));
+            
             
             } catch (SQLException e) {
             e.printStackTrace();

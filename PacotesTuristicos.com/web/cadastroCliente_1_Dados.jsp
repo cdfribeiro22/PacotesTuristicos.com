@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Meus Dadnos Cadastrados</h1>
+                        <h1>Meus Dados Cadastrados</h1>
                     </div>
                 </div>
             </div>

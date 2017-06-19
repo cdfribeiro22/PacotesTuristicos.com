@@ -4,7 +4,7 @@
     Author     : Gylles
 --%>
 
-<%@page import="com.pacotesturisticos.model.CPessoaFisica"%>
+<%@page import="com.pacotesturisticos.model.CPacotes"%>
 <%@page import="com.pacotesturisticos.model.CUsuarioSistema"%>
 
 <%@page import="javax.swing.JOptionPane"%>
@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Clientes Cadastrados</h1>
+                        <h1>Gerenciador de Pacotes</h1>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,8 @@
 
         <p></p>
 
-        <input type="button" onclick="location.href = 'CadastroController?action=listCliente';" value="LISTAR" />
+        <input type="button" onclick="location.href = 'PacotesController?action=listPacotes';" value="LISTAR" />
+        <input type="button" onclick="location.href = 'admin_cadastrarpacotes.jsp';" value="CADASTRAR NOVO PACOTE" />
 
         <p></p>
 
@@ -70,50 +71,32 @@
     <table id=listarMensagens cellspacing="10" class="text-center" border=1>
         <thead>
             <tr align="center">
-                <th>Código Cliente</th>
-                <th>Nome Completo</th>
-                <th>Sexo</th>
-                <th>Nascimento</th>
-                 <!--<th>RG</th>
-                <th>CPF</th>
-                <th>Rua</th>
-                <th>Número</th>
-                <th>Complemento</th>
-                <th>Estado</th>
-                <th>Cidade</th>
-                <th>CEP</th>
-                <th>Bairro</th>-->
-                <th>E-mail</th>
+                <th>Código Pacote</th>
+                <th>Região</th>
+                <th>Descrição do Passeio</th>
+                <th>Item 1 do Pacote</th>
+                <th>Item 2 do Pacote</th>
+                <th>Item 3 do Pacote</th>
+                <th>Preço</th>
                 <th>Status</th>
+                <th><FONT COLOR="0000FF">Ativar pacote</th>
+                <th><FONT COLOR="0000FF">Inativar pacote</th>
                 
-                <th><FONT COLOR="0000FF">Ativar Usuario</th>
-                <th><FONT COLOR="0000FF">Inativar Usuario</th>
-                <th><FONT COLOR="0000FF">Mais Detalhes</th>
             </tr>    
         </thead>        
         <tbody>
-            <c:forEach items="${clientes}" var="cliente">
+            <c:forEach items="${pacotes}" var="pacote">
                 <tr align="center">
-                    <td ><c:out value="${cliente.getCodigoCliente()}" /></td>
-                    <td><c:out value="${cliente.getNome()}" /></td>
-                    <td><c:out value="${cliente.getSexo()}" /></td>
-                    <td><c:out value="${cliente.getDt_nasc()}" /></td>
-                     <!--<td><c:out value="${cliente.getDocumento()}" /></td>
-                    <td><c:out value="${cliente.getCpf()}" /></td>
-                    <td><c:out value="${cliente.getLogradouro()}" /></td>
-                    <td><c:out value="${cliente.getNumero()}" /></td>
-                    <td><c:out value="${cliente.getComplemento()}" /></td>
-                    <td><c:out value="${cliente.getEstado()}" /></td>
-                    <td><c:out value="${cliente.getCidade()}" /></td>
-                    <td><c:out value="${cliente.getCod_postal()}" /></td>
-                    <td><c:out value="${cliente.getBairro()}" /></td>-->
-                    <td><c:out value="${cliente.getEmail()}" /></td>
-                    <td><c:out value="${cliente.getStatusUsuario()}" /></td>
-
-                    
-                    <td><a href="CadastroController?action=ativar&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>"><FONT COLOR="0000FF"><b>Ativar</b></a></td>
-                    <td><a href="CadastroController?action=inativar&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>"><FONT COLOR="0000FF"><b>Inativar</b></a></td>
-                    <td><a href="CadastroController?action=listarCliente&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>"><FONT COLOR="0000FF"><b>Detalhes</b></a></td>
+                    <td><c:out value="${pacote.getCodigopacote()}" /></td>
+                    <td><c:out value="${pacote.getRegiao()}" /></td>
+                    <td><c:out value="${pacote.getDescpasseio()}" /></td>
+                    <td><c:out value="${pacote.getItem1()}" /></td>
+                    <td><c:out value="${pacote.getItem2()}" /></td>
+                    <td><c:out value="${pacote.getItem3()}" /></td>
+                    <td><c:out value="${pacote.getPreco()}" /></td>
+                    <td><c:out value="${pacote.getStatus()}" /></td>
+                    <td><a href="PacotesController?action=ativar&CodigoPacote=<c:out value="${pacote.getCodigopacote()}"/>"><FONT COLOR="0000FF"><b>Ativar</b></a></td>
+                    <td><a href="PacotesController?action=desativar&CodigoPacote=<c:out value="${pacote.getCodigopacote()}"/>"><FONT COLOR="0000FF"><b>Inativar</b></a></td>
                 </tr>
             </c:forEach>   
         </tbody>   

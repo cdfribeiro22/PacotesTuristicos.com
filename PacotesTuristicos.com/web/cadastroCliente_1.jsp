@@ -49,13 +49,24 @@
             </div>
         </section><!--/#title--> 
 
-        <form name="form1" action="CadastroController" method="post" >
+        <form name="form1" action="CadastroController" method="post">
 
             <!-- DADOS PESSOAIS-->
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <table cellspacing="10" class="text-center">
-                     <tr>
+                    <tr>
+                        <td>
+                            <label>Codigo</label>
+                        </td>
+                        <td align="left">
+                            <input id="codigocliente" readonly="true" type="text" name="Fcodigocliente" maxlength="14" value="0" > 
+                        </td>
+                        <td >
+                            <p id="cpfinvalido"></p>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>
                             <label>CPF:</label>
                         </td>
@@ -115,7 +126,7 @@
                             <label for="rg">RG: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Frg" size="20" maxlength="15" required> 
+                            <input type="text" name="Frg" size="20" maxlength="15" > 
                         </td>
                     </tr>
                     
@@ -124,7 +135,7 @@
                             <label for="orgao">Orgão Expeditor</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="ForgaoExpeditor" size="15" maxlength="10" required> 
+                            <input type="text" name="ForgaoExpeditor" size="15" maxlength="10" > 
                         </td>
                     </tr>   
 
@@ -133,7 +144,7 @@
                             <label>Telefone Fixo:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Ftelefone1" onKeyPress="MascaraTelefoneFixo(form1.Ftelefone1);" maxlength="15" required>
+                            <input type="text" name="Ftelefone1" onKeyPress="MascaraTelefoneFixo(form1.Ftelefone1);" maxlength="15" >
                         </td>
                     </tr>
                     <tr>
@@ -141,7 +152,7 @@
                             <label>Telefone Movel:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Ftelefone2" onKeyPress="MascaraTelefoneMovel(form1.Ftelefone2);" maxlength="15" required>
+                            <input type="text" name="Ftelefone2" onKeyPress="MascaraTelefoneMovel(form1.Ftelefone2);" maxlength="15" >
                         </td>
                     </tr>
                     
@@ -161,13 +172,13 @@
                             <label for="rua">Rua:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Frua" size="30" maxlength="30" required>
+                            <input type="text" name="Frua" size="30" maxlength="30" >
                         </td>
                         <td>
                             <label for="numero">Numero:</label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Fnumero" size="6" maxlength="6" required>
+                            <input type="text" name="Fnumero" size="6" maxlength="6" >
                         </td>
                     </tr>
 
@@ -185,7 +196,7 @@
                             <label for="bairro">Bairro: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Fbairro" size="30" maxlength="30" required>
+                            <input type="text" name="Fbairro" size="30" maxlength="30" >
                         </td>
                     </tr>
 
@@ -230,7 +241,7 @@
                             <label for="cidade">Cidade: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Fcidade" size="30" maxlength="30" required>
+                            <input type="text" name="Fcidade" size="30" maxlength="30" >
                         </td>
                     </tr>
                     <tr>
@@ -238,7 +249,7 @@
                             <label for="cep">CEP: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Fcep" onKeyPress="MascaraCep(form1.Fcep);" maxlength="10" required>
+                            <input type="text" name="Fcep" onKeyPress="MascaraCep(form1.Fcep);" maxlength="10" >
                            
                         </td>
                     </tr>
