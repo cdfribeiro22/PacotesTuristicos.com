@@ -79,7 +79,7 @@
                         </td>
                         <td align="left">
                             <select name="Fregiao"> 
-                                <option value="">...</option> 
+                                <option value="">Selecione</option> 
                                 <option value="Sul">Sul</option> 
                                 <option value="Sudeste">Sudeste</option> 
                                 <option value="Centro-Oeste">Centro-Oeste</option> 

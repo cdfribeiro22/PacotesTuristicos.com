@@ -8171,20 +8171,6 @@ select[name="orderResults"] {
     width: 98%;
 }
 
-.wiFi_Service:before {
-    content: '';
-    display: block;
-    background: url(../travel/Styles_B2C/images/gray-2.png) -28px -1350px no-repeat;
-    width: 15px;
-    height: 17px;
-    float: left;
-    -webkit-transform: rotate(315deg);
-    -moz-transform: rotate(315deg);
-    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation = 3);
-    position: relative;
-    top: -4px;
-    left: -1px;
-}
 
 /* -- Type Air -- */
 
