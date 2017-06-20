@@ -67,8 +67,7 @@
                                     <th><font size=4> Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
@@ -84,8 +83,7 @@
                                     <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
                                         diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
@@ -101,8 +99,7 @@
                                     <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
                                         dias / 3 diárias com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
@@ -118,8 +115,7 @@
                                     <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
@@ -135,8 +131,7 @@
                                     <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
@@ -163,70 +158,80 @@
                                     <th><font size=4>Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 758,00</font>
                                         <br><font size=1> 10x de 75,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSudeste1.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
                                         diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSudeste2.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
                                         dias / 3 diárias com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSudeste3.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 948,00</font>
                                         <br><font size=1> 10x de 94,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSudeste4.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 1.078,00</font>
                                         <br><font size=1> 10x de 107,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteSudeste5.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                             </thead>
@@ -244,70 +249,80 @@
                                     <th><font size=4>Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 758,00</font>
                                         <br><font size=1> 10x de 75,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteCentro1.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
                                         diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteCentro2.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
                                         dias / 3 diárias com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteCentro3.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 948,00</font>
                                         <br><font size=1> 10x de 94,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteCentro4.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 1.078,00</font>
                                         <br><font size=1> 10x de 107,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteCentro5.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                             </thead>
@@ -324,70 +339,80 @@
                                     <th><font size=4>Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 758,00</font>
                                         <br><font size=1> 10x de 75,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNordeste1.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
                                         diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNordeste2.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
                                         dias / 3 diárias com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNordeste3.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 948,00</font>
                                         <br><font size=1> 10x de 94,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNordeste4.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 1.078,00</font>
                                         <br><font size=1> 10x de 107,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNordeste5.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                             </thead>
@@ -405,70 +430,80 @@
                                     <th><font size=4>Beto Carrero com Joinville - 4 dias / 2 dias
                                         com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 758,00</font>
                                         <br><font size=1> 10x de 75,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNorte1.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Curitiba com Ilha do Mel - 5 dias / 3 
                                         diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNorte2.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Beto Carrero com Joinville e Unipraias - 5 
                                         dias / 3 diárias com 01 dia de Parque</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 898,00</font>
                                         <br><font size=1> 10x de 89,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNorte3.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Oktoberfest e Beto Carrero com Itajaí - 5 dias 
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 948,00</font>
                                         <br><font size=1> 10x de 94,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNorte4.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                                 <tr>
                                     <th><font size=4>Rota da Amizade - Fraiburgo, Treze Tílias e Videira - 5 dias
                                         / 3 diárias</font>
                                         <br>
-                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio + </i>
-                                        <i class="fa fa-bus" style="font-size: 15px"> Transporte Rodoviário + </i>
+                                        <i class="fa fa-camera" style="font-size: 15px"> Passeio com Guia + </i>
                                         <i class="fa fa-ticket" style="font-size: 15px"> Ingresso</i>
                                     </th>
                                     <th><font size=4>Preço por Pessoa</font>
                                         <br><font size=1> a partir de</font>
                                         <br><font size=4> R$ 1.078,00</font>
                                         <br><font size=1> 10x de 107,80</font>
+                                        <div id="verdetalhes">
+                                            <a href="pacoteNorte5.jsp"><button id="verdetalhes">Detalhes</button></a>
+                                        </div>
                                     </th>
                                 </tr>
                             </thead>
