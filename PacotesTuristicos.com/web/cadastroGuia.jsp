@@ -58,8 +58,21 @@
 
             <!-- DADOS PESSOAIS-->
             <fieldset>
-                <legend><h2> Dados do Ministérdo Turismo </h2></legend>
+                <legend><h2> Dados do Ministério Turismo </h2></legend>
                 <table cellspacing="10" class="text-center">
+                    <tr>
+                        <td>
+                            <label>CodigoCliente</label>
+                        </td>
+
+
+                        <td align="left">
+                            <input id="codigocliente" type="texte"  readonly="true" name="Fcodigocliente"  value="<%= user.getCodigoCliente()%>" maxlength="14" > 
+                        </td>
+                        <td >
+
+                        </td>
+                    </tr>
                     <tr>
                         <td>
                             <label>CPF:</label>
@@ -67,7 +80,7 @@
 
 
                         <td align="left">
-                            <input id="cpf" type="text"  readonly="true" name="Fcpf" onBlur="ValidarCPF(form2.Fcpf);" onKeyPress="MascaraCPF(form2.Fcpf);" value=" <%= user.getCpf()%>" maxlength="14" required> 
+                            <input id="cpf" type="text"  readonly="true" name="Fcpf" onBlur="ValidarCPF(form2.Fcpf);" onKeyPress="MascaraCPF(form2.Fcpf);" value=" <%= user.getCpf()%>" maxlength="14" > 
                         </td>
                         <td >
 
@@ -81,17 +94,17 @@
                             <label for="Cnome">Nome Completo: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Fnome" maxlength="35" size="35" required value=" <%= user.getNome()%>" >
+                            <input type="text" name="Fnome"  readonly="true" maxlength="35" size="35"  value=" <%= user.getNome()%>" >
                         </td>
 
                     </tr>
                     </tr>
                     <tr>
                         <td>
-                            <label for="Cnome">Número do Registro: </label>
+                            <label for="Cregistro">Número do Registro: </label>
                         </td>
                         <td align="left">
-                            <input type="text" name="Fnome" maxlength="35" size="35" required value=" <%= user.getNome()%>" >
+                            <input type="text" name="Fregistro" maxlength="35" size="35" required value=" " >
                         </td>
 
                     </tr>
@@ -128,14 +141,15 @@
                         </td>
                         <td align="left">
                             <input type="date" name="Fdtexpedicao" required>
+                            
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="idioma1">Idioma 1:</label>
+                            <label for="Fidioma1">Idioma 1:</label>
                         </td>
                         <td align="left">
-                            <select name="Festado">
+                            <select name="Fidioma1">
                                <option value="Mandarim">-</option>
                                 <option value="Arabe">Árabe</option> 
                                 <option value="Espanhol">Espanhol</option> 
@@ -148,10 +162,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="idioma2">Idioma 2:</label>
+                            <label for="Fidioma2">Idioma 2:</label>
                         </td>
                         <td align="left">
-                            <select name="Festado">
+                            <select name="Fidioma2">
                                 <option value="Mandarim">-</option>
                                 <option value="Arabe">Árabe</option> 
                                 <option value="Espanhol">Espanhol</option> 
@@ -164,10 +178,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="idioma3">Idioma 3:</label>
+                            <label for="Fidioma3">Idioma 3:</label>
                         </td>
                         <td align="left">
-                            <select name="Fidioma1"> 
+                            <select name="Fidioma3"> 
                                 <option value="Mandarim">-</option>
                                 <option value="Arabe">Árabe</option> 
                                 <option value="Espanhol">Espanhol</option> 
@@ -184,7 +198,7 @@
                             <label>Tipo CNH</label>
                         </td>
                         <td align="left">
-                            <select name="Fidioma3"> 
+                            <select name="Fcnh"> 
                                 <option value="A">A</option> 
                                 <option value="B">B</option> 
                                 <option value="C">C</option> 
@@ -202,7 +216,7 @@
                             <label>Data de Vencimento CNH</label>
                         </td>
                         <td align="left">
-                            <input type="date" name="Fnascimento" required>
+                            <input type="date" name="Fdatecnh" required>
                         </td>
                     </tr>
                 </table>
