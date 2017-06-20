@@ -42,6 +42,15 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h1>Nossos Guias</h1>
+                    <h6>O guia de turismo é o profissional responsável por acompanhar 
+                        e orientar grupos de pessoas que estão viajando, seja em excursões, 
+                        viagens internacionais ou qualquer outro tipo de viagem.
+                        Esses profissionais também são responsáveis por ajudar na 
+                        montagem do roteiro e organizar as atividades que serão feitas 
+                        durante o dia garantindo que você conheça os melhores pontos 
+                        turísticos que a cidade oferece. Geralmente são muito bem humorados 
+                        e no decorrer dos trajetos vão de forma muita criativa contando as 
+                        histórias e lendas do lugar.</h6>
                 </div>
             </div>
         </div>
