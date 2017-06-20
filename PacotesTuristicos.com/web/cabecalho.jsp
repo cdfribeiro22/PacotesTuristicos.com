@@ -5,6 +5,7 @@
 --%>
 
 
+<%@page import="com.pacotesturisticos.dao.GuiaDao"%>
 <%@page import="javax.swing.JOptionPane"%>
 <%@page import="com.pacotesturisticos.model.CPessoaFisica"%>
 <%@page import="com.pacotesturisticos.dao.UsuarioDao"%>
@@ -31,33 +32,44 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="./">Inicio</a></li>
-                        
-                        <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
-                        <li><a href="pacotes.jsp">Pacotes</a></li>
-                        <li><a href="guia.jsp">Guia Turistico</a></li>
-                        <li><a href="contatos.jsp">Contatos</a></li>
-
-
                         <%
                             // verificando se tem um atributo login na sessao
                             // se tiver vai continuar e mostrar o menu
                             if (session.getAttribute("login") != null) {
-                            UsuarioDao dao = new UsuarioDao();
-                            CPessoaFisica user = new CPessoaFisica();
-                            user = dao.getPessoaByEmail(session.getAttribute("login").toString());
-                            //JOptionPane.showMessageDialog(null, user.getCodigoClienteString());
-                            
+                                UsuarioDao dao = new UsuarioDao();
+                                GuiaDao daoguia = new GuiaDao();
+                                CPessoaFisica user = new CPessoaFisica();
+                                user = dao.getPessoaByEmail(session.getAttribute("login").toString());
+                                //JOptionPane.showMessageDialog(null, user.getCodigoClienteString());
+
                         %>
-                        
-                        
-                        <li><a href="CadastroController?action=edit&CodigoCliente=<c:out value="<%= user.getCodigoClienteString() %>"/>">Meus Dados</a></li>
-                        
-                        
-                        
-                        <li><a href="cadastroGuia.jsp">Guia Turistico</a></li>
+
+
+                        <li><a href="./">Inicio</a></li>
+
+                        <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
+                        <li><a href="pacotes.jsp">Pacotes</a></li>
+                            <%                             // se não existir um login na sessao, 
+                                // vai enviar para a página de login novamente
+                                if (daoguia.ConsultarGuiaExistente(user)) {
+                            %>
+                        <li> <a href="cadastroGuia_ativo.jsp">Guia Turistico</a></li>
+                            <%
+                            } else {
+                            %>
+
+                        <li>   <a href="cadastroGuia_1.jsp">Guia Turistico (Cadsatro)</a></li>
+
+                        <%
+                            }
+                        %>
+
+                        <li><a href="contatos.jsp">Contatos</a></li>
+
+                        <li><a href="CadastroController?action=edit&CodigoCliente=<c:out value="<%= user.getCodigoClienteString()%>"/>">Meus Dados</a></li>
+
                         <li>  <% out.print(session.getAttribute("login").toString()); %> <a></a></li>
-                        
+
                         <li><a class="btn btn-danger" href="LoginServlet1?acao=logout">Logout</a></li>
                             <%
                                 // se não existir um login na sessao, 
@@ -65,8 +77,8 @@
                                 String logado = "admin@pactur.com";
                                 if (session.getAttribute("login") != null && (logado.equals(session.getAttribute("login")))) {
                             %>
-                         <li><a href="admin_index.jsp">Gerenciar Site</a></li>
-                      
+                        <li><a href="admin_index.jsp">Gerenciar Site</a></li>
+
                         <%
                             }
                         %>                            
@@ -82,12 +94,12 @@
 
                     </ul>
                 </div>
-                            
+
 
 
             </div>
         </header><!--/header-->
-        
+
     </body>
 
 

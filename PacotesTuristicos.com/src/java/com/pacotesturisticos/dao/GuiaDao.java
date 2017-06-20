@@ -11,6 +11,7 @@ import com.pacotesturisticos.model.CUsuarioSistema;
 import com.pacotesturisticos.model.CPessoa;
 import br.com.Login.util.Conexao;
 import com.pacotesturisticos.model.CPessoaEndereco;
+import com.pacotesturisticos.model.CPessoaFisica;
 import com.pacotesturisticos.model.Pessoa;
 import com.pacotesturisticos.model.CPessoaGuia;
 import java.math.BigDecimal;
@@ -181,27 +182,53 @@ public class GuiaDao {
 //        return srvs;
 //    }
 //
-//    public Pessoa getPessoaById(int cpfCnpj) {
-//        Pessoa srv = new Pessoa();
-//        try {
-//            PreparedStatement preparedStatement = connection.
-//                    prepareStatement("select * from servicos where codigo=?");
-////            preparedStatement.setInt(1, codigo);
-//            ResultSet rs = preparedStatement.executeQuery();
-//
-//            if (rs.next()) {
-////                srv.setCodigo(rs.getInt("codigo"));
-////                srv.setNome(rs.getString("nome"));
-////                srv.setTipoServ(rs.getString("tipoServ"));
-////                srv.setDescServ(rs.getString("descServ"));
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return srv;
-//    }
+    public CPessoaGuia getGuiaById(int codigo) {
+        CPessoaGuia srv = new CPessoaGuia();
+        try {
+            PreparedStatement preparedStatement = connection.
+                    prepareStatement("select * from guia where codigocliente=?");
+            preparedStatement.setInt(1, codigo);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            if (rs.next()) {
+                srv.setCodigocliente(rs.getInt("codigocliente"));
+                srv.setNumerodoregistro(rs.getString("numeroderegistro"));
+                srv.setCategoria1(rs.getString("categoria1"));
+                srv.setCategoria2(rs.getString("categoria2"));
+                srv.setDataexpedicao(rs.getDate("dataexpedicao"));
+                srv.setIdioma1(rs.getString("idioma1"));
+                srv.setIdioma2(rs.getString("idioma2"));
+                srv.setIdioma3(rs.getString("idioma3"));
+                srv.setCnh(rs.getString("cnh"));
+                srv.setDtcnhvencimento(rs.getDate("dtchnvencimento"));
+                
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return srv;
+    }
     
-    
+    public boolean ConsultarGuiaExistente(CPessoaFisica guia) {
+
+        try {
+            PreparedStatement preparedStatement = connection.
+                    prepareStatement("select * from public.guia where codigocliente=?");
+            preparedStatement.setInt(1, guia.getCodigoCliente());
+            
+
+            ResultSet rs = preparedStatement.executeQuery();
+//			                 JOptionPane.showMessageDialog(null, "teste Dao");
+            if (rs.next()) {
+                return true;
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
     
 }
