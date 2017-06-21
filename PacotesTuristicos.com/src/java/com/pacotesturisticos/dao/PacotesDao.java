@@ -71,12 +71,12 @@ public class PacotesDao {
 
             PreparedStatement preparedStatement = connection
                     .prepareStatement("insert into pacotes( codigopacote, regiao, "
-                            + " descpasseio, item1, item2, item3, valor) "
+                            + " descpacote, item1, item2, item3, valor) "
                             + "values (?, ?, ?, ?, ?, ?, ?)");
 
             preparedStatement.setInt(1, pacote.getCodigopacote());
             preparedStatement.setString(2, pacote.getRegiao());
-            preparedStatement.setString(3, pacote.getDescpasseio());
+            preparedStatement.setString(3, pacote.getDescpacote());
             preparedStatement.setString(4, pacote.getItem1());
             preparedStatement.setString(5, pacote.getItem2());
             preparedStatement.setString(6, pacote.getItem3());
@@ -206,16 +206,14 @@ public class PacotesDao {
                 CPacotes srv = new CPacotes();
                     srv.setCodigopacote(rs.getInt("codigopacote"));
                     srv.setRegiao(rs.getString("regiao"));
-                    srv.setDescpasseio(rs.getString("descpasseio"));
+                    srv.setDescpacote(rs.getString("descpacote"));
                     srv.setItem1(rs.getString("item1"));
                     srv.setItem2(rs.getString("item2"));
                     srv.setItem3(rs.getString("item3"));
                     srv.setPreco(rs.getString("valor"));
                     srv.setStatus(rs.getString("statuspacote"));
                     
-                    
-                   
-                srvs.add(srv);
+                    srvs.add(srv);
             }
         } catch (SQLException e) {
             e.printStackTrace();

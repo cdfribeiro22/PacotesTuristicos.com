@@ -107,7 +107,7 @@ public class PacotesController extends HttpServlet {
 
         
         pacote.setRegiao(request.getParameter("Fregiao"));
-        pacote.setDescpasseio(request.getParameter("fpasseio"));
+        pacote.setDescpacote(request.getParameter("fpacote"));
         pacote.setItem1(request.getParameter("fitem1"));
         pacote.setItem2(request.getParameter("fitem2"));
         pacote.setItem3(request.getParameter("fitem3"));

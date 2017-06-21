@@ -13,7 +13,7 @@ public class CPacotes {
     
     private int codigopacote;
     private String regiao;
-    private String descpasseio;
+    private String descpacote;
     private String item1;
     private String item2;
     private String item3;
@@ -38,8 +38,8 @@ public class CPacotes {
         return regiao;
     }
 
-    public String getDescpasseio() {
-        return descpasseio;
+    public String getDescpacote() {
+        return descpacote;
     }
 
     public String getItem1() {
@@ -66,8 +66,8 @@ public class CPacotes {
         this.regiao = regiao;
     }
 
-    public void setDescpasseio(String descpasseio) {
-        this.descpasseio = descpasseio;
+    public void setDescpacote(String descpacote) {
+        this.descpacote = descpacote;
     }
 
     public void setItem1(String item1) {

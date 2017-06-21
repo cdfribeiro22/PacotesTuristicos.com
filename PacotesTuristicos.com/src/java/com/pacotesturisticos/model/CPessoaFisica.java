@@ -24,7 +24,8 @@ public class CPessoaFisica extends CPessoaEndereco{
     protected String cpf;
     protected String orgaoExpeditor;
     protected String statusUsuario; // Se a conta está ativa ou inativa
-
+    protected String Guia; //Informar se é Guia Turistico.
+    
     public CPessoaFisica() {
         
         super();
@@ -255,6 +256,14 @@ public class CPessoaFisica extends CPessoaEndereco{
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getGuia() {
+        return Guia;
+    }
+
+    public void setGuia(String Guia) {
+        this.Guia = Guia;
     }
 
     

@@ -32,6 +32,13 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
+                        
+
+
+                        <li><a href="./">Inicio</a></li>
+
+                        <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
+                        <li><a href="pacotes.jsp">Pacotes</a></li>
                         <%
                             // verificando se tem um atributo login na sessao
                             // se tiver vai continuar e mostrar o menu
@@ -40,17 +47,7 @@
                                 GuiaDao daoguia = new GuiaDao();
                                 CPessoaFisica user = new CPessoaFisica();
                                 user = dao.getPessoaByEmail(session.getAttribute("login").toString());
-                                //JOptionPane.showMessageDialog(null, user.getCodigoClienteString());
-
-                        %>
-
-
-                        <li><a href="./">Inicio</a></li>
-
-                        <li><a href="montarPacotes.jsp">Montar Pacotes</a></li>
-                        <li><a href="pacotes.jsp">Pacotes</a></li>
-                            <%                             // se não existir um login na sessao, 
-                                // vai enviar para a página de login novamente
+                                
                                 if (daoguia.ConsultarGuiaExistente(user)) {
                             %>
                         <li> <a href="cadastroGuia_ativo.jsp">Guia Turistico</a></li>
@@ -58,7 +55,7 @@
                             } else {
                             %>
 
-                        <li>   <a href="cadastroGuia_1.jsp">Guia Turistico (Cadsatro)</a></li>
+                        <li>   <a href="cadastroGuia_1.jsp">Guia Turistico (Cadastro)</a></li>
 
                         <%
                             }

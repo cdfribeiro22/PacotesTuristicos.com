@@ -34,8 +34,10 @@
                                 if (session.getAttribute("login") != null && (logado.equals(session.getAttribute("login")))) {
 %>                           
                         <li><a href="#">Administrador</a></li>
-                        <li><a href="admin_listarclientes.jsp">Clientes</a></li>
-                        <li><a href="admin_listarpacotes.jsp">Pacotes</a></li>
+                        <li><a href="admin_listarclientes.jsp">*Clientes</a></li>
+                        <li><a href="admin_listarguias.jsp">*Guias</a></li>
+                        <li><a href="admin_listarpacotes.jsp">*Pacotes</a></li>
+                        <li><a href="admin_listarpasseio.jsp">*Passeios</a></li>
 <%                        
                             }                                            
  %>

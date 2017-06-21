@@ -10,6 +10,7 @@ package com.pacotesturisticos.dao;
 import com.pacotesturisticos.model.CUsuarioSistema;
 import com.pacotesturisticos.model.CPessoa;
 import br.com.Login.util.Conexao;
+import com.pacotesturisticos.model.CPasseios;
 import com.pacotesturisticos.model.CPessoaEndereco;
 import com.pacotesturisticos.model.CPessoaFisica;
 import com.pacotesturisticos.model.Pessoa;
@@ -32,14 +33,14 @@ import javax.swing.JOptionPane;
  *
  * @author Avell 1513
  */
-public class GuiaDao {
+public class PasseioDao {
     
     private Connection connection;
  
      Timestamp dataDeHoje = new Timestamp(System.currentTimeMillis());
      Date d = new Date(System.currentTimeMillis());
 //    
-    public GuiaDao(){
+    public PasseioDao(){
         connection = Conexao.getConnection();
         
     }
@@ -67,29 +68,23 @@ public class GuiaDao {
 //		return false;
 //	}
     
-        public void addGuiaCadastro(CPessoaGuia guia) {
+        public void addPasseioCadastro(CPasseios passeio) {
             
         try {
            
             PreparedStatement preparedStatement = connection
-                    .prepareStatement("insert into guia (codigocliente,  numeroderegistro ,  categoria1, categoria2,"
-                                                        + "dataexpedicao, idioma1, idioma2,"
-                                                        + "idioma3, cnh, dtchnvencimento)"
-                                                        + "values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");   
+                    .prepareStatement("insert into passeio ( nomepasseio,  descpasseio, periodo,"
+                                                        + "pontodeencontro, codigoguia, valor)"
+                                                        + "values ( ?, ?, ?, ?, ?, ?)");   
 
-        preparedStatement.setInt(1, guia.getCodigocliente());
-        preparedStatement.setString(2, guia.getNumerodoregistro());
-        preparedStatement.setString(3, guia.getCategoria1());
-        preparedStatement.setString(4, guia.getCategoria2());
-        JOptionPane.showMessageDialog(null, guia.getDataexpedicao().getTime());
-        preparedStatement.setDate(5, new Date(guia.getDataexpedicao().getTime()));
-        preparedStatement.setString(6, guia.getIdioma1());
-        preparedStatement.setString(7, guia.getIdioma2());
-        preparedStatement.setString(8, guia.getIdioma3());
-        preparedStatement.setString(9, guia.getCnh());
-        JOptionPane.showMessageDialog(null, guia.getDtcnhvencimento());
-        preparedStatement.setDate(10, new Date(guia.getDtcnhvencimento().getTime()));
-       
+
+        preparedStatement.setString(1, passeio.getNomepasseio());
+        preparedStatement.setString(2, passeio.getDescpasseio());
+        preparedStatement.setString(3, passeio.getPeriodo());
+        preparedStatement.setString(4, passeio.getPontodeencontro());
+        preparedStatement.setInt(5, passeio.getCodigoguia());
+        preparedStatement.setString(6, passeio.getValor());
+
         
         preparedStatement.executeUpdate();
 
@@ -158,39 +153,25 @@ public class GuiaDao {
 //        }
 //    }
 //
-   public List<CPessoaFisica> getAllGuia() {
-        List<CPessoaFisica> srvs = new ArrayList<CPessoaFisica>();
+   public List<CPasseios> getAllPasseio() {
+        List<CPasseios> srvs = new ArrayList<CPasseios>();
         try {
             Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("select * from pessoa");
-            CPessoaFisica srv = new CPessoaFisica();
-            CPessoaEndereco end = new CPessoaEndereco();
+            ResultSet rs = statement.executeQuery("select * from passeio");
             
-            while (rs.next()) {
-               if( getPessoaIdGuia(rs.getInt("codigocliente"))=="SIM"){
-                
-                    srv.setDocumento(rs.getString("pdocumento"));
-                    srv.setDt_nasc(rs.getDate("pdtnascimento"));
-                    srv.setSexo(rs.getString("psexo"));
-                    srv.setTelefoneFixo(rs.getString("ptelefonefixo"));
-                    srv.setTelefoneMovel(rs.getString("ptelefonemovel"));
-                    srv.setOrgaoExpeditor(rs.getString("porgaoexpeditor"));
-                    srv.setCpf(rs.getString("pcpfcnpj"));
-                    srv.setNome(rs.getString("pnome"));
-                    srv.setTipoPessoa(Integer.parseInt(rs.getString("ptipopessoa")));
-                    srv.setTipoUsuario(Integer.parseInt(rs.getString("utipousuario")));
-                    srv.setEmail(rs.getString("uemail"));
-                    srv.setSenha(rs.getString("usenha"));
-                    srv.setDt_nasc(rs.getDate("udtcadastro"));
-                    srv.setDtAcesso(rs.getDate("udtultacesso"));
-                    srv.setCodigoCliente(rs.getInt("codigocliente"));
-                    srv.setStatusUsuario(rs.getString("statuscliente"));
-                    end = getEnderecoByID(srv.getCodigoCliente());
-                    srv.setCidade(end.getCidade());
-                    srv.setEstado(end.getEstado());
-                    srv.setGuia(getPessoaIdGuia(srv.getCodigoCliente()));
-                     srvs.add(srv);
-               }   
+             while (rs.next()) {
+                    CPasseios srv = new CPasseios();
+                    srv.setCodigopasseio(rs.getInt("codigopasseio"));
+                    srv.setNomepasseio(rs.getString("nomepasseio"));
+                    srv.setDescpasseio(rs.getString("descpasseio"));
+                    srv.setPeriodo(rs.getString("periodo"));
+                    srv.setPontodeencontro(rs.getString("pontodeencontro"));
+                    srv.setCodigoguia(rs.getInt("codigoguia"));
+                    srv.setValor(rs.getString("valor"));
+                    srv.setStatus(rs.getString("status"));
+                  
+                    srvs.add(srv);
+                 
             }
         } catch (SQLException e) {
             e.printStackTrace();

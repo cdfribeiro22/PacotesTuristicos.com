@@ -41,26 +41,25 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
     </head><!--/head-->
-        
-    
-        
-          
+
     <body>
 
-        
+        <%@include file="admin_cabecalho.jsp" %>
 
         <section id="title" class="emerald">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Cadastrar Novo Pacote</h1>
+                        <h1>Cadastro de Passeio realizado com sucesso</h1>
                     </div>
                 </div>
             </div>
         </section><!--/#title--> 
 
-      
+           
 
+            
+          
        
 
     </body>

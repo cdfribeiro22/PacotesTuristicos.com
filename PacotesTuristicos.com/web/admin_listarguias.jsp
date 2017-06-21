@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Clientes Cadastrados</h1>
+                        <h1>Guias Cadastrados</h1>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
 
         <p></p>
 
-        <input type="button" onclick="location.href = 'CadastroController?action=listCliente';" value="LISTAR" />
+        <input type="button" onclick="location.href = 'CadastroGuiaController?action=listGuia';" value="LISTAR" />
 
         <p></p>
 
@@ -78,52 +78,28 @@
                 <th>Código Cliente</th>
                 <th>Nome Completo</th>
                 <th>Sexo</th>
-                <th>Nascimento</th>
-                 <!--<th>RG</th>
-                <th>CPF</th>
-                <th>Rua</th>
-                <th>Número</th>
-                <th>Complemento</th>
                 <th>Estado</th>
                 <th>Cidade</th>
-                <th>CEP</th>
-                <th>Bairro</th>-->
                 <th>E-mail</th>
-                <th>Status da conta </th>
-                <th>Guia</th>
+                <th>Telefone</th>    
                 <th></th>
-                <th><FONT COLOR="0000FF">Ativar Usuario</th>
-                <th><FONT COLOR="0000FF">Inativar Usuario</th>
                 <th><FONT COLOR="0000FF">Mais Detalhes</th>
             </tr>    
         </thead>        
         <tbody>
             <c:forEach items="${clientes}" var="cliente">
                 <tr align="center">
-                    <td id="codigoclienteid" ><c:out value="${cliente.getCodigoCliente()}" /></td>
+                    <td><c:out value="${cliente.getCodigoCliente()}" /></td>
                     <td><c:out value="${cliente.getNome()}" /></td>
                     <td><c:out value="${cliente.getSexo()}" /></td>
-                    <td><c:out value="${cliente.getDt_nasc()}" /></td>
-                     <!--<td><c:out value="${cliente.getDocumento()}" /></td>
-                    <td><c:out value="${cliente.getCpf()}" /></td>
-                    <td><c:out value="${cliente.getLogradouro()}" /></td>
-                    <td><c:out value="${cliente.getNumero()}" /></td>
-                    <td><c:out value="${cliente.getComplemento()}" /></td>
+                 
                     <td><c:out value="${cliente.getEstado()}" /></td>
                     <td><c:out value="${cliente.getCidade()}" /></td>
-                    <td><c:out value="${cliente.getCod_postal()}" /></td>
-                    <td><c:out value="${cliente.getBairro()}" /></td>-->
-                    <td><c:out value="${cliente.getEmail()}" /></td>
-                    <td><c:out value="${cliente.getStatusUsuario()}" /></td>
-                    <td><c:out value="${cliente.getGuia()}" /></td>
-             
-                   
                     
-                   
+                    <td><c:out value="${cliente.getEmail()}" /></td>
+                    <td><c:out value="${cliente.getTelefoneMovel()}" /></td>
                     <td>></td>
-                    <td><a href="CadastroController?action=ativar&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>"><FONT COLOR="0000FF"><b>Ativar</b></a></td>
-                    <td><a href="CadastroController?action=inativar&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>"><FONT COLOR="0000FF"><b>Inativar</b></a></td>
-                    <td><a href="CadastroController?action=listarCliente&CodigoCliente=<c:out value="${cliente.getCodigoCliente()}"/>"><FONT COLOR="0000FF"><b>Detalhes</b></a></td>
+                    <td><a href="#"><FONT COLOR="0000FF"><b>Detalhes</b></a></td>
                 </tr>
             </c:forEach>   
         </tbody>   

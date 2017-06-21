@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Gerenciador de Pacotes</h1>
+                        <h1>Gerenciador de Passeios</h1>
                     </div>
                 </div>
             </div>
@@ -58,9 +58,11 @@
 
         <p></p>
 
-        <input type="button" onclick="location.href = 'PacotesController?action=listPacotes';" value="LISTAR" />
-        <input type="button" onclick="location.href = 'admin_cadastrarpacotes_1.jsp';" value="CADASTRAR NOVO PACOTE" />
+        <input type="button" onclick="location.href = 'PasseioController?action=listPasseios';" value="LISTAR" />
+        
         <input type="button" onclick="location.href = 'admin_cadastrarpasseio.jsp';" value="CADASTRAR NOVO PASSEIO" />
+        
+        
         <p></p>
 
 
@@ -71,32 +73,33 @@
     <table id=listarMensagens cellspacing="10" class="text-center" border=1>
         <thead>
             <tr align="center">
-                <th>Código Pacote</th>
-                <th>Região</th>
-                <th>Descrição do Pacote</th>
-                <th>Item 1 do Pacote</th>
-                <th>Item 2 do Pacote</th>
-                <th>Item 3 do Pacote</th>
+                <th>Código Passeio</th>
+                <th>Nome Passeio</th>
+                <th>Descrisção passeio</th>
+                <th>Periodo</th>
+                <th>Ponto de Encontro:</th>
+                <th>Codigo do Guia</th>
                 <th>Preço</th>
                 <th>Status</th>
-                <th><FONT COLOR="0000FF">Ativar pacote</th>
-                <th><FONT COLOR="0000FF">Inativar pacote</th>
+                <th><FONT COLOR="0000FF">Ativar passeio</th>
+                <th><FONT COLOR="0000FF">Inativar passeio</th>
                 
             </tr>    
         </thead>        
         <tbody>
-            <c:forEach items="${pacotes}" var="pacote">
+            <c:forEach items="${passeios}" var="passeio">
                 <tr align="center">
-                    <td><c:out value="${pacote.getCodigopacote()}" /></td>
-                    <td><c:out value="${pacote.getRegiao()}" /></td>
-                    <td><c:out value="${pacote.getDescpacote()}" /></td>
-                    <td><c:out value="${pacote.getItem1()}" /></td>
-                    <td><c:out value="${pacote.getItem2()}" /></td>
-                    <td><c:out value="${pacote.getItem3()}" /></td>
-                    <td><c:out value="${pacote.getPreco()}" /></td>
-                    <td><c:out value="${pacote.getStatus()}" /></td>
-                    <td><a href="PacotesController?action=ativar&CodigoPacote=<c:out value="${pacote.getCodigopacote()}"/>"><FONT COLOR="0000FF"><b>Ativar</b></a></td>
-                    <td><a href="PacotesController?action=desativar&CodigoPacote=<c:out value="${pacote.getCodigopacote()}"/>"><FONT COLOR="0000FF"><b>Inativar</b></a></td>
+                    <td><c:out value="${passeio.getCodigopasseio()}" /></td>
+                    <td><c:out value="${passeio.getNomepasseio()}" /></td>
+                    <td><c:out value="${passeio.getDescpasseio()}" /></td>
+                    <td><c:out value="${passeio.getPeriodo()}" /></td>
+                    <td><c:out value="${passeio.getPontodeencontro()}" /></td>
+                    <td><c:out value="${passeio.getCodigoguia()}" /></td>
+                    <td><c:out value="${passeio.getValor()}" /></td>
+                    <td><c:out value="${passeio.getStatus()}" /></td>
+                    
+                    <td><a href="PasseioController?action=ativar&CodigoPacote=<c:out value="${pacote.getCodigopacote()}"/>"><FONT COLOR="0000FF"><b>Ativar</b></a></td>
+                    <td><a href="PasseioControllerController?action=desativar&CodigoPacote=<c:out value="${pacote.getCodigopacote()}"/>"><FONT COLOR="0000FF"><b>Inativar</b></a></td>
                 </tr>
             </c:forEach>   
         </tbody>   

@@ -231,7 +231,7 @@ public class UsuarioDao {
                     srv.setCodigoCliente(rs.getInt("codigocliente"));
                     srv.setStatusUsuario(rs.getString("statuscliente"));
                     srv.CPessoaEndereco(getEnderecoByID(srv.getCodigoCliente()));
-                   
+                    srv.setGuia(getPessoaIdGuia(srv.getCodigoCliente()));
                 srvs.add(srv);
             }
         } catch (SQLException e) {
@@ -266,7 +266,7 @@ public class UsuarioDao {
                 srv.setDt_nasc(rs.getDate("udtcadastro"));
                 srv.setDtAcesso(rs.getDate("udtultacesso"));
                 srv.setCodigoCliente(Integer.parseInt(rs.getString("codigocliente")));
-                
+                   srv.setGuia(getPessoaIdGuia(srv.getCodigoCliente()));
                 
 
             }
@@ -280,9 +280,34 @@ public class UsuarioDao {
 
         return srv;
     }
+    
+        public String getPessoaIdGuia(int codigoCliente) {
+      
+        try {
+            PreparedStatement preparedStatement = connection.
+                    prepareStatement("select * from guia where codigocliente=?");
+            preparedStatement.setInt(1, codigoCliente);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            if (rs.next()) {
+
+               return "SIM";
+               
+            }
+            rs.close();
+            
+           
+//            JOptionPane.showMessageDialog(null,srv.getNome() );
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return "-";
+    }
 
     public CPessoaFisica getPessoaByEmail(String Email) {
         CPessoaFisica srv = new CPessoaFisica();
+        
         try {
             PreparedStatement preparedStatement = connection.
                     prepareStatement("select * from pessoa where uemail=?");
@@ -306,9 +331,7 @@ public class UsuarioDao {
                 srv.setDt_nasc(rs.getDate("udtcadastro"));
                 srv.setDtAcesso(rs.getDate("udtultacesso"));
                 srv.setCodigoCliente(Integer.parseInt(rs.getString("codigocliente")));
-                
-                
-
+                srv.setGuia(getPessoaIdGuia(srv.getCodigoCliente()));
             }
             rs.close();
             

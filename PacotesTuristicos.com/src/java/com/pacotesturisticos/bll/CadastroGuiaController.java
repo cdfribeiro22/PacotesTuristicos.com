@@ -5,6 +5,7 @@
  */
 package com.pacotesturisticos.bll;
 
+import br.com.Login.util.Conexao;
 import com.pacotesturisticos.dao.GuiaDao;
 import com.pacotesturisticos.dao.UsuarioDao;
 import com.pacotesturisticos.model.CPessoaEndereco;
@@ -19,6 +20,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -44,13 +47,17 @@ public class CadastroGuiaController extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static String INSERT_OR_EDIT = "/cadastroGuia_valido.jsp";
     private static String LIST_Cliente = "/cadastroGuia.jsp";
-    private static String LIST_Admin_Clientes = "/cadastroGuia.jsp";
+    private static String LIST_Admin_Guias = "/admin_listarguias.jsp";
     private static String LIST_OCliente = "/cadastroGuia.jsp";
     private GuiaDao dao;
+       private Connection connection;
 
-    public CadastroGuiaController() {
-        super();
+    
+     public CadastroGuiaController() {
+         super();
         dao = new GuiaDao();
+        connection = Conexao.getConnection();
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -78,11 +85,11 @@ public class CadastroGuiaController extends HttpServlet {
 //            CPessoaFisica cliente = dao.getPessoaById(CodigoCliente);
 //            request.setAttribute("cliente", cliente);
 
-        } else if (action.equalsIgnoreCase("listCliente")) {
+        } else if (action.equalsIgnoreCase("listGuia")) {
 
-//            forward = LIST_Admin_Clientes;
+            forward = LIST_Admin_Guias;
 //            
-//            request.setAttribute("clientes", dao.getAllCliente());
+            request.setAttribute("clientes", dao.getAllGuia());
 //            
         } else if (action.equalsIgnoreCase("listarCliente")) {
 
@@ -153,5 +160,39 @@ public class CadastroGuiaController extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+    
+    public CPessoaEndereco getEnderecoByID(int codigo) {
+        CPessoaEndereco srv = new CPessoaEndereco();
+        try {
+            PreparedStatement preparedStatement = connection.
+                    prepareStatement("select * from enderecos where codigocliente=?");
+            preparedStatement.setInt(1, codigo);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            if (rs.next()) {
+
+                srv.setLogradouro(rs.getString("logradouro"));
+                srv.setNumero(Integer.parseInt(rs.getString("numero")));
+                srv.setComplemento(rs.getString("complemento"));
+                srv.setBairro(rs.getString("bairro"));
+                srv.setEstado(rs.getString("estado"));
+                srv.setCidade(rs.getString("cidade"));
+                srv.setCod_postal(rs.getString("codigopostal"));
+                srv.setPais(rs.getString("pais"));
+
+            }
+            
+             rs.close();
+            
+            return srv;
+
+
+//            JOptionPane.showMessageDialog(null,srv.getNome() );
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return srv;
+    }
 
 }

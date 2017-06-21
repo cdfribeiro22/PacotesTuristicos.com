@@ -146,8 +146,11 @@ public class CadastroController extends HttpServlet {
                        
             cliente.setEmail(request.getParameter("Femail"));
             cliente.setSenha(request.getParameter("repetir_senha"));
+            
+            
 
        int CodigoCliente = Integer.parseInt(request.getParameter("Fcodigocliente"));
+       
 //       JOptionPane.showMessageDialog(null, "DOPOST Codigo do cliente" + CodigoCliente);
 
         if (CodigoCliente == 0) {

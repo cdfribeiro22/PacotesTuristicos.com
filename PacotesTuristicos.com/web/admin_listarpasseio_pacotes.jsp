@@ -44,13 +44,13 @@
 
     <body>
 
-        <%@include file="admin_cabecalho.jsp" %>
+      
 
         <section id="title" class="emerald">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Gerenciador de Pacotes</h1>
+                        <h1>Listas de Passeios</h1>
                     </div>
                 </div>
             </div>
@@ -59,8 +59,8 @@
         <p></p>
 
         <input type="button" onclick="location.href = 'PacotesController?action=listPacotes';" value="LISTAR" />
-        <input type="button" onclick="location.href = 'admin_cadastrarpacotes_1.jsp';" value="CADASTRAR NOVO PACOTE" />
-        <input type="button" onclick="location.href = 'admin_cadastrarpasseio.jsp';" value="CADASTRAR NOVO PASSEIO" />
+        <input type="button" onclick="location.href = 'admin_listarpacotes.jsp';" value="Voltar para Pacotes" />
+        
         <p></p>
 
 
